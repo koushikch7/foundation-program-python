@@ -1,0 +1,18 @@
+[
+    {"text":"Learning Plan", "done":true,"slideindex":"-2","quizindex":"0","hrefUrl":"QuizType1.html"},
+    {"text":"Table of Contents", "done":true,"slideindex":"-1","quizindex":"0","hrefUrl":"QuizType1.html"},
+    {"text":"Module Flow", "done":true,"slideindex":"0.1","quizindex":"0","hrefUrl":"QuizType1.html"},
+     {"text":"Learning Objective", "done":true,"slideindex":"0","quizindex":"0","hrefUrl":"QuizType1.html"},
+    {"text":"Data and Need for DBMS", "done":true,"slideindex":"1","quizindex":"0","hrefUrl":"QuizType1.html"},
+    {"text":"Relational Model and Keys", "done":false,"slideindex":"11","quizindex":"3","hrefUrl":"QuizType2.html"},
+    {"text":"Database Development Life Cycle (DDLC)", "done":true,"slideindex":"16", "quizindex":"8","hrefUrl":"QuizType2.html"},
+    {"text":"Analyzing Data Requirements", "done":false,"slideindex":"19", "quizindex":"12","hrefUrl":"QuizType1.html"},
+    {"text":"Logical Database Design", "done":true,"slideindex":"26", "quizindex":"16","hrefUrl":"QuizType2.html"},
+    {"text":"Physical Database Design ", "done":false,"slideindex":"42","quizindex":"20","hrefUrl":"QuizType1.html"},
+        {"text":"Normalization", "done":false,"slideindex":"50", "quizindex":"24","hrefUrl":"QuizType2.html"},
+            {"text":"Implementation with SQL", "done":false,"slideindex":"67","quizindex":"28","hrefUrl":"QuizType1.html"},
+  {"text":"SQL: Built-in Functions", "done":false,"slideindex":"100","quizindex":"28","hrefUrl":"QuizType1.html"},
+  {"text":"Group By and Having", "done":false,"slideindex":"103","quizindex":"28","hrefUrl":"QuizType1.html"},
+   {"text":"Project", "done":true,"slideindex":"111","quizindex":"0","hrefUrl":"QuizType1.html"}
+  
+]

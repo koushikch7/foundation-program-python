@@ -1,0 +1,36 @@
+[{
+
+	"text": "Learning Plan",
+	"done": true,
+	"slideindex": "0.01",
+	"quizindex": "0",
+	"hrefUrl": "QuizType1.html"
+},
+{
+
+	"text": "Table of content",
+	"done": true,
+	"slideindex": "0.2",
+	"quizindex": "0",
+	"hrefUrl": "QuizType1.html"
+},
+{
+
+	"text": "Recap of Module 1 and Module 2",
+	"done": true,
+	"slideindex": "0.3",
+	"quizindex": "0",
+	"hrefUrl": "QuizType1.html"
+},
+    {"text":"Module Flow", "done":true,"slideindex":"0","quizindex":"0","hrefUrl":"QuizType1.html"},
+    {"text":"Learning Objectives", "done":true,"slideindex":"1","quizindex":"0","hrefUrl":"QuizType1.html"},
+    {"text":"Why Database Programming?", "done":true,"slideindex":"2","quizindex":"0","hrefUrl":"QuizType1.html"},
+    {"text":"Python Database Integration -  Pre-requisites and Installation", "done":false,"slideindex":"7","quizindex":"3","hrefUrl":"QuizType2.html"},
+    {"text":"SELECT Operation", "done":true,"slideindex":"16", "quizindex":"8","hrefUrl":"QuizType2.html"},
+    {"text":"CREATE and INSERT Operation", "done":false,"slideindex":"30", "quizindex":"12","hrefUrl":"QuizType1.html"},
+    {"text":"UPDATE Operation", "done":true,"slideindex":"41", "quizindex":"16","hrefUrl":"QuizType2.html"},
+    {"text":"DELETE Operation", "done":false,"slideindex":"49","quizindex":"20","hrefUrl":"QuizType1.html"},
+    {"text":"Exception Handling", "done":false,"slideindex":"57", "quizindex":"24","hrefUrl":"QuizType2.html"},
+{"text":"Project", "done":false,"slideindex":"65", "quizindex":"24","hrefUrl":"QuizType2.html"}
+
+]

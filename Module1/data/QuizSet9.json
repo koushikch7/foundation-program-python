@@ -1,0 +1,534 @@
+[
+{
+"id":"1",
+"question": "Fill in the blank with the function which will list all the available functions in math module.<br>            import math<br>            _____(math)",
+"imgURL":"",
+"options":[
+           {"option":"a: dir"},
+           {"option":"b: list"},
+           {"option":"c: display"},
+           {"option":"d: listFunctions"}
+          ],
+"correct":"A",
+"description":{
+  "A" : "\"dir()\" function is used to list all the available functions in any module. Please note that we need to import the module before using it's functions. Learn more: https://docs.python.org/3/tutorial/modules.html#the-dir-function ", 
+  "B" : "Error as this function is not defined in Python", 
+  "C" : "Error as this function is not defined in Python",                
+  "D" : "Error as this function is not defined in Python"
+  }
+},
+{
+"id":"2",
+"question": "Complete the statements at line # 2 and 4 such that:<ul style=\"position:relative;margin-left:60px;\"><li>Line# 3 displays August month's calendar for the year 2016.</li><li>Line# 4 checks if the year 1947 was a leap year or not programmatically. Line# 5 prints True/False accordingly.</li></ul><ul style=\"list-style-type:decimal;position:relative;margin-left:130px;\"><li>import calendar </li><li>cal = calendar. <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          A          </span> (2016,8)</li><li>print(cal)</li><li>is_leap = calendar. <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          B          </span> (1447)</li><li>print(is_leap)</li></ul>",
+"imgURL":"",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"  A  ->"},
+		{"option2":"  B  ->"}
+		],
+"colB":
+		[
+		{"option1":"isleap"},
+		{"option2":"month"},
+                {"option3":"formatmonth"},
+                {"option4":"calendar"}
+		],
+"Correct":
+		[
+		{"option":"month"},
+		{"option":"isleap"}
+		],
+ "description":
+         [
+		{"option":"We can print the calender of a given month using month() function"},
+		{"option":"This function returns True if the given month is leap else returns False."}
+		]
+
+},
+{
+"id":"3",
+"question": "Consider two modules \"module1.py\" and \"module2.py\" with the following contents:",
+"imgURL":"images/Quiz79.png",
+"query":"            When module2 is executed, choose the correct output from the options given below:",
+"options":[
+           {"option":"a: 0"},
+           {"option":"b: No output"},
+           {"option":"c: Error"},
+           {"option":"d: 120"}
+          ],
+"correct":"D",
+"description":{
+  "A" : "Try to execute the code and observe the output.", 
+  "B" : "Try to execute the code and observe the output.", 
+  "C" : "Try to execute the code and observe the output.",                
+  "D" : "We have imported module1 in module 2 using import statement. Hence the function factorial() defined in module1 can be used in module2 using module1.factorial(5). 'print(fact)' displays 120."
+  }
+},
+{
+"id":"4",
+"question": "Consider two modules \"module1.py\"  and  module2.py\" with the given contents. When module2 is executed, choose the <br>            correct output from the options given below:",
+"imgURL":"images/Quiz60.png",
+"options":[
+           {"option":"a: 0"},
+           {"option":"b: No output"},
+           {"option":"c: Error"},
+           {"option":"d: 2"}
+          ],
+"correct":"C",
+"description":{
+  "A" : "Try to execute the code and observe the output.", 
+  "B" : "Try to execute the code and observe the output.", 
+  "C" : "This is an example of cyclic/circular imports. 'module1' attempts to import 'module2' but can't as 'module2' needs to import 'module1' which is in the process of being interpreted. Hence throws an error.<br><img class=\"img-centered\" style=\"margin-top:30px;\"  src=\"images/Quiz60_1.png\" /><br>",                
+  "D" : "Try to execute the code and observe the output."
+  }
+},
+{
+"id":"5",
+"question": "Consider the project 'ABCInstitute' again. Suppose we want to compute and print the average score of a student in <br>           'display_result()' function inside 'show_result.py'.<br>           Assume the scores in three subjects of a student are 45,67,86. Implement the scenario.",
+"query":"            Hint – Use 'get_average_score()' function available in manage_score.py",
+"imgURL":"images/Quiz115.png",
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Capture8.PNG",
+"imgAnsText":"<br><strong>Answer:</strong>",
+
+"options":[],         
+"correct":"ABCD",
+"description":{}
+},
+{
+"id":"6",
+"question": "Observe 'manage_student_details.py' module inside 'student' package.  The function 'update_student_grade()' updates the<br>           grade of the student in his details.<br>           Assume average score of a student is 72. Write the code to fetch the student grade.",
+"query":"           Hint - 'get_grade(average)' function inside 'manage_score.py' can be used to retrieve the grade of a student. ",
+"imgURL":"images/Quiz116.png",
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Quiz116_1.png",
+"imgAnsText":"<br><strong>Answer:</strong>",
+
+"options":[],         
+"correct":"ABCD",
+"description":{}
+},
+{
+"id":"7",
+"question": "Import the project 'Demo' in your eclipse using the enclosed 'demo.zip' file.<br>           Project 'Demo'  has two packages 'dictionarydemo' and 'listdemo'. Both the packages have a module with the same name   <br>           'modify.py'. Both the modules have a function with same name 'add_element()'.                           <a class=\"btn btn-info\" id=\"DownloadScripts1\" href=\"Scripts/Demo.zip\" download=\"\" >Download Demo.zip</a><br><br>           Package structure in Eclipse is as below:<br>           listdemo -> modify.py -> add_element()<br>           dictionarydemo -> modify.py -> add_element()",
+"imgURL":"images/Quiz117.png",
+"query":"           Assume, we want to use 'add_element()' function from both the modules in another module 'test_module.py' in package<br>           'test'. Which of the following import statements will work here?",
+"imgURL2":"images/Quiz117_1.png",
+"options":[
+           {"option":"a: import listdemo.modify<br>        import dictionarydemo.modify<br>        listdemo.modify.add_element()<br>        dictionarydemo.modify.add_element()"},
+           {"option":"b: from listdemo import modify as l_modify<br>        from dictionarydemo import modify as d_modify<br>        l_modify.add_element()<br>        d_modify.add_element()"},
+           {"option":"c: from listdemo.modify import add_element() as add_element1<br>        from dictionarydemo.modify import add_element() as add_element2<br>        add_element1()<br>        add_element2()"},
+           {"option":"d: import listdemo.modify as modify1<br>        import dictionarydemo.modify as modify2<br>        modify1.add_element()<br>        modify2.add_element()"}],
+"correct":"ABCD",
+"description":{ 
+    "A" : "We can import both the modules using 'import packagename.modulename'. As the module name and function name are same, we can call both the functions using 'packagename.modulename.functionname()'", 
+  "B" : "As the name of both the modules is same, we can use different alias names (an alias is an alternative and usually easier-to-understand name which can help us to identify a module/function) of the modules while importing. Here 'l_modify' and 's_modify' are alias names  (you can name them anything). We can use alias names of modules to call the functions.", 
+  "C" : "As the name of both the modules and functions is same, we can use different alias names of the functions while importing . Here 'add_element1' and 'add_element1' are alias names for function 'add_element' Later we can call the functions with their alias names.",                
+  "D" : "As the name of both the modules is same, we can use different alias names of the modules while importing. Here 'modify1' and 'modify2' are alias names. We can use alias names of modules to call the functions."}
+},
+{
+"id":"8",
+"question": "Consider the following Python program.<br>            import random<br>            print(random.randrange(10,50))",
+"query":"            Which of the given options is not a possible output of this code snippet?(Multiple options can be selected)",
+"imgURL":"",
+"options":[
+           {"option":"a: 10"},
+           {"option":"b: 15"},
+           {"option":"c: 50"},
+           {"option":"d: 0"}
+          ],
+"correct":"CD",
+"description":{
+  "A" : "random.randrange(x, y) generates a random number between x and y-1.  Answer again.", 
+  "B" : "random.randrange(x, y) generates a random number between x and y-1.  Answer again.", 
+  "C" : "random.randrange(10,50) generates a random number between 10 and 49. Hence 50 cannot be a possible output.",                
+  "D" : "random.randrange(10,50) generates a random number between 10 and 49. Hence 0 cannot be a possible output."
+  }
+},
+{
+"id":"9",
+"question": "Which of the following code snippets are logically same(Assume random module is already imported):",
+"imgURL":"images/Quiz81.png",
+"options":[
+           {"option":"a: 1, 2"},
+           {"option":"b: 1, 2, 4"},
+           {"option":"c: 2, 3"},
+           {"option":"d: 1, 3, 4"}
+          ],
+"correct":"A",
+"description":{
+  "A" : "<br>Code 1: random.randrange(1,11,1) prints any of the numbers from 1 to 10 with step 1. i.e. 1 to 10.<br>Code 2: random.randint(1,10) prints any of the numbers from 1 to 10(including the upper value).", 
+  "B" : "<br>Code 1: random.randrange(1,11,1) prints any of the numbers from 1 to 10 with step 1. i.e. 1 to 10.<br>Code 2: random.randint(1,10) prints any of the numbers from 1 to 10(including the upper value).<br>Code 4: it is equivalent to random.randrange(0,10) prints any of the numbers from 0 to 9 (by default lower value is 0).", 
+  "C" : "<br>Code 2: random.randint(1,10) prints any of the numbers from 1 to 10(including the upper value).<br>Code 3: random.randrange(1,10) prints any of the numbers from 1 to 9(excluding the upper value).",                
+  "D" : "<br>Code 1: random.randrange(1,11,1) prints any of the numbers from 1 to 10 with step 1. i.e. 1 to 10.<br>Code 3: random.randrange(1,10) prints any of the numbers from 1 to 9(excluding the upper value).<br>Code 4: it is equivalent to random.randrange(0,10) prints any of the numbers from 0 to 9 (by default lower value is 0)."
+  }
+},
+{
+"id":"10",
+"question": "Atif is writing a Python program to print the value of variable 'x'. Please help Atif to generate a random number 'x' such<br>             that 'x' is a multiple of 3 between 1 and 100.<br><br>             Complete the following code:<br><br>             import random<br>             x = random. <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          A          </span><br>             print(x)",
+"imgURL":"",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"  A  ->"}
+		],
+"colB":
+		[
+		{"option1":"random.randrange(1,99)"},
+                {"option2":"random.randrange(1,100,3)"},
+                {"option3":"random.randrange(1,99,3)"},
+                {"option4":"random.randrange(1,100)"}
+		],
+"Correct":
+		[
+		{"option":"random.randrange(1,100,3)"}
+		],
+ "description":
+         [
+		{"option":"This function will print a random number from the series of numbers starting from 1 to 99 with a step of 3. The numbers can be one from (3,6,9,_ _  _,99)"}
+		]
+},
+{
+"id":"11",
+"question": "Predict the output of the following code snippet (Try to execute the code and verify the output):",
+"imgURL":"images/Quiz118.png",
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Quiz118_1.png",
+"imgAnsText":"<br><strong>Output:</strong>",
+
+"options":[],         
+"correct":"ABCD",
+"description":{}
+},
+{
+"id":"12",
+"question": "Choose the correct output for the following functions (Assume math module is already imported):",
+"imgURL":"",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"print(math.ceil(4.34))   "},
+		{"option2":"print(math.fabs(-4.34))"}, 
+		{"option3":"print(math.floor(4.34)) "},
+		{"option4":"print(math.pi)              "},
+                {"option5":"print(math.factorial(4))"},
+                {"option6":"print(math.sqrt(16))     "}
+		],
+"colB":
+		[
+		{"option1":"4"},
+		{"option2":"24"}, 
+		{"option3":"5"},
+		{"option4":"4.0"},
+                {"option5":"4.34"},
+                {"option6":"3.141592653589793"}
+		],
+"Correct":
+		[
+		{"option":"5"},
+		{"option":"4.34"}, 
+		{"option":"4"},
+                {"option":"3.141592653589793"}, 
+		{"option":"24"},
+		{"option":"4.0"}
+		],
+ "description":
+         [
+		{"option":"math.ceil(a) returns the smallest integer greater than or equal to a"},
+		{"option":"math.fabs(a) returns the absolute value of a"}, 
+		{"option":"math.floor(a) returns the largest integer less than or equal to a"},
+                {"option":"math.pi returns the value of pi"}, 
+		{"option":"math.factorial(4) returns the factorial of 4 i.e. 4*3*2*1 = 24"},
+		{"option":"math.sqrt(16) returns square root of 16 i.e. 4.0"}
+		]
+},
+{
+"id":"13",
+"question": "Which of the following will return current timestamp:",
+"imgURL":"",
+"options":[
+           {"option":"a: import time<br>        time.time()"},
+           {"option":"b: import time<br>        time.systime()"},
+           {"option":"c: import time<br>        time.now()"},
+           {"option":"d: import time<br>        time.sysdate()"}
+          ],
+"correct":"A",
+"description":{
+  "A" : "time.time() returns current system time as a floating point number expressed in seconds (e.g. 1480486758.4156392).  Read More - https://www.tutorialspoint.com/python/time_time.htm", 
+  "B" : "Try to execute your code and observe the output. Do you get any error?", 
+  "C" : "Try to execute your code and observe the output. Do you get any error?",                
+  "D" : "Try to execute your code and observe the output. Do you get any error?"
+  }
+},
+{
+"id":"14",
+"question": "Observe the following Python code and predict the output:",
+"imgURL":"images/Quiz82.png",
+"options":[
+           {"option":"a: Cats"},
+           {"option":"b: Dogs"},
+           {"option":"c: Error"},
+           {"option":"d: Cat"}
+          ],
+"correct":"D",
+"description":{
+  "A" : "Observe the search pattern, is it 'Cat' or 'Cats' ? Think again and answer.", 
+  "B" : "Observe the search pattern, is it 'Cat' or 'Dogs' ? Think again and answer.", 
+  "C" : "Try to execute the code and observe if there is any error.",                
+  "D" : "re.search() returns a match object if found, 'None' if not found. matched.group() function returns the match if it finds a match, else it throws an error – \" AttributeError: 'NoneType' object has no attribute 'group' \". In this case, re.search() finds the search string 'Cat' in the sentence. <br><br>Here, r in front of the search pattern indicates 'raw string' where the special characters are treated as normal characters."
+  }
+},
+{
+"id":"15",
+"question": "Observe the following Python code and predict the output:",
+"imgURL":"images/Quiz83.png",
+"options":[
+           {"option":"a: Dog"},
+           {"option":"b: Dogs"},
+           {"option":"c: ['Dog', 'Dog']"},
+           {"option":"d: ['Dogs', 'Dog']"}
+          ],
+"correct":"A",
+"description":{
+  "A" : "The search pattern is 'Dog'. Further, search() restricts its check to first occurrence of the pattern to be matched. Hence output is 'Dog'", 
+  "B" : "Observe the search pattern, is it 'Dogs' or 'Dog' ? Thing again and answer.", 
+  "C" : "search() function restricts its check to first occurrence of the pattern to be matched. Try again.",                
+  "D" : "search() function restricts its check to first occurrence of the pattern to be matched. Try again."
+  }
+},
+{
+"id":"16",
+"question": "Observe the following Python code and predict the output:",
+"imgURL":"images/Quiz84.png",
+"options":[
+           {"option":"a: Dogs"},
+           {"option":"b: Dog"},
+           {"option":"c: Error"},
+           {"option":"d: ['Dogs', 'Dog']"}
+          ],
+"correct":"C",
+"description":{
+  "A" : "Observe the search pattern, is it 'Dogs' or 'dog' ? Think again and answer. Also, search() function does a case sensitive search.", 
+  "B" : "Observe the search pattern, is it 'Dog' or 'dog' ? Think again and answer. Also, search() function does a case sensitive search.", 
+  "C" : "search() function does a case sensitive search.",                
+  "D" : "search() function restricts its check to first occurrence of the pattern to be matched. Think again and answer."
+  }
+},
+{
+"id":"17",
+"question": "Consider the following Python code. Select the output as \"Success\" or \"Failure\" by substituting the &lt;<i><b>expression</b></i>&gt; in the code with each of the expressions given below.",
+"query":"",
+"imgURL":"images/Capture1.PNG",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"re.search(\"Pyt\", \"Python\")     "},
+		{"option2":"re.search(\"pyt\", \"Python\")     "}, 
+		{"option3":"re.search(\"yth\", \"Python\")     "},
+		{"option4":"re.search(\"P..h\", \"Python\")    "},
+                {"option5":"re.search(\"thon\\s\", \"Python\") "},
+                {"option6":"re.search(\"^P\", \"Python\")      "},
+                {"option7":"re.search(\"on$\", \"Python\")    "},
+                {"option8":"re.search(\"n\\w\", \"Python#\")  "}
+		],
+"colB":
+		[
+		{"option1":"Success"},
+		{"option2":"Failure"}
+		],
+"Correct":
+		[
+		{"option":"Success"},
+		{"option":"Failure"}, 
+		{"option":"Success"},
+		{"option":"Success"},
+                {"option":"Failure"},
+		{"option":"Success"}, 
+		{"option":"Success"},
+		{"option":"Failure"}
+		],
+ "description":
+         [
+		{"option":"Matches the pattern \"Pyt\" in the given string \"Python\"."},
+		{"option":"Search function does a case sensitive search."}, 
+		{"option":"The pattern can exist anywhere in the provided string."},
+		{"option":"\".\" operator matches a character. If any two characters are there between P and h, the pattern is matched."},
+                {"option":"\"/s\" matches for a space after the pattern. E.g. for the string \"Python language\", the output would be success."},
+		{"option":"\"^\" matches for the pattern at the beginning the given string. Here, the given string \"Python\" starts with \"P\", hence the pattern is matched."}, 
+		{"option":"\"$\" matches if the given string ends with the pattern. Here the given string \"Python\" ends with \"on\", hence the pattern is matched."},
+		{"option":"\"\\w\" checks for an alphanumeric character(a-z,A-Z,0-9). This pattern looks for n followed by an alphabet or number in the given string \"Python#\" but finds a special character."}
+		]
+},
+{
+"id":"18",
+"question": "Predict the output of the following Python code snippets as Pattern is matched/Pattern is not matched:",
+"imgURL":"images/Capture2.PNG",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"Code Snippet 1"},
+		{"option2":"Code Snippet 2"}, 
+		{"option3":"Code Snippet 3"},
+		{"option4":"Code Snippet 4"}
+		],
+"colB":
+		[
+		{"option1":"Pattern is matched"},
+		{"option2":"Pattern is not matched"}
+		],
+"Correct":
+		[
+		{"option":"Pattern is matched"},
+		{"option":"Pattern is not matched"}, 
+		{"option":"Pattern is matched"},
+		{"option":"Pattern is matched"}
+		],
+ "description":
+         [
+		{"option":"Pattern \"d\\dE\" matches for exactly one digit between 'd' and 'E'. It is found in the string hence the output."},
+		{"option":"Pattern \"d[4-8]E\" matches for a digit in the range 4 to 8 between characters 'd' and 'E'. It is not found, hence the output is \"Pattern is not matched\". If the string was \"End4End\", the pattern would have matched."}, 
+		{"option":"Pattern \"d\\d{3}E\" matches for 3 digits between \"d\" and \"E\". If the string was \"End2222End\", the pattern would not match."},
+		{"option":"\"d\\d{2,5}E\" matches for either 2,3,4 or 5 digits between d and E. In the given string, it has 3 digits between characters 'd' and 'E'. Hence pattern is matched."}
+		]
+},
+{
+"id":"19",
+"question":"Predict the output of the following Python code:",
+"imgURL":"images/Quiz120.png",
+"options":[
+           {"option":"a: Pattern is matched"},
+           {"option":"b: Pattern is not matched"}
+],
+"correct":"A",
+"description":{
+  "A" : "| is OR operator. If any of the patterns – 'Hump' or 'Dump' is found in the string the pattern is matched.", 
+  "B" : "Observe the OR operator '|'. It matches for any of the patterns in the string. Think again and answer."
+  }
+},
+{
+"id":"20",
+"question": "Choose the correct output for the following code snippets:",
+"query":"<br>",
+"imgURL":"images/Quiz121.png",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"Code Snippet 1"},
+		{"option2":"Code Snippet 2"}
+		],
+"colB":
+		[
+		{"option1":"Found"},
+		{"option2":"Not Found"}
+		],
+"Correct":
+		[
+		{"option":"Found"},
+		{"option":"Found"}
+		],
+ "description":
+         [
+		{"option":"Pattern \"\\D\" matches any non digits i.e. alphabets(a-z,A-Z).  Hence, pattern (\"1\\D\") matches digit 1 followed by any non digit(alphabet)in the given string."},
+		{"option":"Pattern \"\\D\" matches for any non digit (alphabet) in the given string \"1232Apple\". Matches the first non Digit 'A' in this string, hence prints \"Found\""}
+		]
+},
+{
+"id":"21",
+"question": "Observe the following Python code and choose the correct output:",
+"imgURL":"images/Capture3.PNG",
+"options":[
+           {"option":"a: Dogs and Cats are Domestic Animals. But, I love peacocks"},
+           {"option":"b: Dogs and Cats are Domestic Animals. But, I love Peacocks"},
+           {"option":"c: Error"},
+           {"option":"d: Dogs and Cats are Domestic Animals. But, I love Rabbits"}
+          ],
+"correct":"B",
+"description":{
+  "A" : "Observe the case of the replacement string. sub() function do case sensitive search and replacement. Try again.",
+  "B" : "Here \"Rabbits\" is the pattern to be searched in the string \"Dogs and Cats are Domestic Animals. But, I love Rabbits\" and \"Peacocks\" is the replacement string The pattern \"Rabbits\" is found in the string and is replaced by the substitution string \"Peacocks\", hence output is \"Dogs and Cats are Domestic Animals. But, I love Peacocks\".",
+  "C" : "Try to execute the program and observe if there is any error.",                
+  "D" : "sub() is a substitution function. Here \"Rabbits\" is the pattern to be searched in the string \"Dogs and Cats are Domestic Animals. But, I love Rabbits\" . If it is found, the pattern will be replaced by replacement string \"Peacocks\". Think again and answer."
+  }
+},
+{
+"id":"22",
+"question": "Predict the output",
+"imgURL":"images/Quiz123.png",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"a\\D{2}d   "},
+		{"option2":"a\\d{4}w  "}, 
+		{"option3":"d\\d{4}w   "},
+		{"option4":"x\\d{2,4}y"},
+                {"option5":"a\\D?b      "},
+                {"option6":"d\\d*w      "},
+                {"option7":"x\\d+y     "}
+		],
+"colB":
+		[
+		{"option1":"abcd1234wx567yz"},
+		{"option2":"+++cd1234wx567yz"}, 
+		{"option3":"abcd1234w+++z"},
+		{"option4":"abc+++x567yz"},
+                {"option5":"+++1234wx567yz"},
+                {"option6":"abcd1234w+++z"}
+		],
+"Correct":
+		[
+		{"option":"+++1234wx567yz"},
+		{"option":"abcd1234wx567yz"}, 
+		{"option":"abc+++x567yz"},
+		{"option":"abcd1234w+++z"},
+                {"option":"+++cd1234wx567yz"}, 
+		{"option":"abc+++x567yz"},
+		{"option":"abcd1234w+++z"}
+		],
+ "description":
+                [
+		{"option":"Pattern \"a\\D{2}d\" matches exactly two non digits between a and d in the given string \"abcd1234wx567yz\", finds \"abcd\" and replaces \"abcd\"  with \"+++\",  new_string is \"+++1234wx567yz\""},
+		{"option":"Pattern \"a\\d{4}w\" matches exactly four digits between a and w in the given string. There are characters also between a and w, hence no replacement in the string, new_string is \"abcd1234wx567yz\""}, 
+		{"option":"Pattern \"d\\d{4}w \" matches exactly four digits between d and w in the given string finds \"d1234w\" and replaces the matched string with \"+++\",  new_string is \"abc+++x567yz\""},
+		{"option":"Pattern \"x\\d{2,4}y\" matches 2 ,3 or 4 (2-4) digits between x and y , finds 3 digits, replaces \"x567y\" with \"+++\" , new_string is \"abcd1234w+++z\""},
+                {"option":"Pattern \"a\\D?b\"  matches either 0 or 1 non digit between a and b. There is no digit between a and b, hence matches and replaces \"ab\" with \"+++\", new_string is \"+++cd1234wx567yz\""}, 
+		{"option":"Pattern \"d\\d*w\" matches 0 to any number of digits between d and w , finds 4 digits and replaces \"d1234w\" with \"+++\", new_string is \"abc+++x567yz\""},
+		{"option":"Pattern \"x\\d+y\" matches 1 or any number of digits between x and y, finds 3 digits and replaces \"x567y\" with \"+++\", new_string is \"abcd1234w+++z\""}
+		]
+},
+{
+"id":"23",
+"question": "Guess the output at line numbers 3 and 4:",
+"imgURL":"images/Quiz122.png",
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Capture4.PNG",
+"imgAnsText":"<br><strong>Output:</strong>",
+
+"options":[],         
+"correct":"ABCD",
+"description":{}
+},
+{
+"id":"24",
+"question": "Assume the following Python code:",
+"imgURL":"images/Quiz87.png",
+"query":"            Choose the correct output from the options below:",
+"options":[
+           {"option":"a: Python's subject code is CS101"},
+           {"option":"b: Python has subject code is cs101"},
+           {"option":"c: Python's subject code is cs101"},
+           {"option":"d: Python's subject code is CS"}
+          ],
+"correct":"A",
+"description":{
+  "A" : "In line# 3, re.search(\"n\\D\",str) matches any non digit after n, finds an apostrophe \" ' \" and hence returns true. re.search(\"s$\",str) matches if string ends with 's'. In this case it returns false as the string ends with '1'. Since one of the conditions is true here, the 'if' block is executed and the output is :<br><br>print(re.sub(\"cs\\d{3}\" , \"CS\\1\", str)) -> \"cs\\d{3}\" matches \"cs\" followed by three digits, group the digits as \\1, replaces \"cs\" with \"CS\" followed by group 1. Hence the output is \"Python's subject code is CS101\"", 
+  "B" : "Observe the statement 3 again. Check if either of the conditions for 'or' operator returns 'True‘? Try again.", 
+  "C" : "Observe the replacement string at line 4. Will the case of 'cs' not be changed? Try again.",                
+  "D" : "Observe the statement 4 again. \"cs\\d{3}\" matches \"cs\" followed by three digits, groups the digits as \\1, replaces \"cs\" with \"CS\" followed by group 1. Find the correct output again."
+  }
+}
+]

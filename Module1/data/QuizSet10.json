@@ -1,0 +1,281 @@
+[
+{
+"id":"1",
+"question": "Match the String functions with their functionalities",
+"type":"Matchquiz",
+"colA":
+		[
+                {"option1":"text.endswith(\".jpg\")                       "},
+		{"option2":"text.upper()                                    "}, 
+		{"option3":"text.lower()                                     "},
+		{"option4":"text.replace(\"tomorrow\", \"Saturday\")"},
+                {"option5":"text.strip()                                      "},
+                {"option6":"text.find(\"python\")                           "},
+                {"option7":"text.startswith(\"<HTML>\")               "}
+		
+		],
+"colB":
+		[
+		{"option1":"Return a copy of the string with all occurrences of one substring replaced by another"},
+		{"option2":"Return a copy of the string converted to lowercase"}, 
+		{"option3":"Returns the value 'True' if the string has the given substring at the beginning"},
+		{"option4":"Returns the value 'True' if the string has the given substring at the end"},
+                {"option5":"Returns the first index value when the given substring is found"},
+                {"option6":"Return a copy of the string with the leading and trailing whitespace removed"},
+                {"option7":"Return a copy of the string converted to uppercase"}
+		],
+"Correct":
+		[
+		{"option":"Returns the value 'True' if the string has the given substring at the end"},
+		{"option":"Return a copy of the string converted to uppercase"}, 
+		{"option":"Return a copy of the string converted to lowercase"},
+                {"option":"Return a copy of the string with all occurrences of one substring replaced by another"},
+		{"option":"Return a copy of the string with the leading and trailing whitespace removed"}, 
+		{"option":"Returns the first index value when the given substring is found"},
+		{"option":"Returns the value 'True' if the string has the given substring at the beginning"}
+		],
+ "description":
+         [
+		{"option":"Returns 'True' if the value of the string 'text' ends with \".jpg\" else returns 'False'."},
+		{"option":"Returns a copy of the string in which all the characters are converted to uppercase."}, 
+		{"option":"Returns a copy of the string in which all the characters are converted to lowercase."},
+                {"option":"Returns a copy of the string in which all the occurrences of \"tomorrow\" are replaced with \"Saturday\"."},
+		{"option":"Returns a copy of the string in which all the leading and trailing whitespaces are removed."}, 
+		{"option":"Returns the starting index of the first occurrence of \"python\" in the given string. If not found, returns -1."},
+		{"option":"Returns 'True' if the value of the string 'text' starts with \"&lt;HTML&gt;\" else returns 'False'."}
+		]
+},
+{
+"id":"2",
+"question": "Consider a string, text = \"Infosys\"<br>            Find and match the output of the following functions:<br>",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"text.count(\"s\")          "},
+		{"option2":"text.startswith(\"s\")    "}, 
+		{"option3":"text.endswith(\"s\")     "},
+		{"option4":"text.find(\"s\")            "},
+                {"option5":"text.replace(\"s\", \"S\")"},
+		{"option6":"text.isdigit()             "}, 
+		{"option7":"text.upper()             "},
+		{"option8":"text.lower()             "}
+		],
+"colB":
+		[
+		{"option1":"True"},
+		{"option2":"False"}, 
+		{"option3":"infosys"},
+		{"option4":"INFOSYS"},
+                {"option5":"InfoSyS"},
+		{"option6":"2"}, 
+		{"option7":"4"}
+		],
+"Correct":
+		[
+		{"option":"2"},
+		{"option":"False"}, 
+		{"option":"True"},
+		{"option":"4"},
+                {"option":"InfoSyS"},
+		{"option":"False"}, 
+		{"option":"INFOSYS"},
+		{"option":"infosys"}
+		],
+ "description":
+         [
+		{"option":"Returns count of occurrence of character \"s\" in given string text"},
+		{"option":"Returns \"true\" if given  string text starts with character \"s\""}, 
+		{"option":"Returns \"true\" if given string text ends with character \"s\""},
+		{"option":"Returns index position of character \"s\" in given string if found, else returns \"-1\""},
+                {"option":"Replaces all occurrences of character \"s\" with character \"S\" in given string text"},
+		{"option":"Checks if all the characters in given string text are digits and returns 'true' or 'false' accordingly"}, 
+		{"option":"Converts all the characters in given string text to uppercase"},
+		{"option":"Converts all the characters in given string text to lowercase"}
+		]
+},
+{
+"id":"3",
+"question": "Consider the following Python code:",
+"imgURL":"images/Quiz71.png",
+"query":"            Choose the correct output from the options given below:",
+"options":[
+           {"option":"a: i aM lOVING Python"},
+           {"option":"b: I Am Loving Modules"},
+           {"option":"c: i aM lOVING Modules"},
+           {"option":"d: i aM lOVING pYTHON"}
+          ],
+"correct":"B",
+"description":{
+  "A" : "Strings are immutable. Are the line# b and c assigned back to variable \"string\"? Think again and answer.", 
+  "B" : "Line no b,c are creating new strings with values 'i aM lOVING mODULES' and 'i aM lOVING Python' but the variable string is still pointing to 'I Am Loving Modules'. Hence the output.", 
+  "C" : "Strings are immutable. Are the line# b and c assigned back to variable \"string\"? Even if they were, observe the replace() function at line# c again. Try to execute the code and answer again.",                
+  "D" : "Strings are immutable. Are the line# b and c assigned back to variable \"string\"? Even if they were, observe the replacement string for replace() function at line# c again. Is it \"Python\" or \"pYTHON\". Think again and answer."
+  }
+},
+{
+"id":"4",
+"question": "Consider the following Python code:",
+"imgURL":"images/Quiz71.png",
+"query":"            Change the above code so that the output is  'i aM lOVING Python'",
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Quiz71_1.png",
+"imgAnsText":"<br><strong>Answer:</strong>",
+
+"options":[],         
+"correct":"ABCD",
+"description":{}
+},
+{
+"id":"5",
+"question": "Complete the program given below such that the output of the program is:<br>            <strong>Expected Output:</strong><br>            MY<br>            NAME<br>            IS<br>            JOHN<br><br>            <strong>Python Code Snippet:</strong>",
+"imgURL":"images/Quiz124.png",
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Capture5.PNG",
+"imgAnsText":"<br><strong>Answer:</strong>",
+"options":[],         
+"correct":"ABCD",
+"description":{}
+},
+{
+"id":"6",
+"question":"Observe the below python code:",
+"imgURL":"images/Quiz125.png",
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Capture9.PNG",
+"imgAnsText":"<br><strong>Answer:</strong>",
+
+"options":[],         
+"correct":"ABCD",
+"description":{}
+},
+{
+"id":"7",
+"question": "Observe the following Python code:",
+"imgURL":"images/Quiz72.png",
+"query":"            Choose the correct output from the options below:",
+"options":[
+           {"option":"a: count_before = 2<br>          count_after = 1"},
+           {"option":"b: count_before = 2<br>          count_after = 0"},
+           {"option":"c: count_before = 2<br>          count_after = 2"},
+           {"option":"d: Syntax error"}
+          ],
+"correct":"A",
+"description":{
+  "A" : "<br>listA.count(33) counts the occurrence of 33 In the list, hence count_before = 2<br>listA.remove(33) removes the first occurrence of 33, hence count_after = 1", 
+  "B" : "remove() function of a list removes the first occurrence only of the given element. Try again.", 
+  "C" : "remove() function of a list removes the first occurrence of the given element. Try again.",                
+  "D" : "Try to execute the given code and observe if there is any syntax error."
+  }
+},
+{
+"id":"8",
+"question": "Predict whether the code prints 'True' or 'False' in line number 7?",
+"imgURL":"images/Quiz73.png",
+"options":[
+           {"option":"a: True"},
+           {"option":"b: False"}
+          ],
+"correct":"A",
+"description":{
+  "A" : "<br>After line 1 – student_list = ['Rose', 'Jerry', 'jack', 'Tim', 'Katty']<br>After line 2 – student_list = ['Rose', 'Jerry', 'jack', 'Tim', 'Katty', 'Cane'] – Append function adds the element at last index<br>After line 3 – student_list = ['Rose', 'Sush', 'Jerry', 'jack', 'Tim', 'Katty', 'Cane'] – Element \"Sush\" is added to 1st index. Please note the list index starts with 0.<br>After line 4 – student_list = ['Rose', 'Sush', 'Jerry', 'jack', 'Katty', 'Cane'] – Pop(index) function removes the element at given index from the list. Here \"Tim\" was removed.<br>After line 5 – student_list = ['Rose', 'Jerry', 'jack', 'Katty', 'Cane'] – Remove function is used to remove a particular element from list. <br>After line 6 – student_list = ['Cane', 'Jerry', 'Katty', 'Rose', 'jack'] – Sorts the list as per ASCII values.<br>Hence print(student_list[2]==\"Katty\" is True", 
+  "B" : "Try to execute the code and observe the values of student list after every statement."
+  }
+},
+{
+"id":"9",
+"question": "Assume the following code:",
+"imgURL":"images/Quiz74.png",
+"query":"            Choose the correct output from the options below:",
+"options":[
+           {"option":"a: abc"},
+           {"option":"b: 35"},
+           {"option":"c: -45"},
+           {"option":"d: TypeError"}
+          ],
+"correct":"D",
+"description":{
+  "A" : "Try to execute the code and observe the output.", 
+  "B" : "Try to execute the code and observe the output.", 
+  "C" : "Try to execute the code and observe the output.",                
+  "D" : "While sorting a list, the elements should be of same type, hence we get TypeError: un-orderable types: int() < str()"
+  }
+},
+{
+"id":"10",
+"question": "Assume the following code:",
+"imgURL":"images/Quiz75.png",
+"query":"            Choose the correct output from the options below:",
+"options":[
+           {"option":"a: 54"},
+           {"option":"b: 55"},
+           {"option":"c: 100"},
+           {"option":"d: 101"}
+          ],
+"correct":"B",
+"description":{
+  "A" : "What does the ceil() function return? Think again and answer.", 
+  "B" : "<br>After line b executes, dummy_list = [43.54, -54.34, 43.54, -100.34]<br>After line c executes, dummy_list = [43.54, 100.34, -54.34, 43.54, -100.34] . 100.34 is added to 1st Index, list starts with index 0.<br>After line d executes, dummy_list = [-100.34, -54.34, 43.54, 43.54, 100.34]<br>After line e executes, dummy_list = [-100.34, -54.34, 43.54, 100.34] . 43.54 is removed from index 2.<br>Hence ,dummy_list[1] = -54.34 -> math.fabs(-54.34) = 54.34 , returns the absolute value. Further, math.ceil(54.34) = 55 . Ceil function returns the smallest integer greater than or equal to 54.34 i.e. 55.", 
+  "C" : "The list index starts from 0. Think again and answer.",                
+  "D" : "The list index starts from 0. Think again and answer."
+  }
+},
+{
+"id":"11",
+"question": "Consider a list of fruits:",
+"imgURL":"images/Quiz76.png",
+"query":"            Choose the correct output from the options below:",
+"options":[
+           {"option":"a: ['Apple', 'Banana', 'Guava', 'Pear']"},
+           {"option":"b: ['Pear', 'Guava', 'Banana', 'Apple']"},
+           {"option":"c: ['Pear' ,'Apple' ,'Guava' ,'Banana']"},
+           {"option":"d: None of these"}
+          ],
+"correct":"B",
+"description":{
+  "A" : "Try to execute the code and observe the output", 
+  "B" : "list.sort() function accepts a parameter 'reverse' with a Boolean value. It sorts the series in descending order.", 
+  "C" : "Try to execute the code and observe the output",                
+  "D" : "Try to execute the code and observe the output"
+  }
+},
+{
+"id":"12",
+"question": "Consider fruit_list again:",
+"imgURL":"images/Quiz77.png",
+"query":"            Choose the correct output from the options below:",
+"options":[
+           {"option":"a: ['Apple', 'Banana', 'Guava', 'Pear']"},
+           {"option":"b: ['Pear', 'Guava', 'Banana', 'Apple']"},
+           {"option":"c: ['Pear' ,'Apple' ,'Guava' ,'Banana']"},
+           {"option":"d: None of these"}
+          ],
+"correct":"A",
+"description":{
+  "A" : "sorted() function returns the sorted list.", 
+  "B" : "Try to execute the code and observe the output", 
+  "C" : "Try to execute the code and observe the output",                
+  "D" : "Try to execute the code and observe the output"
+  }
+},
+{
+"id":"13",
+"question": "Observe the following Python code and predict the output:",
+"imgURL":"images/Quiz78.png",
+"options":[
+           {"option":"a: 68 None"},
+           {"option":"b: None None"},
+           {"option":"c: 68 98"},
+           {"option":"d: None 89"}
+          ],
+"correct":"A",
+"description":{
+  "A" : "<br>Let us see how the value of 'score_dict' changes after every line:<br>Line 1 - score_dict = {'Garry': 89, 'Rimmy': 56, 'Tina': 78}<br>Line 3 - score_dict = {'Garry': 89, 'Rimmy': 90, 'Tina': 78}<br>Line 4 - score_dict = {'Garry': 98, 'Rimmy': 90, 'Fiza': 68, 'Tina': 78}<br>Line 5: Keys are case sensitive, hence no value is returned for \"garry\" (It would have returned 98 for score_dict.get(\"Garry\"))", 
+  "B" : "Does an entry with key= 'Fiza' exist in the dictionary? Try again.", 
+  "C" : "Keys in dictionary are case sensitive. Observe the code again and answer.",                
+  "D" : "Observe if entries with keys 'Fiza' and 'garry' exist in the dictionary. Try again."
+  }
+}
+]

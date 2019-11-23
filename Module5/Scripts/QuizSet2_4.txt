@@ -1,0 +1,15 @@
+DROP TABLE orders;
+DROP TABLE agent;
+CREATE TABLE orders(orderid NUMBER CONSTRAINT ord_ordid_pk PRIMARY KEY, orderamount NUMBER, customerid VARCHAR2(10), agentid VARCHAR2(10));
+INSERT INTO orders VALUES (1001, 500, 'C3', 'A1');
+INSERT INTO orders VALUES (1002, 1000, 'C4', 'A2');
+INSERT INTO orders VALUES (1003, 500, 'C1', 'A1');
+INSERT INTO orders VALUES (1004, 1500, 'C5', 'A1');
+INSERT INTO orders VALUES (1005, 2000, 'C4', 'A2');
+CREATE TABLE agent(agentid VARCHAR2(10), agentname VARCHAR2(20), location VARCHAR2(20)); 
+INSERT INTO agent VALUES ('A1', 'Jack', 'New York');
+INSERT INTO agent VALUES ('A2', 'John', 'New Jersey');
+INSERT INTO agent VALUES ('A3', 'Jim', 'Chicago');
+COMMIT;
+
+

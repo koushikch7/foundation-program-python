@@ -1,0 +1,13 @@
+[
+{
+"id":"1",
+"question": "Consider the following student and feepayment tables.  Which of the following queries will return the details of students who have paid the semester fee along with the date of payment and amount paid? Select one or more as applicable",
+"imgURL":"images/Quiz1.PNG",
+"option1":"SELECT s.studentid, amountpaid, paymentdate FROM student s INNER JOIN feepayment fp ON s.studentid = fp.studentid;",
+"option2":"SELECT studentid, amountpaid, paymentdate FROM student s INNER JOIN feepayment fp ON s.studentid = fp.studentid;", 
+"option3":"SELECT s.studentid, amountpaid, paymentdate FROM student s JOIN feepayment fp ON s.studentid = fp.studentid;",
+"option4":"SELECT s.studentid, amountpaid, paymentdate FROM student s INNER JOIN feepayment fp;",
+"correct":"AC",
+"description":"Justification"
+}
+]

@@ -1,0 +1,71 @@
+[{
+		"id": "1",
+		"question": "Select all correct statements w.r.t. Unit testing",
+		"imgURL": "",
+		"imgLink":"",
+		"options": [{
+			"option": "a:The goal of unit testing is to segregate each part of the program and test that the individual parts are working correctly."
+		}, {
+			"option": "b:Unit testing should be done before Integration testing."
+		}, {
+			"option": "c:It reduces the cost of bug fixes"
+		}, {
+			"option": "d:Integration testing should be done before Unit testing."
+		}],
+		"correct": "ABC",
+		"description": {
+			"A": "Option A is correct.The statement is true.",
+			"B": "Option B is correct.Unit testing tests individual units, integration testing validates behavior of multiple units when integrated; Hence unit testing should be done before integration testing.",
+			"C": "Option C is correct.The bugs are found early in SDLC due to unit testing hence it also helps in reducing the cost of bug fixes.",
+			"D": "Option D is incorrect.Unit testing tests individual units, integration testing validates behavior of multiple units when integrated; Hence unit testing should be done before integration testing."
+		},
+		"fileURL": ""
+	}, {
+		"id": "2",
+		"question": "Fill in the following blanks. Choose your answers from the options given:  <br><ul style=\"list-style-type:decimal;position:relative;margin-left:60px;\"><li><span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          A          </span> are set of conditions or variables under which a tester will determine whether a system under test satisfies requirements or works correctly.  </li><li>The data  used for executing a test case is called <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          B          </span>",
+"imgURL":"",
+"type":"Matchquiz",
+"imgLink":"",
+"colA":
+		[
+		{"option1":"  A  ->"},
+		{"option2":"  B  ->"}             
+		],
+"colB":
+		[
+		{"option1":"Test Parameters"},
+		{"option2":"Test Data"}, 
+		{"option3":"Test Cases"}
+		],
+"Correct":
+		[
+		{"option":"Test Cases"},
+		{"option":"Test Data"}
+		],                
+ "description":
+         [
+		{"option":"Test cases are set of conditions or variables under which a tester will determine whether a system under test satisfies requirements or works correctly"},
+		{"option":"The data  used for executing a test case is called test data."}
+		]
+
+	}, 
+	
+{
+		"id": "3",
+		"question": "Unit tests are written and executed by the Test Engineers as their primary responsibility. (True or False)",
+		"imgURL": "",
+		"imgLink":"",
+		"options": [{
+			"option": "a: True"
+		}, {
+			"option": "b: False"
+		}],
+		"correct": "B",
+		"description": {
+			"A": "Software developers are primarily responsible for Unit testing.",
+			"B": "Software developers are primarily responsible for Unit testing."
+		},
+		"fileURL": ""
+	}
+
+]

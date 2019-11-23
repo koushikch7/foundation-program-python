@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 1210 1045" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<style type="text/css"><![CDATA[
+.g3_92{
+fill: none;
+stroke: #0000EE;
+stroke-width: 2;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+.g2_92{
+fill: #418AB3;
+fill-opacity: 0.2;
+}
+.g4_92{
+fill: none;
+stroke: #418AB3;
+stroke-width: 1;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+.g1_92{
+fill: #FFFFFF;
+}
+]]></style>
+</defs>
+<path fill-rule="evenodd" d="M0,0L1210,0l0,1045L0,1045L0,0Z" class="g1_92" />
+<path fill-rule="evenodd" d="M0,0L1210,0l0,1045L0,1045L0,0Z" class="g1_92" />
+<image x="828" y="984" width="334" height="49" xlink:href="img/1.png" />
+<path fill-rule="evenodd" d="M128,88l294,0l0,46l-294,0l0,-46Z" class="g2_92" />
+<path fill-rule="evenodd" d="M422,88l687,0l0,46l-687,0l0,-46Z" class="g2_92" />
+<path d="M430,111l437,0" class="g3_92" />
+<path d="M430,166l458,0" class="g3_92" />
+<path fill-rule="evenodd" d="M128,181l294,0l0,51l-294,0l0,-51Z" class="g2_92" />
+<path fill-rule="evenodd" d="M422,181l687,0l0,51l-687,0l0,-51Z" class="g2_92" />
+<path d="M430,215l462,0" class="g3_92" />
+<path d="M430,271l442,0" class="g3_92" />
+<path fill-rule="evenodd" d="M128,293l294,0l0,61l-294,0l0,-61Z" class="g2_92" />
+<path fill-rule="evenodd" d="M422,293l687,0l0,61l-687,0l0,-61Z" class="g2_92" />
+<path d="M430,332l455,0" class="g3_92" />
+<path d="M430,393l451,0" class="g3_92" />
+<path fill-rule="evenodd" d="M128,415l294,0l0,61l-294,0l0,-61Z" class="g2_92" />
+<path fill-rule="evenodd" d="M422,415l687,0l0,61l-687,0l0,-61Z" class="g2_92" />
+<path d="M430,454l441,0" class="g3_92" />
+<path d="M128.5,28.5l294,0" class="g4_92" />
+<path d="M422.5,28.5l687,0" class="g4_92" />
+<path d="M128.5,89.5l294,0" class="g4_92" />
+<path d="M422.5,89.5l687,0" class="g4_92" />
+<path d="M128.5,135.5l294,0" class="g4_92" />
+<path d="M422.5,135.5l687,0" class="g4_92" />
+<path d="M128.5,182.5l294,0" class="g4_92" />
+<path d="M422.5,182.5l687,0" class="g4_92" />
+<path d="M128.5,233.5l294,0" class="g4_92" />
+<path d="M422.5,233.5l687,0" class="g4_92" />
+<path d="M128.5,294.5l294,0" class="g4_92" />
+<path d="M422.5,294.5l687,0" class="g4_92" />
+<path d="M128.5,355.5l294,0" class="g4_92" />
+<path d="M422.5,355.5l687,0" class="g4_92" />
+<path d="M128.5,477.5l294,0" class="g4_92" />
+<path d="M128.5,416.5l294,0" class="g4_92" />
+<path d="M422.5,477.5l687,0" class="g4_92" />
+<path d="M422.5,416.5l687,0" class="g4_92" />
+</svg>

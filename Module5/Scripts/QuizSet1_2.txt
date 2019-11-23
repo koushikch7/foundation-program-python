@@ -1,0 +1,15 @@
+DROP TABLE Employee;
+CREATE TABLE Employee (empno NUMBER, name VARCHAR2(20), salary NUMBER, deptno NUMBER);
+INSERT INTO Employee VALUES(1000, 'Alice', 100000, 101);
+INSERT INTO Employee VALUES(1001, 'Ben', 15000, 102);
+INSERT INTO Employee VALUES(1002, 'John', 90000, 101);
+INSERT INTO Employee VALUES(1003, 'Mike', 20000, 102);
+INSERT INTO Employee VALUES(1004, 'Smith', 90000, 101);
+
+DROP TABLE Department;
+CREATE TABLE Department (deptno NUMBER, dname VARCHAR2(15), dlocation VARCHAR2(15)); 
+INSERT INTO Department VALUES(101, 'Research', 'New York');
+INSERT INTO Department VALUES(102, 'Sales', 'Dallas');
+INSERT INTO Department VALUES(103, 'Administration', 'Seattle');
+
+COMMIT;

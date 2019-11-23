@@ -1,0 +1,24 @@
+[
+{
+"id":"1",
+"question": "Which of the following are the key disadvantages of storing data in flat files?",
+"imgURL":"",
+"option1":"Data Redundancy",
+"option2":"Tight dependency between application programs and data", 
+"option3":"Difficult to grant access privileges to users for different portions of the same file",
+"option4":"Very high cost",
+"correct":"ABC",
+"description":"Justification"
+},
+{
+"id":"2",
+"question": "Identify the data model which can be used for the following scenario:",
+"imgURL":"",
+"option1":"Hierarchical Model",
+"option2":"Network Model", 
+"option3":"Both",
+"option4":"None of the Above",
+"correct":"B",
+"description":"Justification"
+}
+]

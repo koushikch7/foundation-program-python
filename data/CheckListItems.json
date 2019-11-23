@@ -1,0 +1,12 @@
+[
+    {"text":"Data and Need for DBMS", "done":true,"slideindex":"0","quizindex":"0","hrefUrl":"QuizType1.html"},
+    {"text":"Relational Model and Keys", "done":false,"slideindex":"3","quizindex":"3","hrefUrl":"QuizType2.html"},
+    {"text":"Database Development Life Cycle (DDLC)", "done":true,"slideindex":"8", "quizindex":"8","hrefUrl":"QuizType2.html"},
+    {"text":"Analyzing Data Requirements", "done":false,"slideindex":"12", "quizindex":"12","hrefUrl":"QuizType1.html"},
+    {"text":"Logical Database Design", "done":true,"slideindex":"16", "quizindex":"16","hrefUrl":"QuizType2.html"},
+    {"text":"Physical Database Design ", "done":false,"slideindex":"20","quizindex":"20","hrefUrl":"QuizType1.html"},
+        {"text":"Normalization", "done":false,"slideindex":"24", "quizindex":"24","hrefUrl":"QuizType2.html"},
+            {"text":"Implementation with SQL", "done":false,"slideindex":"28","quizindex":"28","hrefUrl":"QuizType1.html"},
+                {"text":"PL/SQL", "done":false,"slideindex":"290","quizindex":"29","hrefUrl":"QuizType2.html"},
+                    {"text":"SQL Best Practices", "done":false,"slideindex":"30","quizindex":"30","hrefUrl":"QuizType1.html"}
+]

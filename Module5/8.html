@@ -1,0 +1,70 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<style>
+   
+    #linkbox {
+        width: 100%;
+        height:100px;
+        border: 2px solid #0099ff;
+        border-radius: 15px;
+    }
+</style>
+</head>
+
+<body style="margin: 0;">
+
+    <div id="manual" style="overflow: hidden; position: relative; width: 1200px; height:900px">
+        <div class="container">
+            <div class="row" style="position:relative;margin-left:60px">
+                <div class="col-md-11">
+                    <ul>
+                        <li>It is possible to join more than two tables. Here N-1 join conditions would be required to join N tables.</li>
+                        <li>Syntax is as follows:</li>
+                    </ul>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row" style="margin-bottom: 15px;margin-top:10px">
+                <div class="col-md-1" ></div>
+                <div class="col-md-10 btn-other" style="border-radius:0px;background-color: #b3d1ff;font:20px Consolas;line-height: 30px">
+                    <div style="text-align:center;padding:10px">SELECT <&lt;column list>> FROM <&lt;table1>> INNER JOIN <&lt;table2>> ON <&lt;join condition1>> <br>INNER JOIN <&lt;table3>> ON <&lt;join condition2>>;</div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row" style="position:relative;margin-left:60px">
+                <div class="col-md-11">
+                    <ul>
+                        <li>This can be represented as:</li>
+                    </ul>
+
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row" style="margin-bottom: 15px;margin-top:5px">
+                <div class="col-md-12"><img src="images/img4_1.png" style="margin:auto;display: block;"/></div>
+            </div>
+            <div class="row" style="position:relative;margin-left:60px">
+                <div class="col-md-11">
+                    <ul>
+                        <li>Query for the given scenario can be written as follows:</li>
+                    </ul>
+
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+             <div class="row" style="margin-bottom: 15px;margin-top:10px">
+                <div class="col-md-1" ></div>
+                <div class="col-md-10 btn-other" style="border-radius:0px;background-color: #b3d1ff;font:20px Consolas;line-height: 30px">
+                    <div style="text-align:center;padding:10px">SELECT s.studentid, s.name, f.amountpaid, d.deptname FROM  student s INNER JOIN <br>feepayment f ON s.studentid = f.studentid INNER JOIN department d ON s.deptno = d.deptno;</div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>

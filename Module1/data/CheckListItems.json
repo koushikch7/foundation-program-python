@@ -1,0 +1,17 @@
+[
+	{"text":"Learning Plan", "done":true,"slideindex":"0.01","pageNumber":"","quizindex":"0","hrefUrl":"QuizType1.html"},
+	{"text":"Table of Contents", "done":true,"slideindex":"0.02","pageNumber":"","quizindex":"0","hrefUrl":"QuizType1.html"},
+    {"text":"Module Flow", "done":true,"slideindex":"0.1","pageNumber":"","quizindex":"0","hrefUrl":"QuizType1.html"},
+    {"text":"Learning Objectives", "done":true,"slideindex":"0","pageNumber":"","quizindex":"0","hrefUrl":"QuizType1.html"},
+    {"text":"Introduction to Programming", "done":true,"slideindex":"1","pageNumber":"","quizindex":"0","hrefUrl":"QuizType1.html"},
+    {"text":"Algorithm, Flowchart & Pseudo Code", "done":false,"slideindex":"10","pageNumber":"","quizindex":"3","hrefUrl":"QuizType2.html"},
+    {"text":"Python Fundamentals", "done":true,"slideindex":"24","pageNumber":"", "quizindex":"8","hrefUrl":"QuizType2.html"},
+    {"text":"Control Structures", "done":false,"slideindex":"57","pageNumber":"", "quizindex":"12","hrefUrl":"QuizType1.html"},
+    {"text":"Data Structures", "done":true,"slideindex":"71", "pageNumber":"","quizindex":"16","hrefUrl":"QuizType2.html"},
+    {"text":"Functions", "done":false,"slideindex":"101","pageNumber":"","quizindex":"20","hrefUrl":"QuizType1.html"},
+    {"text":"File Handling", "done":false,"slideindex":"118","pageNumber":"","quizindex":"30","hrefUrl":"QuizType1.html"},
+    {"text":"Exception Handling", "done":false,"slideindex":"130","pageNumber":"","quizindex":"31","hrefUrl":"QuizType1.html"},
+    {"text":"Modules & Packages", "done":false,"slideindex":"145","pageNumber":"","quizindex":"32","hrefUrl":"QuizType1.html"},
+    {"text":"More on Data Structures", "done":false,"slideindex":"175","pageNumber":"","quizindex":"32","hrefUrl":"QuizType1.html"},
+    {"text":"Projects", "done":false,"slideindex":"187","pageNumber":"","quizindex":"32","hrefUrl":"QuizType1.html"}
+]

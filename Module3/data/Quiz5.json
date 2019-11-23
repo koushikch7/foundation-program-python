@@ -1,0 +1,124 @@
+[
+{
+"id":"1",
+"question": "Consider a relation Student (studentid, studentname, classroomid, teacherid) and the following functional dependencies.Identify all the Candidate Key(s) of Student.",
+"imgURL":"images/quiz5.1.PNG",
+"options":
+		[
+		{"option1":"{studentid}"},
+		{"option2":"{studentid}, {classroomid, teacherid}"}, 
+		{"option3":"{studentid, studentname}"},
+		{"option4":"{classroomid, teacherid}"}
+		],
+"correct":"B",
+"description":
+{"A":"With studentid, we can find all other attributes of the relation.  But is that all?  Re-think!",
+"B":"Yes, both {studentid} and {classroomid, teacherid} can identify all other attributes of the relation",
+"C":"{studentid, studentname} seems to be a super key!  Re-think!",
+"D":"With {classroomid, teacherid} , we can find all other attributes of the relation.  But is that all?  Re-think!"
+},
+ "fileURL":""
+},
+{
+"id":"2",
+"question": "Consider a relation T (P, Q, R, S) AND  and the following functional dependencies.  Identify all the candidate key(s) of T",
+"imgURL":"images/quiz5.2.PNG",
+"options":
+	[
+	{"option1":"{P}, {R}"},
+	{"option2":"{P}"}, 
+	{"option3":"{P, R}"},
+	{"option4":"{Q, R}"}
+	],
+"correct":"B",
+"description":
+		{"A":"Can we find all attributes of T with P and R separately?",
+		"B":"Yes, P can determine all other attributes of T.  Hence {P} is the candidate key",	
+		"C":"Don’t you think it is a super-key? Re-think!",
+		"D":"Can the composite key {Q,R} lead to all other attributes of T?  Re-think!"
+		},
+                 "fileURL":""
+},
+{
+"id":"3",
+"question": "Consider a relation R (A, B, C, D, E, F, G) and the following functional dependencies.  Identify the Candidate Key(s) of R.",
+"imgURL":"images/quiz5.3.PNG",
+"options":
+		[
+		{"option1":"{A}, {F}"},
+		{"option2":"{B}, {C}"}, 
+		{"option3":"{A,B}"},
+		{"option4":"{A}, {B}, {C}"},
+		{"option5":"{C}"}
+		],
+"correct":"D",
+"description":
+			{
+			"A":"From A and F can we reach to all other attributes of R?  Re-think!",
+			"B":"B and C can determine all other attributes of R.  But is that all?",
+			"C":"Don’t you think {A,B} is a super-key?",
+			"D":"Yes, here we have three candidate keys - {A}, {B}, {C} as we can find all other attributes of R if we get A or B or C",
+			"E":"C can determine all other attributes of R.  But is that all?"
+			},
+                         "fileURL":""
+},
+{
+"id":"4",
+"question": "Consider a relation Student (studentid, studentname, classroomid, teacherid)  and the following functional dependencies.  Identify the highest normal form of Student relation.",
+"imgURL":"images/quiz5.4.PNG",
+"options":
+		[
+		{"option1":"1 NF"},
+		{"option2":"2 NF"}, 
+		{"option3":"3 NF"},
+		{"option4":"BCNF"}
+		],
+"correct":"C",
+"description":
+		{"A":"It is in 1NF as all attributes are atomic in nature.  But is it the highest normal form?  Re-think!",
+		"B":"Here {classroomid, teacherid} is a composite candidate key and studentname is a non-key attribute.  There is no partial dependency between key attributes and non key attributes and hence it is in 2NF. But is it the highest normal form?  Re-think!",
+		"C":"Here studentid, classroomid and teacherid are the key attributes and studentname is the only non-key attribute.  So there is no dependency among non-key attributes and hence there is no transitive dependency.  So it is in 3NF",
+		"D":"Here we do not have any overlapping candidate keys.  Hence it cannot be in BCNF.  Re-think!"
+		},
+                 "fileURL":""
+},
+{"id":"5",
+"question": "Consider a relation T (P, Q, R, S)  and the following functional dependencies.  Identify the highest normal form of T",
+"imgURL":"images/quiz5.5.PNG",
+"options":
+		[
+		{"option1":"1 NF"},
+		{"option2":"2 NF"}, 
+		{"option3":"3 NF"},
+		{"option4":"BCNF"}
+		],
+"correct":"B",
+"description":
+{"A":"It is in 1NF as all attributes are atomic in nature.  But is it the highest normal form?  Re-think!",
+"B":"Here there is no partial dependency.But there is a transitive dependency between key attributes and non key attributes and hence it is in 2NF. But is it the highest normal form?  Re-think!",
+"C":"Here there is no transitive dependency.So it is in 3NF",
+"D":"Here we do not have any overlapping candidate keys.Hence it cannot be in BCNF.  Re-think!"
+},
+ "fileURL":""
+},
+{"id":"6",
+"question": "Consider a relation R (A, B,C, D)  and the following functional dependencies.  Identify the highest normal form of R",
+"imgURL":"images/quiz5.6.PNG",
+"options":
+		[
+		{"option1":"1 NF"},
+		{"option2":"2 NF"}, 
+		{"option3":"3 NF"},
+		{"option4":"None of the Above"}
+		], 
+"correct":"C",
+"description":
+{
+"A":"It is in 1NF as all attributes are atomic in nature.But is it the highest normal form?  Re-think!",
+"B":"Here there is no partial dependency between key attributes and non key attributes and hence it is in 2NF. But is it the highest normal form?  Re-think!",
+"C":"Here there is no dependency among non-key attributes and hence there is no transitive dependency. So it is in 3NF",
+"D":"Here we do not have any overlapping candidate keys.  Hence it cannot be in BCNF.  Re-think!"
+},
+ "fileURL":""
+}
+]

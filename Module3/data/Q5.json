@@ -1,0 +1,42 @@
+[
+{
+"id":"1",
+"question": "Consider the 'item' table again:",
+"imgURL":"images/quiz2.1.PNG",
+"query":"How many rows will be inserted after executing the following code? Assume that the database credentials are correct.<br>",
+"imgURL2":"images/quiz5.C.1.PNG",
+"options":[
+           {"option":"a: 3"},
+           {"option":"b: 1"}, 
+           {"option":"c: 2"},
+           {"option":"d: 0"}
+          ],
+"correct":"B",
+"description":{"A" : "Observe the code again, is the Insert statement inserting 3 rows? Or are these three column values for one record? Think again and answer.", 
+               "B" : "One record is getting inserted here in item table. 8,'Pineapple', 70 are the values for item_code, item_name and category_code respectively.", 
+               "C" : "Observe the code again, is the Insert statement inserting 2 rows? Or are these three column values for one record? Think again and answer.", 
+               "D" : "Observe the code again, do you find any error in the insert statement? Try to match the expected vs. actual values for insert. Is it correct? Think again and answer."
+                }
+},
+{
+"id":"2",
+"question": "Consider the table 'product' and the values of a row. ",
+"imgURL":"images/quiz5.2.PNG",
+"query":"The following Python code is written to insert the above row in product table. A few possible ways of writing the insert query, in the blank space provided, are given in the options. Choose the incorrect option which when inserted at the blank space will result in an error.<br>",
+"imgURL2":"images/quiz5.C.2.PNG",
+"options":[
+           {"option":"a: cur.execute(\"INSERT INTO product VALUES(:p1,:p2,:p3,:p4)\", (id,type,price,qty))"},
+           {"option":"b: cur.execute(\"INSERT INTO product VALUES(:p1,:p2,:p3,:p4)\", {'p1':id,'p2':type, 'p3':price, 'p4':qty})"}, 
+           {"option":"c: cur.execute(\"INSERT INTO product VALUES(:p1,:p2,:p3,:p4)\", (type,price,qty,id))"},
+           {"option":"d: cur.execute(\"\"\"INSERT INTO product VALUES('P105','Pickles',480,25)\"\"\")"},
+			{"option":"e: cur.execute(\"INSERT INTO product VALUES(:p1,:p2,:p3,:p4)\", {'p2':type, 'p3':price, 'p4':qty, 'p1':id})"}
+          ],
+"correct":"C",
+"description":{"A" : "The query is written as per positional bind variables. Successfully inserts the record.", 
+               "B" : "The query is written as per named bind variables. Successfully inserts the record.", 
+               "C" : "The query is written as per positional bind variables but the order in which parameters are passed is not correct.  Hence will result in an error.", 
+               "D" : "The query is written as per positional bind variables and order of passing parameters matters.  Here as per the position, min_qty is passed to param1 and min_price to param2, hence the output will not be correct.The row values are directly given in the query, will result in a successful insert.",
+               "E" : "The query is written as per named bind variables.  Here the order of values passed to the parameters does not matter. The values are assigned as per the parameter names. Hence the record will be inserted successfully."
+                }
+}
+]

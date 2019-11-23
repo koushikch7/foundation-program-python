@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 1210 1045" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<style type="text/css"><![CDATA[
+.g4_94{
+fill: none;
+stroke: #0000EE;
+stroke-width: 2;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+.g2_94{
+fill: #E6E6E6;
+}
+.g5_94{
+fill: none;
+stroke: #418AB3;
+stroke-width: 1;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+.g3_94{
+fill: #418AB3;
+fill-opacity: 0.2;
+}
+.g1_94{
+fill: #FFFFFF;
+}
+]]></style>
+</defs>
+<path fill-rule="evenodd" d="M0,0L1210,0l0,1045L0,1045L0,0Z" class="g1_94" />
+<path fill-rule="evenodd" d="M0,0L1210,0l0,1045L0,1045L0,0Z" class="g1_94" />
+<image x="828" y="984" width="334" height="49" xlink:href="img/1.png" />
+<path fill-rule="evenodd" d="M360,71l488,0l0,290l-488,0L360,71Z" class="g2_94" />
+<path fill-rule="evenodd" d="M167,471l146,0l0,56l-146,0l0,-56Z" class="g3_94" />
+<path fill-rule="evenodd" d="M313,471l729,0l0,56l-729,0l0,-56Z" class="g3_94" />
+<path d="M321,507l474,0" class="g4_94" />
+<path d="M167.5,414.5l146,0" class="g5_94" />
+<path d="M313.5,414.5l729,0" class="g5_94" />
+<path d="M167.5,528.5l146,0" class="g5_94" />
+<path d="M167.5,471.5l146,0" class="g5_94" />
+<path d="M313.5,528.5l729,0" class="g5_94" />
+<path d="M313.5,471.5l729,0" class="g5_94" />
+</svg>

@@ -1,0 +1,195 @@
+[
+{
+"id":"1",
+"question": "Consider an application for an engineering college. Here, a student can enroll for multiple courses. A course can be taken-up by many students.  Students and Courses have their unique IDs.  Exams are conducted for courses and marks are given to students.  A student can enroll for a course only if he/she has undertaken the prerequisite course. Given below are the relations.Student (StudentId, Name, Gender)Course (CourseId, Description, Duration, Prerequisite)Results (StudentID, CourseId, Marks) Identify the primary key for Student Table.",
+"imgURL":"",
+"options":[
+		{"option1":"StudentId"},
+		{"option2":"Name"}, 
+		{"option3":"Gender"},
+		{"option4":"Very high cost"}
+		],		
+"correct":"A",
+"description":
+		{"A":"Yes, Studentid can uniquely identify all records",
+		"B":"Multiple students may have the same name.Hence Name cannot be the primary-key",
+		"C":"Gender cannot uniquely identify all records!"
+		},
+                 "fileURL":""
+},
+{
+"id":"2",
+"question": "Consider an application for an engineering college. Here, a student can enroll for multiple courses. A course can be taken-up by many students.  Students and Courses have their unique IDs.  Exams are conducted for courses and marks are given to students.  A student can enroll for a course only if he/she has undertaken the prerequisite course. Given below are the relations.Student (StudentId, Name, Gender)Course (CourseId, Description, Duration, Prerequisite)Results (StudentID, CourseId, Marks) Identify the primary key for Student Table. Identify the primary key for Course Table.",
+"imgURL":"",
+"options":[
+		{"option1":"CourseId"},
+		{"option2":"Description"}, 
+		{"option3":"Duration"},
+		{"option4":"Prerequisite"}
+		],
+"correct":"A",
+"description":
+	{"A":"Yes,Courseid can uniquely identify all records",
+	"B":"Description may not be a unique field",
+	"C":"Multiple courses may have the same Duration",
+	"D":"Multiple courses may have the same pre-requisites"	
+	},
+         "fileURL":""
+},
+{
+"id":"3",
+"question": "Consider an application for an engineering college. Here, a student can enroll for multiple courses. A course can be taken-up by many students.  Students and Courses have their unique IDs.  Exams are conducted for courses and marks are given to students.  A student can enroll for a course only if he/she has undertaken the prerequisite course. Given below are the relations.Student (StudentId, Name, Gender)Course (CourseId, Description, Duration, Prerequisite)Results (StudentID, CourseId, Marks) Identify the primary key for Student Table. Identify the primary key for Results Table.",
+"imgURL":"",
+"options":
+	[
+	{"option1":"StudentId"},
+	{"option2":"CourseId"}, 
+	{"option3":"StudentId and CourseId"},
+	{"option4":"StudentId and Marks"}
+	],
+"correct":"C",
+"description":
+			{"A":"A student can enroll for multiple courses",
+			"B":"A course can be taken-up by many students",
+			"C":"Only a combination of StudentId and CourseId can uniquely identify all rows",
+			"D":"A student can score the same marks for different courses"	
+			},
+                         "fileURL":""
+	},
+{
+"id":"4",
+"question": "Consider the two tables given below. Presume that Serviceprovider and ChannelPack are foreign keys in SatelliteTVPlans table referring to Payment table.From the following, identify the Candidate Key(s) for SatelliteTVPlans table:",
+"imgURL":"images/quiz2.4.PNG",
+"options":
+		[
+		{"option1":"ServiceProvider"},
+		{"option2":"ChannelPack"}, 
+		{"option3":"ServiceProvider, SetTopBoxType"},
+		{"option4":"ServiceProvider, ChannelPack  "}
+		],
+"correct":"D",
+"description":
+		{"A":"Service Provider alone cannot uniquely identify all records in the table",
+		"B":"ChannelPack field cannot uniquely identify all records in the table",
+		"C":"ServiceProvider and SetTopBoxType cannot uniquely identify all records in the table",
+		"D":"ServiceProvider and ChannelPack can uniquely identify all records in the table.  Hence it is a candidate key"
+		},
+                 "fileURL":""
+
+},
+{
+"id":"5",
+"question": "From the following, identify the Primary Key for Payment table:",
+"imgURL":"images/quiz2.4.PNG",
+"options":
+		[
+		{"option1":"ServiceProvider"},
+		{"option2":"PaymentID"}, 
+		{"option3":"PaymentID, ServiceProvider"},
+		{"option4":"ServiceProvider, ChannelPack"}
+		],
+"correct":"B",
+"description":
+			{"A":"Service Provider cannot uniquely identify all records in the table",
+			"B":"PaymentID alone can uniquely identify all records in the table.  Hence it is the primary key",
+			"C":"PaymentID alone can uniquely identify all records in the table.  Why do we need a composite primary key here?",
+			"D":"ServiceProvider, ChannelPack cannot uniquely identify all records in the table SatelliteTVPlans table"	
+},
+ "fileURL":""
+},
+{
+"id":"6",
+"question": "From the following, identify the foreign key field(s), if any, used in Payment table:",
+"imgURL":"images/quiz2.4.PNG",
+"options":
+		[
+		{"option1":"ServiceProvider"},
+		{"option2":"ChannelPack"}, 
+		{"option3":"PaymentID, ServiceProvider"},
+		{"option4":"ServiceProvider, ChannelPack"}
+		],
+"correct":"D",
+"description":
+		{"A":"Yes,ServiceProvider is a foreign key.But is it the only one?",
+		"B":"Yes,ChannelPack is a foreign key.But is it the only one?",
+		"C":"PaymentID is not a foreign key!",
+		"D":"Yes, ServiceProvider and ChannelPack are the foreign keys referring to"
+		},
+                 "fileURL":""
+},
+{
+"id":"7",
+"question": "Consider the two tables given below.  Presume that Serviceprovider and ChannelPack are foreign keys in Customer Payment table referring to SatelliteTVPlans table.Identify the correct statement(s) from the following w.r.t the above tables",
+"imgURL":"images/quiz2.7.PNG",
+"options":
+		[
+		{"option1":"CustomerID is the primary key for CustomerPayment table"},
+		{"option2":"PaymentID is the primary key for CustomerPayment table"}, 
+		{"option3":"The ServiceProvider field in CustomerPayment table cannot have duplicate Tata Sky entries"},
+		{"option4":"The ServiceProvider  field in CustomerPayment table cannot have the value –Dish TV which is not present in SatelliteTVPlans table"},
+		{"option5":"CustomerPayment table will have a composite primary key"}
+		],
+"correct":"BD",
+"description":
+			{"A":"Justification: A.CustomerID field cannot uniquely identify all records",
+			"B":"Justification: B.Yes,PaymentID alone can uniquely identify all records",
+			"C":"Justification: C.Service Provider is a foreign key field in CustomerPayment table and hence can have duplicate values",
+			"D":"Justification: D.Yes,Service Provider is a foreign key field in CustomerPayment table and hence it cannot take a value which is not there in the master table(SatelliteTVPlans)",
+			"E":"Justification: E.No,CustomerPayment table will not have a composite primary key as PaymentID field alone can uniquely identify all records"	
+			},
+                         "fileURL":""
+},
+{
+"id":"8",
+"question": "Which of the following statement(s) are correct about Candidate Keys?",
+"imgURL":"images/quiz2.7.PNG",
+"options":
+		[
+		{"option1":"Candidate Key can uniquely identify every record in the relation"},
+		{"option2":"Candidate Keys are identified during table creation time"}, 
+		{"option3":"There can be more than one candidate key for a given relation"},
+		{"option4":"Fields with textual data cannot be a part of Candidate Key"}
+		],
+"correct":"AC",
+"description":
+		{"A":"Yes,candidate keys can uniquely identify every record in  a relation",
+		"B":"Not really, candidate keys are identified during database design!",
+		"C":"Very much possible for a table to have more than one candidate key",
+		"D":"There is no such restriction on candidate keys"	
+		},
+                 "fileURL":""
+},
+{
+"id":"9",
+"question": "One of the leading job portals is using relational databases to store details of job seekers, published jobs, applied jobs and so on.  As per the scenario, JobSeeker relation has JobSeekerId, JobSeekerName, ContactNumber, EmailAddress and City as its attributes. The numeric field - JobSeekerId and EmailAddress are unique for every job seeker and the business requirement states that during registration jobSeekerId is autogenerated and that it is mandatory for a job seeker to provide EmailId.Which of the following would best suit the above context?",
+"imgURL":"",
+"options":
+		[
+		{"option1":"JobSeekerId, EmailAddress can individually become candidate keys and JobSeekerId becomes the primary key"},
+		{"option2":"JobSeekerId and  EmailAddress can form the composite primary key of this relation"}, 
+		{"option3":"It is impossible to find a candidate key for this relation"},
+		{"option4":"JobSeekerId is the only candidate key as well as the primary key"}
+		],
+"correct":"A",
+"description":
+	{
+	"A":"Yes, both JobSeekerId and EmailAddress can uniquely identify every record,Since JobSeekerId is numeric field,it qualifies best as the Primary-Key",
+	"B":"There is no need of a composite primary key here as both JobSeekerId and EmailAddress separately can uniquely identify every record",
+	"C":"There are two fields –JobSeekerId and EmailAddress which are unique to every job seeker! Re-think",
+	"D":"EmailAddress is also unique and mandatory field!"
+	},
+ "fileURL":""	
+}
+]
+
+
+
+
+
+
+
+
+
+
+
+

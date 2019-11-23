@@ -1,0 +1,20 @@
+[
+{
+"id":"1",
+"question": "Consider the table 'product':",
+"imgURL":"images/quiz4.3.PNG",
+"query":"Predict the output of the below code:<br>",
+"imgURL2":"images/quiz6.C.1.PNG",
+"type":"Verify",
+"line":"images/Line.png",
+"imgAnsURL":"images/q6.A.1.PNG",
+"imgAnsText":"Output:",
+"options":[
+           
+          ],
+"correct":"AS",
+"description":{
+                },
+                "fileURL":"Scripts/file4.txt"
+}
+]

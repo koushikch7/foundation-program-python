@@ -1,0 +1,10 @@
+DROP TABLE customers;
+CREATE TABLE customers (customerid VARCHAR2(10), name VARCHAR2(20), spouseid VARCHAR(2), age NUMBER, gender CHAR(1));
+INSERT INTO customers VALUES('C1', 'Alice', 'C2', 28, 'F');
+INSERT INTO customers VALUES('C2', 'Ben', 'C1', 30, 'M');
+INSERT INTO customers VALUES('C3', 'Mike', NULL, 25, 'M');
+INSERT INTO customers VALUES('C4', 'Smith', NULL, 32, 'M');
+COMMIT;
+
+
+

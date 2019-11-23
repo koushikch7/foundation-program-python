@@ -1,0 +1,6 @@
+DROP TABLE Customers;
+CREATE TABLE Customers (customerid NUMBER, name VARCHAR2(20), salary NUMBER);
+INSERT INTO Customers values(1001, 'Alice', 3000);
+INSERT INTO Customers values(1002, 'Ben', 3500);
+INSERT INTO Customers values(1003, 'Mike', 1500);
+INSERT INTO Customers values(1004, 'Bob', 2000);

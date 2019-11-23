@@ -1,0 +1,7 @@
+CREATE TABLE Student(RollNo NUMBER, Name VARCHAR2(15), Branch VARCHAR2(5), Marks NUMBER);
+INSERT INTO Student VALUES(1, 'Alice', 'CSE', 95);
+INSERT INTO Student VALUES(2, 'Ben', 'ECE', 88);
+INSERT INTO Student VALUES(3, 'John', 'CSE', 92);
+INSERT INTO Student VALUES(4, 'Mike', 'CSE', 97);
+INSERT INTO Student VALUES(5, 'Smith', 'ECE', 92);
+COMMIT;

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 1210 1045" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<style type="text/css"><![CDATA[
+.g1_31{
+fill: #FFFFFF;
+}
+]]></style>
+</defs>
+<path fill-rule="evenodd" d="M0,0L1210,0l0,1045L0,1045L0,0Z" class="g1_31" />
+<path fill-rule="evenodd" d="M0,0L1210,0l0,1045L0,1045L0,0Z" class="g1_31" />
+<image x="828" y="984" width="334" height="49" xlink:href="img/1.png" />
+<image x="94" y="77" width="82" height="72" xlink:href="shade/1.png" />
+<image x="66" y="18" width="166" height="86" xlink:href="shade/2.png" />
+<image x="212" y="192" width="82" height="72" xlink:href="shade/3.png" />
+<image x="172" y="110" width="185" height="85" xlink:href="shade/4.png" />
+<image x="334" y="293" width="83" height="73" xlink:href="shade/5.png" />
+<image x="293" y="212" width="186" height="86" xlink:href="shade/6.png" />
+<image x="446" y="395" width="83" height="72" xlink:href="shade/7.png" />
+<image x="415" y="313" width="181" height="85" xlink:href="shade/8.png" />
+<image x="552" y="501" width="82" height="73" xlink:href="shade/9.png" />
+<image x="520" y="417" width="166" height="85" xlink:href="shade/10.png" />
+<image x="632" y="524" width="210" height="85" xlink:href="shade/11.png" />
+</svg>

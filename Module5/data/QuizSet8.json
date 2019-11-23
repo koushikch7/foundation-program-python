@@ -1,0 +1,50 @@
+[
+{
+"id":"1",
+"question": "Identify the errors (if any) in the following procedure<br><br><em>CREATE OR REPLACE PROCEDURE Proc_Fee(<br>       p_AnnualFee IN NUMBER(10) DEFAULT 500, p_SpecialFee IN OUT NUMBER(10) DEFAULT 100,<br>       p_TotalFee OUT NUMBER(10))<br>    IS<br>       v_studentid CHAR(3) NOT NULL:='S1';<br>       v_dept CONSTANT CHAR(3):='IT';<br>    BEGIN<br>       p_AnnualFee := 1000;<br>       p_SpecialFee := p_AnnualFee/10;<br>       p_TotalFee  := p_AnnualFee + p_SpecialFee;<br>    END;</em><br>",
+"imgURL":"",
+"options":[
+           {"option":"a: Size cannot be specified for IN parameter p_Annual Fee"},
+           {"option":"b: Size cannot be specified for IN OUT parameter p_SpecialFee"},
+           {"option":"c: Size cannot be specified for OUT parameter p_TotalFee"},
+           {"option":"d: DEFAULT cannot be specified for IN parameter p_AnnualFee"},
+           {"option":"e: DEFAULT cannot be specified for IN OUT parameter p_SpecialFee"},
+           {"option":"f: NOT NULL cannot be specified with variable v_studentid"},
+           {"option":"g: Assignment p_AnnualFee := 1000; is not valid"},
+           {"option":"h: Assignment p_SpecialFee := p_AnnualFee/10; is not valid"},
+           {"option":"i: No Error"}
+          ],
+"correct":"ABCEG",
+"description":{
+  "A" : "You cannot specify size for procedure parameters", 
+  "B" : "You cannot specify size for procedure parameters", 
+  "C" : "You cannot specify size for procedure parameters",                
+  "D" : "DEFAULT can be specified for IN parameter",
+  "E" : "DEFAULT cannot be specified for IN OUT and OUT parameters",
+  "F" : "Usage of NOT NULL is valid here",
+  "G" : "IN parameter cannot be used as assignment target",
+  "H" : "This assignment is valid",
+  "I" : "There are few errors!"
+}
+},
+{
+"id":"2",
+"question": "Consider the following Customers table, with the stored procedure.",
+"imgURL":"images/Quiz27.PNG",
+"query":"<em>CREATE OR REPLACE PROCEDURE Get_Customer (p_Custid NUMBER, p_Name OUT VARCHAR2, p_Salary OUT NUMBER)<br>IS<br>BEGIN<br>        SELECT name, salary INTO p_Name, p_Salary FROM Customers<br>        WHERE customerid = p_Custid;<br>END</em><br><br>Predict the result of executing the following  PL/SQL block calling the procedure.<br><br><em>DECLARE<br>        v_Name VARCHAR(20);<br>        v_Salary NUMBER;<br>BEGIN<br>        Get_Customer(1001, v_Name, v_Salary);<br>                DBMS_OUTPUT.PUT_LINE('Name: '|| v_Name);<br>        DBMS_OUTPUT.PUT_LINE('Salary: '|| v_Salary);<br>END;</em>",
+"options":[
+           {"option":"a: Name: Alice<br>        Salary: 3000<br>        Statement processed"},
+           {"option":"b: Error indicating Get_Customer procedure is invalid"},
+           {"option":"c: No data found"},
+           {"option":"d: Error in the calling PL/SQL block"}
+          ],
+"scripts":"Scripts/QuizSet8_2.txt",
+"correct":"A",
+"description":{
+  "A" : "It is a valid procedure and procedure call.  Hence details of customerid 1001 will be fetched", 
+  "B" : "There is no error in the Get_Customer procedure.  Re-think!", 
+  "C" : "Don’t we have customer with customerid 1001 in the table?  Re-think!",                
+  "D" : "There is no error in calling PL/SQL block.  Re-think!"
+}
+}
+]

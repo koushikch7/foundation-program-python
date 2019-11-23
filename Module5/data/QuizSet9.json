@@ -1,0 +1,66 @@
+[
+{
+"id":"1",
+"question": "Which of the following WHERE clauses would be better in terms of query performance? Select one or more as applicable.",
+"imgURL":"",
+"options":[
+           {"option":"a: WHERE name = 123 (assuming name as character data)"},
+           {"option":"b: WHERE To_NUMBERr(name) = 123   (assuming name as character data)"},
+           {"option":"c: WHERE rollno = ‘123’  (assuming rollno as numeric data)"},
+           {"option":"d: WHERE To_CHAR(rollno) = ‘123’ (assuming rollno as numeric data)"}
+          ],
+"correct":"BD",
+"description":{
+  "A" : "Implicit type conversions are always costly!  Re-think", 
+  "B" : "Yes, it is always better to compare values of same type.  Usage of To_Number function will improve query performance", 
+  "C" : "Implicit type conversions are always costly!  Re-think",                
+  "D" : "Yes, it is always better to compare values of same type.  Usage of To_Char function will improve query performance"                 
+}
+},
+{
+"id":"2",
+"question": "Consider the following queries (Assume that jobid is a varchar2 field and jobno is numeric field.  Also, jobno is the primary key of jobs table)<br><br>Query 1: <em>SELECT * FROM jobs WHERE jobid = ‘CC’ AND jobno = 1001;</em><br>Query 2: <em>SELECT * FROM jobs WHERE jobid || jobno = ‘CC1001’;</em><br><br>Which of the following statements are correct?",
+"imgURL":"",
+"options":[
+           {"option":"a: Query 1 runs faster than Query 2"},
+           {"option":"b: Query 2 runs faster than Query 1"},
+           {"option":"c: Query 1 and Query 2 takes the same amount of time to execute"}
+          ],
+"correct":"A",
+"description":{
+  "A" : "Yes, query 1 is better as we are not mixing data types.  In this case, index will be used.", 
+  "B" : "In query-2, we are mixing data types by concatenation and this leads to index suppression.  Hence query2 is likely to take more time to execute!", 
+  "C" : "In query-2, we are mixing data types by concatenation and this leads to index suppression.  Hence the query2 is likely to take more time to execute than query1!"                
+}
+},
+{
+"id":"3",
+"question": "Consider the following employee table structure and the two queries given below",
+"imgURL":"images/Quiz28.PNG",
+"query":"Query 1: <em>SELECT  job,  avg(salary) FROM  employee  GROUP BY job  HAVING  job =‘Manager'  OR  job = ‘Admin‘;</em><br>Query 2: <em>SELECT  job,  avg(salary) FROM  employee  WHERE job =‘Manager'  OR  job = ‘Admin‘ GROUP BY job;</em><br><br>Which of the following statements is true in terms of performance?",
+"options":[
+           {"option":"a: Query 1 is better than Query2"},
+           {"option":"b: Query 2 is better than Query 1"}
+          ],
+"correct":"B",
+"description":{
+  "A" : "In query-1, for grouping all the jobs would be taken into consideration which is not required as per the later part of the query", 
+  "B" : "In query-2, the selection of jobs is limited using WHERE clause and then Group By is used.  Hence this query runs faster"                
+}
+},
+{
+"id":"4",
+"question": "Consider the following table structures. Assume that employee table has 15000 rows and order has 6000 rows. Consider the two following queries which gives the details of employees who have placed orders on behalf of customer 101.",
+"imgURL":"images/Quiz29.PNG",
+"query":"Query 1: <em>SELECT e.empid , e.name , e.salary FROM employee e WHERE EXISTS (SELECT 1 FROM order o WHERE e.empid = o.agentid  AND o.customerid = 101);</em><br>Query 2: <em>SELECT e.empid , e.name , e.salary FROM employee e WHERE e.empid IN (SELECT o.agentid FROM order o WHERE o.customerid = 101);</em><br><br>Which of the following statements is true in terms of performance?",
+"options":[
+           {"option":"a: Query 1 is better than Query 2"},
+           {"option":"b: Query 2 is better than Query 1"}
+          ],
+"correct":"B",
+"description":{
+  "A" : "If the selective predicate is in sub-query, usage of IN is recommended rather than Exists.  Exists can be used if the selective predicate is in parent query.", 
+  "B" : "Here selective predicate is in sub-query and hence IN is better and leads to fewer resources being used"                
+}
+}
+]

@@ -1,0 +1,12 @@
+DROP TABLE customer;
+CREATE TABLE customer (customer_id NUMBER, customer_name VARCHAR2(15), city VARCHAR2(15), state VARCHAR2(15));
+INSERT INTO customer VALUES(1001, 'Alice', 'Redmonddale', 'Washington');
+INSERT INTO customer VALUES(1002, 'Ben', 'Mountain View', 'California');
+INSERT INTO customer VALUES(1003, 'John', 'Redwood City', 'California');
+INSERT INTO customer VALUES(1004, 'Will', 'Irvingdale', 'Texas');
+INSERT INTO customer VALUES(1005, 'Blake', 'Springdale', 'Arkansas');
+INSERT INTO customer VALUES(1006, 'Ben', 'RacineCity', 'Wisconsin');
+INSERT INTO customer VALUES(1007, 'Keith', 'Westlake', 'California');
+INSERT INTO customer VALUES(1008, 'Smith', 'Thomasville', 'Georgia');
+INSERT INTO customer VALUES(1009, 'John', 'Redwood City', 'California');
+COMMIT;

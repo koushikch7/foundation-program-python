@@ -1,0 +1,66 @@
+[
+{
+"id":"1",
+"question": "Consider the table customers(customerid, name, spouseid, age, gender). The following two statements are fired in the order specified<br><br>1. <em>CREATE OR REPLACE VIEW custview AS SELECT customerid, name, spouseid FROM customers WHERE spouseid IS NOT NULL;</em><br>2. <em>INSERT INTO custview values ('C5', 'John', NULL);</em><br><br>Which of the following statements are correct in this context? Select one or more as applicable.",
+"imgURL":"",
+"options":[
+           {"option":"a: An error will be thrown as NULL value cannot be inserted for spouseid field in the view"},
+           {"option":"b:  A row with values (2015, ‘BBBB’, NULL,) will get inserted into custview only"},
+           {"option":"c: No rows will be inserted into custview"},
+           {"option":"d: A row with values (2015, ‘BBBB’, NULL) will get inserted into customers table only"},
+           {"option":"e: No rows will be inserted into customers table"},
+           {"option":"f: A row with values (2015, ‘BBBB’, NULL) will get inserted both into custview and customers table"}
+          ],
+"scripts":"Scripts/QuizSet4_1.txt",
+"correct":"CD",
+"description":{
+  "A" : "The statement is legal.  No error will be thrown here",
+  "B" : "View contains records where spouseid is NULL.  Hence this row can’t be inserted into the view", 
+  "C" : "Yes.  View contains records where spouseid is NULL.  Hence insertion will not be done in the view",                
+  "D" : "Yes, a row gets inserted into the base table – customers",
+  "E" : "A row gets inserted into the base table – customers ",
+  "F" : "A row gets inserted into the base table – customers but not in the view - custview"
+}
+},
+{
+"id":"2",
+"question": "Consider the table customers(customerid, name, spouseid, age, gender). The following two statements are fired in the order specified.<br><br>1. <em>CREATE OR REPLACE VIEW custview AS SELECT customerid, name, spouseid FROM customers WHERE spouseid IS NOT NULL WITH CHECK OPTION;</em><br>2. <em>INSERT INTO custview values (‘C5’, ‘John', NULL);</em><br><br>Which of the following statements are correct in this context? Select one or more as applicable.",
+"imgURL":"",
+"options":[
+           {"option":"a: An error will be thrown as NULL value cannot be inserted for spouseid field in the view with CHECK option"},
+           {"option":"b: A row with values (2015, ‘BBBB’, NULL,) will get inserted into custview only"},
+           {"option":"c: A row with values (2015, ‘BBBB’, NULL) will get inserted into customer table only "},
+           {"option":"d: A row with values (2015, ‘BBBB’, NULL) will get inserted both into custview and customer table"}
+          ],
+"scripts":"Scripts/QuizSet4_2.txt",
+"correct":"A",
+"description":{
+  "A" : "Yes, it will throw an error as the view is created with CHECK OPTION to prevent adding records with NULL value for spouseid field", 
+  "B" : "Since CHECK OPTION is there, this row cannot be inserted into the view", 
+  "C" : "Since CHECK OPTION is there, this row cannot be inserted into the base table",                
+  "D" : "Since CHECK OPTION is there, this row cannot be inserted into the view and the base table as well"                
+}
+},
+{
+"id":"3",
+"question":"Which of the following scenarios restrict a view from being updated? Select one or more as applicable",
+"imgURL":"",
+"options":[
+           {"option":"a: DISTINCT clause is specified "},
+           {"option":"b: GROUP BY clause is used"},
+           {"option":"c: FROM clause contains only one updateable table"},
+           {"option":"d: WHERE clause contains a sub-query that refers to the FROM clause"},
+           {"option":"e: SELECT clause contains column functions "},
+           {"option":"f: SELECT clause contains set operators"}
+          ],
+"correct":"ABDEF",
+"description":{
+  "A" : "View cannot be updated if SELECT clause contains DISTINCT", 
+  "B" : "View cannot be updated if the query contains GROUP BY or HAVING clauses", 
+  "C" : "Yes, the view can be updated in this case",                
+  "D" : "View cannot be updated if the WHERE clause contains a sub-query",
+  "E" : "View cannot be updated if SELECT clause contains functions",
+  "F" : "View cannot be updated if SELECT clause contains set functions"
+}
+}
+]

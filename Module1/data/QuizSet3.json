@@ -1,0 +1,629 @@
+[
+{
+"id":"1",
+"duration":5,
+"question":"Which of the following is/are true regarding Python IDLE?",
+"imgURL":"",
+"options":[
+           {"option":"a: It is an integrated development environment for Python."},
+           {"option":"b: It is OS required for running Python."},
+           {"option":"c: It is a Python Shell."},
+           {"option":"d: It is only a run time environment for Python"}
+          ],         
+"correct":"AC",
+"description":{
+  "A" : "IDLE (Integrated DeveLopment Environment or Integrated Development and Learning Environment) is an integrated development environment for Python. IDLE is intended to be a simple IDE and suitable for beginners.",  
+  "B":"Python IDLE is used to write and execute Python programs, it is not an operating system.",
+  "C" : "When you start IDLE, is it opened as a Python Shell and also offers syntax highlighting.",              
+  "D":"It is a run time environment for Python programs (which helps us to execute Python code) but also allows us to write the Python programs. Try again."
+}
+},
+{
+"id":"2",
+"duration":5,
+"question": "Which of the following confirms successful installation of Python on your windows machine:",
+"imgURL":"",
+"options":[
+           {"option":"a: Open Python interpreter by typing 'python' on the command prompt. You can write and execute Python statements here<br>        (assuming Python's installation directory is added to the Environment Variable -> Path)."},
+           {"option":"b: Open IDLE by pressing 'Start' and typing 'Python' and selecting the 'IDLE (Python GUI).' You can write and execute Python<br>        statements here."},
+           {"option":"c: Both a and b"}
+          ],
+"correct":"C",
+"description":{
+  "A":"Try to open Python interpreter on your machine using command prompt and print “hello”.",
+  "B":"Open IDLE on your machine and print “Hello Python”.",
+  "C" : "You can confirm the successful installation of Python on your windows machine by using any of the two options."             
+}
+},
+{
+"id":"3",
+"duration":2,
+"question": "Which of the following Statement is False with respect to interpreter:",
+"imgURL":"",
+"options":[
+            {"option":"a: It translates and executes one instruction at a time."},
+            {"option":"b: Object code is saved for future use."},
+            {"option":"c: It is relatively slower than a compiler."}
+          ],
+"correct":"B",
+"description":{
+  "A" : "Interpreter translates and executes one instruction at a time, More about interpreters: <a href=\"http://www.webopedia.com/TERM/I/interpreter.html\" target=\"_blank\" style=\"color:blue\";>Click Here</a>.", 
+  "B" : "Interpreter do not save the object code.", 
+  "C" : "Each statement is executed one by one. Compiler first converts the entire source code into object code and then executes it."               
+}
+},
+{
+"id":"4",
+"duration":5,
+"question":"Which of the following is/are not valid variable names in python?",
+"imgURL":"",
+"options":[
+           {"option":"a: _age"},
+           {"option":"b: _1234"},
+           {"option":"c: in"},
+           {"option":"d:      length (white spaces appended before the word length)"},
+           {"option":"e: 100_emp"},
+           {"option":"f: abc$"}
+          ],         
+"correct":"CDEF",
+"description":{
+  "A" : "Correct, variable name can start with underscore or alphabets", 
+  "B" : "Correct, variable name can start with underscore or alphabets" ,
+  "C" : "Keywords cannot be used as a variable name." ,
+  "D" : "Variable names cannot start with a space ' '(indents). Here we have spaces before 'length', which is not allowed." ,
+  "E" : "Variable names cannot start with a number." ,
+  "F" : "Variable names cannot have any special character other than an underscore(_)."              
+}
+},
+{
+"id":"5",
+"duration":5,
+"question":"Observe the following python code snippet:",
+"imgURL":"images/Quiz35.png",
+"query":"            Predict the line number with an error:",
+"options":[
+           {"option":"a: 1"},
+           {"option":"b: 2"},
+           {"option":"c: 3"},
+           {"option":"d: No Error"}
+          ],         
+"correct":"C",
+"description":{
+  "A" : "This statement is correct and will print the string 'This program will print the value of my variable'.",
+  "B" : "This statement is correct and is creating a variable 'my_variable' with value 10.",
+  "C" : "Python is a case sensitive language. The variable name in line number 3 should be 'my_variable' (instead of 'my_Variable')." ,
+  "D" : "Look at the code again. Will it print the value of the variable at Line number 3?"
+}
+},
+{
+"id":"6",
+"duration":5,
+"question":"Identify the FALSE statement in the below statements:",
+"imgURL":"",
+"options":[
+           {"option":"a: global = '30' creates a string variable in Python."},
+           {"option":"b: Assert = True creates a Boolean variable in Python."},
+           {"option":"c: x = 14 / 3 creates a float variable in Python."}
+          ],         
+"correct":"A",
+"description":{
+  "A" : "Syntax error as global is a keyword. Keywords List in Python.",
+  "B" : "'assert' is a keyword in Python, however Python being case sensitive, 'Assert' is allowed to be a variable name.",
+  "C":"Floating point numbers represent real numbers and are written with a decimal point dividing the integer and fractional parts. Value of x is 4.666666666666667."
+}
+},
+{
+"id":"7",
+"question":"Observe the following Python code snippet and complete the output statements:",
+"imgURL":"images/Quiz128.png",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"complex.real ="},
+		{"option2":"y =                 "}
+		],
+"colB":
+		[
+		{"option1":"11.6"},
+		{"option2":"4.0"}
+		],
+"Correct":
+		[
+		{"option":"4.0"},
+		{"option":"11.6"}
+		],
+ "description":
+         [
+		{"option":"'complex.real' returns the real value of the complex number."},
+		{"option":"'complex.imag' returns the imaginary value of complex variable i.e. 5.6 , 5.6 + 6 returns 11.6."}
+		]
+},
+{
+"id":"8",
+"duration":10,
+"question":"Match the following Python variables against the correct data types:",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"rect_length = 30         "},
+		{"option2":"is_true = true             "}, 
+		{"option3":"student_name = \"Tony"},
+		{"option4":"bill_amount = 160.50 "},
+                {"option5":"var = 3+5j                 "},
+                {"option6":"Complex = 4.3+5.6i    "},
+                {"option7":"success_flag = \"True\" "},
+                {"option8":"is_prime = False        "},
+                {"option9":"citizenship_status = 'A'"}
+		],
+"colB":
+		[
+		{"option1":"float"},
+		{"option2":"int"},
+		{"option3":"complex"},
+		{"option4":"String"},
+                {"option5":"Boolean"},
+                {"option6":"Wrong syntax"}
+		],
+"Correct":
+		[
+		{"option":"int"},
+		{"option":"Wrong syntax"}, 
+		{"option":"Wrong syntax"},
+		{"option":"float"},
+                {"option":"complex"},
+		{"option":"Wrong syntax"}, 
+		{"option":"String"},
+		{"option":"Boolean"},
+                {"option":"String"}
+		],
+ "description":
+         [
+		{"option":"As an integer value is stored in rect_length, hence it is of the type int."},
+		{"option":"True should start with a capital letter for a Boolean value. Correct statement would be is_true = True where is_true is a Boolean variable."}, 
+		{"option":"Closing double quotes missing. student_name = \"Tony\" will create a string variable."},
+		{"option":"As a floating point value is stored in bill_amount, hence it is of the type float."},
+                {"option":"Complex numbers are created as x + yj, hence var is of the type complex."},
+		{"option":"Complex variables are created as x + yj (rather than i)"}, 
+		{"option":"When enclosed within single or double quotes, \"True\" is treated as a string."},
+		{"option":"Variables with value True or False (without quotes) are created as Boolean and are of type bool."},
+                {"option":"Any value in single, double or triple quotes is a string. Hence citizenship_status is of the type String."}
+		]
+ },
+{
+"id":"9",
+"duration":5,
+"question":"Choose the correct output for the following Python code from the given options:",
+"imgURL":"images/Quiz36.png",
+"options":[
+           {"option":"a: 10"},
+           {"option":"b: xyz"},
+           {"option":"c: Syntax error"},
+           {"option":"d: None of the above"}
+          ],         
+"correct":"B",
+"description":{
+  "A" : "The value of 'a' has changed at line# 2. Try again.",  
+  "B" : "In this code, 'a' has a value 10 in line# 1. In line# 2, 'a' is re-assigned a value 'XYZ' in line# 2. Hence line# 3 will print 'XYZ'. Observe that the data type of 'a' has also changed after line# 2. Python supports dynamic semantics i.e. the data type of a variable depends on the value it carries.",
+  "C" : "Try to execute this code and see if there is any syntax error.",
+  "D" : "Try to execute this code and observe the output."
+}
+},
+{
+"id":"10",
+"duration":5,
+"question":"Observe the following code:",
+"query":"            Select the correct statement/statements from the options given below:",
+"imgURL":"images/Quiz37.png",
+"options":[
+           {"option":"a: There is a syntax error at line# 5"},
+           {"option":"b: Line# 6 prints false"},
+           {"option":"c: A Boolean variable 'c' is created in line# 3"},
+           {"option":"d: Line# 7 prints &lt:class 'bool'>"}
+          ],         
+"correct":"BD",
+"description":{
+  "A" : "Code at line 5 is 'a = b', here the value of variable 'b' is assigned to variable 'a'. Hence 'a' is a string variable with value 'Some Value' after line 5.",  
+  "B" : "'c' is a string variable with value 'False' , 'd' is a Boolean variable with value False. Hence, c == d returns 'False'(a Boolean) as we are comparing values of a string and a Boolean variable.",
+  "C" : "'c' is a string variable with value 'False' (as the value False is enclosed in quotes).",
+  "D" : "'d' is a Boolean variable with value 'False', hence 'type(d)' returns <class 'bool'>."
+}
+},
+{
+"id":"11",
+"duration":5,
+"question":"Assume the following Python code.<br>             If user enters user_input = 5, the expected output of the program is Sum = 15.<br>             Observe the code and suggest whether it is giving the desired output?<br>             If not, predict the line number with an error from the given options:",
+"imgURL":"images/Quiz38.png",
+"options":[
+           {"option":"a: Line 3"},
+           {"option":"b: Line 4"},
+           {"option":"c: Line 5"},
+           {"option":"d: No error"}
+          ],         
+"correct":"C",
+"description":{
+  "A" : "This statement correctly prints the type of the variable 'int_a' i.e. <class 'int'>",
+  "B" : "This statement correctly prints the type of the variable 'user_input' i.e. <class 'str'>. Please note that input() function returns the user input as a string value.",   
+  "C" : "Error at line 5 will be -  TypeError: unsupported operand type(s) for +: 'int' and 'str'. input() function returns the user input as a string value, hence variable 'user_input' is of string type. Here, we are trying to concatenate an integer and a string value, hence the error.",
+  "D" : "Try to execute this code and observe the output." 
+}
+},
+{
+"id":"12",
+"duration":5,
+"question":"Observe the following python code:",
+"query":"            Predict the line number which throws an error.",
+"imgURL":"images/Quiz39.png",
+"options":[
+           {"option":"a: Line 1"},
+           {"option":"b: Line 2"},
+           {"option":"c: Line 3"},
+           {"option":"d: No error"}
+          ],         
+"correct":"D",
+"description":{
+  "A" : "We are assigning a value with more than 25 digits to variable 'a'. This is correct and allowed in Python.",  
+  "B" : "The value of variable 'a' is correctly printed at line 2 i.e. 12345675432334556677889990",
+  "C" : "'a' is already created as an integer variable at line 1, hence type conversion 'int(a)' does not have any effect on value of 'a' and hence the same value is printed here i.e. 12345675432334556677889990", 
+  "D" : "Option d Integers have unlimited precision in Python (please note there is no \"long\" data type in Python 3 onwards). Both lines 2 and 3 will print the same value of 'a' i.e. 12345675432334556677889990" 
+}
+},
+{
+"id":"13",
+"duration":5,
+"question":"Observe the following Python code and guess the correct output from the given options:",
+"imgURL":"images/Quiz40.png",
+"options":[
+           {"option":"a: 10<br>         2"},
+           {"option":"b: 10<br>        10"},
+           {"option":"c: 10<br>        12"},
+           {"option":"d: None of the above"}
+          ],         
+"correct":"C",
+"description":{
+  "A" : "Observe and evaluate the assignment operation at line# 3. Try again.",  
+  "B" : "Is a new value reassigned to variable 'var_1' at line# 3? Think again and answer.",
+  "C" : "The correct output is 10 12. In line i variable 'var_1' is assigned a value 10. Line ii prints the same. Further, in line iii, 'var_1' is assigned a new value as (var_1 + 2) i.e. 12, hence line iv prints the value 12.",
+  "D" : "Try to execute the code and observe the output."
+}
+},
+{
+"id":"14",
+"duration":10,
+"question":"Match the following Python code snippets with their respective outputs: <br>               Assume x = 2 , y = 5.",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":""},
+		{"option2":""}, 
+		{"option3":""},
+		{"option4":""},
+                {"option5":""}
+		],
+"colAimg":
+		[
+		{"option":"images/Quiz100_1.png"},
+		{"option":"images/Quiz100_2.png"}, 
+		{"option":"images/Quiz100_3.png"},
+		{"option":"images/Quiz100_4.png"},
+                {"option":"images/Quiz100_5.png"}
+		],
+"colB":
+		[
+		{"option1":"10"},
+		{"option2":"8"},
+		{"option3":"7"},
+		{"option4":"3.0"},
+                {"option5":"1"}
+		],
+"Correct":
+		[
+		{"option":"7"},
+		{"option":"10"}, 
+		{"option":"1"},
+		{"option":"8"},
+                {"option":"3.0"}
+		],
+ "description":
+         [
+		{"option":"x += y is equivalent to x = x + y -> 2 + 5 -> 7, hence print(x) prints 7."},
+		{"option":" y += y is equivalent to y = y + y -> 5 + 5 -> 10, hence print(y) prints 10"}, 
+		{"option":"x += 2 is equivalent to x = x + 2 -> 2 + 2 -> 4 <br>y -= x is equivalent to y = y – x -> 5 – 4 -> 1, hence print(y) prints 1"},
+		{"option":"x *= 2 is equivalent to x = x * 2 -> 2 * 2 -> 4 <br>x += x is equivalent to x = x + x -> 4 + 4 -> 8 ,hence print(x) prints 8"},
+                {"option":"y += 1 is equivalent to y = y + 1 -> 5 + 1 -> 6 <br>y /= x is equivalent to y = y / x -> 6 / 2 -> 3.0"
+         }
+		]
+},
+{
+"id":"15",
+"duration":5,
+"question":"Consider following python code.",
+"query":"            Select the correct answer:",
+"imgURL":"images/Quiz8.png",
+"options":[
+           {"option":"a: 10 \"ABC\" True"},
+           {"option":"b: Syntax error"}
+          ],         
+"correct":"A",
+"description":{
+  "A" : " Multiple variable assignment is allowed in Python. Here, three variables 'a', 'b', 'c' are created and assigned with integer, string and Boolean values respectively. print() function correctly prints the values of variables 'a', 'b', 'c' i.e. 10 \"ABC\" True.",  
+  "B" : "Try to execute the code and observe if there is any error."
+}
+},
+{
+"id":"16",
+"duration":2,
+"question":"Which of the following gives an output as 8?",
+"imgURL":"",
+"options":[
+           {"option":"a: >>> 2 * 3"},
+           {"option":"b: >>> 2 ** 3"},
+           {"option":"c: >>> 2 ^^ 3"},
+           {"option":"d: None of the above"}
+          ],         
+"correct":"B",
+"description":{
+  "A" : "'*' is the multiplication operator, hence multiplies the operands 2 and 3 and prints 6 here.",  
+  "B" : "'**' performs exponential (power) calculation on operators. Hence, 'x**y' represents 'x' raise to power 'y'. Here, 2 raise to power 3 prints value 8.",
+  "C" : "It is an invalid syntax in Python.",
+  "D" : "Try to execute the code snippets given in options a,b,c and observe the output."
+}
+},
+{
+"id":"17",
+"duration":2,
+"question":"What is the output of the below Python code snippet:<br>       <em>       >>> \"40\" + 7</em>",
+"imgURL":"",
+"options":[
+           {"option":"a: 407"},
+           {"option":"b: 47"},
+           {"option":"c: Error"},
+           {"option":"d: Garbage Values"}
+          ],         
+"correct":"C",
+"description":{
+  "A" : "Observe 7 is an integer value here. Can we concatenate a string with an integer? Try again.",  
+  "B" : "Observe \"40\" is a string value here. Can we add a string to an integer? Try again.",
+  "C" : "Strings cannot be added to integers directly, hence the error.",
+  "D" : "Try to execute \"40\" + 7 in IDLE/shell and observe the output."
+}
+},
+{
+"id":"18",
+"duration":5,
+"question":"Which of the following will give the output as 23?(Choose all applicable)",
+"imgURL":"",
+"options":[
+           {"option":"a: >>>int(\"20\") + 3"},
+           {"option":"b: >>>\"20\" + str(3)"},
+           {"option":"c: >>>int(20) + int(\"3\")"},
+           {"option":"d: >>>str(20 + 3)"}
+          ],         
+"correct":"ACD",
+"description":{
+  "A" : "int() function converts string '20' to an integer value 20, adding 3 to 20 gives the output as 23(an integer)",  
+  "B" : "str() function converts integer 3 to a string '3', '+' operator concatenates string values  '20' and '3' and gives the output as string '203'",
+  "C" : "int(20) gives the output as number 20, int(\"3\") converts string '3' to an integer 3, hence output is 23(an integer)",
+  "D" : "Here 20 and 3 are integer values, hence their addition returns 23 and str() function converts integer 23 to string '23', hence the output as '23'(a string)"
+}
+},
+{
+"id":"19",
+"duration":5,
+"question":"Observe the following python code:",
+"query":"            Suppose the user enters the value for val1 as 10 and val2 as 5, predict the output:",
+"imgURL":"images/Quiz41.png",
+"options":[
+           {"option":"a: Sum of two numbers is:  105"},
+           {"option":"b: Sum of two numbers is:  15"},
+           {"option":"c: Syntax error"},
+           {"option":"d: Sum of two numbers is:"}
+          ],         
+"correct":"A",
+"description":{
+  "A" : "The input values are stored as strings in variables 'val1' and 'val2'. '+' operator concatenates the values of string variables 'val1' and 'val2' i.e. \"10\" and \"5\". Hence the output is: \"Sum of two numbers is:  105\".",  
+  "B" : "Please refer the code again, we are accepting the values of 'val1' and 'val2' from user. So what will be the data type of variables 'val1' and 'val2'? Think again and answer.",
+  "C" : "Try to execute the code and observe if there is any syntax error.",
+  "D" : "Try to execute the code and observe the output."
+}
+},
+
+{
+"id":"20",
+"duration":5,
+"question":"Refer the code given below and choose the correct output:",
+"imgURL":"images/Quiz90.png",
+"query":"<br>",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"num1 = "},
+		{"option2":"num2 = "}, 
+		{"option3":"num3 = "}
+		],
+"colB":
+		[
+		{"option1":"2"},
+		{"option2":"2.666666666666666"}, 
+		{"option3":"2.0"}
+		],
+"Correct":
+		[
+		{"option":"2.666666666666666"},
+		{"option":"2"}, 
+		{"option":"2.0"}
+		],
+ "description":
+         [
+		{"option":"Division of two integers results in a float value."},
+		{"option":"Floor division for two integers ,results in an integer value."}, 
+		{"option":"Floor division for any one of the operands as float, results the output as a float."}
+		]
+},
+{
+"id":"21",
+"duration":5,
+"question":"Observe the following python code:",
+"query":"            Select the output from the options given below:",
+"imgURL":"images/Quiz42.png",
+"options":[
+           {"option":"a: 6.0"},
+           {"option":"b: 6.2"},
+           {"option":"c: 6"},
+           {"option":"d: 6.222222222222222"}
+          ],         
+"correct":"A",
+"description":{
+  "A" : "Value of variable 'speed' is computed as 'distance / time', hence 6.0 is stored in the variable 'speed'. Later the value of 'distance' is changed to 168. However, by changing the value of 'distance' , the value in variable speed will not change until we compute again. Hence value of variable 'speed' is still 6.0. If we compute speed = distance/time again (after changing the value of distance), the output would be 6.22222222222222",  
+  "B" : "Are we computing \"speed\" again after changing the value for variable \"distance\"? Observe the code again and answer.",
+  "C" : "speed = distance / time = 162/27 = 6.0. The division of two integers returns a floating point number. Try again.",
+  "D" : "Is value of 'speed' computed again after changing the value of 'distance'? Think again and answer."
+}
+},{
+"id":"22",
+"duration":5,
+"question":"Complete the statements given below. Choose the correct answers for A - F. <br><br><ul style=\"list-style-type:decimal;position:relative;margin-left:60px;\"><li><span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          A          </span> has the maximum precedence.</li><li>Multiplication, Division and <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          B          </span> are at same precedence level.</li><li>Addition and <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          C          </span>  has the least precedence.</li><br>",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"  A  ->"},
+		{"option2":"  B  ->"}, 
+		{"option3":"  C  ->"}            
+		],
+"colB":
+		[
+		{"option1":"Subtraction"},
+		{"option2":"Division"}, 
+		{"option3":"Multiplication"},
+		{"option4":"Addition"},
+                {"option5":"Parentheses"},
+                {"option6":"Exponential"},
+                {"option7":"Modulo"} 
+		],
+"Correct":
+		[
+		{"option":"Parentheses"},
+		{"option":"Modulo"},
+		{"option":"Subtraction"}
+		],                
+ "description":
+         [
+		{"option":"Parentheses has the maximum precedence.<br><strong>Rule</strong> - Precedence of an operator can be identified based on the rule - BODMAS. Brackets followed by Orders (Powers, Roots), followed by modulo, Division and Multiplication, followed by Addition and Subtraction."},
+		{"option":"Multiplication, Division and Modulo are at same precedence level.<br><strong>Rule</strong> - Precedence of an operator can be identified based on the rule - BODMAS. Brackets followed by Orders (Powers, Roots), followed by modulo, Division and Multiplication, followed by Addition and Subtraction."}, 
+		{"option":"Addition and Subtraction have the least precedence.<br><strong>Rule</strong> - Precedence of an operator can be identified based on the rule - BODMAS. Brackets followed by Orders (Powers, Roots), followed by modulo, Division and Multiplication, followed by Addition and Subtraction."}
+		],
+"CumulativeDescription":"<br>Parentheses has the maximum precedence.<br>Multiplication, Division and Modulo are at same precedence level.<br>Addition and Subtraction have the least precedence.<br><strong>Rule</strong> - Precedence of an operator can be identified based on the rule - BODMAS. Brackets followed by Orders (Powers, Roots), followed by modulo, Division and Multiplication, followed by Addition and Subtraction."                
+},
+{
+"id":"23",
+"duration":10,
+"question":"Consider the following expression. Select the correct operators in place of a, b, c, d from the following given options so that<br>             the output is 55.",
+"imgURL":"images/Quiz13.png",
+"options":[
+           {"option":"a: + , // , - , **"},
+           {"option":"b: +, % , - , ^"},
+           {"option":"c: % , + , - , **"},
+           {"option":"d: + , // , - , ^"}
+          ],         
+"correct":"A",
+"description":{
+  "A" : "<br>7+6//2%4*(9-5)**2<br>7+6//2%4*4**2<br>7+6//2%4*16<br>7+3%4*16<br>7+3*16<br>7+48<br>55<br>",  
+  "B" : "Solve and check again",
+  "C" : "Solve and check again",
+  "D" : "Solve and check again"
+}
+},{
+"id":"24",
+"duration":10,
+"question":"Which of the following returns True? (Select all applicable)<br>             Assume:<br>              x = 1<br>             y = 4<br>",
+"imgURL":"",
+"options":[
+           {"option":"a: x == 1 and y <= 4"},
+           {"option":"b: True and (x * 4 == y)"},
+           {"option":"c: not(y > x)"},
+           {"option":"d: x <= 1 and y - 2 > x or True"},
+           {"option":"e: not(x - y > 0) or (1 != 1)"},
+           {"option":"f: False or True and False"}
+          ],         
+"correct":"ABDE",
+"description":{
+  "A" : "x == 1 and y <= 4 -> 1 ==1 and 4 <= 4-> True and True -> True",  
+  "B" : "True and (x * 4 == y) -> True and (4 == 4) -> True and True -> True",
+  "C" : "not(y > x) -> not(4 > 1) -> not(True)-> False",
+  "D" : "x <= 1 and y - 2 > x or True -> 1 <= 1 and 2 > 1 or True -> (True and True) or True -> True or True -> True",
+  "E" : "not(x - y > 0) or (1 != 1) -> not(1 – 4 > 0) or False -> not(False) or False -> True or False -> True",
+  "F" : "False or True and False -> (False or True) and False -> True and False -> False"
+}
+},{
+"id":"25",
+"duration":10,
+"question":"Which of the following statements are true:<br>             Assume:<br>             a = 5<br>             b = 5<br>             c = 1<br>             d = 0<br>             e = 10<br>",
+"imgURL":"",
+"options":[
+           {"option":"a: a >= b"},
+           {"option":"b: not(e * c == 10)"},
+           {"option":"c: (a - c) * e >= e / c * d"},
+           {"option":"d: not(a > c) and (e == c – d * a * 2)"},
+           {"option":"e: (a > e) or ((b - d * c) == (b - c))"}
+          ],         
+"correct":"AC",
+"description":{
+  "A" : "<br>a >= b<br>    5 >= 2<br>    True",
+  "B" : "<br>not(e * c == 10)<br>    not(10 * 1 == 10)<br>    not(10 == 10)<br>    not(True)<br>    False",
+  "C" : "<br>(a - c) * e >= e / c * d<br>    (5 – 1) * 10 >= 10 / 1 * 0<br>     4 * 10 >= 10 * 0<br>     40 >=0<br>     True",
+  "D" : "<br>not(a > c) and (e == c – d * a * 2)<br>    not(5 > 1) and (10 == 1 – 0 * 5 * 2)<br>    not(True) and (10 == 1 – 0)<br>    False and (10==1)<br>    False and False<br>    False",
+  "E" : "<br>(a > e) or ((b – d * c) == (b - c))<br>    (5 > 10) or ((5 – 0 * 1) == (5 – 1))<br>    False or ((5 – 0) == 4)<br>    False or (5 == 4)<br>    False or False<br>    False"
+}
+},
+{
+"id":"26",
+"duration":5,
+"question":"Observe the following Python code:",
+"query":"            Which of following statement is False:",
+"imgURL":"images/Quiz43.png",
+"options":[
+           {"option":"a: Line numbers 3 and 4 print the same value for addresses of x and y."},
+           {"option":"b: If line number 2 is changed to y = x + 1, will line 3 and 4 print the same address again?"}
+          ],         
+"correct":"B",
+"description":{
+  "A" : "Variables x and y are pointing to the same object in memory which has value 10. Hence line numbers 3 and 4 print the same value of address.",  
+  "B" : "If we make the value of y as x+1, y points to a new object with value 11, whereas x is still pointing to the object with value 10.  Hence line numbers 3 and 4 print different address values."
+}
+},
+{
+"id":"27",
+"duration":5,
+"question":"Observe the following Python code and predict the correct output:",
+"imgURL":"images/Quiz44.png",
+"options":[
+           {"option":"a: False<br>        True"},
+           {"option":"b: False<br>        False"},
+           {"option":"c: True<br>        True"},
+           {"option":"d: True<br>        False"}
+          ],         
+"correct":"A",
+"description":{
+  "A" : "x = 10 and y = 11, hence have different addressed and line# 3 prints False. When x is changed to 11 at line# 4, both x and y are referring to the same integer object with value 11, hence the addresses of x and y are same now, and line# 5 prints True.",  
+  "B" : "At line# 4, x is changed to 11. Observe the value of x and y now, should both the variables refer to the same object?",
+  "C" : "Observe the code at line# 1 and 2 again. Should both the variables x and y refer to the same object?",
+  "D" : "Try to execute the code and observe the output."
+}
+},{
+"id":"",
+"duration":5,
+"question":"Which of the Following statement is True:",
+"imgURL":"",
+"options":[
+           {"option":"a: Python programs are compiled first and then interpreted"},
+           {"option":"b: The extension for python files is .python"},
+           {"option":"c: Python programs are executed using the \"Run Module\" in IDLE"}
+          ],         
+"correct":"C",
+"description":{
+  "A" : "Python is an interpreted language.",  
+  "B" : "The extension for Python files is .py or .pyc",
+  "C" : "True"
+}
+}
+]
+

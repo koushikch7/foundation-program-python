@@ -1,0 +1,15 @@
+[
+    {"text":"Learning Plan", "done":true,"slideindex":"-1","pageNumber":"","quizindex":"0","hrefUrl":"QuizType1.html"},
+    {"text":"Table Of Contents", "done":true,"slideindex":"-1","pageNumber":"","quizindex":"0","hrefUrl":"QuizType1.html"},
+    {"text":"Recap", "done":true,"slideindex":"-1","pageNumber":"","quizindex":"0","hrefUrl":"QuizType1.html"},
+    {"text":"Module Flow", "done":true,"slideindex":"0.1","pageNumber":"","quizindex":"0","hrefUrl":"QuizType1.html"},
+    {"text":"Learning Objectives", "done":true,"slideindex":"0","pageNumber":"","quizindex":"0","hrefUrl":"QuizType1.html"},
+    {"text":"Joins", "done":true,"slideindex":"1","pageNumber":"","quizindex":"0","hrefUrl":"QuizType1.html"},
+    {"text":"Sub Queries", "done":false,"slideindex":"20","pageNumber":"","quizindex":"3","hrefUrl":"QuizType2.html"},
+    {"text":"Index", "done":true,"slideindex":"31","pageNumber":"", "quizindex":"8","hrefUrl":"QuizType2.html"},
+    {"text":"Views", "done":false,"slideindex":"37","pageNumber":"", "quizindex":"12","hrefUrl":"QuizType1.html"},
+    {"text":"Transactions", "done":true,"slideindex":"43", "pageNumber":"","quizindex":"16","hrefUrl":"QuizType2.html"},
+    {"text":"PL/SQL and Stored Procedures  ", "done":false,"slideindex":"51","pageNumber":"","quizindex":"20","hrefUrl":"QuizType1.html"},
+    {"text":"SQL Best Practices", "done":false,"slideindex":"71","pageNumber":"","quizindex":"32","hrefUrl":"QuizType1.html"},
+    {"text":"Projects", "done":false,"slideindex":"75","pageNumber":"","quizindex":"32","hrefUrl":"QuizType1.html"}
+]

@@ -1,0 +1,74 @@
+[
+{
+"id":"1",
+"question":"What is the output of the following PL/SQL code?<br><br><em>DECLARE<br>  v_char CONSTANT VARCHAR2(20):=’Campus’;<br>BEGIN<br>  v_char:=v_char || ’Connect’;<br>  DBMS_OUTPUT.PUT_LINE(v_char);<br></em>END;<br>",
+"imgURL":"",
+"options":[
+           {"option":"a: Campus"},
+           {"option":"b: CampusConnect"},
+           {"option":"c: No output"},
+           {"option":"d: Error"}
+          ],
+"correct":"D",
+"description":{
+  "A" : "v_char is a CONSTANT.  Can it be used in an assignment?", 
+  "B" : "v_char is a CONSTANT.  Can it be used in an assignment?", 
+  "C" : "Do you think there is any problem with Put_Line?  Re-think!",                
+  "D" : "CONSTANT v_char can’t be used in an assignment.  Hence error"               
+}
+},
+{
+"id":"2",
+"question":"What is the output of the following PL/SQL code?<br><br><em>DECLARE<br>  v_num NUMBER :=’007’;<br>  v_char VARCHAR2(10):=’Bond’;<br>BEGIN<br>  v_char:=v_char || v_num;<br>  DBMS_OUTPUT.PUT_LINE(v_char);<br>END;</em>",
+"imgURL":"",
+"options":[
+           {"option":"a: Bond007"},
+           {"option":"b: Bond7"},
+           {"option":"c: Bond"},
+           {"option":"d: Error"}
+          ],
+"correct":"B",
+"description":{
+  "A" : "In case of implicit conversion to Number, what will happen to ‘007’?", 
+  "B" : "Implicit conversion will be done, ‘007’ becomes the number 7 and Bond7 will be the result", 
+  "C" : "Why wouldn’t the concatenation work?  How about implicit conversion?  Rethink!",                
+  "D" : "No error! Don’t you think implicit conversion will be done here? "                 
+}
+},
+{
+"id":"3",
+"question": "What is the output of the following PL/SQL code?<br><br><em>DECLARE<br>  v_num NUMBER;<br>BEGIN<br>  v_num:=v_num+50;<br>  DBMS_OUTPUT.PUT_LINE(v_num);<br>END;</em>",
+"imgURL":"",
+"options":[
+           {"option":"a: 50"},
+           {"option":"b: 0"},
+           {"option":"c: Nothing will be displayed"},
+           {"option":"d: Error"}
+          ],
+"correct":"C",
+"description":{
+  "A" : "You have taken the default value for Number as 0.  Re-think!", 
+  "B" : "Can’t be zero by any means!", 
+  "C" : "Variable initialization should be done.  Hence in this case, there will not be any output",                
+  "D" : "Declaration of v_num without initialization will not throw an error!"               
+}
+},
+{
+"id":"4",
+"question": "What is the output of the following PL/SQL code?<br><br><em>DECLARE<br>   v_num1 number := 50;<br>   v_num2 number := 100;<br>BEGIN<br>   dbms_output.put_line('Outer Variable v_num1: ' || v_num1);<br>   dbms_output.put_line('Outer Variable v_num2: ' || v_num2);<br>   DECLARE<br>      v_num1 number := 150;<br>      v_num2 number := 250;<br>   BEGIN<br>      dbms_output.put_line('Inner Variable v_num1: ' || v_num1);<br>      dbms_output.put_line('Inner Variable v_num2: ' || v_num2);<br>   END;<br>END;</em><br>",
+"imgURL":"",
+"options":[
+           {"option":"a: Outer Variable v_num1: 50<br>        Outer Variable v_num2: 100<br>        Inner Variable v_num1: 50<br>        Inner Variable v_num2: 100"},
+           {"option":"b: Outer Variable v_num1: 50<br>        Outer Variable v_num2: 100<br>        Inner Variable v_num1: 150<br>        Inner Variable v_num2: 250"},
+           {"option":"c: Outer Variable v_num1: 150<br>        Outer Variable v_num2: 250<br>        Inner Variable v_num1: 150<br>        Inner Variable v_num2: 250"},
+           {"option":"d: Error"}
+          ],
+"correct":"B",
+"description":{
+  "A" : "Do you think the inner DECLARE  block won’t have any impact on the value of v_num1 and v_num2?", 
+  "B" : "Inner DECLARE block will reset the values of v_num1 and v_num2 and hence correct", 
+  "C" : "How can the variables displayed in outer BEGIN reflect the value set in inner DECLARE section?  Re-think!",                
+  "D" : "Variables with same name can be declared and referred to in different blocks.  Hence no error."                 
+}
+}
+]

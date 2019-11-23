@@ -1,0 +1,63 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<style>
+  
+    #linkbox {
+        width: 100%;
+        height:110px;
+        border: 2px solid #0099ff;
+        border-radius: 15px;
+    }
+</style>
+</head>
+
+<body style="margin: 0;">
+    <div id="manual" style="overflow: hidden; position: relative; width: 1200px; height: 680px;">
+        <div class="container">
+            <div class="row" style="position:relative;margin-left:60px">
+                <div class="col-md-11">
+                    <ul>
+                        <li>Indexing involves forming a two dimensional matrix completely independent of the table on which index is created.</li>
+                        <li>Here one column will hold the sorted data of the column which is been indexed.</li>
+                        <li>Another column called the address field identifies the location of the record i.e. Row ID.</li>
+                        <li>Row Id indicates exactly where the record is stored in the table.</li>
+                        <li>Syntax to create and drop an index is as follows:</li>
+                    </ul>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row" style="margin-bottom: 15px;margin-top:10px">
+                <div class="col-md-1" ></div>
+                <div class="col-md-10 btn-other" style="border-radius:0px;background-color: #b3d1ff;font:20px Consolas">
+                    <div style="text-align:center;padding:10px;line-height: 30px ">CREATE [UNIQUE] INDEX <&lt;indexname>> ON <<&lt;tablename>> (<&lt;columnname>>); DROP INDEX <<&lt;indexname>>;</div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row" style="margin-bottom: 15px;margin-top:10px">
+                <div class="col-md-1" ></div>
+                <div class="col-md-10 btn-other" style="border-radius:0px;background-color: #66bbff;font:18px Verdana">
+                    <div style="text-align:center;padding:10px">Food for thought: Should we use index for all columns in a table?</div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row" style="margin-top: 10px">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div id="linkbox" class="btn-linkbox" style="text-align:center">
+                        <div style="line-height:10px;text-align:center;padding:10px">
+             
+                            <div style="margin-top: 10px;;margin-bottom: 15px;">Understanding Index: <a href="https://www.youtube.com/watch?v=8oBKA4hU4xM" target="_blank"><span class="linktext">https://www.youtube.com/watch?v=8oBKA4hU4xM</span></a><span style="white-space:pre-wrap"> (Duration 5:37)</span></div>
+                            <div>Indexing Guidelines: <a href="https://www.youtube.com/watch?v=LZJ0TdtWz2o" target="_blank"><span class="linktext">https://www.youtube.com/watch?v=LZJ0TdtWz2o</span></a><span style="white-space:pre-wrap"> (Duration 4:56)</span></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+[
+{
+"id":"1",
+"question": "Consider the following student and feepayment tables. Which of the following queries will return the details of students who have paid the semester fee along with the date of payment and amount paid? Select one or more as applicable.",
+"imgURL":"images/Quiz1.PNG",
+"options":[
+           {"option":"a: SELECT s.studentid, amountpaid, paymentdate FROM student s INNER JOIN feepayment fp ON s.studentid = fp.studentid;"},
+           {"option":"b: SELECT studentid, amountpaid, paymentdate FROM student s INNER JOIN feepayment fp ON s.studentid = fp.studentid;"}, 
+           {"option":"c: SELECT s.studentid, amountpaid, paymentdate FROM student s JOIN feepayment fp ON s.studentid = fp.studentid;"},
+           {"option":"d: SELECT s.studentid, amountpaid, paymentdate FROM student s INNER JOIN feepayment fp;"},
+           {"option":"e: SELECT s.studentid, amountpaid, paymentdate FROM student s JOIN feepayment fp;"}
+          ],
+"scripts":"Scripts/QuizSet1_1.txt",
+"correct":"AC",
+"description":{"A" : "Correct select clause and join condition. Also, inner join is same as join", 
+               "B" : "Wrong select clause. Studentid field is there in both tables. Will throw an error", 
+               "C" : "Correct select clause and join condition. Also, inner join is same as join", 
+               "D" : "Join condition is missing!",
+               "E" : "Join condition is missing!"
+                }
+},
+{
+"id":"2",
+"question": "Consider the following Employee and Department tables. Which of the following queries will return the deptno and dname of those departments where more than one employee is working?",
+"imgURL":"images/Quiz2.PNG",
+"options":[
+           {"option":"a: SELECT d.deptno, d.dname FROM Employee e  INNER JOIN Department d ON e.deptno = d.deptno GROUP BY e.deptno, d.dname HAVING COUNT(*)>1;"},
+           {"option":"b: SELECT d.deptno, d.dname FROM Employee e JOIN Department d ON e.deptno = d.deptno GROUP BY d.deptno, d.dname HAVING COUNT(*)>1;"}, 
+           {"option":"c: SELECT e.deptno, d.dname FROM Employee e OUTER JOIN Department d ON e.deptno = d.deptno GROUP BY d.deptno, d.dname HAVING COUNT(*)>1;"},
+           {"option":"d: SELECT d.deptno, d.dname FROM Employee e  INNER JOIN Department d ON e.deptno = d.deptno GROUP BY d.deptno, d.dname HAVING COUNT(d.deptno)>1;"},
+           {"option":"e: SELECT d.deptno, d.dname FROM Employee e OUTER JOIN Department d ON e.deptno = d.deptno GROUP BY d.deptno, d.dname HAVING COUNT(*)>1;"},
+           {"option":"f: SELECT e.deptno, d.dname FROM Employee e JOIN Department d ON e.deptno = d.deptno GROUP BY e.deptno, d.dname HAVING COUNT(*)>1;"}        
+          ],
+"scripts":"Scripts/QuizSet1_2.txt",
+"correct":"BDF",
+"description":{"A" : "Columns specified in Group By clause are not correct", 
+               "B" : "Proper usage of Group By and Select, Count function, Inner Join is same as Join", 
+               "C" : "Outer join will not work here and wrong select clause", 
+               "D" : "Proper usage of Group By and Select, Count function, Inner Join is same as Join",
+               "E" : "Outer join will not work here",
+               "F" : "Proper usage of Group By and Select, Count function, Inner Join is same as Join"
+              }
+},
+{
+"id":"3",
+"question": "Predict the result of the following query.<br/>",
+"query":"<em>SELECT deptno, dname FROM Employee e JOIN Department d ON e.deptno = d.deptno GROUP BY d.deptno, d.dname HAVING COUNT(*)>1;</em>",
+"imgURL":"images/Quiz2.PNG",
+"options":[
+           {"option":"a: "},
+           {"option":"b: "},
+           {"option":"c: No Data Found"},
+           {"option":"d: Error"}
+          ],
+"optionimg":[{"option":"images/Quiz3.PNG"},{"option":"images/Quiz4.PNG"},{"option":null},{"option":null},{"option":null},{"option":null},{"option":null}],
+"correct":"D",
+"description":{"A" : "deptno column is present in both tables and hence cannot be resolved", 
+               "B" : "deptno column is present in both tables and hence cannot be resolved", 
+               "C" : "deptno column is present in both tables and hence cannot be resolved", 
+               "D" : "Error is the correct answer since deptno column is ambiguously defined in the query"
+              }
+},
+{
+"id":"4",
+"question": "Consider two tables – Employee and Department with 4 and 3 rows respectively. A full outer join is performed between Employee and Department tables. How many rows will be there in the result set? Assume that there are 2 matched rows based on the join condition.",
+"imgURL":"",
+"options":[
+           {"option":"a: 7"},
+           {"option":"b: 5"},
+           {"option":"c: 12"},
+           {"option":"d: 4"}
+          ],
+"correct":"B",
+"description":{"A" : "In full outer join the number of rows in result would be (sum of number of rows in  two tables) minus (Number of matched rows). Hence this option is wrong.", 
+               "B" : "In full outer join the number of rows in result would be (sum of number of rows in  two tables) minus (Number of matched rows). Hence the answer 5.", 
+               "C" : "In full outer join the number of rows in result would be (sum of number of rows in  two tables) minus (Number of matched rows). Hence this option is wrong.", 
+               "D" : "In full outer join the number of rows in result would be (sum of number of rows in  two tables) minus (Number of matched rows). Hence this option is wrong."
+              }
+},
+{
+"id":"5",
+"question": "Consider the following student and feepayment tables. Requirement is to retrieve the studentid ,name and amountpaid of all ‘Regular’ students. The result should also Include the details of Regular students who have not paid the fee. Display ‘Not Paid’ instead of NULL fields in the result.",
+"imgURL":"images/Quiz5.PNG",
+"options":[
+           {"option":"a: SELECT s.studentid, s.name, NVL(to_char(amountpaid), 'Not Paid') as 'Paid Amount' FROM student s LEFT OUTER JOIN feepayment f ON s.studentid = f.studentid WHERE studenttype = 'Regular';"},
+           {"option":"b: SELECT s.studentid, s.name, NVL(to_char(amountpaid), 'Not Paid') as 'Paid Amount' FROM student s LEFT OUTER JOIN feepayment f ON s.studentid = f.studentid AND studenttype = 'Regular';"},
+           {"option":"c: SELECT s.studentid, s.name, NVL(to_char(amountpaid), 'Not Paid') as 'Paid Amount' FROM student s RIGHT OUTER JOIN feepayment f ON s.studentid = f.studentid AND studenttype = 'Regular';"},
+           {"option":"d: SELECT s.studentid, s.name, NVL(to_char(amountpaid), 'Not Paid') as 'Paid Amount' FROM feepayment f RIGHT OUTER JOIN student s ON s.studentid = f.studentid WHERE studenttype = 'Regular';"},
+           {"option":"e: SELECT s.studentid, s.name, NVL(to_char(amountpaid), 'Not Paid') as 'Paid Amount' FROM feepayment f RIGHT OUTER JOIN student s ON s.studentid = f.studentid AND studenttype = 'Regular';"}
+          ],
+"scripts":"Scripts/QuizSet1_5.txt",
+"correct":"AD",
+"description":{
+  "A" : "Right outer join gives the same result as left outer join when the order of tables in join condition is reversed. Also, in this case, WHERE clause should be used after join condition to get the expected result", 
+  "B" : "In this case, usage of AND in join condition will not yield the required result", 
+  "C" : "In this case, usage of AND in join condition will not yield the required result.  Also, right outer join in this query will not work",                
+  "D" : "Right outer join gives the same result as left outer join when the order of tables in join condition is reversed. Also, in this case, WHERE clause should be used after join condition to get the expected result",
+  "E" : "In this case, usage of AND in join condition will not yield the required result"                 
+}
+},
+{
+"id":"6",
+"question":"Consider the following student and feepayment tables. Requirement is to retrieve the details (paymentid, amountpaid and studentid) of all fee payments above Rs. 6000. Also include the details of students who have not yet paid the fee. Which of the following queries can help with this? Select one or more as applicable.",
+"imgURL":"images/Quiz5.PNG",
+"options":[
+           {"option":"a: SELECT  s.studentid, NVL(to_char(paymentid), ' Not Paid ')as 'PAYMENTID', NVL(to_char(amountpaid), ' Not Paid ') as 'AMOUNT' FROM student s LEFT OUTER JOIN feepayment f ON s.studentid = f.studentid WHERE amountpaid > 6000;"},
+           {"option":"b: SELECT  s.studentid, NVL(to_char(paymentid), ' Not Paid ')as 'PAYMENTID', NVL(to_char(amountpaid), ' Not Paid ') as 'AMOUNT' FROM student s LEFT OUTER JOIN feepayment f ON s.studentid = f.studentid AND amountpaid > 6000;"},
+           {"option":"c: SELECT  s.studentid, NVL(to_char(paymentid), ' Not Paid ')as 'PAYMENTID', NVL(to_char(amountpaid), ' Not Paid ') as 'AMOUNT' FROM student s RIGHT OUTER JOIN feepayment f ON s.studentid = f.studentid AND amountpaid > 6000;"},
+           {"option":"d: SELECT  s.studentid, NVL(to_char(paymentid), ' Not Paid ')as 'PAYMENTID', NVL(to_char(amountpaid), ' Not Paid ') as 'AMOUNT' FROM student s RIGHT OUTER JOIN feepayment f ON s.studentid = f.studentid WHERE amountpaid > 6000;"},
+           {"option":"e: SELECT  s.studentid, NVL(to_char(paymentid), ' Not Paid ')as 'PAYMENTID', NVL(to_char(amountpaid), ' Not Paid ') as 'AMOUNT' FROM feepayment f RIGHT OUTER JOIN student s  ON s.studentid = f.studentid AND  amountpaid > 6000;"}
+          ],
+"scripts":"Scripts/QuizSet1_6.txt",
+"correct":"BE",
+"description":{
+  "A" : "WHERE clause after join will not give the desired output here", 
+  "B" : "Right outer join gives the same result as left outer join when the order of tables in join condition is reversed. Also, in this case, AND should be used along with join condition to get the expected result", 
+  "C" : "Right outer join with the given order of tables in this query will not give the desired output here",                
+  "D" : "Right outer join with the given order of tables in this query and WHERE clause after join will not give the desired output here",
+  "E" : "Right outer join gives the same result as left outer join when the order of tables in join condition is reversed. Also, in this case, AND should be used along with join condition to get the expected result"
+}
+},
+{
+"id":"7",
+"question": "Consider the following Employee table. Which of the following queries will return the employee number and names of all employees who are working in the same department as John? John should not appear in the result. Select one or more as applicable.",
+"imgURL":"images/Quiz6.PNG",
+"options":[
+           {"option":"a: SELECT e1.empno, e1.name FROM Employee e1 INNER JOIN Employee e2 ON e1.deptno=e2.deptno AND e2.name = ‘John’ AND e1.name<>’John’;"},
+           {"option":"b: SELECT e1.empno, e1.name FROM Employee e1 INNER JOIN Employee e2 ON e1.deptno=e2.deptno AND e1.name = ‘John’ AND e1.name<>’John’;"},
+           {"option":"c: SELECT e1.empno, e1.name FROM Employee e1 INNER JOIN Employee e2 ON e1.deptno=e2.deptno AND e1.name = ‘John’ AND e2.name<>’John’;"},
+           {"option":"d: SELECT e1.empno, e1.name FROM Employee e1 INNER JOIN Employee e2 ON e1.deptno=e2.deptno WHERE e1.name = ‘John’ AND e2.name<>’John’"},
+           {"option":"e: SELECT e1.empno, e1.name FROM Employee e1 INNER JOIN Employee e2 ON e1.deptno=e2.deptno WHERE e2.name = ‘John’ AND e1.name<>’John’;"},
+           {"option":"f: SELECT e1.empno, e2.name FROM Employee e1 INNER JOIN Employee e2 ON e1.deptno=e2.deptno AND e2.name = ‘John’ AND e1.name<>’John’;"}
+          ],
+"scripts":"Scripts/QuizSet1_7.txt",
+"correct":"AE",
+"description":{
+  "A" : "Correct select clause and self join condition.  Also, in inner join there is no difference between using AND or WHERE along with join condition", 
+  "B" : "Wrong self join condition", 
+  "C" : "Wrong self join condition",                
+  "D" : "Wrong self join condition",
+  "E" : "Correct select clause and self join condition.  Also, in inner join there is no difference between using AND or WHERE along with join condition",
+  "F" : "Wrong select clause"
+}
+},
+{
+"id":"8",
+"question": "Which of the following is the Correct order of query execution in SQL?",
+"imgURL":"",
+"options":[
+           {"option":"a: FROM,   WHERE,   GROUP BY,  HAVING,   JOIN,   SELECT,   DISTINCT,   ORDER BY"},
+           {"option":"b: FROM,   JOIN,   GROUP BY,   HAVING,   WHERE,   SELECT,   DISTINCT,   ORDER BY"},
+           {"option":"c: FROM,   SELECT,   JOIN,   WHERE,   GROUP BY,   HAVING,   DISTINCT,   ORDER BY"},
+           {"option":"d: FROM,   JOIN,   WHERE,   GROUP BY,   HAVING,   SELECT,   DISTINCT,   ORDER BY"}
+          ],
+"correct":"D",
+"description":{
+  "A" : "JOIN will be processed before WHERE clause", 
+  "B" : "WHERE clause will be processed before Group By and Having clauses", 
+  "C" : "SELECT operation will be processed only after applying Group By and Having clauses",                
+  "D" : "JOIN is processed before WHERE and SELECT operation will be done after Group By and Having"               
+}
+}
+]

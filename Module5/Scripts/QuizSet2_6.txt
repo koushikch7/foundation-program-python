@@ -1,0 +1,14 @@
+DROP TABLE customers;
+DROP TABLE customerorders;
+CREATE TABLE customers (customerid VARCHAR2(10), name VARCHAR2(20), location VARCHAR2(20));
+INSERT INTO customers VALUES('C1', 'Alice', 'New York');
+INSERT INTO customers VALUES('C2', 'Ben', 'New Jersey');
+INSERT INTO customers VALUES('C3', 'Smith', 'Chicago');
+INSERT INTO customers VALUES('C4', 'Mike', 'New York');
+CREATE TABLE customerorders(orderid NUMBER, customerid VARCHAR2(10), amount NUMBER);
+INSERT INTO customerorders VALUES (1001,'C3', 500);
+INSERT INTO customerorders VALUES (1002,'C4', 1000);
+INSERT INTO cdustomerorders VALUES (1003,'C1', 500);
+INSERT INTO customerorders VALUES (1004,'C3', 1500);
+INSERT INTO customerorders VALUES (1005,'C4', 2000);
+COMMIT;

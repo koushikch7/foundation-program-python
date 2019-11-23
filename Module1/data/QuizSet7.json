@@ -1,0 +1,207 @@
+[
+{
+"id":"1",
+"question": "Choose the functionality of the file open modes given below:",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":" r    "},
+		{"option2":" w  "}, 
+		{"option3":" r+ "},
+		{"option4":" w+"},
+                {"option5":" a   "}
+		],
+"colB":
+		[
+		{"option1":"Open file for both read/write"},
+		{"option2":"Open file in append mode"}, 
+		{"option3":"Open file for write only"},
+		{"option4":"Open file in read only"},
+                {"option5":"Open file for both read and write. Creates file if it doesn't exist"}
+		],
+"Correct":
+		[
+		{"option":"Open file in read only"},
+		{"option":"Open file for write only"}, 
+		{"option":"Open file for both read/write"},
+		{"option":"Open file for both read and write. Creates file if it doesn't exist"},
+                {"option":"Open file in append mode"}
+		],
+ "description":
+         [
+		{"option":"Opens a file for reading only."},
+		{"option":"Opens a file for writing only."}, 
+		{"option":"Opens a file for both reading and writing. If the file does not exist, gives an error."},
+		{"option":"Opens a file for both reading and writing. If the file does not exist, creates a new file for reading and writing."},
+                {"option":"Opens a file for appending."}
+		]
+},
+{
+"id":"2",
+"question": "Assume the following Python code and predict the output:",
+"imgURL":"images/Quiz56.png",
+"query":"<br>",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"Name of the file : "},
+		{"option2":"Closed or not :    "}, 
+		{"option3":"Opening mode :   "}
+		],
+"colB":
+		[
+		{"option1":"True"},
+		{"option2":"None"}, 
+		{"option3":"foo.txt"},
+                {"option4":"r"},
+		{"option5":"False"},
+                {"option6":"w"},
+		{"option7":"foo"}
+		],
+"Correct":
+		[
+		{"option":"foo.txt"},
+		{"option":"False"}, 
+		{"option":"w"}
+		],
+ "description":
+         [
+		{"option":"'result.name' prints the name of the file."},
+		{"option":"'result.closed' prints if the file is closed or not."}, 
+		{"option":"'result.mode' prints the file open mode."}
+		]
+},
+{
+"id":"3",
+"question": "Consider the file \"d://test.txt\" with the contents as given below:",
+"imgURL":"images/Quiz58.png",
+"imgURL2":"images/Quiz93.png",
+"query":"            Choose the correct output for the following code snippet from the given options:",
+"options":[
+           {"option":"a: Read String is :  Hi there,"},
+           {"option":"b: Read String is :  Python is simple."},
+           {"option":"c: Syntax error"},
+           {"option":"d: Read String is :  Hi there,<br>                                I am loving Python.<br>                                Python is simple."}
+          ],
+"correct":"D",
+"description":{    
+  "A" : "Try to execute the code and observe the output.", 
+  "B" : "Try to execute the code and observe the output.", 
+  "C" : "Try to execute the code and observe if there is any syntax error.",                
+  "D" : "fileObject.read() - reads the file until end of file. Hence the output is:<br><br>Read String is :  Hi there,<br>I am loving Python.<br>Python is simple.<br>"  
+}
+},
+{
+"id":"4",
+"question": "Consider the file \"d://test.txt\" with the contents as given below:",
+"imgURL":"images/Quiz58.png",
+"imgURL2":"images/Quiz93.png",
+"query":"            Refer to the code again and state true/false for the given question:",
+"query2":"            Is \"D://TEST.txt\" case sensitive in line# 1?",
+"options":[
+           {"option":"a: True"},
+           {"option":"b: False"}
+          ],
+"correct":"B",
+"description":{
+  "A" : "In you are working on Linux operating system the case of the file name does matter. However, If you are working on windows operating system try to execute the code and observe if it works.", 
+  "B" : "While dealing with windows paths, the case of the filename does not matter. This code will work fine with result = open(\"d://test.txt\", \"r+\") also. However it will throw an error in Linux."  
+}
+},
+{
+"id":"5",
+"question": "Consider the file \"d://test.txt\" with the below contents:",
+"imgURL":"images/Quiz58.png",
+"imgURL2":"images/Quiz92.png",
+"query":"            Choose the correct output for the following code snippet from the given options:",
+"options":[
+           {"option":"a: Read String is :  Hi there"},
+           {"option":"b: Read String is :  Hi there,"},
+           {"option":"c: Syntax error"},
+           {"option":"d: Hi there,<br>        I am loving Python.<br>        Python is simple."}
+          ],
+"correct":"A",
+"description":{
+  "A" : "fileObject.read([count]) - Parameter 'count' counts the number of bytes to be read from the opened file(starting from 1st position). It starts reading from the beginning of the file. If count is not specified, reads until end of file.", 
+  "B" : "Parameter 'count' counts the number of bytes to be read from the opened file and the starting position is 1 and not 0. Try again.", 
+  "C" : "Try to execute the code and observe if there is any syntax error.",                
+  "D" : "If we pass a count parameter to read([count]) function, only those number of bytes are read. Observe the read() function again and try to answer again."
+}
+},
+{
+"id":"6",
+"question": "Consider a file \"d://test.txt\" with the following contents:",
+"query":"            Observe the below Code.",
+"imgURL":"images/Quiz94.png",
+"imgURL2":"images/Quiz94_1.png",
+"query2":"            Predict the output at Stmt3 and Stmt4 for the following Python code:",
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Quiz94_2.png",
+"imgAnsText":"<br><strong>Output:</strong>",
+
+"options":[],         
+"correct":"ABCD",
+"description":{}
+},
+{
+"id":"7",
+"question": "Consider a file test.txt in D Drive with the following contents:",
+"imgURL":"images/Quiz94.png",
+"query":"            Choose the output for the following Python code from the given options(Select all applicable):",
+"imgURL2":"images/Quiz61.png",
+"options":[
+           {"option":"a: Stmt2 prints the contents of the file test.txt"},
+           {"option":"b: Stmt5 will print number of tokens(words) in the file separated by a space ' '"},
+           {"option":"c: Stmt6 should be uncommented to close the open file."},
+           {"option":"d: Stmt3 results in an error"}
+          ],
+"correct":"AD",
+"description":{
+  "A" : "Stmt2 prints the contents of the file test.txt", 
+  "B" : "Try to execute the code and observe the output.", 
+  "C" : "\"with\" keyword automatically closes the file. Hence f.close() is not needed. Try again.",                
+  "D" : "Stmt3 will result in- \"ValueError: I/O operation on closed file\". Rest of the content will not be executed.The output of the code is:"
+}
+},
+{
+"id":"8",
+"question": "Consider a file read.txt in D Drive with the following contents:",
+"imgURL":"images/Quiz95.png",
+"query":"            Choose the output for the following Python code from the given options:",
+"imgURL2":"images/Quiz62.png",
+"options":[
+           {"option":"a: {}"},
+           {"option":"b: {0: 'Banana', 1: 'Apple', 2: 'Grapes'}"},
+           {"option":"c: [0: 'Banana', 1: 'Apple', 2: 'Grapes']"},
+           {"option":"d: {'Banana':0, 'Apple':1, 'Grapes':2}"}
+          ],
+"correct":"B",
+"description":{
+  "A" : "Try to execute the code and observe the output.", 
+  "B" : "readlines() function of the result object returns a list 'lines' with lines of the file (appended with a newline character '\n'). Then we iterate through the 'lines' list to populate each line in a dictionary. strip() function is used to remove the new line character from each line. Using this code we have read a file and populated a dictionary.", 
+  "C" : "Are we populating a dictionary or a list?",                
+  "D" : "Observe the key value pair while populating the dictionary."
+}
+},
+{
+"id":"9",
+"question": "Consider a file read.txt in D Drive with the following contents:",
+"query":"            Choose the output for the following Python code from the given options:",
+"imgURL":"images/Quiz95.png",
+"imgURL2":"images/Quiz63.png",
+"options":[
+           {"option":"a: []"},
+           {"option":"b: ['Banana', 'Apple', 'Grapes']"},
+           {"option":"c: {'Banana', 'Apple', 'Grapes'}"},
+           {"option":"d: Error"}
+          ],
+"correct":"B",
+"description":{
+  "A" : "Try to execute the code and observe the output.", 
+  "B" : "readlines() function of the result object returns a list 'lines' with lines of the file (appended with a newline character '\n'). An empty list 'fruits_list' is created which will be populated with the contents of the file. Then we iterate through the 'lines' list to populate a list. strip() function is used to remove the new line character from each line. Using this code we have read a file and populated a list.", 
+  "C" : " Observe the braces, is 'fruits_list' a dictionary or a list?",                
+  "D" : "Try to execute the code and observe the output."
+}
+}
+]

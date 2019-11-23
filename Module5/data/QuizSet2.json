@@ -1,0 +1,128 @@
+[
+{
+"id":"1",
+"question": "Which of the following statements are TRUE with respect to sub-queries?",
+"imgURL":"",
+"options":[
+           {"option":"a: Sub-query must be enclosed within parentheses"},
+           {"option":"b: In a sub-query, order by clause can be used inside the inner query and outer query"},
+           {"option":"c: IN operator can be used if the sub-query returns multiple rows"},
+           {"option":"d: ANY operator cannot be used if the sub-query returns multiple rows"},
+           {"option":"e: Sub-queries can return multiple columns"},
+           {"option":"f: Distinct operator cannot be used within a sub-query"},
+           {"option":"g: Between operator cannot be used with a sub-query; but it can be used within the sub-query"}
+          ],
+"correct":"ACEG",
+"description":{
+  "A" : "Sub query has to be enclosed within parentheses", 
+  "B" : "Order By clause can only be used in the  outer or main query", 
+  "C" : "IN operator can be used in this case",                
+  "D" : "ANY operator can be used in this case",
+  "E" : "Sub-queries can return multiple columns",
+  "F" : "DISTINCT can be used in sub-query if required",
+  "G" : "BETWEEN can be used inside the inner query"
+}
+},
+{
+"id":"2",
+"question": "Consider the following student table and the query. What will be the result of the query?",
+"imgURL":"images/Quiz7.PNG",
+"query":"<em>SELECT name FROM student WHERE name = (SELECT MIN(name) FROM student);</em>",
+"options":[
+           {"option":"a: "},
+           {"option":"b: "},
+           {"option":"c: No Output"},
+           {"option":"d: Error"}
+          ],
+"optionimg":[{"option":"images/Quiz8.PNG"},{"option":"images/Quiz9.PNG"},{"option":null},{"option":null},{"option":null},{"option":null},{"option":null}],
+"scripts":"Scripts/QuizSet2_2.txt",
+"correct":"B",
+"description":{
+  "A" : "Will the MIN function fetch only one value?  The name ’Alice’ appears twice in the table!", 
+  "B" : "It is  a proper sub-query and MIN function retrieves the minimal value of name – Alice and the outer query filters the records based on this value", 
+  "C" : "Do you think MIN function while used with textual fields will not return any value?",                
+  "D" : "Do you think MIN function while used with textual fields will throw an error?"              
+}
+},
+{
+"id":"3",
+"question": "Consider the table - product (productid, type, price, quantity). What will be the result of the following query?",
+"imgURL":"images/Quiz10.PNG",
+"query":"<em>SELECT productid, type, price FROM product WHERE price = (SELECT MAX(price) FROM product WHERE price != (SELECT MAX(price) FROM product));</em>",
+"options":[
+           {"option":"a: Details of the product with the highest price"},
+           {"option":"b: Details of all products excluding the products with price equal to that of the highest priced product"},
+           {"option":"c: Details of the product with second highest price"},
+           {"option":"d: Details of all products excluding the products with price equal to that of the second highest priced product"}
+          ],
+"scripts":"Scripts/QuizSet2_3.txt",
+"correct":"C",
+"description":{
+  "A" : "In this case, what is the role of != operator in the inner-most query?", 
+  "B" : "In the given query, the sub-queries are not returning multiple rows!", 
+  "C" : "The inner-most query returns the highest value for price field i.e. 1000 from the given table.  The other sub-query filters off this maximum price value found by the inner-most query and then the outer most query returns the details of product with second highest price",                
+  "D" : "In the given query, the sub-queries are not returning multiple rows!"
+}
+},
+{
+"id":"4",
+"question": "Consider the following orders table. Choose the query which retrieves the order details like orderid, agentid, orderamount of the lowest priced order from each of the agents.",
+"imgURL":"images/Quiz11.PNG",
+"options":[
+           {"option":"a: SELECT orderid, agentid, orderamount  FROM orders  WHERE (orderamount) IN  (SELECT agentid, MIN(orderamount)  FROM orders  GROUP BY agentid); "},
+           {"option":"b: SELECT orderid, agentid, orderamount  FROM orders  WHERE (agentid, orderamount) IN  (SELECT agentid, MIN(orderamount)  FROM orders  GROUP BY agentid); "},
+           {"option":"c: SELECT orderid, agentid, orderamount  FROM orders  WHERE (agentid, orderamount) IN  (SELECT agentid, MIN(orderamount)  FROM orders); "},
+           {"option":"d: SELECT orderid, agentid, orderamount  FROM orders WHERE (agentid) IN  (SELECT agentid, MIN(orderamount)  FROM orders  GROUP BY agentid); "}
+          ],
+"scripts":"Scripts/QuizSet2_4.txt",
+"correct":"B",
+"description":{
+  "A" : "WHERE clause of outer query is not correct.  Inner query returns two columns!", 
+  "B" : "Correct WHERE clause of outer query and proper sub-query with Group By clause gives the required result", 
+  "C" : "Will not get the required data for each agent here.  Group By is not used!",                
+  "D" : "WHERE clause of outer query is not correct.  Inner query returns two columns!"                
+}
+},
+{
+"id":"5",
+"question": "Consider the following orders and agent table. What will be the result of the following query?",
+"imgURL":"images/Quiz12.PNG",
+"query":"<em>SELECT a.orderid, a.orderamount FROM orders a WHERE a.agentid = (SELECT b.agentid FROM agent b WHERE b.agentname = 'John');</em>",
+"options":[
+           {"option":"a: "},
+           {"option":"b: "},
+           {"option":"c: "},
+           {"option":"d: Error"}
+          ],
+"optionimg":[{"option":"images/Quiz13.PNG"},{"option":"images/Quiz14.PNG"},{"option":"images/Quiz15.PNG"},{"option":null},{"option":null},{"option":null},{"option":null}],
+"scripts":"Scripts/QuizSet2_5.txt",
+"correct":"A",
+"description":{
+  "A" : "Proper sub-query which displays the details of orders which are processed by agent ‘John’", 
+  "B" : "Is this the only order processed by agent ‘John’?", 
+  "C" : "The given query has to retrieve the details of orders processed by agent – ‘John’. ",                
+  "D" : "It is a proper sub-query without any error"           
+}
+},
+{
+"id":"6",
+"question": "Consider the following customers and customerorders table. What will be the result of the following query?",
+"imgURL":"images/Quiz16.PNG",
+"query":"<em>SELECT customerid, name FROM customers c WHERE EXISTS (SELECT * FROM customerorders p WHERE c.customerid = p.customerid);</em>",
+"options":[
+           {"option":"a: "},
+           {"option":"b: "},
+           {"option":"c: "},
+           {"option":"d: Error"}
+          ],
+"optionimg":[{"option":"images/Quiz17.PNG"},{"option":"images/Quiz18.PNG"},{"option":"images/Quiz19.PNG"},{"option":null},{"option":null},{"option":null},{"option":null}],
+"scripts":"Scripts/QuizSet2_6.txt",
+"correct":"B",
+"description":{
+  "A" : "EXISTS clause evaluates to true if the sub-query returns at least one row.  WHERE clause in sub-query will not be satisfied for all four customers – C1, C2, C3 and C4", 
+  "B" : "EXISTS clause evaluates to true if the sub-query returns at least one row.  Subquery returns true for only three customers – C3, C4 and C1 who have placed an order", 
+  "C" : "For every row in outer query, EXISTS will return true when the condition in sub-query is met for the first time.  Hence repeated records will not be there",                
+  "D" : "It is a proper sub-query without any error"                
+}
+}
+]

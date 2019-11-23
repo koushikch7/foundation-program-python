@@ -1,0 +1,80 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<style>
+    body{
+        text-align: justify;
+    }
+    .verticalLine {
+    border-right: 3px solid #0099ff;
+    }
+    ul.arrow li {
+    //margin: 0.75em 0;
+    //padding: 0 1em;
+    list-style: none;
+}
+ul.arrow li:before { 
+    content: "";
+    border-color: transparent #111;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 1.2em;
+    position: relative;
+}
+</style>
+</head>
+
+<body style="margin: 0;">
+    
+    <div id="manual" style="overflow: hidden; position: relative; width: 1200px; height: 1200px;">
+        <div id="container" class="container-fluid">
+                <!-- This div contains the main content. It divides the page into three columns in 1:10:1 ratio -->
+                <div class="row" style="margin-bottom: 5px">
+                    <div class="col-md-9"></div>
+                    <div class="col-md-3  btn-duration">
+                        <div class="durationtext" style="font:18px Verdana">Duration: 30 min</div>
+                    </div>
+                </div>
+                <div class="row" style="position:relative;margin-left:60px">
+                    <div class="col-md-11">
+                       
+                                Use the below database structure and frame the queries for the following questions.
+                       
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+                <div class="row" style="position:relative;margin-left:85px">
+                    
+                    <div class="col-md-5 verticalLine ">
+                        <ul class ="arrow" style="list-style-type:none;padding-right:10px">
+                            <li><strong>Users </strong>(Emailid, password, usertype)</li>
+                            <li><strong>Employer </strong>(companyid, companyname, emailid, mobile, city, industrytype, functionalarea, membershipplan, dateofsignup, dateofrenewal, renewalstatus)</li>
+                            <li><strong>Job_Posted </strong>(Jobpostid, companyid, jobpostdate, validitydate, joblocation, skillsets, yrsofexp, qualifyingtestscore, jobpostedstatus)</li>
+                            <li><strong>Jobseeker_Personal </strong>(firstname, lastname, dateofbirth, emailid, mobile, city, state, country, passportno)</li>
+                            <li><strong>Jobseeker_Resume </strong>(jobseekerid, emailid, ug_qualification, pg_qualification, keyskills1, keyskills2, additionalskills, yrsofexp, curremployer, designation, curr_CTC, exp_CTC)</li>                
+                            <li><strong>Job_Applied_Status </strong>(applicationid, jobseekerid, jobpostid, applicationdate, jobtestvaliditydate, Attempt, jobteststatus, jobtestscore, jobtestresult)</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 gap-modify" style="">
+                        <ul style="position:relative;margin-top: 10px;list-style-type:lower-roman;">
+                            <li>Identify the details of posted jobs which are applied by jobseekers. Display jobpostid, companyid, jobpostdate and validitydate of those job post . Display only unique jobs.</li>
+                            <li>Identify jobseekers with the least experience who got selected. Display Jobseekerid, fullname, emailid , years of exp  and jobtestresult of those jobseekers.</li>
+                            <li>Identify the jobseekers who have the highest  experience and got rejected. Display Jobseekerid, full name, emailid , years of exp  and jobtestresult of those jobseekers.</li>
+                            <li>Identify the jobseeker having second highest current CTC. Display jobseekerid, fullname, qualification, Skillsets and EXP CTC of those jobseekers.</li>
+                            <li>Identify the job post with least qualifying test score and the total number of applications received for that job post. Display companyname, jobpostid, qualifyingtestscore and  total number of applications received for the same.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>

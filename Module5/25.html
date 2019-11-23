@@ -1,0 +1,71 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<style>
+    #linkbox {
+        width: 100%;
+        height:100px;
+        border: 2px solid #0099ff;
+        border-radius: 15px;
+    }
+    .sub-query{
+        width: 85%;
+        margin : auto;
+        margin-top : 5px;
+        border: 3px solid red;
+        border-radius: 10px;
+ 
+    }
+</style>
+</head>
+
+<body style="margin: 0;">
+
+    <div id="manual" style="overflow: hidden; position: relative; width: 1200px; height: 1000px;">
+        <div class="container">
+            <div class="row" style="position:relative;margin-left:60px">
+                <div class="col-md-11">
+                    <ul>
+                        <li>So far, in all sub-query examples, the inner query gets executed completely before the outer query.</li>
+                        <li>Here in Correlated sub query, the inner query depends on the outer query i.e. the inner query is executed repeatedly for each row selected from the outer query.</li>
+                        <li>Consider the following Employee table. We want to fetch the details of employees drawing salary greater than or equal to average salary of employees in each department.</li>
+                    </ul>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row" style="margin-bottom: 15px;margin-top:5px">
+                <div class="col-md-12"><img src="images/img12.PNG" style="margin:auto;display: block;width: 40%;height:40%"/></div>
+            </div>
+            <div class="row" style="position:relative;margin-left:60px">
+                <div class="col-md-11">
+                    <ul>
+                        <li>How to meet the stated requirement?</li>
+                        <li>Solution requires iterative comparison of employee’s salary with computed average salary for that department.</li>
+                        <li>This is achieved using correlated sub query.</li>
+                    </ul>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            
+            <div class="row" style="margin-bottom: 15px;margin-top:5px">
+                    <div class="col-md-12"><img src="images/img9_4.png" style="margin:auto;display: block;width:950px;"/></div>
+                </div>
+            <div class="row" style="margin-top: 10px">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div id="linkbox" class="btn-linkbox" style="text-align:center">
+                        <div style="line-height:10px;text-align:center;padding:10px">
+                            <div style="text-decoration:underline;margin-bottom: 5px;padding:5px"><em>Video Link</em></div><br>
+                            <a href="https://www.youtube.com/watch?v=FqjtgZyDpDw" target="_blank"><span class="linktext">Multiple Row Sub Queries, Correlated Sub Queries</span></a><span style="white-space:pre-wrap"> (Duration 17:12)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

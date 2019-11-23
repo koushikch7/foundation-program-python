@@ -1,0 +1,40 @@
+[
+{
+"id":"1",
+"question": "Consider the following customers table and the PLSQL code.",
+"imgURL":"images/Quiz26.PNG",
+"query":"<em>DECLARE  number_rows number(2);<br>BEGIN<br>   UPDATE customers  SET salary = salary + 500;<br>   IF sql%notfound THEN<br>      dbms_output.put_line(‘zero customer records updated');<br>   ELSIF sql%found THEN<br>      number_rows := sql%rowcount;<br>      dbms_output.put_line( number_rows || ' customers updated ');<br>   END IF;<br>END;</em>?<br><br>What will be result of running the PLSQL code?<br>",
+"options":[
+           {"option":"a: zero customer records updated"},
+           {"option":"b: 4 customers updated"},
+           {"option":"c: 1 customers updated"},
+           {"option":"d: Error"}
+          ],
+"scripts":"Scripts/QuizSet7_1.txt",
+"correct":"B",
+"description":{
+  "A" : "sql%notfound return true if the update statement does not change any rows in the table.  Re-think!", 
+  "B" : "sql%found will  return true if the SQL statement affects  / selects one or more  number of rows  and SQL%rowcount returns the number of rows affected / selected.  Here the update statement affects 4 rows in customer table", 
+  "C" : "sql%found will have the number of rows affected by the SQL statement.  How can it be one row here?  Re-think!",                
+  "D" : "It is a valid PL/SQL block without any error!"                 
+}
+},
+{
+"id":"2",
+"question": "Which of the following are valid attributes of implicit cursor in PL/SQL? Select one or more as applicable.",
+"imgURL":"",
+"options":[
+           {"option":"a: %FOUND"},
+           {"option":"b: %NOTFOUND"},
+           {"option":"c: %ISOPEN"},
+           {"option":"d: %ROWCOUNT"}
+          ],
+"correct":"ABCD",
+"description":{
+  "A" : "Yes, it is a valid attribute of implicit cursor.", 
+  "B" : "Yes, it is a valid attribute of implicit cursor.", 
+  "C" : "Yes, it is a valid attribute of implicit cursor.",                
+  "D" : "Yes, it is a valid attribute of implicit cursor."
+}
+}
+]

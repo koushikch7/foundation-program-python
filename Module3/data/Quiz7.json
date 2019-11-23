@@ -1,0 +1,87 @@
+[
+{
+"id":"1",
+"question": "Consider the following item table.  How many rows will be returned by the given select query?SELECT DISTINCT category_code FROM item ORDER BY category_code;",
+"imgURL":"images/quiz7.1.PNG",
+"options":[
+           {"option1":"2"},
+           {"option2":"3"}, 
+           {"option3":"4"},
+           {"option4":"0"}
+          ],
+"correct":"C",
+"description":{"Justification":"Since Distinct clause considers NULL as well.Replace DISTINCT with ALL and see the difference in result!"},
+"fileURL":"Scripts/file1.txt"
+                         
+},
+
+{
+"id":"2",
+"question":"Consider the following customer table.Which of the following queries would return all unique combinations of city and state from the customer table?",
+"imgURL":"images/quiz7.2.PNG",
+"options":[
+{"option1":"SELECT DISTINCT city, DISTINCT state FROM customer ORDER BY city, state;"},
+{"option2":"SELECT DISTINCT city, state FROM customer ORDER BY city, state;"},
+{"option3":"SELECT DISTINCT (city, state) FROM customer ORDER BY city, state;"},
+{"option4":"SELECT DISTINCT city, state FROM customer ORDER BY DISTINCT city, state;"}
+          ],
+"correct":"B",
+"description":
+               {"A":"Wrong since DISTINCT keyword is duplicated", 
+                "B":"Correct as DISTINCT is properly used with multiple columns",
+                "C":"Wrong usage of DISTINCT clause", 
+                "D":"Wrong usage of DISTINCT clause"	
+               },
+               "fileURL":""
+},
+{
+"id":"3",
+"question": "Consider a table Student - RollNo, Name, Marks and the query given below.SELECT RollNo, Name FROM Student  WHERE Marks BETWEEN 80 AND 90; The query will return the roll number and names of those students where marks________",
+"imgURL":"",
+"options":[
+           {"option1":"Is >= 80 and <=90"},
+           {"option2":"Is >80 and <90"}, 
+           {"option3":"Is >80 and <=90"},
+           {"option4":"Is >= 80 and <90"}
+          ],
+"correct":"A",
+"description":{"Justification":"between considers both lower and upper limit values as well"}	,
+ "fileURL":""
+},
+{
+"id":"4",
+"question": "Consider the following customer table and the incomplete query given below. SELECT * FROM Customer WHERE ____________________________;  Identify the missing portion of the query so that while executed it gives the following result.  Select one or more applicable answers",
+"imgURL":"",
+"options":[
+           {"option1":"customer_id IS (1003, 1004, 1005, 1006)"},
+           {"option2":"customer_id IN (1003, 1004, 1005, 1006)"}, 
+           {"option3":"customer_id=1003 OR customer_id=1004 OR customer_id=1005 OR customer_id=1006"},
+           {"option4":"customer_id NOT IN (1001, 1002, 1007, 1008, 1009)"},
+           {"option5":"customer_id=1003 AND customer_id=1004 AND customer_id=1005 AND customer_id=1006"},
+           {"option6":"customer_id BETWEEN (1003, 1004, 1005, 1006)"}
+          ],
+"correct":"BCD",
+"description":{"":""},
+ "fileURL":""
+},
+{
+"id":"5",
+"question": "Which of the following queries would execute without any error?  Assume that the concerned  tables are already created accordingly.",
+"imgURL":"",
+"options":[
+           {"option1":"UPDATE item SET category_code = 100 WHERE category_code IS NULL;"},
+           {"option2":"UPDATE item SET category_code = 100 WHERE category_code = NULL;"}, 
+           {"option3":"UPDATE item SET category_code = 100 WHERE category_code IN NULL;"},
+           {"option4":"DELETE FROM item WHERE category_code IS NULL;"},
+           {"option5":"DELETE * FROM item WHERE category_code IS NOT NULL;"},
+           {"option6":"DELETE  FROM item WHERE category_code IN (NULL);"}
+          ],
+"correct":"ABCDF",
+"description":{"":""},
+ "fileURL":""
+}
+]
+
+
+
+

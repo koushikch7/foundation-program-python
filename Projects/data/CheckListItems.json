@@ -1,0 +1,12 @@
+[
+     {"text":"Salient features of the projects", "done":true,"slideindex":"1","quizindex":"0","hrefUrl":"QuizType1.html"},
+     {"text":"Creating Projects in Eclipse with Pydev", "done":true,"slideindex":"2","quizindex":"0","hrefUrl":"QuizType1.html"},
+     {"text":"Project 1: Word Scrambling", "done":true,"slideindex":"3","quizindex":"4","hrefUrl":"QuizType1.html"},         
+    {"text":"Project 2: InstaDB", "done":true,"slideindex":"5","quizindex":"0","hrefUrl":"QuizType1.html"},
+    {"text":"Project 3: InstaDB Integration", "done":false,"slideindex":"7","quizindex":"3","hrefUrl":"QuizType2.html"},
+    {"text":"Project 4: Bank Accounts", "done":true,"slideindex":"9", "quizindex":"8","hrefUrl":"QuizType2.html"},
+    {"text":"Project 5: Bank Accounts Analysis", "done":false,"slideindex":"11", "quizindex":"12","hrefUrl":"QuizType1.html"},
+    {"text":"Project 6: InstaDB Analysis", "done":true,"slideindex":"13", "quizindex":"16","hrefUrl":"QuizType2.html"}
+  
+  
+]

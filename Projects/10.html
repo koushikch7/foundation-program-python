@@ -1,0 +1,571 @@
+
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Project 4</title>
+</head>
+<body style="margin: 0;">
+<div id="jpedal" style="overflow: hidden; position: relative; width: 1150px; height: 8000px;">
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+
+.s3_5{
+	FONT-SIZE: 16.3px;
+	FONT-FAMILY: Verdana;
+	color: rgb(0,0,0);
+line-height: 230%;
+}
+.s2_5{
+	FONT-SIZE: 18.3px;
+	FONT-FAMILY: Verdana;
+	color: rgb(0,0,0);
+line-height: 230%;}
+
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style id="fonts5" type="text/css" >
+
+@font-face {
+	font-family: Verdana;
+	src: url("fonts/LiberationSans_4n.woff") format("woff");
+}
+
+@font-face {
+	font-family: Verdana;
+	src: url("fonts/Verdana.woff") format("woff");
+}
+table, th, td {
+ border: 1px solid black;
+ border-collapse: collapse;
+ width:8%
+}
+.connected
+    {
+       border:8%;
+       list-style-type: none;
+    }
+</style>
+<!-- End embedded font definitions -->
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+
+<ul class="nav nav-tabs" style="font-size: 14px;margin-left:15px">
+      <li class="active"><a data-toggle="tab" href="#home"><b>Guidelines</b></a></li>
+      <li><a data-toggle="tab" href="#menu1"><b>Project Objectives</b></a></li>
+      <li><a data-toggle="tab" href="#menu2"><b>Bank Accounts</b></a></li>
+      <li><a data-toggle="tab" href="#menu3"><b>Specifications and <br>Assumptions</b></a></li>
+      <li><a data-toggle="tab" href="#menu4"><b>Menu and <br>Development Approach</b></a></li>
+      <li><a data-toggle="tab" href="#menu5"><b>Project Evaluation<br> Guidelines</b></a></li>
+      <li><a data-toggle="tab" href="#menu6"><b>Coverage</b></a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+ <ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">This project is to be done after completing Module 4  </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Learners are suggested to use Eclipse IDE and Oracle for project development</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Suggested duration: 64 person-hours (4 learners can do in 2 days)</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Suggested team size: 4</li>
+</ul>
+
+    </div>
+    <div id="menu1" class="tab-pane fade">
+   <ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">After completing this project, the learner should be able to understand and implement the following concepts of OOP & Databases and their integration.
+<ul>
+<li>Classes and Objects in Python</li>
+<li> Relationships amongst Classes – is-a, has-a, uses-a 
+<li> UML Class diagram</li>
+<li>Python – Oracle Integration</li>
+<li>Basic Database Operations and clauses in SQL
+<ul><li>Select, Update, Delete,, Functions, Group By and Having</li></ul>
+
+</li>
+</ul>
+</ul>  
+    </div>
+    <div id="menu2" class="tab-pane fade">
+ <ul style="list-style-type:disc">
+
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">We are aware of banking services and would have done some transactions like deposit, withdrawal, transfer of funds and so on.
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">A bank typically has large number of customers and maintains the details of each customer i.e. what is the name of my customer, his address, account number, how much money is there in his account etc.
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">We also hear about multiple types of accounts like Saving account, Current account. 
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">The project is to develop a banking application for a bank that has multiple customers spread across the country. 
+
+</li>
+
+</ul>   
+    </div>
+    <div id="menu3" class="tab-pane fade">
+<ul style="list-style-type:disc">
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5"><b>The Bank provides following services:</b><ul style="list-style-type:disc">
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">A customer can have either of the following type of accounts:
+<ul style="list-style-type:circle">
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Savings Account – Generally used for temporary savings. Offers interest at the rate of 7.5% per annum on your savings. Maximum 10 withdrawals are allowed per month. No minimum balance is needed to open or maintain this account.</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Current Account – Generally used by corporates and business men. No interest is offered on this account. No limit of on no. of withdrawals. A customer needs to have minimum 5K to open or maintain this account.
+</li>
+</ul>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">A customer can do following transactions:
+<ol style="list-style-type:circle">
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Deposit and withdraw money in his account/s</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Transfer money to other accounts</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Print his account statement for given range of dates</li>
+</ol>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Bank wants to maintain history of closed accounts i.e. which accounts have been closed on which dates. Bank admin can see this history.
+</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Every customer has a customer-id and password to access his account.
+<ol style="list-style-type:circle">
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">When a new customer registers himself with the bank, a customer-id is auto generated by the bank and given to him.</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Password needs to be set by the customer. It should be minimum 8 characters and can be any combination of numeric and alphabets.</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Allow maximum 3 consecutive re-trials for unsuccessful login attempts. </li>
+</ol>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Bank keeps following information of all customers to send regular updates
+
+<ol style="list-style-type:circle">
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">First and Last Name of customer</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Address has following fields - Address Line 1, Line 2, City, State, Pincode. Pincode should be a 6 digit numeric and rest of the fields are strings.</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Account no./s – Account no. is auto-generated by the bank on opening of a new account and is same as customer id.</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Transactions (withdrawals & deposits) done by the customers on respective accounts
+</li>
+</ol>
+</li>
+    </ul>
+   
+<li  class="s3_5"><b>What needs to be done:</b><ul style="list-style-type:disc">
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Develop OO model
+<ul style="list-style-type:circle">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Identify Classes, respective attributes and relationships among classes</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Create Class diagram in UML</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Write code for classes & methods, and given use cases</li>
+</ul>
+</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Develop DB model
+<ul style="list-style-type:circle">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Identify tables, respective fields and relationships among tables </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Create tables</li>
+</ul>
+</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Execute given use cases
+<ul style="list-style-type:circle">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" >Application should show menu based choices as shown ahead for each of the given use cases. </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">After displaying result of a use case, appropriate menu should appear again and prompt for user’s choice.</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Populate tables with sample data for testing</li>
+</ul>
+</li>
+</ul>
+
+</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">A customer can have only one account in a bank. (However, the next project i.e. Project V which will build incrementally on top of this project will allow customers to have multiple accounts in a bank.)
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" >Interest on savings account is not getting applied. </li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" >Account once locked due to 3 successive erroneous password can not be unlocked. 
+</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" >Password is not encrypted.
+ 
+
+</li>
+
+</ul>
+  
+    </div>
+          <div id="menu4" class="tab-pane fade">
+<center><img src="images/Capture.PNG" alt="BAnk_accimg12"/></center>
+
+<li class="s2_5"><b>Use Cases</b>
+<ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5"><b>Main Menu</b>
+<ol>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Sign Up:
+<ul style="list-style-type:none" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Prompt for new customer details (name, address etc.) and the type of account he wants to open. Add that customer based on necessary conditions (e.g. min balance). On successful creation of new customer, display auto-generated customer-id and account no. Prompt for a password and accept as per password rules. Display success or error messages as applicable.</li>
+</ul>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Sign In:
+<ul style="list-style-type:none" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Prompt for customer-id and password and validate. Allow maximum 3 consecutive re-trials for unsuccessful login attempts. Display error messages as applicable.
+</li>
+</ul>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Admin Sign In:
+<ul style="list-style-type:none" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Prompt for admin-id and password and validate. Allow 3 consecutive re-trials for successful login. Display success or error messages. Admin id and password are fixed and stored in database.
+</li>
+</ul>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Quit:
+<ul style="list-style-type:none" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Quit the application.
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5"><b>Sub Menu - Option “2”</b>
+<ol>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Address Change:
+<ul style="list-style-type:square" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Prompt logged-in customer for new address and update as per entered address. Display success or error messages.
+</li>
+</ul>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Money Deposit: 
+
+<ul style="list-style-type:square" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Prompt logged-in customer for amount to be deposited and the account no. Validate (e.g. amount should not be negative, account no. should be valid) and update. Display the new balance.</li>
+</ul>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Money Withdrawal: 
+
+<ul style="list-style-type:square" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Prompt logged-in customer for amount to be withdrawn and the account no. Validate (e.g. amount should be more than available balance, min balance condition should be maintained based on account type, account no. should be valid) and update. Display the new balance.
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Write unit test cases as per Boundary conditions to test this use case.</li>
+</ul>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Print Statement:
+<ul style="list-style-type:square" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Prompt logged-in customer for account no., “Date From” and “Date To”. Validate the entered values (e.g. Dates are valid, “Date To” is greater than “Date From”, account no. should be valid), and display print statement with following values in a tabular format – Date, Transaction Type (Credit, Debit), Amount, Balance</li>
+</ul>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Transfer Money:
+<ul style="list-style-type:square" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Prompt logged-in customer for “Account To” and amount. Validate the entered values (e.g. “Account To” should be a valid account of any customer, minimum balance in “Account From” should be maintained). Update both accounts and display new balances. The transaction should be atomic i.e. if account balance is not updated properly in either “Account From” or “Account To”, entire transaction should be rolled back.
+</li>
+</ul>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Account Closure:
+<ul style="list-style-type:square" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Close the account so that no further operation like deposit, withdrawal is allowed on that account. Display the amount to be sent to customer’s address after his account closure, and give successful closure message.
+</li>
+</ul>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Customer Logout:
+<ul style="list-style-type:square" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Log out logged-in customer. Display successful logout message.
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5"><b>Sub Menu - Option “3”</b>
+<ol>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Print Closed Accounts History
+<ul style="list-style-type:square" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Display in a tabular format the list of closed account no.s with respective dates on which they were closed.</li>
+</ul>
+</li>
+
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Admin Logout
+<ul style="list-style-type:square" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Log out admin. Display successful logout message.</li>
+</ul>
+</li>
+</ol>
+</ul>
+</li>
+
+
+
+<li class="s2_5"><b>Development Approach</b><ul style="list-style-type:disc"><li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">A group of 4 learners should develop the project in a collaborative manner on following lines:
+<ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">All group members go through the specifications, understand, discuss and arrive at an class diagram and database design in following format. Discuss the same with faculty.
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Incorporate the feedback from faculty on correctness of class diagram and database design to proceed with coding.
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Divide the coding work among all the group members and ensure that each member writes and performs unit testing on his/her part of the code. Work can be divided either based on class or use-case.
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Integrate the work and test the integrated application.
+</li>
+</ul>
+</ul>
+<center><img src="images/prg4_1.png" alt=""></center>
+<br>
+<center><img src="images/prg4_2.png" alt=""></center>
+    </div>
+    <div id="menu5" class="tab-pane fade">
+ <ul style="list-style-type:disc">
+<center><img src="images/prg4_3.png" alt="" height="400" width="600"></center>
+</ul>
+    </div>
+ <div id="menu6" class="tab-pane fade">
+   <ul style="list-style-type:disc"><li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">The project provides a practice on following concepts to learners:<ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Classes and Objects</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Class Relationships – is-a, has-a, uses-a</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">UML Class diagram</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Unit Testing</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Database Fundamentals</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Python DB Integration Concepts</li>
+</ul></li>
+</ul>
+    </div>
+  </div>
+
+
+
+
+
+<!--
+
+
+<ul><li class="s2_5"><b>Guidelines</b>
+<ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">This project is to be done after completing Module 4  </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Learners are suggested to use Eclipse IDE and Oracle for project development</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Suggested duration: 64 person-hours (4 learners can do in 2 days)</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Suggested team size: 4</li>
+</ul>
+</li>
+<li class="s2_5"><b>Project Objectives</b>
+<ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">After completing this project, the learner should be able to understand and implement the following concepts of OOP & Databases and their integration.
+<ul>
+<li>Classes and Objects in Python</li>
+<li> Relationships amongst Classes – is-a, has-a, uses-a 
+<li> UML Class diagram</li>
+<li>Python – Oracle Integration</li>
+<li>Basic Database Operations and clauses in SQL
+<ul><li>Select, Update, Delete,, Functions, Group By and Having</li></ul>
+
+</li>
+</ul>
+</ul>
+<li class="s2_5"><b>Bank Accounts</b><ul style="list-style-type:disc">
+
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">We are aware of banking services and would have done some transactions like deposit, withdrawal, transfer of funds and so on.
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">A bank typically has large number of customers and maintains the details of each customer i.e. what is the name of my customer, his address, account number, how much money is there in his account etc.
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">We also hear about multiple types of accounts like Saving account, Current account. 
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">The project is to develop a banking application for a bank that has multiple customers spread across the country. 
+
+</li>
+
+</li>
+</ul>
+<li class="s2_5"><b>Specifications</b><ul style="list-style-type:disc">
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5"><b>The Bank provides following services:</b><ul style="list-style-type:disc">
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">A customer can have either of the following type of accounts:</b>
+<ul style="list-style-type:circle">
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="justify">Savings Account – Generally used for temporary savings. Offers interest at the rate of 7.5% per annum on your savings. Maximum 10 withdrawals are allowed per month. No minimum balance is needed to open or maintain this account.</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="justify">Current Account – Generally used by corporates and business men. No interest is offered on this account. No limit of on no. of withdrawals. A customer needs to have minimum 5K to open or maintain this account.
+</li>
+</ul>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">A customer can do following transactions:
+<ol style="list-style-type:circle">
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Deposit and withdraw money in his account/s</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Transfer money to other accounts</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Print his account statement for given range of dates</li>
+</ol>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Bank wants to maintain history of closed accounts i.e. which accounts have been closed on which dates. Bank admin can see this history.
+</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Every customer has a customer-id and password to access his account.
+<ol style="list-style-type:circle">
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="justify">When a new customer registers himself with the bank, a customer-id is auto generated by the bank and given to him.</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Password needs to be set by the customer. It should be minimum 8 characters and can be any combination of numeric and alphabets.</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Allow maximum 3 consecutive re-trials for unsuccessful login attempts. </li>
+</ol>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Bank keeps following information of all customers to send regular updates
+
+<ol style="list-style-type:circle">
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">First and Last Name of customer</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Address has following fields - Address Line 1, Line 2, City, State, Pincode. Pincode should be a 6 digit numeric and rest of the fields are strings.</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Account no./s – Account no. is auto-generated by the bank on opening of a new account and is same as customer id.</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Transactions (withdrawals & deposits) done by the customers on respective accounts
+</li>
+</ol>
+</li>
+    </ul>
+    </ul>
+<li  class="s3_5"><b>What needs to be done:</b><ul style="list-style-type:disc">
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Develop OO model
+<ul style="list-style-type:circle">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Identify Classes, respective attributes and relationships among classes</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Create Class diagram in UML</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Write code for classes & methods, and given use cases</li>
+</ul>
+</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Develop DB model
+<ul style="list-style-type:circle">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Identify tables, respective fields and relationships among tables </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Create tables</li>
+</ul>
+</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Execute given use cases
+<ul style="list-style-type:circle">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" >Application should show menu based choices as shown ahead for each of the given use cases. </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">After displaying result of a use case, appropriate menu should appear again and prompt for user’s choice.</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Populate tables with sample data for testing</li>
+</ul>
+</li>
+</li>
+</ul>
+</li>
+</li>
+</ul>
+</ul>
+<li class="s2_5"><b>Assumptions</b><ul style="list-style-type:disc">
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">A customer can have only one account in a bank. (However, the next project i.e. Project V which will build incrementally on top of this project will allow customers to have multiple accounts in a bank.)
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="justify">Interest on savings account is not getting applied. </li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="justify">Account once locked due to 3 successive erroneous password can not be unlocked. 
+</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="justify">Password is not encrypted.
+ 
+
+</li>
+</ul>
+<li class="s2_5"><b>Menu</b></li>
+<center><p><img src="images/Capture.PNG" alt="BAnk_accimg12"/></p></center>
+
+<li class="s2_5"><b>Use Cases</b>
+<ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5"><b>Main Menu</b>
+<ol>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Sign Up:
+<ul style="list-style-type:none" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Prompt for new customer details (name, address etc.) and the type of account he wants to open. Add that customer based on necessary conditions (e.g. min balance). On successful creation of new customer, display auto-generated customer-id and account no. Prompt for a password and accept as per password rules. Display success or error messages as applicable.</li>
+</ul>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Sign In:
+<ul style="list-style-type:none" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Prompt for customer-id and password and validate. Allow maximum 3 consecutive re-trials for unsuccessful login attempts. Display error messages as applicable.
+</li>
+</ul>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Admin Sign In:
+<ul style="list-style-type:none" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Prompt for admin-id and password and validate. Allow 3 consecutive re-trials for successful login. Display success or error messages. Admin id and password are fixed and stored in database.
+</li>
+</ul>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Quit:
+<ul style="list-style-type:none" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Quit the application.
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5"><b>Sub Menu - Option “2”</b>
+<ol>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Address Change:
+<ul style="list-style-type:square" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Prompt logged-in customer for new address and update as per entered address. Display success or error messages.
+</li>
+</ul>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Money Deposit: 
+
+<ul style="list-style-type:square" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Prompt logged-in customer for amount to be deposited and the account no. Validate (e.g. amount should not be negative, account no. should be valid) and update. Display the new balance.</li>
+</ul>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Money Withdrawal: 
+
+<ul style="list-style-type:square" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Prompt logged-in customer for amount to be withdrawn and the account no. Validate (e.g. amount should be more than available balance, min balance condition should be maintained based on account type, account no. should be valid) and update. Display the new balance.
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Write unit test cases as per Boundary conditions to test this use case.</li>
+</ul>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Print Statement:
+<ul style="list-style-type:square" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Prompt logged-in customer for account no., “Date From” and “Date To”. Validate the entered values (e.g. Dates are valid, “Date To” is greater than “Date From”, account no. should be valid), and display print statement with following values in a tabular format – Date, Transaction Type (Credit, Debit), Amount, Balance</li>
+</ul>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Transfer Money:
+<ul style="list-style-type:square" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Prompt logged-in customer for “Account To” and amount. Validate the entered values (e.g. “Account To” should be a valid account of any customer, minimum balance in “Account From” should be maintained). Update both accounts and display new balances. The transaction should be atomic i.e. if account balance is not updated properly in either “Account From” or “Account To”, entire transaction should be rolled back.
+</li>
+</ul>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Account Closure:
+<ul style="list-style-type:square" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Close the account so that no further operation like deposit, withdrawal is allowed on that account. Display the amount to be sent to customer’s address after his account closure, and give successful closure message.
+</li>
+</ul>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Customer Logout:
+<ul style="list-style-type:square" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Log out logged-in customer. Display successful logout message.
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5"><b>Sub Menu - Option “3”</b>
+<ol>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Print Closed Accounts History
+<ul style="list-style-type:square" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Display in a tabular format the list of closed account no.s with respective dates on which they were closed.</li>
+</ul>
+</li>
+
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Admin Logout
+<ul style="list-style-type:square" >
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5" align="Justify">Log out admin. Display successful logout message.</li>
+</ul>
+</li>
+</ol>
+</ul>
+</li>
+
+
+
+<li class="s2_5"><b>Development Approach</b><ul style="list-style-type:disc"><li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">A group of 4 learners should develop the project in a collaborative manner on following lines:
+<ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">All group members go through the specifications, understand, discuss and arrive at an class diagram and database design in following format. Discuss the same with faculty.
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Incorporate the feedback from faculty on correctness of class diagram and database design to proceed with coding.
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Divide the coding work among all the group members and ensure that each member writes and performs unit testing on his/her part of the code. Work can be divided either based on class or use-case.
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Integrate the work and test the integrated application.
+</li>
+</li>
+</ul>
+</ul>
+<center><img src="images/prg4_1.png" alt=""></center>
+<br>
+<center><img src="images/prg4_2.png" alt=""></center>
+<li class="s2_5"><b>Project Evaluation Guidelines</b><ul style="list-style-type:disc">
+<center><img src="images/prg4_3.png" alt="" height="400" width="600"></center>
+</ul></li>
+
+<li class="s2_5"><b>Coverage</b><ul style="list-style-type:disc"><li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">The project provides a practice on following concepts to learners:<ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Classes and Objects</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Class Relationships – is-a, has-a, uses-a</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">UML Class diagram</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Unit Testing</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Database Fundamentals</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Python DB Integration Concepts</li>
+</ul></li>
+</ul>
+</li>
+</ul>
+
+-->
+<!-- End text definitions -->
+<!-- Begin page background -->
+<div id="pg5Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg5"><object width="1100" height="825" data="5/5.svg" type="image/svg+xml" id="pdf5" style="width:1100px; height:825px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+</div>
+</body>
+</html>

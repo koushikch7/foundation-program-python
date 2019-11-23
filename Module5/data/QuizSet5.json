@@ -1,0 +1,78 @@
+[
+{
+"id":"1",
+"question": "Consider two tables – Project and Employee with 9 and 10 rows respectively. After the following operations are triggered in the given order, how many rows will be there in Project and Employee tables? Assume that auto commit feature is turned off. <br><br><em> Add 3 projects <br> Add 4 employees <br> Commit <br> Add 5 projects <br> Add 6 employees <br> Rollback</em> ",
+"imgURL":"",
+"options":[
+           {"option":"a: 12, 14"},
+           {"option":"b: 9, 10"},
+           {"option":"c: 9, 14"},
+           {"option":"d: 17, 14"}
+          ],
+"correct":"A",
+"description":{
+  "A" : "COMMIT saves all transactions since the last COMMIT or ROLLBACK.  ROLLBACK will undo the changes since the last COMMIT or  ROLLBACK.  Hence 12 and 14 rows respectively", 
+  "B" : "ROLLBACK cannot undo the already committed transactions.  So it cannot be 9 and 10 rows", 
+  "C" : "ROLLBACK will undo all the transactions since the last COMMIT",                
+  "D" : "ROLLBACK will undo all the transactions since the last COMMIT"               
+}
+},
+{
+"id":"2",
+"question": "Consider the tables car1 and car2 with a numeric primary key field carid and a carmake VARCHAR2(15) field. Consider the following two transactions. Which of the following statements are correct with respect to the state of the tables after the ROLLBACK statement?",
+"imgURL":"images/Quiz20.PNG",
+"options":[
+           {"option":"a: car1 will have 0 rows and car2 will have 1 row"},
+           {"option":"b: car1 will have 0 rows and car2 will have 2 row"},
+           {"option":"c: car1 will have 1 row and car2 will have 2 rows"},
+           {"option":"d: Both car1 and car2 will have zero rows"},
+           {"option":"e: Both car1 and car2 will have one row "}
+          ],
+"scripts":"Scripts/QuizSet5_2.txt",
+"correct":"B",
+"description":{
+  "A" : "With autocommit ON, rollback cannot undo both the INSERT statements on car2 table", 
+  "B" : "With autocommit OFF, roll back will undo both the inserts on car1 and with autocommit ON, rollback cannot undo both the INSERT statements on car2.  Hence 0 and 2 respectively", 
+  "C" : "With autocommit OFF, rollback will undo both the inserts on car1",                
+  "D" : "With autocommit ON, rollback cannot undo both the INSERT statements on car2",
+  "E" : "With autocommit OFF, rollback will undo both the inserts on car1 and with autocommit ON, rollback cannot undo both the INSERT statements on car2"                 
+}
+},
+{
+"id":"3",
+"question":"Consider the table emp and the following transactions T1 and T2 executing statements in the given order. Which of the following concurrency issues is depicted here?",
+"imgURL":"images/Quiz21.PNG",
+"options":[
+           {"option":"a: Dirty Read"},
+           {"option":"b: Non-repeatable Read"},
+           {"option":"c: Phantom Record"},
+           {"option":"d: Lost Update"}
+          ],
+"correct":"A",
+"description":{
+  "A" : "T2 is reading while T1 is updating / writing.  Hence Dirty Read", 
+  "B" : "Non-repeatable read or Incorrect summary occurs when two transactions try to read the same data concurrently.  It is not there in this case.", 
+  "C" : "Phantom Record occurs when a transaction is writing / updating the data while another one is reading the same data. It is not there in this case.",                
+  "D" : "Lost update occurs when two transactions try to write / update the same data concurrently. It is not there in this case."                 
+}
+},
+{
+"id":"4",
+"question":"Consider the table Customers and the following transactions T1 and T2 executing in Oracle database. Presume that autocommit is off. What will be result of these transactions after time point A2?",
+"imgURL":"images/Quiz22.PNG",
+"options":[
+           {"option":"a: Sal field of emp with empno 1001 will be set to 7500"},
+           {"option":"b: Sal field of emp with empno 1002 will be set to 7500"},
+           {"option":"c: Both the transactions will wait indefinitely for the other to commit"},
+           {"option":"d: Oracle detects a deadlock and comes out of it"}
+          ],
+"scripts":"Scripts/QuizSet5_4.txt",
+"correct":"D",
+"description":{
+  "A" : "The record is locked by T1 for update  and hence T2 can’t set the value 7500", 
+  "B" : "The record is locked by T2 and hence T1 can’t set the value 7500", 
+  "C" : "It will not wait indefinitely here!  What do you think the DBMS will do here?",                
+  "D" : "Oracle is clever enough to detect this deadlock situation and can come out of it "                
+}
+}
+]

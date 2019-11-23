@@ -1,0 +1,20 @@
+[
+{
+"id":"1",
+"question": "Which function in cx_Oracle module is used to connect to Oracle database from Python application?",
+"imgURL":"",
+"options":[
+           {"option":"a: get_connection()"},
+           {"option":"b: fetch_connection()"}, 
+           {"option":"c: connect()"},
+           {"option":"d: None of the above"}
+          ],
+"correct":"C",
+"description":{"A" : "Not a valid function name. Try again.", 
+               "B" : "Not a valid function name. Try again.", 
+               "C" : "connect() function helps to connect to Oracle database using Oracle credentials and returns a connection object.", 
+               "D" : "Suggest the function which helps to connect to Oracle database."
+                },
+                "qtype":"multichoice"
+}
+]

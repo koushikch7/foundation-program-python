@@ -1,0 +1,475 @@
+[
+{
+"id":"1",
+"duration":5,
+"question":"Which of the following will print \"rawmango\": (Multiple options can be correct)",
+"imgURL":"",
+"options":[
+           {"option":"a: print(\"raw\" + \"mango\")"},
+           {"option":"b: print(\"raw\" \"mango\")"},
+           {"option":"c: print(raw mango)"},
+           {"option":"d: print(\"raw\") + print(\"mango\")"}
+          ],         
+"correct":"AB",
+"description":{
+  "A" : "+ is a concatenation operator and prints rawmango.",  
+  "B" : "Strings separated by white space are allowed. They are concatenated.",
+  "C" : "Syntax error as raw and mango are not defined.",
+  "D" : "Functions cannot be concatenated using + operator. Hence a syntax error."
+}
+},
+{
+"id":"2",
+"duration":5,
+"question":"Consider the following code snippet and predict the output:",
+"imgURL":"images/Quiz27.png",
+"options":[
+           {"option":"a: Samplo"},
+           {"option":"b: Sample"},
+           {"option":"c: Sampoe"},
+           {"option":"d: Error"}
+          ],         
+"correct":"D",
+"description":{
+  "A" : "Try to execute the code and observe the output.",  
+  "B" : "Try to execute the code and observe the output.",
+  "C" : "Try to execute the code and observe the output.",
+  "D" : "The string objects are immutable and cannot be modified once created. Hence the code throws a Type error at line number 2.TypeError: 'str' object does not support item assignment"
+}
+},
+{
+"id":"3",
+"duration":5,
+"question":"Predict the output of the following python code:",
+"imgURL":"images/Quiz28.png",
+"options":[
+           {"option":"a: Hello World!!"},
+           {"option":"b: Now I know Python"},
+           {"option":"c: Hello World!! Now I know Python"},
+           {"option":"d: Error"}
+],         
+"correct":"A",
+"description":{
+    "A" : "<br>Strings are immutable and cannot be changed once created.<br>Line number 2 creates a new string variable \"Hello World!! Now I know Python\" which is not referenced yet.<br>If we would have used var1 = var1 + \"Now I know Python\", the output would have been \"Hello World!! Now I know Python\"",  
+    "B" : "Have we changed the value of var1 to \"Now I know Python\"? Think again and answer.",
+    "C" : "Try to execute the code and observe the output.",
+    "D" : "Try to execute the code and see if we get any error."
+}
+},
+{
+"id":"4",
+"duration":5,
+"question":"Consider the following Python code:",
+"imgURL":"images/Quiz29.png",
+"imgURL2":"images/Quiz96.png",
+
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Quiz96_1.png",
+"imgAnsText":"<br><strong>Output:</strong>",
+"query":"            Predict the output of the following:",
+"options":[],         
+"correct":"AB",
+"description":{
+}
+},
+{
+"id":"5",
+"duration":5,
+"question":"Consider the following string variable in Python:<br>            text = \"Intro to strings\"",
+"imgURL":"",
+"query":"            Which of the following statements are false:",
+"options":[
+           {"option":"a: text(0) will give the output as 'I'"},
+           {"option":"b: text[5] will give the output as 't'"},
+           {"option":"c: text[-1] will give the output as g"},
+           {"option":"d: text[9]='S' will replace 's' with 'S' in the string text"},
+           {"option":"e: not(text[10] == text[-6])"},
+           {"option":"f: (len(text) – 2 * (3-1) ** 2 < 9) or (text[-13] != 'r')"}
+          ],         
+"correct":"ABCDE",
+"description":{
+  "A" : "This is an error, [] braces are used to refer the index of a string",  
+  "B" : "The spaces are also counted in the index. The output will be '  ' (blank), text[6] will print 't'",
+  "C" : "Negative indices can be used to refer the string in reverse order. Last element being at -1. Hence text [-1] prints 's'. text[-2] will print 'g'",
+  "D" : "Strings are immutable and cannot be changed, assignment does not work with string objects.",
+  "E" : "text[10] == text [-6] =='t', the 'Not' of the statements returns 'false'",
+  "F" : "<br>len(text) = 16. Hence the LHS expression becomes16-2*2**2 -> 16-2*4 -> 16-8 -> 8, hence LHS is 'True',<br>       text [-13] == 'r' , hence RHS Expression  text [-13] != 'r' is 'False'<br>       'True or False' returns 'True'."
+}
+},
+{
+"id":"6",
+"duration":5,
+"type":"Matchquiz",
+"question":"Assume, string1 = \"Infosys Limited\" , string2 = \"Mysore\". Match the following Python statements with their corresponding<br>            output:",
+"colA":
+		[
+		{"option1":"print(string1[:4])                                     "},
+		{"option2":"print(string1[-1])                                     "}, 
+		{"option3":"print(string1 * 2)                                     "},
+		{"option4":"print(string1[:-1] + string2 + string1[:-1])"},
+                {"option5":"print (string2[1])                                     "},
+                {"option6":"print (string2[4])                                      "},
+                {"option7":"print(string1 * 2 + string1[:-1] + string2) "}
+		],
+"colB":
+		[
+		{"option1":"d"},
+		{"option2":"Infosys LimiteMysoreInfosys Limite"}, 
+		{"option3":"y"},
+		{"option4":"Info"},
+                {"option5":"Infosys LimitedInfosys LimitedInfosys LimiteMysore"},
+                {"option6":"r"},
+                {"option7":"Infosys LimitedInfosys Limited"}
+		],
+"Correct":
+		[
+		{"option":"Info"},
+		{"option":"d"}, 
+		{"option":"Infosys LimitedInfosys Limited"},
+		{"option":"Infosys LimiteMysoreInfosys Limite"},
+                {"option":"y"}, 
+		{"option":"r"},
+		{"option":"Infosys LimitedInfosys LimitedInfosys LimiteMysore"}
+		],
+ "description":
+         [
+		{"option":"string1[:4] will slice the string \"Infosys Limited\" starting from first character (index - 0) i.e. 'I', up to but not including the character at index 4,  i.e. 's'. Hence, Output: 'Into'"},
+		{"option":"Negative Index is used to represent the string from the end. '-1' represents the last character, hence string1[-1] represents 'd' "}, 
+		{"option":"'*' is a used to concatenate multiple copies of the same string. string1 * 2 concatenates string1 two times."},
+		{"option":"string1[:-1] slices the string1 from start of the string upto but not including the character at index -1, gives the output as 'Infosys Limite' . string2 is 'Mysore'. Hence the concatenated output is 'Infosys LimiteMysoreInfosys Limite'."},
+                {"option":"The character at index 1 in string2 i.e. 'Mysore' is 'y'."}, 
+		{"option":"The character at index 4 in string2 i.e. 'Mysore' is 'r'."},
+		{"option":"string1 * 2 gives the output as 'Infosys LimitedInfosys Limited'. string1[:-1] slices the string1 from start of the string upto but not including the character at index -1, gives the output as 'Infosys Limite' . string2 is 'Mysore', hence the concatenated output is 'Infosys LimitedInfosys LimitedInfosys LimiteMysore'"}
+		]
+ },
+{
+"id":"7",
+"duration":5,
+"question":"Consider the following string variable in Python:<br>            text =\"I love Python\"",
+"imgURL":"",
+"query":"            Which of the following will give an output as \"Python\" (Multiple options can be correct):",
+"options":[
+           {"option":"a: text[7:13]"},
+           {"option":"b: text[8:13]"},
+           {"option":"c: text[7:] "},
+           {"option":"d: text[-6:-1]"},
+           {"option":"e: text[-6:]"}
+          ],         
+"correct":"ACE",
+"description":{
+  "A" : "This will slice the string, starting from character at 7th position i.e. 'P' in the string, up to but not including the character at position 13th,  i.e. 'n'. Output: 'Python'",  
+  "B" : "This will slice the string, starting from character at 8th position i.e. 'y' in the string, up to but not including the character at position 13th,  i.e. 'n'. This will give the output as \"ython\"",
+  "C" : "This will slice the string, starting from character at 7th position i.e. 'P' in the string, up to the end of the String.Output: 'Python'",
+  "D" : "In negative indices, the counting starts from the end of the string (with an index of -1) instead of at the beginning. Hence 'n' is -1, 'o' Is -2 and so on. text[-6:-1] will slice the string, starting from character at -6th position \"P\" till one character before index -1 i.e. 'o', hence output is \"Pytho\".",
+  "E" : "This will slice the string, starting from character at -6th position i.e. 'P' in the string, up to the end of the String. Output: 'Python'"
+}
+},
+{
+"id":"8",
+"duration":5,
+"question":"Consider the following string variable and predict which of the following output are true:<br>            message = \"Earth is round\"",
+"imgURL":"",
+"options":[
+           {"option":"a: message[0:6] == \"Earth\""},
+           {"option":"b: message[9: -1] == \"roun\""},
+           {"option":"c: message[-5:] == message[9:]"},
+           {"option":"d: message[-6:3] == ''"}
+          ],         
+"correct":"BCD",
+"description":{
+  "A" : "message[0:6] will slice the given string starting from character at 0th position i.e. 'E' in the string, up to but not including the character at position 6th,  i.e. 'i'.  Hence results in 'Earth ' (observe a space after 'Earth')",  
+  "B" : "message[9: -1] will slice the given string starting from 9th position i.e. 'r' in the string, up to but not including the character at -1 position i.e. 'd'(a string can be accessed using negative indices, last character having the index -1). Hence results in \"roun\"",
+  "C" : "message[-5:]  will slice the string starting from index -5 i.e. 'r' till the end of the string. Hence results in \"round\"<br>     message[9:] will slice the staring starting from index 9 (again 'r') till the end of string, hence it also results in \"round\"",
+  "D" : "message[-6:3] will slice the string starting from index -6 i.e. space(\" \") till index 3 i.e. 't'. As the ending index comes before the starting index, nothing will be printed. Try executing message[-6:13] and observe the output."
+  }
+},
+{
+"id":"9",
+"duration":5,
+"question":"Predict the output:",
+"imgURL":"images/Quiz97.png",
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Quiz97_1.png",
+"imgAnsText":"<br><strong>Output:</strong>",
+"options":[],         
+"correct":"AB",
+"description":{}
+},
+{
+"id":"10",
+"duration":5,
+"question":"Consider a list, fruits=[\"Mango\", \"Banana\", \"Guava\", \"Strawberry\"]. Match the following:",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"fruits[1:4]   "},
+		{"option2":"fruits[-4:-1]"}, 
+		{"option3":"fruits[-4:]   "},
+		{"option4":"fruits[:-2]   "},
+                {"option5":"fruits[-2:]   "}
+		],
+"colB":
+		[
+		{"option1":"['Mango', 'Banana', 'Guava', 'Strawberry']"},
+		{"option2":"['Mango', 'Banana', 'Guava']"}, 
+		{"option3":"['Banana', 'Guava', 'Strawberry']"},
+		{"option4":"['Guava', 'Strawberry']"},
+                {"option5":"['Mango', 'Banana']"}
+		],
+"Correct":
+		[
+		{"option":"['Banana', 'Guava', 'Strawberry']"},
+		{"option":"['Mango', 'Banana', 'Guava']"}, 
+		{"option":"['Mango', 'Banana', 'Guava', 'Strawberry']"},
+		{"option":"['Mango', 'Banana']"},
+                {"option":"['Guava', 'Strawberry']"}
+		],
+ "description":
+         [
+		{"option":"['Banana', 'Guava', 'Strawberry'] (Prints from index 1,3)"},
+		{"option":"['Mango', 'Banana', 'Guava'] (The list can be referred from the end by negative index. Last element being -1. This code Prints from index -4 to -1 excluding -1"}, 
+		{"option":" ['Mango', 'Banana', 'Guava', 'Strawberry'] (Prints from -4 to last)"},
+		{"option":"['Mango', 'Banana'](prints from start to -2, excluding -2)"},
+                {"option":"['Guava', 'Strawberry'](prints from index -2 to last)"}
+		]
+ },
+{
+"id":"11",
+"duration":5,
+"question":"Predict the output of the following:",
+"imgURL":"images/Quiz98.png",
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Quiz98_1.png",
+"imgAnsText":"<br><strong>Answers:</strong>",
+"options":[ ],         
+"correct":"AB",
+"description":{}
+},
+{
+"id":"12",
+"duration":5,
+"question":"Consider a list of employee names:<br>              list_emp_names = [\"James\",\"Jack\",\"Mary\",\"Lily\",\"Roella\"]",
+"imgURL":"images/Quiz102.png",
+"query":"              Execute and observe the output for the statements below:",
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Quiz102_1.png",
+"imgAnsText":"<br><strong>Output:</strong>",
+"options":[],         
+"correct":"AB",
+"description":{}
+},
+{
+"id":"13",
+"duration":5,
+"question":"Assume following two tuples:",
+"query":"             Predict the output of following statements:",
+"imgURL":"images/Quiz103.png",
+"imgURL2":"images/Quiz103_1.png",
+"options":[],
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Quiz103_2.png",
+"imgAnsText":"<br><strong>Output:</strong>",
+"correct":"AB",
+"description":{}
+},
+{
+"id":"14",
+"duration":5,
+"question":"Assume  a tuple,<br>             t = (9,8,7,6,5,4) ",
+"imgURL":"",
+"query":"             Which of the following are not allowed/have an error?<br>                1) print(t[4])<br>                2) print(t[6])<br>                3) print(max(t))<br>                4) print(len(t))<br>                5) print(t[2:6])<br>                6) t[5]=3",
+"options":[
+           {"option":"a: 2"},
+           {"option":"b: 5, 6"},
+           {"option":"c: 3, 4"},
+           {"option":"d: 2, 6"}
+          ],         
+"correct":"D",
+"description":{
+  "A" : "<br>Line 2: Index out of range.",  
+  "B" : "<br>Line 5: Slicing works fine for tuples , output is (7, 6, 5, 4).<br>Line 6: Type Error as tuples are immutable.",
+  "C" : "<br>Line 3: Prints the maximum number i.e. 9.<br>Line 4: Prints the length of tuple i.e. 6.",
+  "D" : "<br>Line 2: Index out of range.<br>Line 6: Type Error as tuples are immutable."
+}
+},
+{
+"id":"15",
+"duration":5,
+"question":"Assume,<br>             tupleA = (46,43,78,32,45,33,65,89)",
+"imgURL":"",
+"query":"             Expected output is:<br>             46<br>             78<br>             45<br>             65<br>             Choose the code snippets from the options below, to print the expected output.(Multiple options can be correct)",
+"options":[
+           {"option":"a: for i in range(0, len(tupleA), 2):<br>          print(tupleA[i])"},
+           {"option":"b: for i in tupleA:<br>          if(i%2 == 0):<br>                print(i)"},
+           {"option":"c: for i in range(-8, -1, 2):<br>          print(tupleA[i])"},
+           {"option":"d: for i in range(-7, -1, 2):<br>          print(tupleA[i])"}
+          ],         
+"correct":"AC",
+"description":{
+  "A" : "The 'for' loop here is equivalent to 'for i in range(0,8,2)'  for i in (0,2,4,6). 'print(tupleA[i])' prints the elements of 'tupleA' at indices 0,2,4,6, hence the output.",  
+  "B" : "The 'for' loop iterates through all the elements of 'tupleA'. The 'if' loop checks if the element is divisible by 2. If yes, it is displayed. Hence the output is:<br>      46<br>      78<br>      32",
+  "C" : "The elements of a tuple can be accessed using negative indices. The last element starts from index '-1'. Hence the element at index '-8' is '46'. The 'for' loop is equivalent to  'for i in(-8,-6,-4,-2)' , hence prints the elements at these indices, the output is:<br>      46<br>      78<br>      45<br>      65",
+  "D" : "The elements of a tuple can be accessed using negative indices and the last element starts from index '-1'. Hence the element at index '-7' is '43'.  Think again and answer. This 'for' loop will give the output as:<br>      43<br>      32<br>      33"
+}
+},
+{
+"id":"16",
+"duration":5,
+"question":"Which of the following creates a dictionary in Python?",
+"imgURL":"images/Quiz30.png",
+"options":[
+           {"option":"a: a, c"},
+           {"option":"b: b, d"},
+           {"option":"c: a, c, d"},
+           {"option":"d: a, b, d"}
+          ],         
+"correct":"D",
+"description":{
+  "A" : "Creates a dictionary with 'joe' and 'jack' as keys. 22322223  and 56342341 are the values corresponding to the keys.",  
+  "B" : "Creates a dictionary with 50 and 67 as keys and \"Ram\" and \"Shyam\" as values.",
+  "C" : "It is an invalid syntax (Observe the usage of incorrect braces)",
+  "D" : "Creates a dictionary with '50' and '67' (both strings) as keys and \"Ram\" and \"Shyam\" as values."
+}
+},
+{
+"id":"17",
+"duration":5,
+"question":"Which of the following creates an empty dictionary?",
+"imgURL":"images/Quiz31.png",
+"options":[
+           {"option":"a: a"},
+           {"option":"b: b"},
+           {"option":"c: e"},
+           {"option":"d: a, c, d"}
+          ],         
+"correct":"A",
+"description":{
+  "A" : "This is an invalid syntax",  
+  "B" : "It creates an empty tuple",
+  "C" : "It creates an empty list",
+  "D" : "This is an invalid syntax"
+}
+},
+{
+"id":"18",
+"duration":5,
+"question":"Consider a dictionary:<br>             d = {\"city\":\"Bangalore\", \"state\":\"Karnataka\"}",
+"imgURL":"",
+"query":"             Suppose we want to delete the entry of \"city\", which of the following commands we can use?",
+"options":[
+           {"option":"a: d.delete(\"city\":\"Bangalore\")"},
+           {"option":"b: d.delete(\"city\")"},
+           {"option":"c: del d[\"city\"]"},
+           {"option":"d: del d((\"city\":\"Bangalore\")"},
+           {"option":"e: del(d[\"city\"])"}
+          ],         
+"correct":"CE",
+"description":{
+  "A" : "Try to execute the code and observe the output.",  
+  "B" : "Try to execute the code and observe the output.",
+  "C" : "An entry in a dictionary can be deleted by any of these two ways. Execute the code to verify.",
+  "D" : "Try to execute the code and observe the output.",
+  "E" : "An entry in a dictionary can be deleted by any of these two ways. Execute the code to verify."
+}
+},
+{
+"id":"19",
+"duration":5,
+"question":"Consider the dictionary again:<br>             d = {\"city\":\"Bangalore\", \"state\":\"Karnataka\"}",
+"imgURL":"",
+"query":"             Which of the following commands will return the number of entries in the dictionary, d:",
+"options":[
+           {"option":"a: len(d)"},
+           {"option":"b: d.len()"},
+           {"option":"c: d.size()"},
+           {"option":"d: size(d)"}
+          ],         
+"correct":"B",
+"description":{
+  "A" : "Try to execute the code and observe the output.",  
+  "B" : "Execute the code to verify",
+  "C" : "Try to execute the code and observe the output.",
+  "D" : "Try to execute the code and observe the output."
+}
+},
+{
+"id":"20",
+"duration":5,
+"question":"Consider a dictionary,  dummy_dict = {1:\"a\",2:\"b\",3:\"c\"}.<br>             What will be the output of the below print statements?",
+"imgURL":"images/Quiz104.png",
+"options":[],  
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Quiz104_1.png",
+"imgAnsText":"<br><strong>Output:</strong>",
+"correct":"AB",
+"description":{
+}
+},
+{
+"id":"21",
+"duration":5,
+"question":"Observe the following code and find the output. Execute the code and verify your answer.",
+"imgURL":"images/Quiz105.png",
+"options":[],         
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Quiz105_1.png",
+"imgAnsText":"<br><strong>Answer:</strong>",
+"correct":"AB",
+"description":{}
+},
+{
+"id":"22",
+"duration":5,
+"question":"Observe the following code and predict the output:",
+"query":"            Execute the above code 5 times and observe the output. Will the key-value pairs be printed in same order always?",
+"imgURL":"images/Quiz106.png",
+"options":[],         
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Quiz106_1.png",
+"imgAnsText":"<br><strong>Output:</strong>",
+"correct":"AB",
+"description":{}
+},
+{
+"id":"23",
+"duration":5,
+"question":"Consider the sets:",
+"query":"            Predict the output.",
+"imgURL":"images/Quiz107.png",
+"imgURL2":"images/Quiz107_1.png",
+"options":[],         
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Quiz107_2.png",
+"imgAnsText":"<br><strong>Answer:</strong>",
+"correct":"AB",
+"description":{}
+},
+{
+"id":"24",
+"duration":5,
+"question":"Find the output of the following Python code snippet:<br>             s1 = set(\"my name is John and John is my name\".split())",
+"imgURL":"",
+"options":[
+           {"option":"a: error"},
+           {"option":"b: s1 = {'is', 'and', 'my', 'name', 'John'}"},
+           {"option":"c: s1 = ('is', 'and', 'my', 'name', 'John')"},
+           {"option":"d: s1 = {'my' 'name' 'is' 'John' 'and' 'John' 'is' 'my' 'name'}"}
+          ],         
+"correct":"B",
+"description":{
+  "A" : "Try to execute the code and observe the output.",  
+  "B" : "'split()' function splits the string into a list of words. 'set()' function removes the duplicate entries from the list and converts it into a set.",
+  "C" : "Here 's1' is not a set (Observe the braces). Try again.",
+  "D" : "Observe the duplicate values here. Can a set contain duplicate values? Try again."
+}
+}
+]

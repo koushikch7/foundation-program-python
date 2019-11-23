@@ -1,0 +1,244 @@
+[
+{
+"id":"1",
+"question": "Which of the following is not a benefit of Inheritance?",
+"imgURL":"",
+"imgLink":"",
+"options":[
+           {"option":"a: Customization and Code Reuse is possible without touching the existing code."},
+           {"option":"b: Child class can add to the existing functionality of Parent class."}, 
+           {"option":"c: Better readability of code."},
+           {"option":"d: If child class is modified, parent class property modifies automatically."}
+          ],
+"correct":"D",
+"description":{"A":"It is a benefit",
+				"B":"It is a benefit",
+				"C":"It is a benefit",
+				"D":"A child class knows about its parent(s) from its definition, however, parent class has no way out to know which all classes have inherited it."},
+"fileURL":""
+                         
+},
+
+{
+"id":"2",
+"question":"Consider the following code snippet and predict the output\nHint: refer following for documentation of issubclass ",
+"imgLink":"https://docs.python.org/3/library/functions.html #issubclass",
+"imgURL":"images/quiz17.PNG",
+"options":[
+{"option":"a: True, False"},
+{"option":"b: True, True"},
+{"option":"c: False, False"},
+{"option":"d: False, True"}
+          ],
+"correct":"A",
+"description":
+               {"A":"issubclass method takes first argument as child class and second argument as parent.",
+               "B":"refer following for documentation of issubclass https://docs.python.org/3/library/functions.html#issubclass ",
+               "C":"refer following for documentation of issubclass https://docs.python.org/3/library/functions.html#issubclass",
+               "D":"refer following for documentation of issubclass https://docs.python.org/3/library/functions.html#issubclass"
+               },
+               "fileURL":""
+},
+{
+"id":"3",
+"question": "Consider the following code snippet and predict the output.\n Hint: refer following for documentation of ",
+"imgURL":"images/quiz18.PNG",
+"imgLink":"https://docs.python.org/3/library/functions.html#isinstance",
+"options":[
+           {"option":"a: True, False, False"},
+           {"option":"b: True, True , False"}, 
+           {"option":"c: False, False, True"},
+           {"option":"d: False, True, True"}
+          ],
+"correct":"B",
+"description":{"A":" refer following for documentation of https://docs.python.org/3/library/functions.html#isinstance ",
+				"B":"BigBox  is–a Box hence an instance of BigBox is also of type Box. However, a smallBox is an instance of parent class hence it is not of type BigBox which is child class. In other word Box is-a BigBox may not be true",
+				"C":"refer following for documentation of https://docs.python.org/3/library/functions.html#isinstance",
+				"D":" refer following for documentation of https://docs.python.org/3/library/functions.html#isinstance"
+				},
+ "fileURL":""
+},
+{
+"id":"4",
+"question": "Consider the following code snippet and predict the output.",
+"imgURL":"images/quiz19.PNG",
+"imgLink":"",
+"options":[
+           {"option":"a: 'Hey from A.x'"},
+           {"option":"b: 'Hello from B.x'"}, 
+           {"option":"c: Statement from option (1) followed by (2)"},
+           {"option":"d: None of above"}
+           ],
+"correct":"C",
+"description":{"A":"B class has overridden x()",
+				"B":"super().x() Will first give a call to x()",
+				"C":"B class has overridden x() so the call at #statement4 will result in call to x() of B class.\nsuper() returns reference to superclass hence super().\nx() Will first give a call to x() of superclass at #statement2 followed by #statement3",
+				"D":" Please execute the code"
+				},
+ "fileURL":""
+},
+{
+"id":"5",
+"question": "Consider the following code snippet and predict the output.",
+"imgURL":"images/quiz20.PNG",
+"imgLink":"",
+"options":
+		[
+		{"option":"a: m of A called"},
+		{"option":"b: m of B called"}, 
+		{"option":"c: m of C called"},
+		{"option":"d: error"}
+		],
+"correct":"C",
+"description":
+		{
+		"A":"m() of A is overridden by B and C",
+		"B":"Execute the code and select the correct answer to see the justification.",
+		"C":"At the time of class declaration class [D(C,B):]Since C is written first, in case of conflict methods of C gets called.",
+		"D":"Not an error. Execute the code and select the correct answer to see the justification"
+		},
+             "fileURL":""
+},
+{
+"id":"6",
+"question": "Consider the following code snippet and predict the output.",
+"imgURL":"images/quiz21.PNG",
+"imgLink":"",
+"options":
+		[
+		{"option":"a: m of A called"},
+		{"option":"b: m of B called"},
+		{"option":"c: m of C called"},
+		{"option":"d: error"}
+		], 
+"correct":"B",
+"description":
+		{"A":" m() of A is overridden by B and C",
+		"B":"If we call the method m on an instance x of D, i.e. x.m(), we will get the output 'm of B called' since B is written first in the class definition of 'D'.If we transpose the order of the classes in the class header of D in 'class D(C,B):', we will get the output 'm of C called'",
+		"C":"Execute the code and select the correct answer to see the justification.",
+		"D":"Not an error. Execute the code and select the correct answer to see the justification"
+		},
+             "fileURL":""
+},
+{
+"id":"7",
+"question": "choose the correct option.<br>1. Complex activities regarding start and accelerate involved in driving a car are moved inside Engine class.<br>    This design is an example of :  <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          A          </span><br>2. Driver should not access the mechanical wheels directly, instead he/she needs to call changeGear method. <br>    This is example of :  <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          B          </span> <br>3. Same gearbox can be used for forward or reverse motion is an example of : <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          C          </span><br>",  
+
+"imgURL":"images/quiz28.PNG",
+
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"  A  ->"},
+		{"option2":"  B  ->"}, 
+		{"option3":"  C  ->"}            
+		],
+"colB":
+		[
+		{"option1":"Encapsulation"},
+		{"option2":"Polymorphism"}, 
+		{"option3":"Abstraction"},
+		{"option4":"Data Typing"}
+		],
+"Correct":
+		[
+		{"option":"Abstraction"},
+		{"option":"Encapsulation"}, 
+		{"option":"Polymorphism"}
+		],                
+ "description":
+         [
+		{"option":"C : Abstraction is about hiding complexities design level"},
+		{"option":"A : Encapsulation hides direct access to internal information of the object,  thereby protecting object data from accidental changes"}, 
+		{"option":"B : Polymorphism refers to the ability of an object/method to behave differently in different situations."}
+		]
+}	,
+{
+"id":"8",
+"question": "Fill in the following blanks. Choose your answers from the options given: <br>The objects are instantiated in <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          A          </span> memory, instance variables of an object are created in <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          B          </span>   memory and local variables of a method are created in <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          C          </span> memory.",
+"imgURL":"",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"  A  ->"},
+		{"option2":"  B  ->"}, 
+		{"option3":"  C  ->"}             
+		],
+"colB":
+		[
+		{"option1":"Global space"},
+		{"option2":"Heap"}, 
+		{"option3":"Stack"}
+		],
+"Correct":
+		[
+		{"option":"Heap"},
+		{"option":"Heap"}, 
+		{"option":"Stack"}
+		],                
+ "description":
+         [
+		{"option":"The objects are instantiated in Heap memory"},
+		{"option":"Instance variables of an object are created in Heap memory inside the object"}, 
+		{"option":"local variables of a method are created in Stack memory"}
+		]
+},
+{
+"id":"9",
+"question": "Fill in the following blanks. Choose your answers from the options given: <br>The stack frames are destroyed in <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          A          </span> manner.",
+"imgURL":"",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"  A  ->"}
+		             
+		],
+"colB":
+		[
+		{"option1":"FIFO : First In First Out"},
+		{"option2":"LIFO : Last In First Out"}, 
+		{"option3":"LRU : Least Recently Used"},
+		{"option4":"MRU : Most Recently Used"}
+		],
+"Correct":
+		[
+		{"option":"LIFO : Last In First Out"}
+		],                
+ "description":
+         [
+		{"option":"This is why it is called stack"}
+		]
+
+},
+{
+"id":"10",
+"question": "Fill in the following blanks. Choose your answers from the options given: <br><span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          A          </span> is a mechanism to remove the dead objects from heap memory.",
+"imgURL":"",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"  A  ->"}
+		             
+		],
+"colB":
+		[
+		{"option1":"Garbage Collector"},
+		{"option2":"Memory cleaner"}, 
+		{"option3":"Object destroyer"}
+		],
+"Correct":
+		[
+		{"option":"Garbage Collector"}
+		],                
+ "description":
+         [
+		{"option":"Garbage Collector is a mechanism to remove the dead objects from heap memory"}
+		]
+
+}	
+
+]
+
+
+
+

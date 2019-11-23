@@ -1,0 +1,295 @@
+[
+{
+"id":"1",
+"duration":5,
+"question":"Consider a scenario from a retail store management. A discount of 2% is provided to all bill amounts greater than Rs.500<br>            and a discount of 1% to rest of the bill amounts. Observe the following code and predict the output:",
+"imgURL":"images/Quiz14.png",
+
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Quiz15.png",
+"imgAnsText":"<br><strong>Output:</strong>",
+
+"options":[],         
+"correct":"ABCD",
+"description":{}
+},
+{
+"id":"2",
+"duration":5,
+"question":"Consider the following python code:",
+"query":"            In which of the following scenarios the room booking is successful?",
+"imgURL":"images/Quiz16.png",
+"options":[
+           {"option":"a: room_availablity = \"Yes\" , customer_age = 18"},
+           {"option":"b: room_availablity = \"yes\" , customer_age = 21"},
+           {"option":"c: room_availablity = \"Yes\" , customer_age = 17"},
+           {"option":"d: None of the above"}
+          ],         
+"correct":"A",
+"description":{
+  "A" : "room_availablity = \"Yes\", the first if condition is satisfied. In the inner if loop, customer_age = 18 is also satisfied, hence output is \"Room is booked\"",  
+  "B" : "The string comparison is case sensitive, hence \"yes\" == \"Yes\" returns false in the outer if block. The else block of the outer loop is executed. Hence the output is \"Room not available\".",
+  "C" : "room_availablity = \"Yes\", the first if condition is satisfied. customer_age = 17 (i.e not greater than or equal to 18 ), hence the condition of inner if loop is not satisfied. The else block of inner loop will be executed. Hence, Output is \"Minors must accompany an adult, booking not done!!!\"",
+  "D" : "Try to execute the program and observe the output."
+}
+},
+{
+"id":"3",
+"duration":5,
+"question":"Observe the following Python code.Find the value of num3 if the output of the program is 6.",
+"imgURL":"images/Quiz45.png",
+"options":[
+           {"option":"a: 3"},
+           {"option":"b: 8"},
+           {"option":"c: 9"},
+           {"option":"d: None of the above"}
+          ],         
+"correct":"B",
+"description":{
+  "A" : "Try to execute the code with value of num3 = 3. Are you getting the output as 6? Think again and answer.",  
+  "B" : "As given, the output of the program is 6, hence the value of variable 'num2' at line # 10 is 6. It means the value of num2(originally is 5) is incremented by 1. Hence 'if' block is executed.<br>Next, the condition in the 'if' block should return True i.e. <br>   (num2 != 5 or (abs(num1 - num3) == 6)) should be True.<br>The value of 'num2' is 5, so the first part of 'or' (num2 != 5) returns False.<br>Hence  abs(num1 - num3) == 6 must be True so as to make the condition of 'if' statement True i.e. (abs(2-num3)) == 6 -> num3 = 8",
+  "C" : "Try to execute the code with value of num3 = 9. Are you getting the output as 6? Think again and answer.",
+  "D" : "Assume the value of num3 as 3, 8, 9 and observe the output for three cases respectively. Try to find the correct answer."
+}
+},
+{
+"id":"4",
+"duration":5,
+"question":"Consider the following python code: ",
+"query":"            Choose the values of a, b and c for both the cases from the given options:",
+"imgURL":"images/Quiz17.png",
+"options":[
+           {"option":"a: 20, 10, 15 and 15, 10, 5"},
+           {"option":"b: 15, 10, 5 and 20, 10, 15"},
+           {"option":"c: 20, 15, 10 and 15, 10, 5"},
+           {"option":"d: 15, 10, 5 and 20, 15, 5"}
+          ],         
+"correct":"C",
+"description":{
+  "A" : "Try to substitute the values given in other options and find the correct answer.",  
+  "B" : "Try to substitute the values given in other options and find the correct answer.",
+  "C" : "<br><em>Case 1</em> - Output of the program is 1. Hence 'if' block is executed.<br>Further (( b - a / c == 13) and c * 2 == a) returns True. Hence both (b - a / c == 13) and (c * 2 == a) should be True. Substituting the values 20, 15 and 5 we get the result.<br><em>Case 2</em> - Output of the program is 2 . Hence 'elif' block is executed.<br>((b +c == a) and ((a - c) / b == 1)) returns True. Further (b +c == a) and (a - c) / b == 1) returns True. The values of a, b, c are 15, 10 and 5 in this case.",
+  "D" : "Try to substitute the values given in other options and find the correct answer."
+}
+},
+{
+"id":"5",
+"type":"Verify",
+"duration":5,
+"question":"<p style=\"position:relative;margin-top:-40px;margin-left:70px;line-height:40px\">Consider a scenario from admission process of a management institute. The minimum admission criteria for a student is 80% marks in tenth and 75% marks in twelfth grade. Further, student should have scored more than 80 marks in the institute's entrance examination. A relaxation of 10 marks is given to a student if he is a national level player in any of the sports.<br>Assume, a student Jack has scored 85% and 78% marks in tenth and twelfth grades respectively. He is a national level badminton player but could score only 51 marks in the entrance examination. As per the current program flow Jack is not getting any information regarding his admission status.<br>Observe the given Python code and make necessary changes so that Jack gets the appropriate output as:<br>\"Sorry, You are not admitted.\"<br>Note: No new lines of code should be added.<br></p>",
+"imgURL":"images/Quiz18.png",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Quiz11.png",
+"imgAnsText":"<br><strong>Answer:</strong>",
+"options":[],         
+"correct":"AS",
+"description":{}
+},
+{
+"id":"6",
+"duration":5,
+"question":"Which of the following code snippets exhibits the same logic as that of the previous scenario?",
+"imgQuestionURL":"images/Quiz20.png",
+"options":[
+           {"option":"a: A"},
+           {"option":"b: B"},
+           {"option":"c: A and B"},
+           {"option":"d: Neither A nor B"}
+          ],         
+"correct":"A",
+"description":{
+  "A" : "The inner if loop has been combined with the outer elif block at line# 8. Further \"and\" operator has to be used for combining the statements (at line#8) as both the conditions have to be true in order to confirm the admission. Code B uses \"or\" operator which is not correct.",  
+  "B" : "Refer the scenario again. If the student is a national player and has scored 70 or more in entrance exam, his admission is confirmed. Are we ensuring both the conditions to be true here? Observe the code at line# 8 again and answer.",
+  "C" : "If the student is a national player and has scored 70 or more in entrance exam, his admission is confirmed. Are we ensuring both the conditions to be true in Code B? Observe the code again.",
+  "D" : "We are combining the inner if loop (at line# 9 in previous question) with the outer if loop(at line# 6 in previous question) in these code snippets. Observe the code snippets again and answer."
+}
+},
+{
+"id":"7",
+"duration":5,
+"question":"Predict the output of the code snippet given below:",
+"query":"            Hint: Argument \"end\" in print() function is used to specify a delimiter, default delimiter  is 'new line'.",
+"imgURL":"images/Quiz46.png",
+"options":[
+           {"option":"a: P,y,t,h,o,n, ,i,s, ,e,a,s,y"},
+           {"option":"b: P,y,t,h,o,n, ,i,s, , e,a,s,y,"},
+           {"option":"c: Syntax error"},
+           {"option":"d: Python, is, easy,"}
+          ],         
+"correct":"B",
+"description":{
+  "A" : "The 'for' loop iterates through all the characters of the string 'sample_string' and prints the character. The delimiter specified here is a comma ','. Hence comma is printed after every character- including the last character. Observe the code again and answer.",  
+  "B" : "The 'for' loop iterates through all the characters of the string 'sample_string' and prints the character. The delimiter specified here is a comma ','. Hence comma is printed after every character (including blank spaces, a blank space is also considered as a character in string)",
+  "C" : "There is no syntax error in this code. Observe the code again and predict the correct output.",
+  "D" : "The given loop 'for i in sample_string' iterates through all the characters (not words) of 'sample_string' starting 'P' till the end of the string. Observe the code again and predict the correct output."
+}
+},
+{
+"id":"8",
+"duration":5,
+"question":"Predict the output of the code snippet given below:<br>",
+"imgURL":"images/Quiz47.png",
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Quiz47_1.png",
+"imgAnsText":"<br><strong>Output:</strong>",
+"options":[],         
+"correct":"AB",
+"description":{
+}
+},
+{
+"id":"9",
+"duration":5,
+"question": "Consider the following Python code:",
+"imgURL":"images/Quiz101.png",
+"query":"<br>",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"  A  ->"},
+		{"option2":"  B  ->"}, 
+		{"option3":"  C  ->"},
+		{"option4":"  D  ->"}
+		],
+"colB":
+		[
+		{"option1":"51"},
+		{"option2":"10"}, 
+		{"option3":"10|20|30|40|50|"},
+		{"option4":"10|20|30|40|50"},
+                {"option5":"10 20 30 40 50|"},
+                {"option6":"10 20 30 40 50|"}
+		],
+"Correct":
+		[
+		{"option":"10"},
+		{"option":"51"}, 
+		{"option":"10"},
+		{"option":"10|20|30|40|50|"}
+		],
+ "description":
+         [
+		{"option":"For using a range() function equivalent to values (10,20,30,40,50), we need to guess the value for starting number, ending number and step for the range() function. The starting number should be 10(starting number is inclusive). 'for num in (10,20,30,40,50) is equivalent to 'for num in range(10, 51, 10)'."},
+		{"option":"For using a range() function equivalent to values (10,20,30,40,50), we need to guess the value for starting number, ending number and step for the range() function. The ending number should be 51(ending number in not included by the range function). 'for num in (10,20,30,40,50) is equivalent to 'for num in range(10, 51, 10)'."}, 
+		{"option":"For using a range() function equivalent to values (10,20,30,40,50), we need to guess the value for starting number, ending number and step for the range() function. The value for step should be 10. 'for num in (10,20,30,40,50) is equivalent to 'for num in range(10, 51, 10)'."},
+		{"option":"In the given Python code:<br>for num in 10,20,30,40,50:<br><span style=\"white-space:pre-wrap;\">      print(num, end=\"|\")</span><br>'for' loop iterates through every number and print the number, the delimiter specified here is '|' (Note: new line is the default delimiter). Hence the output is 10|20|30|40|50|. "}
+		]
+},
+{
+"id":"10",
+"duration":10,
+"question":"Which of the following code snippets convey the same logic:",
+"imgURL":"images/Quiz21.png",
+"options":[
+           {"option":"a: A,B,C"},
+           {"option":"b: A,C"},
+           {"option":"c: B,C"},
+           {"option":"d: A,B"}
+          ],         
+"correct":"B",
+"description":{
+  "A" : "The code snippets demonstrate the usage of 'for' and 'while' loops interchangeably. Observe the boundary conditions of all the code snippets again and answer.",  
+  "B" : "<br>In code snippets A and C, 'while' loop and 'for' loop are used interchangeably. Both the loops -  'while (y <= b):'  in code snippet A and 'for y in range(1, b+1):' in code snippet C - generate the value of 'y' as 1 and 2.<br>In code snippet B, 'for y in range(1, b):' is equivalent to: 'for y in (1)' , range function is excluding the value 2. Hence generates the value of 'y' as 1.",
+  "C" : "The code snippets demonstrate the usage of 'for' and 'while' loops interchangeably. Observe the boundary conditions of all the code snippets again and answer.",
+  "D" : "The code snippets demonstrate the usage of 'for' and 'while' loops interchangeably. Observe the boundary conditions of all the code snippets again and answer."
+}
+},
+{
+"id":"11",
+"duration":5,
+"question":"Consider the following Python code snippet:",
+"query":"            Choose the correct output from the options given below:",
+"imgURL":"images/Quiz22.png",
+"options":[
+           {"option":"a: 20 40 30 60 50 100"},
+           {"option":"b: 20 50 40 100"},
+           {"option":"c: 20 40 30 60"},
+           {"option":"d: 20 30 40 60"}
+          ],         
+"correct":"C",
+"description":{
+  "A" : "<br>In range function, the upper limit is excluded, hence the outer 'for' loop is equivalent to 'for n in (2,3,4)'. Try again and find the correct output.",  
+  "B" : "<br>In range function, the upper limit is excluded, hence the outer 'for' loop is equivalent to 'for n in (2,3,4)'. Try again and find the correct output.",
+  "C" : "<br>The outer 'for' loop is equivalent to 'for n in (2,3,4)'.<br>For 'n = 2', 'if' block is skipped and inner 'for' loop prints 20 40. <br>For 'n = 3', 'if' block is skipped again and inner 'for' loop prints 30 60. <br>For 'n = 4', 'if' block is executed and 'break' is encountered. 'break' statement terminates the loop and inner 'for' loop is not executed.",
+  "D" : "<br>The outer 'for' loop is equivalent to 'for n in (2,3,4)'. <br>For 'n = 2', the complete inner 'for' loop is executed. Then for 'n = 3', again the complete inner loop is executed. <br>Think again and choose the correct answer."
+}
+},
+{
+"id":"12",
+"duration":5,
+"question":"Consider the following python code and predict the output from the options below:",
+"imgURL":"images/Quiz23.png",
+"options":[
+           {"option":"a: 5"},
+           {"option":"b: 5 11"},
+           {"option":"c: 5 8 14"},
+           {"option":"d: 5 11 20"}
+          ],         
+"correct":"D",
+"description":{
+  "A" : "The range function is defined as range(lower limit, upper limit[exclusive] , step). Hence, the 'for' loop at line #3 is equivalent to : 'for count in (0,3,6,9)'. Try again and choose the correct output.",  
+  "B" : "The range function is defined as range(lower limit, upper limit[exclusive] , step). Hence, the 'for' loop at line #3 is equivalent to : 'for count in (0,3,6,9)'. Try again and choose the correct output.",
+  "C" : "The range function is defined as range(lower limit, upper limit[exclusive] , step). Hence, the 'for' loop at line #3 is equivalent to : 'for count in (0,3,6,9)'. Try again and choose the correct output.",
+  "D" : "<br>The 'for' loop at line #3 is equivalent to : 'for count in (0,3,6,9)'<br>For the value of 'count = 0', the condition of 'if' block at line# 4 is false and line# 5 is skipped ,line# 6, 7 are executed and prints 5.<br>For the next value of count, 'count = 3', the condition of 'if' block is true, hence 'continue' at line# 5 is executed and execution of remainder section of loop is skipped for that iteration. <br>For 'count = 6', line# 6 and 7 are executed and prints 11.<br>Finally for 'count = 9', line# 6 and 7 are executed again and prints 20.<br>Hence the output is 5 11 20."
+}
+},
+{
+"id":"13",
+"duration":5,
+"question":"What is the value of \"a\", if the output of the program is 0 0 1?",
+"imgURL":"images/Quiz24.png",
+"options":[
+           {"option":"a: 4"},
+           {"option":"b: 3"},
+           {"option":"c: 2"},
+           {"option":"d: 1"}
+          ],         
+"correct":"ABC",
+"description":{
+  "A" : "When a = 4, Output is: 0 0 1",  
+  "B" : "When a = 3, Output is: 0 0 1",
+  "C" : "When a = 2, Output is: 0 0 1",
+  "D" : "When a = 1, Output is: 0 0"
+}
+},
+{
+"id":"14",
+"duration":5,
+"question":"Refer the given Python program. Complete the missing code for line numbers 4 and 8 from the given options such that the<br>             output of the program is : <br>             <strong>Result = 12</strong>",
+"imgURL":"images/Quiz25.png",
+"options":[
+           {"option":"a: Line 4: result = result + 2<br>        Line 8: result = result + count"},
+           {"option":"b: Line 4: result = result + 1<br>        Line 8: result = result + count"},
+           {"option":"c: Line 4: result = result + count<br>        Line 8: result = result + 1"},
+           {"option":"d: Line 4: result = result + count<br>        Line 8: result = result  - count"}
+          ],         
+"correct":"C",
+"description":{
+  "A" : "Prints 'Result = 11', Try again.",  
+  "B" : "Prints 'Result = 10', Try again.",
+  "C" : "Prints 'Result = 12'",
+  "D" : "Prints 'Result = 0'. Try again."
+}
+},
+{
+"id":"15",
+"duration":5,
+"question":"Consider the Python code snippets given below. Which of the two has a syntax error?",
+"imgURL":"images/Quiz26.png",
+"options":[
+           {"option":"a: 1 and 2"},
+           {"option":"b: 1"},
+           {"option":"c: 2"},
+           {"option":"d: None"}
+          ],         
+"correct":"C",
+"description":{
+  "A" : "Code snippet 1 gives an output as 4 3 2 1. Pre-decrement/increment operators are not supported in Python, but will not give error if used. It will not have any effect. Try to execute the code snippets and observe the output.",  
+  "B" : "Code snippet 1 gives an output as 4 3 2 1. Pre-decrement/increment operators are not supported in Python, but will not give error if used. It will not have any effect. Try to execute the code snippets and observe the output.",
+  "C" : "Code snippet 2 has a syntax error at line 3. Post-decrement/increment operators are not supported in Python and will give an error if used.",
+  "D" : "Try to execute the code snippets and observe the output."
+}
+}
+]

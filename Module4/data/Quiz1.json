@@ -1,0 +1,369 @@
+[
+{
+"id":"1",
+"question": "Fill in the following blanks. Choose your answers from the options given:<span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          A          </span>  is a design level thought process, <br/>whereas <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          B          </span>   is code level implementation.",
+"type":"Matchquiz",
+"imgLink":"",
+"imgURL":"",
+"colA":
+		[
+		{"option1":"  A  ->"},
+		{"option2":"  B  ->"} 
+	             
+		],
+"colB":
+		[
+		{"option1":"Encapsulation"},
+		{"option2":"Abstraction"}, 
+		{"option3":"Entity"}
+		],
+"Correct":
+		[
+		{"option":"Abstraction"},
+		{"option":"Encapsulation"} 
+		
+		],
+"description":
+         [
+		{"option":"Abstraction is a design level thought process"},
+		{"option":"Encapsulation is code level implementation"}
+		]
+    },
+ 
+ {
+"id":"2",
+"question": "Fill in the following blanks. Choose your answers from the options given:<span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          A          </span>  hides object information, <br/>whereas <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          B          </span>   hides implementation complexity",
+"type":"Matchquiz",
+"imgLink":"",
+"imgURL":"",
+"colA":
+		[
+		{"option1":"  A  ->"},
+		{"option2":"  B  ->"} 
+		             
+		],
+"colB":
+		[
+		{"option1":"Encapsulation"},
+		{"option2":"Abstraction"}, 
+		{"option3":"Entity"}
+		],
+"Correct":
+		[
+		{"option":"Encapsulation"},
+		{"option":"Abstraction"} 
+		
+		],
+"description":
+         [
+		{"option":"Encapsulation hides object information"},
+		{"option":"Abstraction hides implementation complexity"}
+		]
+},
+
+{
+"id":"3",
+"question": "Fill in the following blanks. Choose your answers from the options given: In a class:<span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          A          </span>  are properties and <br><span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          B          </span>   and are behaviors ",
+"type":"Matchquiz",
+"imgLink":"",
+"imgURL":"",
+"colA":
+		[
+		{"option1":"  A  ->"},
+		{"option2":"  B  ->"}
+		             
+		],
+"colB":
+		[
+		{"option1":"Instance variables"},
+		{"option2":"Methods"}, 
+		{"option3":"Specifiers"}
+		],
+"Correct":
+		[
+		{"option":"Instance variables"},
+		{"option":"Methods"} 
+		
+		],
+"description":
+         [
+		{"option":"In a class: Instance variables are properties/attributes"},
+		{"option":"In a class: methods are behaviors"}
+		]
+
+    },
+    {
+"id":"4",
+"duration":5,
+"question": "From the code snippet given below, a call to __init__ method should be made after creating object of class Box at #statement1?",
+"imgURL":"images/quiz4.PNG",
+"imgLink":"",
+"options":[
+           {"option":"a: True"},
+           {"option":"b: False"}
+          ],
+"correct":"B", 
+"description":{"A":"because __init__ method is automatically called when instance is created.",
+               "B":"because __init__ method is automatically called when instance is created."
+              }
+},
+{
+"id":"5",
+"question": "Match the pair from the code",
+"type":"Matchquiz",
+"imgLink":"",
+"imgURL":"images/quiz25.PNG",
+"colA":
+		[
+		{"option1":"vol"},
+		{"option2":"length"},
+		{"option3":"Box"},
+		{"option4":"smallBox"}            
+		],
+"colB":
+		[
+		{"option1":"Class"},
+        {"option2":"Object"},
+        {"option3":"Instance variable"},
+        {"option4":"Local variable"}
+		],
+"Correct":
+		[
+		{"option":"Local variable"},
+		{"option":"Instance variable"}, 
+		{"option":"Class"},
+		{"option":"Object"}
+		
+		],
+"description":
+         [
+		{"option":"vol is declared inside getVolume method"},
+		{"option":"length is declared with self reference"},
+		{"option":"Box is name of the class"},
+		{"option":"smallBox is object of class Box"}
+		]
+},
+{
+"id":"6",
+"question": "Consider the code given below and identify: <ul style=\"list-style-type:decimal;position:relative;margin-left:60px;\"><li><span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          A          </span> number of objects created.</li> <li><span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          B          </span> number of reference variable created </li> ",  
+"type":"Matchquiz",
+"imgLink":"",
+"imgURL":"images/quiz6.PNG",
+"colA":
+		[
+		{"option1":"  A  ->"},
+		{"option2":"  B  ->"}          
+		],
+"colB":
+		[
+		{"option1":" 1 "},
+		{"option2":" 2 "}, 
+		{"option3":" 3 "},
+		{"option4":" 4 "},
+        {"option5":" 5 "}
+		],
+"Correct":
+		[
+		{"option":" 3 "},
+		{"option":" 2 "}
+		],                
+ "description":
+         [
+		{"option":"3 : a new instance is created whenever constructor/initializer Box() is called"},
+		{"option":"2 : a variable can hold only one object reference at a time. So in #statement2 the previous reference in smallBox is over written."}
+		]
+
+
+},
+{
+"id":"7",
+"question": "Consider the following code snippet and predict True/False, \nIf “self” is removed from #statement1 then the #statement3 will print “0”",
+"imgURL":"images/quiz8.PNG",
+"imgLink":"",
+"options":
+		[
+		{"option":"a: True"},
+		{"option":"b: False"}
+		],
+"correct":"A",
+"description":
+		{"A":"length, breadth and height are local variable in __init__ the “self” reference makes it an instance variable, so removal of self will mean instance variable still has value = 0",
+		"B":"length, breadth and height are local variable in __init__ the “self” reference makes it an instance variable, so removal of self will mean instance variable still has value = 0"		
+		},
+                 "fileURL":""
+},
+{
+"id":"8",
+"question": "Consider the following code snippet and predict True/False, \n#statement3 will result in error because self is not passed as argument to the “getVolume” function.",
+"imgURL":"images/quiz8.PNG",
+"imgLink":"",
+"options":
+		[
+		{"option":"a: True"},
+		{"option":"b: False"}
+		],
+"correct":"B",
+"description":
+		{"A":"self is reference to the object itself and is implicitly passed to the methods.",
+		"B":"self is reference to the object itself and is implicitly passed to the methods."
+		},
+                 "fileURL":""
+},
+{
+"id":"9",
+"question": "Consider the following code snippet and predict True/False, \nCoder can define “init” instead of “__init__”  to initialize the members.",
+"imgURL":"images/quiz8.PNG",
+"imgLink":"",
+"options":
+		[
+		{"option":"a: True"},
+		{"option":"b: False"}
+		],
+"correct":"B",
+"description":
+		{"A":"Since removal of underscores will change the method name.",
+		"B":"Since removal of underscores will change the method name."
+		},
+                 "fileURL":""
+},
+{
+"id":"10",
+"question": "choose the correct option.<br><ul style=\"list-style-type:decimal;position:relative;margin-left:60px;\"><li>public access member :    <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          A          </span> </li><li>private access member :    <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          B          </span> </li><li>protected access member : <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          C          </span></li></ul><br>",  
+"imgURL":"",
+"imgLink":"",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"  A  ->"},
+		{"option2":"  B  ->"}, 
+		{"option3":"  C  ->"}
+		            
+		],
+"colB":
+		[
+		{"option1":" + "},
+		{"option2":" ? "}, 
+		{"option3":" # "},
+		{"option4":" - "},
+        {"option5":" @ "}
+		],
+"Correct":
+		[
+		{"option":" + "},
+		{"option":" - "}, 
+		{"option":" # "}
+		],                
+ "description":
+         [
+		{"option":"public access member in UML is depicted with '+' symbol"},
+		{"option":"private access member in UML is depicted with '-' symbol."}, 
+		{"option":"protected access member in UML is depicted with '#' symbol."}
+		]
+},
+{
+	"id": "11",
+	"question": "Select correct option(s) w.r.t. the below code execution",
+	"imgURL": "images/quiz11.PNG",
+	"imgLink":"",
+	"options": [{
+		"option": "a: Code will result in error at #statement1 - “NameError: name 'raise_amount' is not defined”"
+	}, {
+		"option": "b: No error. Program runs fine as expected and increases the pay by 4%"
+	}, {
+		"option": "c: Will result in error at #statement2 - “NameError: name 'raise_amount' is not defined”"
+	}],
+	"correct": "A",
+	"description": {
+		"A": "Since raise_amount is a class variable and not instance variable so it is not known to the instance.\nHowever, emp_1.raise_amount will not result in error since object will search up in the Employee class when it doesn’t find the variable inside the instance.",
+		"B": "Code will result in Error.Please execute the code for more details.",
+		"C": "emp_1.raise_amount will not result in error since object will search up in the Employee class when it doesn’t find the variable inside the instance."
+
+	},
+	"fileURL": ""
+}, {
+	"id": "12",
+	"question": "Select correct option(s) w.r.t. the below code execution",
+	"imgURL": "images/quiz12.PNG",
+	"imgLink":"",
+	"options": [{
+		"option": "a: #statement3 will print 1.03"
+	}, {
+		"option": "b: #statement4 will print 1.03"
+	}, {
+		"option": "c: #statement3 will print 1.02"
+	}, {
+		"option": "d: #statement4 will print 1.02"
+	}],
+	"correct": "AD",
+	"description": {
+		"A": "option A is correct. Select more to see justification.",
+		"B": "option B is incorrect.Execute the code and select correct options to see the justification.",
+		"C": "option C is incorrect.Execute the code and select correct options to see the justification.",
+		"D": "option D is correct.Since raise_amount is a class variable when it is set at #stmt2 it is applicable to all the instance variables.However,emp_1.raise_amount at# stmt1 will actually create a copy of same inside the object emp_1.So the valueset at# stmt1 remains unchanged."
+	},
+	"fileURL": ""
+},
+{
+"id":"13",
+"question": "Consider the following code snippet.<br>If you want to make the following code work without any error.<br>Then find out what will go to in places of three  &LT;&LT;blanks&GT;&GT; from following options: <br> (A) #nothing (B) @staticmethod (C) @classmethod",
+"imgURL":"images/quiz13.PNG",
+"imgLink":"",
+"options":
+		[
+		{"option":"a: &LT;&LT;blank1&GT;&GT;: #nothing, &LT;&LT;blank2&GT;&GT;: @classmethod, &LT;&LT;blank3&GT;&GT;: @staticmethod"},
+		{"option":"b: &LT;&LT;blank1&GT;&GT;: @classmethod, &LT;&LT;blank2&GT;&GT;: #nothing, &LT;&LT;blank3&GT;&GT;: @staticmethod"}, 
+		{"option":"c: &LT;&LT;blank1&GT;&GT;: @staticmethod, &LT;&LT;blank2&GT;&GT;: #nothing, &LT;&LT;blank3&GT;&GT;: @classmethod"},
+		{"option":"d: &LT;&LT;blank1&GT;&GT;: #nothing, &LT;&LT;blank2&GT;&GT;: @staticmethod, &LT;&LT;blank3&GT;&GT;: @classmethod"}
+		],
+"correct":"A",
+"description":
+{"A":"&LT;&LT;blank1&GT;&GT; : #nothing (This is a regular instance method.)\n &LT;&LT;blank2&GT;&GT;: @classmethod\n &LT;&LT;blank3&GT;&GT; : @staticmethod",
+"B": "Please read about classmethod and staticmethod declaration and try again.",
+"C": "Please read about classmethod and staticmethod declaration and try again.",
+"D": "Please read about classmethod and staticmethod declaration and try again."
+
+
+},
+ "fileURL":""
+},
+{
+"id":"14",
+"question": "Selection correct option(s) w.r.t. the below code execution-",
+"imgURL":"images/quiz14.PNG",
+"imgLink":"",
+"options":
+	[
+	{"option":"a: #statement3 will print 1.05"},
+	{"option":"b: #statement4 will print 1.05"}, 
+	{"option":"c: #statement3 will print 1.04"},
+	{"option":"d: #statement4 will print 1.04"}
+	],
+"correct":"AB",
+"description":
+		{"A":"option A is correct. Select more to see justification.",
+		"B":"option B is correct.  setRaiseAmount is a classmethod this will not be duplicated for instance of Employee class so #stmt1 and #stmt2 actually means the same method call.(Note: conventionally such class methods should be called with Class name instead of object name as mentioned in #stmt1)",
+		"C":"option C is incorrect. Execute the code and select correct options to see the justification.",
+		"D":"option D is incorrect. Execute the code and select correct options to see the justification."	
+		},
+                 "fileURL":""
+},
+{
+"id":"15",
+"question": "What will happen on execution of the below code. ",
+"imgURL":"images/quiz15.PNG",
+"imgLink":"",
+"options":[
+           {"option":"a: It will print 'A digital device with computing power'"},
+           {"option":"b: Syntax Error since the string ‘A digital….’ is not assigned to any variable."}, 
+           {"option":"c: Syntax error at #statement1 since the object of Computer class is not created"},
+           {"option":"d: Syntax error at #statement1 since there is no such variable __doc__"}
+          ],
+"correct":"A", 
+"description":{"A":"There is no error, this is how class documents can be printed.",
+			   "B":"Given string is a variable value",
+				"C":" __doc__ is not an instance variable.",
+				"D":" __doc__ is not an instance variable."},
+ "fileURL":""
+}
+        
+]

@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+
+<html>
+	
+    <head>
+    	 
+		 <title>Title name will go here</title>
+		 
+		 <style>
+		 	
+			#div1 {width:200px;height:auto;padding:10px;border:1px solid green;float:left;}
+			#div2 {width:200px;height:auto; padding:10px;border:1px solid green;float:left;}
+		#div3 {width:200px;height:auto; padding:10px;border:1px solid green;float:left;}
+		#div4 {width:200px;height:auto; padding:10px;border:1px solid green;float:left;}
+			#d1 {width:200px;height:auto; padding:10px;border:1px solid green;display:inline-block; }
+			#d2 {width:200px;height:auto; padding:10px;border:1px solid green;display:inline-block;}
+			#d3{width:200px;height:auto; padding:10px;border:1px solid green;display:inline-block;}
+			#d4 {width:200px;height:auto; padding:10px;border:1px solid green;display:inline-block;}
+		
+		 </style>
+		 <script src="jquery.js"></script>
+		 <script type="text/javascript">
+		 function checkmatch(){
+		 //alert("Hi");
+		 var  ans=['Drag this text3','Drag this text2','Drag this text4','Drag this text1'];
+		// alert(document.getElementById('d1').childNodes[1].innerHTML);
+		 //alert(ans[0]);
+		 if(document.getElementById('d1').childNodes[1].innerHTML==ans[0])
+		 {
+			document.getElementById('d1').childNodes[1].style.color="Green";
+		 }
+		 else
+		 {
+		 document.getElementById('d1').childNodes[1].style.color="Red";
+		 }
+		  if(document.getElementById('d2').childNodes[1].innerHTML==ans[1])
+		 {
+			document.getElementById('d2').childNodes[1].style.color="Green";
+		 }
+		 else
+		 {
+		 document.getElementById('d2').childNodes[1].style.color="Red";
+		 }
+		 
+		 if(document.getElementById('d3').childNodes[1].innerHTML==ans[2])
+		 {
+			document.getElementById('d3').childNodes[1].style.color="Green";
+		 }
+		 else
+		 {
+		 document.getElementById('d3').childNodes[1].style.color="Red";
+		 }
+		  if(document.getElementById('d4').childNodes[1].innerHTML==ans[3])
+		 {
+			document.getElementById('d4').childNodes[1].style.color="Green";
+		 }
+		 else
+		 {
+		 document.getElementById('d4').childNodes[1].style.color="Red";
+		 }
+		 
+		 }
+		 
+			function allowDrop(ev)
+				{
+					ev.preventDefault();
+				}
+			function drag(ev)
+				{
+					ev.dataTransfer.setData("Text",ev.target.id);
+				}
+			function drop(ev)
+				{
+					ev.preventDefault();
+					var data=ev.dataTransfer.getData("Text");
+					ev.target.appendChild(document.getElementById(data));
+					ev.target.appendChild("<br>");
+				}
+		 
+		 </script>
+		 
+    </head>
+    
+    <body>
+		Question: Question here
+		<br>
+		<br>
+		<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<span id="sp1" draggable="true" ondragstart="drag(event)" id="drag1">Drag this text1</span>
+		</div>
+		<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<span id="sp2" draggable="true" ondragstart="drag(event)" id="drag2">Drag this text2</span>
+		</div><div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<span id="sp3" draggable="true" ondragstart="drag(event)" id="drag3">Drag this text3</span>
+		</div><div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<span id="sp4" draggable="true" ondragstart="drag(event)" id="drag4">Drag this text4</span>
+		</div><br>
+		<br>
+		<br>
+	Question 1:<div id="d1" ondrop="drop(event)" ondragover="allowDrop(event)">
+		</div>
+		<br>
+	
+		Question 2:<div id="d2" ondrop="drop(event)" ondragover="allowDrop(event)">
+		</div>
+<br>
+		Question 3:<div id="d3" ondrop="drop(event)" ondragover="allowDrop(event)">
+		</div>
+		<br>
+Question 4:<div id="d4" ondrop="drop(event)" ondragover="allowDrop(event)">
+		</div><br>	
+		<button id="bttn" onclick="checkmatch()">Submit</button>
+    </body>
+    
+</html>
+
+

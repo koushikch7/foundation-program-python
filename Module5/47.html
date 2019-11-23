@@ -1,0 +1,29 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+</head>
+
+<body style="margin: 0;">
+
+    <div id="manual" style="overflow: hidden; position: relative; width: 1200px;">
+        <div id="container" class="container-fluid">
+            <div class="row" style="margin-bottom: 15px;margin-top:5px">
+                <div class="col-md-12"><figure><img src="images/img17.png" style="margin:auto;display: block;width:45%;height:45%;"/></figure></div>
+            </div>
+        </div>
+        <div class="row" style="position:relative;margin-left:60px">
+                <div class="col-md-11">
+                    <ul>
+                        <li>If transaction T1 locks the resource A (database/tablespace/table/row/field) in shared (S) mode, another transaction T2 can also lock the same resource A in shared (S) mode.</li>
+                        <li>If transaction T1 locks the resource A (database/tablespace/table/row/field) in shared (S) mode, another transaction T2 cannot lock the same resource A, in exclusive (X) mode until T1 releases its S lock on A.</li>
+                        <li>If transaction T1 locks resource A in X mode no other transaction can lock resource A in any other (S or X) mode until T1 releases its X lock on A.</li>
+                    </ul>
+                    
+               </div>
+                <div class="col-md-1"></div>
+            </div>
+    </div>
+</body>
+</html>

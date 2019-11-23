@@ -1,0 +1,17 @@
+.btn {
+    border-radius: 100px;
+	
+	
+}
+.btn-default{
+background-color:red;
+}
+
+.btn-primary
+{
+background-color:deeppink;
+}
+.btn-success
+{
+background-color:purple;
+}

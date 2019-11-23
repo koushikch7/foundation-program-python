@@ -1,0 +1,353 @@
+﻿<!doctype html>
+<html class="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Infosys Campus Connect : Foundation Program 5.0</title>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap.css" />
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <script src="lib/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    
+<script>
+jQuery(document).ready(function() {
+        
+	jQuery('.carousel[data-type="multi"] .item').each(function(){
+		var next = jQuery(this).next();
+		if (!next.length) {
+			next = jQuery(this).siblings(':first');
+		}
+		next.children(':first-child').clone().appendTo(jQuery(this));
+	  
+		for (var i=0;i<2;i++) {
+			next=next.next();
+			if (!next.length) {
+				next = jQuery(this).siblings(':first');
+			}
+			next.children(':first-child').clone().appendTo($(this));
+		}
+	});
+        
+});
+</script>
+<style>
+.carousel-control.left, .carousel-control.right {
+	background-image:none;
+}
+
+img{
+	width:100%;
+	height:250px;
+}
+.carousel-inner {
+    width:100%
+}
+
+@media (min-width: 992px ) {
+	.carousel-inner .active.left {
+		left: -25%;
+              
+	}
+	.carousel-inner .next {
+		left:  25%;
+	}
+	.carousel-inner .prev {
+		left: -25%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px ) {
+	.carousel-inner .active.left {
+		left: -33.3%;
+	}
+	.carousel-inner .next {
+		left:  33.3%;
+	}
+	.carousel-inner .prev {
+		left: -33.3%;
+	}
+	.active > div:first-child {
+		display:block;
+	}
+	.active > div:first-child + div {
+		display:block;
+	}
+	.active > div:last-child {
+		display:none;
+	}
+}
+
+@media (max-width: 767px) {
+	.carousel-inner .active.left {
+		left: -100%;
+	}
+	.carousel-inner .next {
+		left:  100%;
+	}
+	.carousel-inner .prev {
+		left: -100%;
+	}
+	.active > div {
+		display:none;
+	}
+	.active > div:first-child {
+		display:block;
+	}
+}
+</style>
+
+    <script type="text/javascript">
+    
+     function myFunction() {
+    NewWindow=window.open("Module2/Module2.html", "_blank", "status=no,fullscreen,toolbar=no,location=no,menubar=no,scrollbars=no,resizable=no,top=100,left=300,width=800,height=500");
+NewWindow.focus();
+void(0);     
+}
+        function MM_preloadImages() { //v3.0
+            var d = document; if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                 var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+            }
+        }
+
+    </script>
+    <!-- added -->
+    <script src="lib/jquery.js" type="text/javascript"></script>   
+    <script src="lib/bootstrap.js" type="text/javascript"></script>   
+    <script>
+           $('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
+
+        </script>
+</head>
+<body onload="Hmpg();" >
+  
+    <div class="gridContainer clearfix" >
+             <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a  class="navbar-brand" onclick="Hmpg();"  href="#" style="font-family:Monotype Corsiva;font-size: 30px; font-weight: bold">Foundation Program 5.0</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+          <li class="active" ><a  onclick="Hmpg();" href="#">Home</a></li>
+          <li class="active" ><a  onclick="AboutFP();" href="#">About FP5.0</a></li>
+        <li><a onclick="FAQFP();" href="#">FAQ</a></li>
+        <li><a  onclick="Contactfp()" href="#">Contact</a></li>
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+<div class="container">
+    <div class="col-md-12">
+              <div class="well">
+   <div class="container text-center">
+<div class="carousel slide row" data-ride="carousel" data-type="multi" data-interval="5000" id="fruitscarousel">
+
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/M1.jpg"  onclick="location.href='Module1/dbtoc.html'" ></a></div>
+             <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/M2.jpg" onclick="location.href='Module2/dbtoc.html'" ></a></div>
+              <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/M3.jpg" onclick="location.href='Module3/dbtoc.html'" ></a></div>
+               <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/M4.jpg" onclick="location.href='Module4/dbtoc.html'"  ></a></div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/M5.jpg" onclick="location.href='Module5/dbtoc.html'"  ></a></div>
+             <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/M6.png" onclick="location.href='Projects/dbtoc.html'"  ></a></div>
+              <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/M1.jpg" onclick="location.href='Module1/dbtoc.html'"  ></a></div>
+               <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/M2.jpg" onclick="location.href='Module2/dbtoc.html'"  ></a></div>
+        </div>
+        <div class="item">
+          <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/M3.jpg" onclick="location.href='Module3/dbtoc.html'"  ></a></div>
+             <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/M4.jpg" onclick="location.href='Module4/dbtoc.html'"  ></a></div>
+              <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/M5.jpg" onclick="location.href='Module5/dbtoc.html'"  ></a></div>
+               <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/M6.png" onclick="location.href='Projects/dbtoc.html'"  ></a></div>
+        </div>
+       
+    </div>
+
+    <a class="left carousel-control" href="#fruitscarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+    <a class="right carousel-control" href="#fruitscarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a> 
+
+</div>
+</div>
+  <marquee>Browser Specification : Use only Chrome Browser and set your browser zoom size to 90% for best viewability.</marquee>
+        </div>
+        <!--/well-->
+    </div>
+</div>       
+     
+       <div class="row equal" style="margin-top:1%" id="disdiv">
+    <!--begin panel 1 -->
+    <div class="col-md-4">
+      <div style="text-align:center" class="panel panel-primary">
+        <div class="panel-heading">
+          <h1 class="panel-title text-center">Disclaimer</h1>
+        </div>
+        <!-- end panel-heading -->
+        <div class="panel-body">
+       
+          <ul class="text-left lead2">
+            <li>This catalog is created to guide students to do self-paced learning using videos and tools freely available on internet.</li>
+            <li>It refers to the websites and videos from internet which may change without prior notice.</li>
+            <li>Infosys is not responsible for any IP violation by these websites.</li>
+            <li>Infosys does not promote any of these websites or tools; faculty members and students may use any alternate tools / videos that help in achieving the learning objectives</li>
+            <li>This material can be used and distributed freely by any engineering institute for learning purposes. No derivative works are allowed.</li>
+           
+          </ul> 
+        </div>
+        <!-- end panel-body -->
+      </div>
+      <!-- end panel-primary -->
+    </div>
+    <!--end col-md-4 -->
+    <!-- begin panel 2 -->
+    <div class="col-md-4" id="guidediv">
+      <div style="text-align:center" class="panel panel-primary">
+        <div class="panel-heading">
+          <h1 class="panel-title">Guidelines</h1>
+        </div>
+        <!-- end panel-heading -->
+        <div class="panel-body">
+          
+            <ul class="text-left">
+            <li>Learners are supposed to sequentially go through this material.</li>
+            <li>The time given for each topic is a suggested duration, however it should be treated as a self-paced course.</li>
+            <li>Complete the quizzes and assignments given with each topic.</li>
+            <li>Get your queries clarified from your faculty during doubt clearing sessions.</li>
+            <li>Implement the project given at end of each module as per given guidelines.</li>
+            <li>Join the sessions conducted by Campus Connect for interaction with Infosys SMEs on these areas.</li>
+               </ul> 
+            <a href="Modulespage.html" class="btn btn-primary btn-xs" style="border-radius: 40px">View Modules</a>
+        </div>
+        <!-- end panel-body -->
+      </div>
+      <!-- end panel-primary -->
+    </div>
+    <!-- end col-md-4 -->
+   
+  </div>
+  <!-- end row -->
+  <div class="col-md-12" id="Aboutdiv">
+      <div  class="panel panel-primary">
+        <div class="panel-heading">
+          <h1 class="panel-title">Foundation Program 5.0</h1>
+        </div>
+        <!-- end panel-heading -->
+        <div class="panel-body" style="padding-left:5%;padding-right:5%;">
+            <p style="text-align:justify;text-indent: 2em;"> The core of Campus Connect Program is the Foundation Program (FP) Roll-out.  Foundation Program represents the experience of Infosys in training thousands of entry level engineers from heterogeneous backgrounds and disciplines to deliver world-class projects to our global customers. </p>
+
+            <p style="text-align:justify; text-indent:2em"> The latest version of Foundation Program - FP5.0 predominantly focuses on self-paced learning leveraging freely available online multimedia artifacts which enable learning-on-the-go.  Rightly supplemented with interactive quizzes and real world assignments, FP5.0 provides plenty of space for reinforced learning and self-assessment.  It comprises of five modules and comes in two modes of execution which helps institutions to select based on their needs.  Integrated Projects chosen from multiple domains at the end of  every module in FP5.0 have an eye on fostering industry orientation  and team work.  While this version gets a flavor of self-learning, the role of faculty members continues to be pivotal and stands elevated to that of a mentor.  Urge you to dive deep and experience the magic of fine learning! </p>
+
+        
+        </div>
+        <!-- end panel-body -->
+      </div>
+      <!-- end panel-primary -->
+    </div>
+    <!-- end col-md-4 -->
+   
+<div class="col-md-12" id="FAQdiv">
+      <div  class="panel panel-primary">
+        <div class="panel-heading" >
+          <h1 class="panel-title">FP5.0 FAQs</h1>
+        </div>
+        <!-- end panel-heading -->
+        <div class="panel-body" style="padding-left:5%; padding-right: 5%">
+            <ol>
+                <li style="font-weight:bold">What is covered in the Infosys Foundation Program 5.0?</li>
+                  <p>The courses of the Infosys Foundation Program cover the following 5 modules, which is the basis for software development:</p>
+                    <ul>
+                        <li>Module 1 : Programming Fundamentals
+                        <li>Module 2 : Database Fundamentals
+<li>Module 3 : Python – Database Integration
+<li>Module 4 : Object Oriented Programming using Python
+<li>Module 5 : Advanced Database Concepts
+
+                    </ul>
+                  <li style="font-weight:bold">What is unique in this version?</li>
+                  <p style="text-align:justify">This version is designed to promote self-driven/self-paced learning with support and mentoring from members of faculty and included are a lot of online video references, quizzes, assignments and projects.</p>
+
+                  
+                    <li style="font-weight:bold">Does that mean students are expected to learn on their own?</li>
+                  <p style="text-align:justify">Yes. However, faculty members will mentor the students by conducting frequent doubt clearing sessions and giving enough guidance to complete the projects. In addition, Infosys will also conduct webinar based doubt clearing sessions frequently.</p>
+
+                    <li style="font-weight:bold">Are the course contents available online? Is this designed like online MOOC courses?</li>
+                  <p style="text-align:justify">Yes the course contents are available in the CC portal. But not like MOOC courses. Student can download the content on their machines and the contents are to be used as offline webpages which can be viewed using Google chrome browser. However, external references needs to be accessed using Internet.</p>
+
+                      <li style="font-weight:bold">Is it mandatory to complete all projects?</li>
+                  <p style="text-align:justify">Yes. Each module is having a project. It’s important to complete all the projects to complete the learning cycle. However, faculty will evaluate the projects related to Module 4 and Module 5.</p>
+
+                     <li style="font-weight:bold">Does attending this program entitle the student for placement in Infosys?</li>
+                  <p style="text-align:justify">No. Infosys placements are decided through the regular and independent recruitment process. Those students who are already selected by Infosys will acquire more knowledge by going through this program.</p>
+
+                       <li style="font-weight:bold">What are the eligibility criteria to attend this program?</li>
+                  <p style="text-align:justify">The exact eligibility criteria to select students for the program are decided by the partner college. However, students recruited by Infosys are strongly advised to complete this program.</p>
+
+                       <li style="font-weight:bold">Is the program open for students of non-IT engineering branches?</li>
+                  <p style="text-align:justify">Yes. Students from IT-related as well as non-IT-related branches can do this program.</p>
+
+                   <li style="font-weight:bold">Is it compulsory for all the Infosys selected students to attend this program?</li>
+                  <p style="text-align:justify">No. However, it is strongly advised to complete the program so that they are better equipped in technical requirements before joining Infosys.</p>
+
+                <li style="font-weight:bold">If a student who is yet to be placed attends this program, is it compulsory for the student to join Infosys?</li>
+                  <p style="text-align:justify">No. There is no such restriction.</p>
+
+           <li style="font-weight:bold">Can students who are not selected by Infosys attend the program?</li>
+                  <p style="text-align:justify">Yes. They can undergo the program.</p>
+
+            <li style="font-weight:bold">What are the benefits of attending the program for students?</li>
+                  <p style="text-align:justify">Students completing this program will be technically stronger for pursuing a career in IT industry. Students, who complete the qualifying criteria, will also receive an FP certificate from Infosys.</p>
+
+                              <li style="font-weight:bold">Is the ONLINE assessment a mandatory requirement for FP completion?</li>
+                  <p style="text-align:justify">Yes. College should conduct the ONLINE assessment to complete the FP Rollout.</p>
+
+            <li style="font-weight:bold">Is the Project Implementation a mandatory requirement for FP?</li>
+                  <p style="text-align:justify">Yes. Project Implementation is a mandatory requirement to complete the FP rollout.</p>
+
+            </ol>
+            <p style="text-align:center">**********</p>
+        </div>
+        <!-- end panel-body -->
+      </div>
+      <!-- end panel-primary -->
+    </div>
+    <!-- end col-md-4 -->
+  
+    <div class="col-md-12" id="Contactdiv">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h1 class="panel-title" >Contact Us</h1>
+        </div>
+        <!-- end panel-heading -->
+        <div class="panel-body">
+            <p style="font-weight:bold;">For any queries related to Foundation Program 5.0 :</p>
+            <ul>
+                <li>Email us: <a href="#">ccfp@infosys.com</a> </li>
+            </ul>
+            <br><br><br><br><br><br><br>
+        </div>
+        <!-- end panel-body -->
+      </div>
+      <!-- end panel-primary -->
+    </div>
+    <!-- end col-md-4 -->
+  
+    
+        <div id="footer-copyright">&copy; 2017 Infosys Limited. All rights reserved.</div>
+    </div>   
+  
+       
+</body>
+</html>

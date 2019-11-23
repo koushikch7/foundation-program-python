@@ -1,0 +1,92 @@
+[
+{
+"id":"1",
+"question": "Consider the following ER diagram. From the following identify the valid relational schema which can be derived from this diagram?  Select one or more as applicable.",
+"imgURL":"images/quiz4.1.PNG",
+"options":
+		[
+		{"option1":"Person(pid, name, chairid) , Chair(chairid, make)"},
+		{"option2":"Person(pid, name) ,  Chair(chairid, pid, make)"}, 
+		{"option3":"Person(pid, name) , Chair(chairid, name, make)"},
+		{"option4":"Person(pid, name) ,  Chair(chairid, pid, make)  , Sits_on(pid, chairid)"},
+		{"option5":"Person(pid, name, chairid) ,  Chair(chairid, make)  , Sits_on(pid, chairid)"}
+		],
+"correct":"AB",
+"description":
+		{
+		"A":"For binary 1 to1 relationship, key attribute of any entity can go as foreign key in the other",
+		"B":"For binary 1 to1 relationship, key attribute of any entity can go as foreign key in the other",
+		"C":"The ‘name’ attribute of Person entity is not its key attribute. Re-think!",
+		"D":"It’s not a M to N relationship.  Why do we need a third table here?",
+		"E":"It’s not a M to N relationship.  Why do we need a third table here?"
+		},
+                 "fileURL":""
+},
+{
+"id":"2",
+"question": "Consider the following ER diagram. From the following identify the valid relational schema which can be derived from this diagram? Select one or more as applicable.",
+"imgURL":"images/quiz4.2.PNG",
+"options":
+		[
+		{"option1":"Teacher(tid, tname, courseid) , Course(courseid, cname)"},
+		{"option2":"Teacher(tid, tname) , Course(courseid, cname, tid)"}, 
+		{"option3":"Teacher(tid, tname) , Course(courseid, cname, tname)"},
+		{"option4":"Teacher(tid, tname, cname) , Course(courseid, cname)"},
+		{"option5":"This diagram cannot be converted to relational schema"}
+		],
+"correct":"B",
+"description":
+			{
+			"A":"A teacher can handle multiple courses.  Is this the correct schema?",
+			"B":"For binary 1 to M relationship, key attribute of entity on 1 side should be given as foreign key in the entity on M side",
+			"C":"The ‘tname’ attribute of Teacher entity is not its key attribute. Re-think!",
+			"D":"The ‘cname’ attribute of Course entity is not its key attribute. Re-think!",
+			"E":"This is a proper ER diagram which can be represented as relational scheme.  Re-think!"	
+			},
+                         "fileURL":""
+},
+{
+"id":"3",
+"question": "Consider the following ER diagram. From the following identify the valid relational schema which can be derived from this diagram? Select one or more as applicable.",
+"imgURL":"images/quiz4.3.PNG",
+"options":
+		[
+		{"option1":"Student(sid, sname, courseid) , Course(courseid, cname)"},
+		{"option2":"Student(sid, sname) , Course(courseid, cname, sid)"}, 
+		{"option3":"Student(sid, sname) , Course(courseid, cname) ,  Enrolls_For(sid , courseid)"},
+		{"option4":"Student(sid, sname, cname) , Enrolls_For(sid, cid)"},
+		{"option5":"This diagram cannot be converted to relational schema"}
+		],
+"correct":"C",
+"description":
+			{
+			"A":"A student can enroll for multiple courses.  Is this the correct schema?  Also, it is a M to N relationship.  Re-think!",
+			"B":"A course can be taken up by many students.  Is this the correct schema? Also, it is a M to N relationship.  Re-think!",
+			"C":"For a binary M to N relationship, a third table for relationship is required with key attributes from both the entities",
+			"D":"A student can enroll for multiple courses. A course can be taken up by many students. Also, it is a M to N relationship.  Re-think!",
+			"E":"This is a proper ER diagram which can be represented as relational scheme.  Re-think!"
+			},
+                         "fileURL":""
+},
+{
+"id":"4",
+"question": "Consider the following relationship in the ER Diagram for the above scenario.  How many tables would be there in the relational schema for the following diagram?",
+"imgURL":"images/quiz4.4.PNG",
+"options":
+		[
+		{"option1":"0"},
+		{"option2":"1"}, 
+		{"option3":"2"},
+		{"option4":"This diagram cannot be converted into relational schema"}
+		],
+"correct":"C",
+"description":
+		{
+		"A":"Zero!  Do you think this diagram cannot be converted into relational schema?",
+		"B":"How about the M:N relationship?  Re-think!",
+		"C":"Yes, one for the Employee entity and the other for M:N relationship",
+		"D":"This is a complete ER diagram and can be converted into relational schema"	
+		},
+                 "fileURL":""
+}
+]

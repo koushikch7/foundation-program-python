@@ -1,0 +1,47 @@
+[
+{
+"id":"1",
+"question": "Consider the following 'item' table:",
+
+"imgURL":"images/quiz2.1.PNG",
+
+"query":"Predict the output of the below Python code from the given options (Assume username and password are correct):<br> ",
+"imgURL2":"images/quiz2.C.1.PNG",
+"qtype":"multichoice",
+"qtype":"multichoice",
+"opt":"Options:<br>",
+"options":[
+           {"option":"a: [(1, 'Plum'), (2, 'Banana'), (3, 'Orange'), (4, 'Apple'), (5, 'Bread'), (6, 'Sausage'), (7, 'Sandisk)]"},
+           {"option":"b: [(30, 'Plum'), (30, 'Banana'), (30, 'Orange'), (30, 'Apple'), (65, 'Bread'), (20, 'Sausage'), (, 'Sandisk)]"}, 
+           {"option":"c: Error"},
+           {"option":"d: [('1', 'Plum'), ('2', 'Banana'), ('3', 'Orange'), ('4', 'Apple'), ('5', 'Bread'), ('6', 'Sausage'), ('7', 'Sandisk)]"}
+          ],
+          "fileURL":"Scripts/file1.txt",
+          
+"correct":"A",
+
+"description":{"A" : "The cursor fetches the values of Item_code and Item_name for all the rows of table Item. ", 
+               "B" : "Are we fetching category_code instead of item_code here? Think again.", 
+               "C" : "Try to execute this code and observe if there is any error.", 
+               "D" : "Does the query return the result as a dictionary? Observe again. "
+                }
+},
+{
+"id":"2",
+"question": "",
+"imgURL":"images/quiz2.1.PNG",
+"query":"Predict the output of the below Python code (Assume username and password are correct):<br>",
+"imgURL2":"images/quiz2.C.2.PNG",
+"type":"Verify",
+"qtype":"multichoice",
+"line":"images/Line.png",
+"imgAnsURL":"images/q2.A.2.PNG",
+"imgAnsText":"Output:",
+"options":[
+           
+          ],
+"correct":"AS",
+"description":{
+                }
+}
+]

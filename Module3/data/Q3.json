@@ -1,0 +1,23 @@
+[
+{
+"id":"1",
+"question": "Consider the following 'customer' table:",
+"imgURL":"images/quiz3.1.PNG",
+"query":"Predict the output of the Python code given below:<br>",
+"imgURL2":"images/quiz3.C.1.PNG",
+"options":[
+           {"option":"a: 4"},
+           {"option":"b: 3"}, 
+           {"option":"c: 2"},
+           {"option":"d: 1"}
+          ],
+          "query2":"Note: Using triple quotes (three consecutive single or double quotes), the line of code can be broken into several lines which is not possible with single or double quotes.",
+"correct":"C",
+"description":{"A" : "Do we have 4 customers with state = 'California' AND city = 'Redwood City' ? Observe the table data again.", 
+               "B" : "Do we have 3 customers with state = 'California' AND city = 'Redwood City' ? Observe the table data again", 
+               "C" : "cur.rowcount returns the number of records fetched by the cursor. In the table Customer, two customers have state as 'California' and city as 'Redwood City'. Hence cur.rowcount returns 2.<br><br>Try to execute print(cur.description) in IDE and observe the output.<br>Note- Add the statement before con.close() ", 
+               "D" : "Do we have only 1 customer with state = 'California' AND city = 'Redwood City' ? Observe the table data again."
+                },
+                "fileURL":"Scripts/file2.txt"
+}
+]

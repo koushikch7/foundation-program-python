@@ -1,0 +1,200 @@
+[
+{
+"id":"1",
+"question": "Observe the code snippets given below and choose their correct output from the dropdown list.",
+"imgURL":"images/Quiz126.png",
+"query":"<br>",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"I   "},
+		{"option2":"II "}, 
+		{"option3":"III"}
+		],
+"colB":
+		[
+		{"option1":"A|C|E|"},
+		{"option2":"A|B|C|D|"}, 
+		{"option3":"A|B|C|D|E|"},
+		{"option4":"A|B|D|E|"},
+                {"option5":"Syntax Error"}
+		],
+"Correct":
+		[
+		{"option":"A|C|E|"},
+		{"option":"Syntax Error"}, 
+		{"option":"A|B|D|E|"}
+		],
+ "description":
+                [
+		{"option":"Divide by zero Exception is raised, hence B is not printed and C is printed. 'else' is not executed as there was an exception. 'finally' is executed after except, hence E is printed."},
+		{"option":"Invalid Syntax – 'else' block should come after 'except' block"},
+		{"option":"'try' block is executed, hence A, B are printed. 'else' block is executed after try as there was no exception, hence D is printed. 'finally' is executed, hence E is printed."}
+                ]
+},
+{
+"id":"2",
+"question": "Observe the below Python code. Which of the following code snippets will give the output as:<br>                <em>A</em><br>                <em>B</em><br>                <em>C</em>",
+"imgURL":"images/Quiz64.png",
+"options":[
+           {"option":"a: A"},
+           {"option":"b: B"},
+           {"option":"c: A and B"},
+           {"option":"d: None of the Above"}
+          ],
+"correct":"B",
+"description":{
+  "A" : "Try to execute the code in block A, can we have only 'else' block after 'try' block. Answer again.", 
+  "B" : "<br>A is an invalid syntax as else block must follow an except block.<br>B gives the output as A B C as finally block is executed after try. Please note that we can have a try block without an except block.", 
+  "C" : "Try to execute the code in block A, can we have only 'else' block after 'try' block. Answer again.",                
+  "D" : "Try to execute the code snippets and observe the output."
+}
+},
+{
+"id":"3",
+"question": "Observe the following Python Code:",
+"imgURL":"images/Quiz65.png",
+"query":"            Choose the correct output:",
+"options":[
+           {"option":"a: Error"},
+           {"option":"b: Type error"},
+           {"option":"c: Value error"},
+           {"option":"d: Syntax Error in the program"}
+          ],
+"correct":"D",
+"description":{
+  "A" : "Try to execute the code and observe the output.", 
+  "B" : "\"TypeError\" is thrown when we try to do some operation on incompatible types. e.g. we try to subtract a number from a string value.", 
+  "C" : "Try to execute the code and observe the output.",                
+  "D" : "The default 'except:' block (which catches the remaining exceptions other than 'TypeError' and 'ValueError) should be the last except block."
+}
+},
+{
+"id":"4",
+"question": "Observe the given code snippet and choose the correct output for different values of &lt;&lt;input&gt;&gt; supplied in line number<br>            'm'.",
+"imgURL":"images/Quiz127.png",
+"query":"<br>",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"'A'       "},
+		{"option2":"10      "}, 
+		{"option3":"10+21 "},
+		{"option4":"'String'"}
+		],
+"colB":
+		[
+		{"option1":"Start, 10, In Finally,"},
+		{"option2":"Start, Value error, In Finally, Finish,"}, 
+		{"option3":"Start, 31, In Finally, Finish,"},
+		{"option4":"Start, 10, In Finally, Finish"},
+                {"option5":"Start, Type Error, In Finally, Finish,"}
+		],
+"Correct":
+		[
+		{"option":"Start, Value error, In Finally, Finish,"},
+                {"option":"Start, 10, In Finally, Finish"},
+		{"option":"Start, 31, In Finally, Finish,"}, 		
+		{"option":"Start, Value error, In Finally, Finish,"}
+		],
+ "description":
+         [
+		{"option":"There is a value error at line no# d as a wrong type (passed a string value while a number is expected) is passed while calling the function at line# m. Hence the code enters the value error exception block at #h. Once completed, finally block is executed. In the last \"Finish\" is displayed at line# l. The output is: Start, Value error, In Finally, Finish,"},
+		{"option":"Try block is successfully executed. Line# b and #e are executed. Once completed, finally block is printed. In the last \"Finish\" is displayed at line# l. The output is: Start, 10, In Finally, Finish"}, 
+		{"option":"10+21 is computed and function is called with integer value 31 at line# m. Try and finally blocks are executed and output is: Start, 31, In Finally, Finish,"},
+		{"option":"There is a value error at line no# d as a wrong type (passed a string value while a number is expected) is passed while calling the function at line# m. Hence the code enters the value error exception block at #h. Once completed, finally block is executed. In the last \"Finish\" is displayed at line# l. The output is: Start, Value error, In Finally, Finish,"}
+		]
+},
+{
+"id":"5",
+"question": "Which of the following code snippets correctly handles the exception?",
+"imgURL":"images/Quiz66.png",
+"options":[
+           {"option":"a: A"},
+           {"option":"b: B"},
+           {"option":"c: A and B"},
+           {"option":"d: None of the Above"}
+          ],
+"correct":"C",
+"description":{
+  "A" : "Observe code B also, is the code fine?", 
+  "B" : "Observe code A also, is the code fine?", 
+  "C" : "We can either handle the exception during the function definition or during function call.<br>In code A , the exception is handled in the function definition while in Code B, it is handled during the function call.",                
+  "D" : "Observe the type of arguments passed while calling the function. Are we passing the type of parameters as expected? Think again and answer."
+}
+},
+{
+"id":"6",
+"question": "Observe the following Python code:",
+"imgURL":"images/Quiz67.png",
+"query":"<br>            Choose the correct sequence of output statements from the options below:<br>            1) Divide by zero error<br>            2) ZeroDivisionError<br>            3) In Function Finally<br>            4) In Outside Finally",
+"options":[
+           {"option":"a: 1,3,2,4"},
+           {"option":"b: 2,4"},
+           {"option":"c: 1,3,4"},
+           {"option":"d: 2,4,3"}
+          ],
+"correct":"C",
+"description":{
+  "A" : "The exception is already handled at line# 4 inside the function, will it be handled again at line# 10? Think again and answer.", 
+  "B" : "When the function is called at line# 9, the control is passed to line# 1, then will the exception be handled at line# 4 or line# 10? Think again and answer.", 
+  "C" : "<br>Divide by zero error<br>In Function Finally<br>In Outside Finally<br><br>The function is called at line# 9, the exception is encountered at line# 3. It is caught in step#4 and prints \"Divide by zero error\" followed by finally block inside function which prints \"In Function Finally\". Once the exception is handled, it will not be caught again at #10 but finally block is executed which prints \"In Outside Finally\".",                
+  "D" : "When the function is called at line# 9, the control is passed to line# 1, then will the exception be handled at line# 4 or line# 10? Think again and answer."
+}
+},
+{
+"id":"7",
+"question":"Consider a file test.txt in D Drive with the following contents:",
+"imgURL":"images/Quiz68.png",
+"query":"            Predict the output for the above Python code:",
+"options":[
+           {"option":"a: In try block<br>        I love Python<br>        In exception block"},
+           {"option":"b: In try block<br>        I love Python<br>        Completed try block"},
+           {"option":"c: In try block<br>        I love Python<br>        Completed try block<br>        In exception block"},
+           {"option":"d: None of the above."}
+          ],
+"correct":"A",
+"description":{
+  "A" : "<br>Line ii. prints \"In try block\"<br>Line iv. prints the contents of the file test.txt. i.e. \"I love Python\"<br>Line v. throws – \"ValueError: I/O operation on closed file\". \"with\" keyword automatically closes the file, hence we cannot do any further operation on that file.<br>Line vi. to viii. In 'try' block are not executed<br>Line x. in 'except' block is executed.", 
+  "B" : "\"with\" keyword automatically closes the file and we are trying to access it again at line# v. Think again and answer", 
+  "C" : "Once an exception is encountered in 'try' block, will rest of the statements in 'try' block be executed? Think again and answer.",                
+  "D" : "Try to execute the code and observe the output."
+}
+},
+{
+"id":"8",
+"question": "Consider a file test.txt in D Drive.<br>            Predict the output for the following Python code:",
+"imgURL":"images/Quiz69.png",
+"options":[
+           {"option":"a: In try block<br>        In exception block<br>        In finally block"},
+           {"option":"b: In try block<br>        Completed try block<br>        In exception block<br>        In finally block"},
+           {"option":"c: In try block<br>        Completed try block"},
+           {"option":"d: In try block<br>        Completed try block<br>        In finally block"}
+          ],
+"correct":"A",
+"description":{
+  "A" : "The file is opened in read mode in line# c and we are trying to write to the file in line# d, hence the exception is thrown here. Further statements in 'try' block are not executed. Hence, line# e is not executed. 'except' block at line# f is executed and  line# g is printed. 'finally' block is always executed. <br>Hence the output is:<br>In try block<br> In exception block<br>In finally block", 
+  "B" : "Observe the opening mode for file at line# c. We are trying to write to the file at line# d. Can we write to a file opened in read only mode? Think again and answer.", 
+  "C" : "Observe the opening mode for file at line# c. We are trying to write to the file at line# d. Can we write to a file opened in read only mode? Think again and answer.",                
+  "D" : "Observe the opening mode for file at line# c. We are trying to write to the file at line# d. Can we write to a file opened in read only mode? Think again and answer."
+}
+},
+{
+"id":"9",
+"question": "Consider a file test.txt in D Drive.<br>            Predict the output for the following Python code:",
+"imgURL":"images/Quiz70.png",
+"options":[
+           {"option":"a: In try block<br>        In exception block<br>        In finally block"},
+           {"option":"b: In try block<br>        Completed try block<br>        In else block<br>        In finally block"},
+           {"option":"c: In try block<br>        Completed try block<br>        In finally block"},
+           {"option":"d: In try block<br>        In else block<br>        In finally block"}
+          ],
+"correct":"B",
+"description":{
+  "A" : "Try to execute the code. Do you encounter any exception?", 
+  "B" : "The file is opened in write mode and the text is written in the file. No exception is encountered, hence line# ii and v are printed. 'else' block is executed after 'try' block as there is no exception. Hence line# ix  is printed. 'finally' block is anyways executed.<br>Hence the output is:<br><br>In try blockCompleted try block<br>In else block<br>In finally block", 
+  "C" : "In case there is no exception, will the \"else\" block also not be executed after 'try' block ? Think again and answer.",                
+  "D" : "Try to execute the code.  If there is no exception, will line# v be executed? Answer again."
+}
+}
+]

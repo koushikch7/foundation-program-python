@@ -1,0 +1,215 @@
+
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Project 3</title>
+</head>
+<body style="margin: 0;">
+
+<div id="jpedal" style="overflow: hidden; position: relative; width: 1100px; height: 4000px;">
+
+<!-- Begin shared CSS values -->
+
+<!-- End shared CSS values -->
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+
+.s3_5{
+	FONT-SIZE: 16.3px;
+	FONT-FAMILY: Verdana;
+	color: rgb(0,0,0);
+line-height: 230%;
+}
+.s2_5{
+	FONT-SIZE: 18.3px;
+	FONT-FAMILY: Verdana;
+	color: rgb(0,0,0);
+line-height: 230%;}
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+
+<!-- End embedded font definitions -->
+
+<ul class="nav nav-tabs" style="font-size: 14px;margin-left:15px">
+      <li class="active"><a data-toggle="tab" href="#home"><b>Guidelines</b></a></li>
+      <li><a data-toggle="tab" href="#menu1"><b>Project Objectives</b></a></li>
+      <li><a data-toggle="tab" href="#menu2"><b>Specifications</b></a></li>
+      <li><a data-toggle="tab" href="#menu3"><b>Expected Output</b></a></li>
+      <li><a data-toggle="tab" href="#menu4"><b>Project Evaluation Guidelines</b></a></li>
+      <li><a data-toggle="tab" href="#menu5"><b>Coverage</b></a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+ <ul style="list-style-type:disc">
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">This project is to be done after completing Module 3 </li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Learners are suggested to use Eclipse IDE and Oracle for project development</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">It is an extension of Project II – InstaDB</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Suggested duration: 16 person-hours (2 learners can do in 1 day)</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Suggested team size: 2</li></ul>
+
+    </div>
+    <div id="menu1" class="tab-pane fade">
+    <ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">After completing this project, a learner should be able to understand and implement the integration of Python Program and Oracle database and perform basic database queries from Python Application.
+<ul>
+<li>Connecting Python Application to Oracle database</li>
+<li> Control Structures in Python Programming – If / Else, For loop
+<li> Data Structures in Python – Strings, Lists, Tuples, Dictionary</li>
+<li>Functions in Python</li>
+<li>Basic Database Operations and clauses in SQL
+<ul><li>Select, Update, Delete,, Functions, Group By and Having</li></ul>
+
+</li>
+</ul>
+</ul>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+    <ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">The project is to extend the InstaDB project by integrating the Oracle database with a Python program.</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">The Python Program should connect to InstaDB and allow the user to perform given queries. </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">The data needs to be pulled from multiple tables using SQL queries and logic needs to be written in Python program to join the result from those queries to get the desired result. (However, you will learn a simpler way of achieving the same result in Module 5 using ‘Join’ operator.)
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">For query “Which of my pictures has received maximum likes?”:<ul style="list-style-type:circle">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Retrieve pic ids from ‘Pictures’ Table where user-id = myUserId and store them in Python list</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Iterate over that list, say using For loop of Python, and retrieve no. of likes for each of these pictures from ‘Likes’ table, and store in another list</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Find and display the picture id with maximum likes</li></ul></li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">What needs to be done:<ul style="list-style-type:circle">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Write a Python program that connects to database created in InstaDB project</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Program should show menu based choices from 1 to 8 for each of the given queries and execute the query based on user’s choice: <ol style="list-style-type:square">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Max Likes </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Min Likes </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Who liked most </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Music pictures </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Popular Tag </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Most liked User </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Old Tagging </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Delete Inactive Users</li></ol></li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">After displaying results of a query in console window, main menu should appear again and prompt for user’s choice</li></ul></li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Queries:<ul style="list-style-type:circle">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Max Likes - Which of my pictures (picture ids) has received maximum likes?</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Min Likes - Which of my pictures (picture ids) has received minimum likes?</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Who liked most - Who (user id) has liked my pictures most?</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Music pictures - Show all pictures related to music.</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Popular Tag - What is the name of most popular tag?</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Most liked User - Whose pictures (user id) have been liked most?</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Old Tagging - Tag my pictures older than 3 years “Old”</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Delete Inactive Users - Delete inactive users i.e. who have not done activity for past 1 year</li></ul></li>
+</ul>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+<ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Examples<ul style="list-style-type:circle">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Max Likes - Which of my pictures (picture ids) has received maximum likes?<ul style="list-style-type:none">
+<p><img src="images/Capture.PNG"></p></ul></li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Popular Tag - What is the name of most popular tag? <br>  “Literaure” </li></ul></li>
+</ul>
+    </div>
+          <div id="menu4" class="tab-pane fade">
+    <ul style="list-style-type:disc">
+<center><img src="images/prg3_1.png" alt="" height="300" width="500"></center>
+</ul>
+    </div>
+    <div id="menu5" class="tab-pane fade">
+   <ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">The project provides a practice on following concepts to learners:
+<ul>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Python - Oracle Integration concepts
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Database concepts <ul style="list-style-type:none">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Select, Update, Delete, Functions, Group by, Having</li></ul></li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Python programming fundamentals<ul style="list-style-type:none">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">For loop, If-else, String, List, Dictionary, Functions</li></ul></li>
+</ul>
+</li>
+</ul>
+    </div>
+
+  </div>
+
+
+
+
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<!--
+<ul><li class="s2_5"><b>Guidelines</b><ul style="list-style-type:disc">
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">This project is to be done after completing Module 3 </li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Learners are suggested to use Eclipse IDE and Oracle for project development</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">It is an extension of Project II – InstaDB</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Suggested duration: 16 person-hours (2 learners can do in 1 day)</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Suggested team size: 2</li></ul></li>
+<li class="s2_5"><b>Project Objectives</b>
+<ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">After completing this project, a learner should be able to understand and implement the integration of Python Program and Oracle database and perform basic database queries from Python Application.
+<ul>
+<li>Connecting Python Application to Oracle database</li>
+<li> Control Structures in Python Programming – If / Else, For loop
+<li> Data Structures in Python – Strings, Lists, Tuples, Dictionary</li>
+<li>Functions in Python</li>
+<li>Basic Database Operations and clauses in SQL
+<ul><li>Select, Update, Delete,, Functions, Group By and Having</li></ul>
+
+</li>
+</ul>
+</ul>
+<li class="s2_5"><b>Specifications</b><ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">The project is to extend the InstaDB project by integrating the Oracle database with a Python program.</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">The Python Program should connect to InstaDB and allow the user to perform given queries. </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">The data needs to be pulled from multiple tables using SQL queries and logic needs to be written in Python program to join the result from those queries to get the desired result. (However, you will learn a simpler way of achieving the same result in Module 5 using ‘Join’ operator.)
+</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">For query “Which of my pictures has received maximum likes?”:<ul style="list-style-type:circle">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Retrieve pic ids from ‘Pictures’ Table where user-id = myUserId and store them in Python list</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Iterate over that list, say using For loop of Python, and retrieve no. of likes for each of these pictures from ‘Likes’ table, and store in another list</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Find and display the picture id with maximum likes</li></ul></li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">What needs to be done:<ul style="list-style-type:circle">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Write a Python program that connects to database created in InstaDB project</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Program should show menu based choices from 1 to 8 for each of the given queries and execute the query based on user’s choice: <ol style="list-style-type:square">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Max Likes </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Min Likes </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Who liked most </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Music pictures </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Popular Tag </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Most liked User </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Old Tagging </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Delete Inactive Users</li></ol></li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">After displaying results of a query in console window, main menu should appear again and prompt for user’s choice</li></ul></li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Queries:<ul style="list-style-type:circle">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Max Likes - Which of my pictures (picture ids) has received maximum likes?</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Min Likes - Which of my pictures (picture ids) has received minimum likes?</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Who liked most - Who (user id) has liked my pictures most?</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Music pictures - Show all pictures related to music.</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Popular Tag - What is the name of most popular tag?</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Most liked User - Whose pictures (user id) have been liked most?</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Old Tagging - Tag my pictures older than 3 years “Old”</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Delete Inactive Users - Delete inactive users i.e. who have not done activity for past 1 year</li></ul></li>
+</ul></li>
+<li class="s2_5"><b>Expected Output</b><ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Examples<ul style="list-style-type:circle">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Max Likes - Which of my pictures (picture ids) has received maximum likes?<ul style="list-style-type:none">
+<p><img src="images/Capture.PNG"></p></ul></li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Popular Tag - What is the name of most popular tag? <br>  “Literaure” </li></ul></li>
+</ul></li>
+<li class="s2_5"><b>Project Evaluation Guidelines</b><ul style="list-style-type:disc">
+<center><img src="images/prg3_1.png" alt="" height="300" width="500"></center>
+</ul></li>
+<li class="s2_5"><b>Coverage</b><ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">The project provides a practice on following concepts to learners:
+<ul>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Python - Oracle Integration concepts
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Database concepts <ul style="list-style-type:none">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Select, Update, Delete, Functions, Group by, Having</li></ul></li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Python programming fundamentals<ul style="list-style-type:none">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">For loop, If-else, String, List, Dictionary, Functions</li></ul></li>
+</ul>
+</li>
+</ul></li>
+</ul>
+-->
+</div>
+</body>
+</html>

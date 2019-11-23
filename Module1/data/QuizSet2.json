@@ -1,0 +1,390 @@
+[
+{
+"id":"1",
+"duration":5,
+"question": "Which of the following is false about arrows in flowchart?",
+
+"options":[
+           {"option":"a: Arrows show the direction of flow"},
+           {"option":"b: Arrows show the sequence of solution steps"},
+           {"option":"c: Arrows represent the decision in flowchart"},
+           {"option":"d: Arrows join different blocks in flowchart"}
+          ],
+"correct":"C",
+"description":{
+  "A" : "Arrows represent the direction of flow of a program.", 
+  "B" : "Arrows in flowchart represent the sequence of the solution steps of a program.", 
+  "C" : "Arrows do not represent the decision, they just represent the direction of flow of a program.",                
+  "D" : "Arrows are used to join different blocks of a flowchart."
+}
+},
+{
+"id":"2",
+"type":"Matchquiz",
+"question": "Match the flowchart symbols with their description:",
+"colA":
+		[
+		{"option1":" "},
+		{"option2":" "}, 
+		{"option3":" "},
+		{"option4":""},
+                {"option5":"   "},
+                {"option6":"    "}
+		],
+"colAimg":
+		[
+		{"option":"images/Quiz1_1.png"},
+		{"option":"images/Quiz1_2.png"}, 
+		{"option":"images/Quiz1_3.png"},
+		{"option":"images/Quiz1_4.png"},
+                {"option":"images/Quiz1_5.png"},
+                {"option":"images/Quiz1_6.png"}
+		],
+"colB":
+		[
+		{"option1":"Represents connector for flowcharts"},
+		{"option2":"Represents decision /conditional statements"}, 
+		{"option3":"Begin and end of flowchart"},
+		{"option4":"Holds user input and output"},
+                {"option5":"Holds processes and calculations"},
+                {"option6":"Represents pointer to indicate the flow of statements"}
+		],
+"Correct":
+		[
+		{"option":"Begin and end of flowchart"},
+		{"option":"Holds processes and calculations"}, 
+		{"option":"Represents decision /conditional statements"},
+		{"option":"Holds user input and output"},
+                {"option":"Represents pointer to indicate the flow of statements"},
+                {"option":"Represents connector for flowcharts"}
+		],
+ "description":
+         [
+		{"option":"Ovals or rounded rectangles represent terminals in flowchart. They usually represent the start or end of a process."},
+		{"option":"Rectangle represents a process. This shape is used to show that some operation is performed e.g. addition, replacement, increment etc."}, 
+		{"option":"Rhombus or diamond shape represents a decision statement, usually a yes/no or true/false question. It has two arrows coming out of it one corresponding to Yes or True and other to No or False."},
+		{"option":"Parallelogram represents an input/output in flowchart e.g. input A, display X etc."},
+                {"option":"An arrow represents a flow line. It represents the flow of statements in flowchart. The arrow coming from one symbol in a flowchart and ending to another represents that the control passes to the symbol to which arrow points to."},
+                {"option":"Called as on-page connector, it is used to join different flowline."}
+		]
+ },
+
+{
+"id":"3",
+"question": "Given flowchart represents the algorithm to find greatest of three numbers- A,B,C. Complete the flowchart. Choose the values of I to VII from the options:",
+"imgQuestionURL":"images/Quiz2.png",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":" I   ->"},
+		{"option2":" II  ->"}, 
+		{"option3":" III ->"},
+		{"option4":" IV  ->"},
+                {"option5":" V   ->"}, 
+		{"option6":" VI  ->"},
+		{"option7":" VII ->"}
+		],
+"colB":
+		[
+		{"option1":"Yes"},
+		{"option2":"C > A"}, 
+		{"option3":"Print \"A is greatest\""},
+		{"option4":"Print \"C is greatest\""},
+                {"option5":"A > C"}, 
+		{"option6":"No"}
+		],
+"Correct":
+		[
+		{"option":"A > C"},
+		{"option":"Print \"A is greatest\""}, 
+		{"option":"Print \"C is greatest\""},
+                {"option":"Yes"},
+		{"option":"No"}, 
+		{"option":"Yes"},
+		{"option":"No"}
+		]
+},
+{
+"id":"4",
+"duration":10,
+"question": "Observe the given flowchart to print the ten multiples of a number N. Select the incorrect block(s)/arrow(s) from the options<br>           provided below:",
+"imgQuestionURL":"images/Quiz3.png",
+"options":[
+           {"option":"a: Block 1"},
+           {"option":"b: Block 2"},
+           {"option":"c: Block 3"},
+           {"option":"d: Block 4"},
+           {"option":"e: Block 5"},
+           {"option":"f: Arrow 1"},
+           {"option":"g: Arrow 2"}
+          ],
+"correct":"BDEF",
+"description":{
+    "A" : "This block is fine. We hold input/output using a parallelogram shape only.",
+    "B" : "An incorrect block. A rectangle holds processes/calculations.",
+    "C" : "This block is fine. A rectangle holds processes/calculations.",
+    "D" : "An incorrect block. Output should be displayed in a parallelogram.",
+    "E" : "An incorrect block. A rectangle should hold processes/calculations.",
+    "F" : "Arrow is incorrect. It should come after block 2 as per the logic.",
+    "G" : "This arrow is correctly joining two blocks."    
+}
+},
+
+{
+"id":"5",
+"duration":10,
+"question": "The blocks in dark blue color are corrected in this flowchart. Now, do you find any problem in the logic? Identify the<br>            block/blocks showing incorrect logic:",
+"imgQuestionURL":"images/Quiz4.png",
+"options":[
+           {"option":"a: Block 1"},
+           {"option":"b: Block 2"},
+           {"option":"c: Block 3"},
+           {"option":"d: Block 4"},
+           {"option":"e: Block 5"},
+           {"option":"f: None of the Above"}
+          ],
+"correct":"BE",
+"description":{
+    "A" : "It is initializing the count value to 1. This is fine.",
+    "B" : "The value of Multiple should be computed as the product of Count and N. The logic is incorrect.",
+    "C" : "The value of multiple should be printed, this is fine.",
+    "D" : "We need to print 10 multiples of the number N. This block is checking if the value of count has reached 10. Logic is fine.",
+    "E" : "If the value of count is not 10 at block 4, the value of Count should be incremented by 1(and not the value of Multiple). Hence the logic is incorrect.",
+    "F" : "Try to simulate the flowchart with some input value."
+}
+},
+{
+"id":"6",
+"question": "Fill in the following blanks. Choose your answers from the options given:<br><br><ul style=\"list-style-type:decimal;position:relative;margin-left:60px;\"><li><span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          A          </span>  is a step by step procedure to solve a given problem.</li><li><span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          B          </span>  is a type of diagram that represents a process.</li><li><span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          C          </span>  is a compact and informal high-level description of a program.</li></ul><br>",
+"imgURL":"",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"  A  ->"},
+		{"option2":"  B  ->"}, 
+		{"option3":"  C  ->"}             
+		],
+"colB":
+		[
+		{"option1":"Pseudo code"},
+		{"option2":"Class diagram"}, 
+		{"option3":"Algorithm"},
+		{"option4":"Flowchart"},
+                {"option5":"Data flow diagram"}
+		],
+"Correct":
+		[
+		{"option":"Algorithm"},
+		{"option":"Flowchart"}, 
+		{"option":"Pseudo code"}
+		],                
+ "description":
+         [
+		{"option":"Algorithm is a self-contained step-by-step set of operations to be performed (to solve a problem)."},
+		{"option":"Flowchart is a diagrammatic representation of an algorithm illustrating a solution model to a given problem."}, 
+		{"option":"Pseudo code is an informal and English-like representation of an algorithm."}
+		],
+"CumulativeDescription":"<br><strong>Algorithm</strong> is a self-contained step-by-step set of operations to be performed (to solve a problem).<br><strong>Flowchart</strong> is a diagrammatic representation of an algorithm illustrating a solution model to a given problem.<br><strong>Pseudo code</strong> is an informal and English-like representation of an algorithm.<br><strong>Class Diagram</strong>  is a structure diagram which shows the structure of the system by showing the classes and their relationships. It will be covered later in this course.<br><strong>Data Flow Diagram</strong> (<a href=\"https://en.wikipedia.org/wiki/Data_flow_diagram\" target=\"_blank\" style=\"color:#0000EE\">https://en.wikipedia.org/wiki/Data_flow_diagram</a>) represents the flow of data between different processes in a business. This is not within the purview of this course."
+                
+},
+{
+"id":"7",
+"duration":2,
+"question": "Identify wrong statement with respect to a pseudo code:",
+"imgURL":"",
+"options":[
+           {"option":"a: It can use compact mathematical notations"},
+           {"option":"b: It is a rough sketch of an actual program"},
+           {"option":"c: It is an informal way to describe a program"},
+           {"option":"d: It can be used as a computer program"},
+           {"option":"e: It is not meant for compiling"},
+           {"option":"f: It can be expressed using natural language "},
+           {"option":"g: There is no standard defined for writing pseudo code so it can vary from author to author"}
+          ],
+"correct":"D",
+"description":{               
+  "A":"Pseudo code can use natural language or compact mathematical notations. Look for a wrong statement w.r.t pseudo code.",
+  "B":"Pseudo code is only a rough sketch of an actual program and not the actual program. Look for a wrong statement w.r.t pseudo code.",
+  "C":"Pseudo code is an informal representation of a program. Look for a wrong statement w.r.t pseudo code.",
+  "D":"Pseudo code is not a computer program. It is just a representation.",
+  "E":"Pseudo code is only a rough sketch of an actual program and not the actual program. Hence it is not meant for compiling. Look for a wrong statement w.r.t pseudo code.",
+  "F":"Pseudo code can use natural language or compact mathematical notations. Look for a wrong statement w.r.t pseudo code.",
+  "G":"No standard for pseudo code syntax exists, as a program in pseudo code is not an executable program. Look for a wrong statement w.r.t pseudo code."
+  }
+},
+{
+"id":"8",
+"question": "Several ways of determining the flow of control in programs are illustrated in the pictures below. Match them with their<br>            names.",
+"imgURL":"",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"          "},
+		{"option2":""}, 
+		{"option3":"      "}
+		],
+"colAimg":
+		[
+		{"option":"images/Quiz99_1.png"},
+		{"option":"images/Quiz99_2.png"}, 
+		{"option":"images/Quiz99_3.png"}
+		],
+"colB":
+		[
+		{"option1":"Selection"},
+		{"option2":"Looping"}, 
+		{"option3":"Sequential"}
+		],
+"Correct":
+		[
+		{"option":"Sequential"},
+		{"option":"Selection"}, 
+		{"option":"Looping"}
+		],
+ "description":
+         [
+		{"option":"In Sequential Control Structure statements are executed line by line in the order in which they appear."},
+                {"option":"Selection Control Structure is used to test a condition."},
+                {"option":"Looping (or Iteration) Control Structure repeatedly executes a series of statements as long as the condition is true."}
+         ]
+},
+{
+"id":"9",
+"duration":5,
+"question": "The following pseudo code is written to identify the winner of car racing game. Which of the following is a better way to write<br>           the pseudo code and why?",
+"imgURL":"images/Quiz7.png",
+"options":[
+           {"option":"a: Pseudo Code A"},
+           {"option":"b: Pseudo Code B"},
+           {"option":"b: Both A and B"},
+           {"option":"b: None of these"}
+           ],
+"correct":"B",
+"description":{
+    "A":"Is there a need to use 'if' loop three times here? Can we write the code in a better way? Think again.",
+    "B":" It is using the conditional/selection statements in a better way. In code A, the conditions for all the 'if' block will be tested, irrespective of whether the earlier ones were true or false. Observe the usage of 'else if' and 'else' blocks in code B. Here if the condition in 'if' block is true, the conditions for 'else if' and 'else' blocks will not be tested.",
+    "C":"In code snippet A, is there a need to use 'if' loop three times? Can we write the code in a better way? Think again.",
+    "D":"Pseudo code has to be expressed in one of the given ways. Please suggest which one is better."
+    }
+},
+{
+"id":"10",
+"duration":5,
+"type":"Verify",
+"question": "The pseudo code for the previous scenario using 'for loop' is given in jumbled form below. Guess the correct sequence:",
+"imgURL":"images/Quiz9.png",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Quiz9_1.png",
+"imgAnsText":"<br><strong>Answer:</strong>",
+"options":[],
+"correct":"BE",
+"description":{}
+},
+{
+"id":"11",
+"type":"Verify",
+"duration":5,
+"question": "Observe the pseudo code given below and guess the output:",
+"imgURL":"images/Quiz10.png",
+"imgURLFlag":"Stay",
+"imgAnsText":"<br><strong>Answer:</strong><br>The pseudo code prints an infinite series of natural numbers 5 6 7...... <br><br>This code is an example of infinite loop. <br>The logic inside the loop should be written such that, the loop terminates after a finite number of iterations.",
+"options":[],
+"correct":"AB",
+"description":{}
+},
+{
+"id":"12",
+"duration":5,
+"question": "The following pseudo code is expected to print the numbers from 5 to 1 in descending order. (i.e. 5 4 3 2 1). Identify the<br>              line number(if any) with a logical error. ",
+"imgURL":"images/Quiz10.png",
+"options":[{"option":"a: No Error"},
+           {"option":"b: Line number 2"},
+           {"option":"c: Line number 4"},
+           {"option":"d: Line number 1"}
+          ],
+"correct":"C",
+"description":{
+    "A":"Observe the pseudo code again, there is some error in it's logic.  Try to find out.",
+    "B":"The condition of while loop is correct. Observe the pseudo code and try to find the error.",
+    "C":"The value for 'count' should decrement here, hence line# 4 should be 'count = count -1'.",
+    "D":"Here count is initialized to 5, which is fine. Observe the pseudo code and try to find the error."
+}
+},
+{
+"id":"13",
+"duration":10,
+"type":"Verify",
+"imgURLFlag":"Stay",
+"question": "In ABC Training Institute, a student takes examination in three different subjects. Find the average marks scored<br>             by the student. If the average is more than 65 percent, print 'Student passed' else print 'Student failed'.<br><ul style=\"position:relative;margin-left:60px\"><li>Write a pseudo code for above scenario.</li><li>Extend the pseudo code to print the pass/fail status for 'N' number of students of the class.</li></ul>",
+"imgURL":"",
+"imgAnsText":"<br><strong>Your answer could be on similar lines:</strong><br>Observe the usage of a meaningful name, line numbers and indentation while writing good pseudo code:",
+"imgAnsURL":"images/Quiz12.png",
+"options":[],
+"correct":"BE",
+"description":{}
+},
+{
+"id":"14",
+"question": "Match the correct example/examples for the Language Types mentioned below:",
+"type":"Matchquiz",
+"colA":
+		[
+                {"option1":"Python                 "},
+		{"option2":"Machine Code       "}, 
+		{"option3":"Assembly language"},
+                {"option4":"JavaScript             "},
+                {"option5":"C++                     "}
+		],
+"colB":
+		[
+		{"option1":"CPU Understandable Language"},
+		{"option2":"Low Level Language"}, 
+		{"option3":"High Level Language"}
+		],
+"Correct":
+		[
+		{"option":"High Level Language"},
+		{"option":"CPU Understandable Language"}, 
+		{"option":"Low Level Language"},
+                {"option":"High Level Language"},
+                {"option":"High Level Language"}
+		],
+ "description":
+         [
+		{"option":"Python, Java, PHP etc. are High Level Languages"},
+                {"option":"Machine code consists of binary or hexadecimal instructions which a computer can respond to directly."},
+		{"option":"Assembly language is a low level computer language."}, 
+		{"option":"JavaScript is a high level computer language."},
+                {"option":"C and C++ are examples of High Level Languages."}               
+		],
+"CumulativeDescription":"<br>\"A <strong>high-level language</strong> is a programming language such as C, FORTRAN, or Pascal that enables a programmer to write programs that are more or less independent of a particular type of computer. Such languages are considered high-level because they are closer to human languages and further from machine languages.\" - Webopedia. Source - http://www.webopedia.com/TERM/H/high_level_language.html<br>Python , PHP, C, C++, Fortran etc. are examples of High Level Languages.<br><br>\"<strong>Low-level languages</strong> are closer to the hardware than are high-level programming languages, which are closer to human languages.\" - Webopedia. Source - http://www.webopedia.com/TERM/L/low_level_language.html<br>Assembly language is a low level language.<br><br>\"<strong>Machine code</strong> or <strong>machine language</strong> is a set of instructions executed directly by a computer's central processing unit (CPU). Each instruction performs a very specific task, such as a load, a jump, or an ALU operation on a unit of data in a CPU register or memory.\" – Wikipedia. Source - https://en.wikipedia.org/wiki/Machine_code<br>"
+
+},
+{
+"id":"15",
+"duration":5,
+"question": "Identify the computer understandable language from the options below:",
+"imgURL":"",
+"options":[
+           {"option":"a: English, as spoken in Boston."},
+           {"option":"b: Python"},
+           {"option":"c: Machine language, different for every type of CPU."}
+          ],
+"correct":"C",
+"description":{
+    "A":"English is not a computer language.",
+    "B":"Python is a high level programming language, computer cannot understand Python directly.",
+    "C":"Machine language is a computer understandable language which consists of binary and hexadecimal instructions."
+}
+}
+]
+
+
+
+
+
+
+
+
+
+

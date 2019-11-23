@@ -1,0 +1,148 @@
+﻿<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="" ng-app="fpApp">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FP5.0 : Module 2</title>
+     <script src="js/angular.js"></script>
+         <script src="js/jquery.js"></script>
+         <script src="js/jquery.fileDownload.js"></script>
+<script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
+
+  <link rel="stylesheet" href="js/libs/twitter-bootstrap/css/bootstrap.css">
+  <style type="text/css">
+      .visi{
+          visibility: visible;
+      }
+      .hid{
+          visibility: hidden;
+      }
+  </style>
+   
+  
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/quiz1.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/Quiz.js"></script>
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/db.css">   
+    <style>
+        #qt1, #qt2, #qt3{
+            font : 18px Verdana;
+            color : #525252
+        }
+        #q1radio {
+            font : 18px Verdana;
+            color : #525252
+        }
+        #manual{
+            color : #525252
+        }
+ 
+       progress {
+   -webkit-appearance: none;
+   appearance: none;
+}
+    progress::-moz-progress-bar { background: darkcyan; }
+    progress::-webkit-progress-bar { background: #9eacba; }
+    progress::-webkit-progress-value { background: darkcyan; }
+</style>
+</head>
+<body class="qc" onload="MM_preloadImages('../images/arrow-l.png', '../images/arrow-r.png', '../images/arrow-l-hl.png', '../images/arrow-r-hl.png')">    
+       <div class="gridContainer clearfix" ng-controller="quiztype1" ng-controller="paging">
+           <div id="home-content" style="margin-top:5%">
+            <div id="container" class="container-fluid">
+                <!-- This div contains the main content. It divides the page into three columns in 1:10:1 ratio -->
+                <div class="row">
+                    <div class="col-md-10"></div>
+                   <div class="col-md-2  btn-duration">
+                        <div class="" style="text-align:center;font:18px Verdana;padding:7px">Duration: 5 min</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- This div contains the second column -->
+                    <div class="col-md-12" id="quiz">
+                        <div id="q1radio" data-qzAns="a" >                            
+                            
+                            <p id="question" class="question" style="margin-bottom:10px;line-height: 40px">  </p>
+                           
+                           <p id="quizQuestionImage" style="margin-bottom:10px;"><img class="img-centered" ng-src="{{quiz.imgURL}}" /></p>  
+                                                   <div id="DownloadScripts">
+                                <a class="btn btn-info"  ng-href="{{quiz.fileURL}}" download="" style="color:#525252;">Download Scripts</a>
+                           </div>
+                            <p style="line-height: 40px"><input type="{{itype}}" id="input1" name="q1"  ng-model="value" value='A' ng-click="MyAlert(quiz,'A')"><span id="option1" >{{quiz.options[0].option1}}</span>
+                                <br id="br1"></p>
+                           
+                            <p style="line-height: 40px"><input type="{{itype}}" id="input2" name="q1"  ng-model="value" value='B' ng-click="MyAlert(quiz,'B')"><span id="option2">{{quiz.options[1].option2}}</span>
+                            <br id="br2"></p>
+                            
+                            <p style="line-height: 40px"><input type="{{itype}}" id="input3" name="q1"  ng-model="value" value='C' ng-click="MyAlert(quiz,'C')"><span id="option3">{{quiz.options[2].option3}}</span>
+                            <br id="br3"></p>
+                            <p style="line-height: 40px"><input type="{{itype}}" id="input4" name="q1"   ng-model="value" value='D' ng-click="MyAlert(quiz,'D')"><span id="option4">{{quiz.options[3].option4}}</span>                         
+                            <br id="br4"></p>
+                                
+                            <p style="line-height: 40px"><input type="{{itype}}" id="input5" name="q1"  ng-model="value" value='E' ng-click="MyAlert(quiz,'E')"><span id="option5">{{quiz.options[4].option5}}</span>
+                            <br id="br5"></p>
+                            
+                            <p style="line-height: 40px"><input type="{{itype}}" id="input6" name="q1"  ng-model="value" value='F' ng-click="MyAlert(quiz,'F')"><span id="option6">{{quiz.options[5].option6}}</span>
+                            <br id="br6"></p>
+                            <p style="line-height: 40px"><input type="{{itype}}" id="input7" name="q1"  ng-model="value" value='G' ng-click="MyAlert(quiz,'G')"><span id="option7">{{quiz.options[6].option7}}</span>
+                            <br id="br7"></p>
+                            
+                            <p style="line-height: 40px"><input type="{{itype}}" id="input8" name="q1"  ng-model="value" value='H' ng-click="MyAlert(quiz,'H')"><span id="option8">{{quiz.options[7].option8}}</span>
+                            <br id="br8"></p>
+                            
+                            <p style="line-height: 40px"><input type="{{itype}}" id="input9" name="q1"  ng-model="value" value='I' ng-click="MyAlert(quiz,'I')"><span id="option9">{{quiz.options[8].option9}}</span>
+                            <br id="br9"></p>
+                            
+                          <div id="q1m" style="line-height: 30px;margin-bottom:10px;"><p class="text-success">Correct Answer : {{quiz.correct}}<br>
+      {{quiz.description}}</p></div>
+                          <div>
+                            <button style="margin-top:10px;" class="btn btn-inverse" id="sA" ng-click="checkboxquiz(quiz)" type="button">Submit</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <div id="menu-top">
+            <div id="home-menu">
+                <ul class="ddmenu">
+                    <li>
+                        <a href="#" class="home-menu-icon" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Menu','','../images/menu-hl.png',1)"><img id="Menu" src="../images/menu.png" alt=""></a>
+                        <div class="submenu" id="home-submenu">
+                            <ul>
+                                <li><a href="dbtoc.html">Database</a></li>
+                                <li><a href="../index1.html">Home</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="pageheainding">
+
+                <h1 id="title-quiz">Test Yourself</h1>
+            </div>             
+        </div>
+        <div id="footer">
+            <div id="footer-tell">
+                <div id="prev"><a ng-click="getPrev()" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('nav-prev','','../images/arrow-l-hl.png',1)"><img id="nav-prev" src="../images/arrow-l.png" alt=""></a></div>
+                <div id="tell"><p id="telltext" style="text-align:center;font:12pt Verdana solid">{{quizpageNumber}}</p></div>
+                <div id="next"><a ng-click="getNext()" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('nav-next','','../images/arrow-r-hl.png',1)"><img id="nav-next" src="../images/arrow-r.png" alt=""></a></div>
+            </div>
+            <div id="footer-copyright">&copy; 2017 Infosys Limited. All rights reserved.</div>
+        </div>
+           <div id="page-progress">
+                <progress id="prog-bar" value="{{quizpageNumber}}" max="175" style="position:fixed;bottom:24px;height:10px;width:1200px"></progress>
+            </div>
+    </div>
+</body>
+</html>
+

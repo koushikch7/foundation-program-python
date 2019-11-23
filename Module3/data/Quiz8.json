@@ -1,0 +1,113 @@
+[
+{
+"id":"1",
+"question": "Consider the following item table.  Which of the following queries would retrieve the number of distinct category codes in Item table?",
+"imgURL":"images/quiz8.11.JPG",
+"options":
+		[
+		{"option1":"SELECT COUNT(DISTINCT category_code) AS total FROM item;"},
+		{"option2":"SELECT DISTINCT COUNT(category_code) AS total FROM item;"}, 
+		{"option3":"SELECT DISTINCT COUNT (*) AS total FROM ITEM;"},
+		{"option4":"SELECT COUNT(category_code) AS total FROM item; "}
+		],
+"correct":"A",
+"description":
+		[{"Justification":"Since Distinct clause considers NULL as well.  Replace DISTINCT with ALL and see the difference in result!"
+		}],
+             "fileURL":"Scripts/file2.txt"
+},
+{
+"id":"2",
+"question": "Consider the following item table.Which of the following queries is better in terms of performance?",
+"imgURL":"images/quiz8.11.JPG",
+"options":
+		[
+		{"option1":"SELECT COUNT(*) AS total FROM item WHERE category_code=30;"},
+		{"option2":"SELECT COUNT(1) AS total FROM item WHERE category_code=30;"}
+		], 
+"correct":"B",
+"description":
+		[{"Justification":"In Count(1), the database will not need to fetch all fields from item table"
+		}],
+             "fileURL":"Scripts/file3.txt"
+},
+{
+"id":"3",
+"question": "Consider the following Student table.  Which of the following queries will return each branch along with the maximum marks in that branch",
+"imgURL":"images/quiz8.1.PNG",
+"options":
+		[
+		{"option1":"SELECT Branch, MAX(Marks) AS 'Highest Mark' FROM Student GROUP BY Branch, MAX(Marks);"},
+		{"option2":"SELECT Branch, MAX(Marks) AS 'Highest Mark' FROM Student GROUP BY Marks, Branch;"}, 
+		{"option3":"SELECT Branch, MAX(Marks) AS 'Highest Mark' FROM Student GROUP BY Branch;"},
+		{"option4":"SELECT Branch, MAX(Marks) AS 'Highest Mark' FROM Student GROUP BY Marks;"}
+		],
+"correct":"C",
+"description":
+		[{"":""}],
+         "fileURL":"Scripts/file4.txt"
+},
+{
+"id":"4",
+"question": "In which of the following scenarios, a GROUP BY clause becomes mandatory?",
+"imgURL":"",
+"options":
+		[
+		{"option1":"SELECT query with only one aggregate function"},
+		{"option2":"SELECT query with minimum one aggregate function along with other columns"}, 
+		{"option3":"SELECT query with two aggregate functions"},
+		{"option4":"SELECT query with only two columns"}
+		],
+"correct":"B",
+"description":{"Justification":""},
+ "fileURL":""
+},
+{
+"id":"5",
+"question": "In a query it is mandatory that the condition in HAVING clause must be based on ____________",
+"imgURL":"",
+"options":
+		[
+		{"option1":"any column of the table referred in the query"},
+		{"option2":"the aggregate function used in the GROUP BY clause"}, 
+		{"option3":"the primary key of the table referred in the query"},
+		{"option4":"the columns that appear in the GROUP BY clause"}
+		],
+"correct":"D",
+"description":
+		{"":""},
+         "fileURL":""
+},
+{
+"id":"6",
+"question": "Consider a table -  Student(Name, Marks).  Which of the following queries can give the desired table state?",
+"imgURL":"images/quiz8.2.PNG",
+"options":
+		[
+		{"option1":"SELECT NVL(Name, ‘NIL') 'Name', NVL(Marks, 'NA') 'Marks' FROM Student;"},
+		{"option2":"SELECT NVL(TO_NUMBER(Name),‘NIL’) 'Name', NVL(Marks,'NA') 'Marks' FROM Student;"}, 
+		{"option3":"SELECT NVL(Name,‘NIL') 'Name', NVL(TO_CHAR(Marks),'NA') 'Marks' FROM Student;"},
+		{"option4":"SELECT NVL(TO_NUMBER(Name),‘NIL') 'Name', NVL(TO_NUMBER(Marks),'NA') 'Marks' FROM Student;"}
+		],
+"correct":"C",
+"description":
+{"":""},
+ "fileURL":"Scripts/file5.txt"
+},
+{
+"id":"8",
+"question": "Consider a table Employee(empno, name, designation, salary, deptno).  We need to retrieve the department number along with the minimum and maximum salary given in that department only if the minimum salary is less than 1000 and maximum salary is greater than 2000.  Which of the following query can help with this requirement?",
+"imgURL":"",
+"options":
+		[
+		{"option1":"SELECT deptno, MIN (salary), MAX (salary) FROM employee GROUP BY deptno HAVING MIN(salary) < 1000 AND MAX (salary) >2000;"},
+		{"option2":"SELECT deptno, MIN (salary), MAX (salary) FROM employee WHERE MIN(salary) < 1000 AND MAX (salary) >2000 GROUP BY DEPTNO;"}, 
+		{"option3":"SELECT deptno, MIN (salary), MAX (salary) FROM employee GROUP BY deptno WHERE MIN(salary) < 1000 AND MAX (salary) >2000;"},
+		{"option4":"SELECT deptno, MIN (salary), MAX (salary) FROM employee HAVING MIN(salary) < 1000 AND MAX (salary) >2000;"}
+		],
+"correct":"A",
+"description":
+	[{"":""}],
+ "fileURL":""
+}
+]

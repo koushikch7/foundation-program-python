@@ -1,0 +1,59 @@
+[
+{
+"id":"1",
+"question":"Which of the following statements are true with respect to index? Select one or more as applicable.",
+"imgURL":"",
+"options":[
+           {"option":"a: Index greatly speeds the execution of SQL statements with search conditions that refer to the indexed column(s)"},
+           {"option":"b: It consumes additional disk space"},
+           {"option":"c: It is most appropriate when retrieval of data from tables are more frequent than inserts and updates"},
+           {"option":"d: Index puts an additional overhead on DML Statements"}
+          ],
+"correct":"ABCD",
+"description":{
+  "A" : "Yes, index speeds up the execution by avoiding full table scans", 
+  "B" : "Yes, Index has to be created and consumes some space", 
+  "C" : "Yes, Index will speed up SELECT queries ",                
+  "D" : "Yes.  Since every time an insert or update  or delete operation is done, index also has to be changed"                
+}
+},
+{
+"id":"2",
+"question": "In which of the following cases usage of index is appropriate?",
+"imgURL":"",
+"options":[
+           {"option":"a: When the query returns large number of rows as per the 95/5 rule "},
+           {"option":"b: For columns which are constantly being updated"},
+           {"option":"c: For columns where the distribution of data is poor (eg: Yes or No, Male or Female and so on)"},
+           {"option":"d: When the query returns small number of rows as per the 95/5 rule "}
+          ],
+"correct":"D",
+"description":{
+  "A" : "Not appropriate as this is almost same as full table access", 
+  "B" : "Not appropriate since every time an  update is done, index also has to be changed, which is an overhead", 
+  "C" : "In this case, it is not worth using an Index",                
+  "D" : "Using an index gives the best result in this case"
+}
+},
+{
+"id":"3",
+"question": "In which of the following queries the unique index on the column ‘customerid’ gets suppressed? Select one or more as applicable.(Presume that customers table is created with unique index on customerid column)",
+"imgURL":"",
+"options":[
+           {"option":"a: SELECT customerid, name FROM  customers WHERE  SUBSTR(customerid,1,2) = ‘1';"},
+           {"option":"b: SELECT customerid, name FROM  customers WHERE  customerid LIKE 'A%';"},
+           {"option":"c: SELECT customerid, name FROM  customers WHERE  customerid NOT IN (‘C1’, ‘C2’);"},
+           {"option":"d: SELECT customerid, name FROM  customers WHERE  customerid || ‘  ‘   =  ‘C6 ‘;"},
+           {"option":"e: SELECT customerid, name FROM  customers WHERE  customerid LIKE ‘%A';"}
+          ],
+"scripts":"Scripts/QuizSet3_3.txt",
+"correct":"ACDE",
+"description":{
+  "A" : "Index  on a column gets suppressed with the use of a function on that column", 
+  "B" : "When the % is given after the value in LIKE, index will be used", 
+  "C" : "Index  on a column gets suppressed with the use of NOT",                
+  "D" : "Index on a column gets suppressed upon modifying that column in WHERE clause",
+  "E" : "When LIKE is used with a preceding %, index  gets suppressed"                 
+}
+}
+]

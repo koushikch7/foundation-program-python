@@ -1,0 +1,66 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<style>
+    #linkbox {
+        width: 100%;
+        height:110px;
+        border: 2px solid #0099ff;
+        border-radius: 15px;
+    }
+    .sub-query{
+        width: 75%;
+        margin : auto;
+        margin-top : 5px;
+        border: 3px solid red;
+        border-radius: 10px;
+ 
+    }
+</style>
+</head>
+
+<body style="margin: 0;">
+
+    <div id="manual" style="overflow: hidden; position: relative; width: 1200px; height: 1250px;">
+        <div class="container">
+            <div class="row" style="position:relative;margin-left:60px">
+                <div class="col-md-11">
+                    <ul>
+                        <li>The EXISTS / NOT EXISTS keyword is used to check whether a sub query returns any row(s).</li>
+                        <li>The main query displays the row if sub query following the EXISTS returns at least one row i.e. EXISTS returns TRUE.</li>
+                        <li>If sub query does not return any rows, then EXISTS returns FALSE.</li>
+                        <li>Consider the following Student and Feepayment tables</li>
+                    </ul>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row" style="margin-bottom: 15px;margin-top:5px">
+                <div class="col-md-12"><img src="images/img13.PNG" style="margin:auto;display: block;width: 80%;height:80%"/></div>
+            </div>
+            <div class="row" style="position:relative;margin-left:60px">
+                <div class="col-md-11">
+                    <ul>
+                        <li>From these tables, we need to fetch the studentid and name of those students who have made atleast one fee payment.</li>   
+                        <li>The query for the stated requirement can be framed using EXISTS clause.</li>
+                    </ul>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+           
+            <div class="row" style="margin-bottom: 15px;margin-top:5px">
+                    <div class="col-md-12"><img src="images/img9_5.png" style="margin:auto;display: block"/></div>
+                </div>
+            <div class="row" style="margin-bottom: 15px;margin-top:10px">
+                <div class="col-md-1" ></div>
+                <div class="col-md-10 btn-other" style="border-radius:0px;background-color: #66bbff;font:18px Verdana">
+                    <div style="text-align:center;padding:10px;line-height:30px">Food for thought: Is there any difference between giving a ‘*’ and column name(s) in the select list of sub query that follows EXISTS / NOT EXISTS clause?</div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

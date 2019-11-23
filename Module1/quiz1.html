@@ -1,0 +1,338 @@
+﻿<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="" ng-app="fpApp">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FP5.0 : Module 1</title>
+     <script src="js/angular.js"></script>
+         <script src="../lib/jquery.js"></script>
+<script src="../lib/bootstrap.js"></script>
+<!--<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="../lib/bootstrap.css">
+  <style type="text/css">
+      .visi{
+          visibility: visible;
+      }
+      .hid{
+          visibility: hidden;
+          
+      }
+       #home-menu .ddmenu li:hover .submenu{
+        height :100px;
+    }
+</style>
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/quiz1.js"></script>
+    <title>Advanced Database Quiz</title>
+    <script src="js/jquery.js"></script>
+    <script src="..//lib/bootstrap.js"></script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/Quiz.js"></script>
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/db.css">  
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+    <style>
+        #qt1, #qt2, #qt3{
+            font : 13pt Verdana;
+        }
+        #q1radio {
+            font : 13pt Verdana;
+        }
+        #manual{
+            color : #424242
+        }
+        #home-menu .ddmenu li:hover .submenu{
+        height :100px;
+    }
+       progress {
+   -webkit-appearance: none;
+   appearance: none;
+}
+    progress::-moz-progress-bar { background: darkcyan; }
+    progress::-webkit-progress-bar { background: #9eacba; }
+    progress::-webkit-progress-value { background: darkcyan; }
+</style>
+<script type="text/javascript" language="javascript">
+    function openScripts(value) 
+    {
+    //alert("hi");
+    window.open(value);
+    }
+
+        
+    function runProgram(value)
+    {
+        //alert("hi");
+        var rawFile = new XMLHttpRequest();
+        rawFile.open("GET", value, false);
+        rawFile.onreadystatechange = function ()
+        {
+            if(rawFile.readyState === 4)
+            {
+                if(rawFile.status === 200 || rawFile.status == 0)
+                {
+                    var allText = rawFile.responseText;
+                    alert(allText);
+                }
+            }
+        }
+        rawFile.send(null);
+    }
+</script>
+</head>
+<body class="qc" onload="MM_preloadImages('../images/arrow-l.png', '../images/arrow-r.png', '../images/arrow-l-hl.png', '../images/arrow-r-hl.png')">
+    <div id="manual" class="gridContainer clearfix" ng-controller="quiztype1" ng-controller="paging">
+        <div id="home-content">
+            <div id="container" class="container-fluid">
+                <!-- This div contains the main content. It divides the page into three columns in 1:10:1 ratio -->
+                <div class="row">
+                    <div class="col-md-10"></div>
+                    <div class="col-md-2  btn-duration">
+                        <div class="centered">Duration: 5 mins</div>
+                    </div>
+                </div>
+                <div class="row" id="qt1">
+                    <!-- This div contains the second column -->
+                    <div class="col-md-12" id="quiz">
+                        <div id="q1radio" data-qzAns="a" >                            
+                            <div>
+                            <p id="question" class="question" style="margin-bottom:10px;line-height: 40px">  </p>
+                            <p id="quizQuestionImage" style=""><img class="img-left"  src="{{quiz.imgURL}}" /></p>
+                            <p id="quizVerifyQuestionImage" style=""><img class="img-centered" style="margin-bottom:30px;"  src="{{quiz.imgQuestionURL}}" /></p>
+                            
+                            <p id="query" style="margin-bottom:10px;line-height: 40px;">  </p>
+                            <p id="quizQuestionImage2" style=""><img class="img-left"  src="{{quiz.imgURL2}}" /></p>
+                            <p id="query2" style="margin-bottom:10px;line-height: 40px;">  </p>
+                            <p id ="answerImageText" class="img-left" style="margin-bottom:10px;border-top:2px solid darkgray;"></p>
+                            <p id="quizAnswerImage" style="margin-bottom:10px;"><img class="img-centered"  src="{{quiz.imgAnsURL}}" /></p>
+                            <p id="quizVerifyAnswerImage" style="margin-bottom:10px;"><img class="img-left"  src="{{quiz.imgAnsURLLeft}}" /></p></div>
+                            <div>
+                                <a class="btn btn-info" id="DownloadScripts" href="" download="" >Download Scripts</a>
+                           </div>
+                            
+                            <div id="optionset">
+                            <p style="line-height: 40px"><input type="{{itype}}" id="input1" name="q1"  ng-model="value" value='A' ng-click="MyAlert(quiz,'A')"><span id="option1" ></span><img src="" id="img1">
+                                <br id="br1"></p>
+                           
+                            <p style="line-height: 40px"><input type="{{itype}}" id="input2" name="q1"  ng-model="value" value='B' ng-click="MyAlert(quiz,'B')"><span id="option2"></span><img src="" id="img2">
+                            <br id="br2"></p>
+                            
+                            <p style="line-height: 40px"><input type="{{itype}}" id="input3" name="q1"  ng-model="value" value='C' ng-click="MyAlert(quiz,'C')"><span id="option3"></span><img src="" id="img3">
+                                <br id="br3"></p>
+                            
+                            <p style="line-height: 40px"><input type="{{itype}}" id="input4" name="q1"   ng-model="value" value='D' ng-click="MyAlert(quiz,'D')"><span id="option4"></span><img src="" id="img4">                          
+                            <br id="br4"></p>
+                                
+                            <p style="line-height: 40px"><input type="{{itype}}" id="input5" name="q1"  ng-model="value" value='E' ng-click="MyAlert(quiz,'E')"><span id="option5"></span> <img src="" id="img5">
+                            <br id="br5"></p>
+                            
+                            <p style="line-height: 40px"><input type="{{itype}}" id="input6" name="q1"  ng-model="value" value='F' ng-click="MyAlert(quiz,'F')"><span id="option6"></span><img src="" id="img6">
+                            <br id="br6"></p>
+                            
+                            <p style="line-height: 40px"><input type="{{itype}}" id="input7" name="q1"  ng-model="value" value='G' ng-click="MyAlert(quiz,'G')"><span id="option7"></span><img src="" id="img7">
+                            <br id="br7"></p>
+                            
+                            <p style="line-height: 40px"><input type="{{itype}}" id="input8" name="q1"  ng-model="value" value='H' ng-click="MyAlert(quiz,'H')"><span id="option8"></span><img src="" id="img8">
+                            <br id="br8"></p>
+                            
+                            <p style="line-height: 40px"><input type="{{itype}}" id="input9" name="q1"  ng-model="value" value='I' ng-click="MyAlert(quiz,'I')"><span id="option9"></span><img src="" id="img9">
+                            <br id="br9"></p>
+                            </div>
+                            
+                          <div id="q1m" style="line-height: 30px"><p class="text-success" >Correct Answer : {{quiz.correct}}{{quiz.description}}</p></div>
+                          <div>
+                            <button class="btn btn-inverse" id="sA" ng-click="checkboxquiz(quiz)" type="button" style="margin-top:20px">Submit</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="qt2">
+                    <!-- This div contains the second column -->
+                    <div class="col-md-12" id="quiz" style="margin-bottom:10px;">
+                        <div id="questionmtf" style="line-height: 40px;margin-bottom:10px;white-space:pre-wrap;"></div>
+                        <p id="imgmtf" style=""><img class="img-left"  src="{{quiz.imgURL}}" /></p>
+                        <p id="imgcentermtf" style=""><img class="img-centered" style="margin-bottom:30px;"  src="{{quiz.imgQuestionURL}}" /></p>
+                         <p id="querymtf" style="line-height: 40px;white-space: pre-wrap"></p>
+                       
+                       <p id="option1mtf">a. {{quiz.colA[0].option1}}  <img src="" id="img1mtf">&nbsp;&nbsp;<select id='a1'>
+                           <option value="default" disabled selected>Select your option</option>  
+                           <option name="choice1">{{quiz.colB[0].option1}}</option>
+                           <option name="choice2">{{quiz.colB[1].option2}}</option>
+                           <option name="choice3">{{quiz.colB[2].option3}}</option>
+                           <option name="choice4">{{quiz.colB[3].option4}}</option>
+                           <option name="choice5">{{quiz.colB[4].option5}}</option>
+                           <option name="choice6">{{quiz.colB[5].option6}}</option>
+                           <option name="choice7">{{quiz.colB[6].option7}}</option>
+                           
+                       </select></p>
+                    
+                    <p id="option2mtf">b. {{quiz.colA[1].option2}}  <img src="" id="img2mtf">&nbsp;&nbsp;<select id='a2'>
+                            <option value="default" disabled selected>Select your option</option> 
+                           <option name="choice1">{{quiz.colB[0].option1}}</option>
+                           <option name="choice2">{{quiz.colB[1].option2}}</option>
+                           <option name="choice3">{{quiz.colB[2].option3}}</option>
+                           <option name="choice4">{{quiz.colB[3].option4}}</option>
+                           <option name="choice5">{{quiz.colB[4].option5}}</option>
+                           <option name="choice6">{{quiz.colB[5].option6}}</option>
+                           <option name="choice7">{{quiz.colB[6].option7}}</option>
+                           
+                       </select></p>
+                    
+                    <p id="option3mtf">c. {{quiz.colA[2].option3}}  <img src="" id="img3mtf">&nbsp;&nbsp;<select id='a3'>
+                            <option value="default" disabled selected>Select your option</option> 
+                           <option name="choice1">{{quiz.colB[0].option1}}</option>
+                           <option name="choice2">{{quiz.colB[1].option2}}</option>
+                           <option name="choice3">{{quiz.colB[2].option3}}</option>
+                           <option name="choice4">{{quiz.colB[3].option4}}</option>
+                           <option name="choice5">{{quiz.colB[4].option5}}</option>
+                           <option name="choice6">{{quiz.colB[5].option6}}</option>
+                           <option name="choice7">{{quiz.colB[6].option7}}</option>
+                           
+                       </select></p>
+                    
+                    <p id="option4mtf">d. {{quiz.colA[3].option4}}  <img src="" id="img4mtf">&nbsp;&nbsp;<select id='a4'>
+                            <option value="default" disabled selected>Select your option</option> 
+                           <option name="choice1">{{quiz.colB[0].option1}}</option>
+                           <option name="choice2">{{quiz.colB[1].option2}}</option>
+                           <option name="choice3">{{quiz.colB[2].option3}}</option>
+                           <option name="choice4">{{quiz.colB[3].option4}}</option>
+                           <option name="choice5">{{quiz.colB[4].option5}}</option>
+                           <option name="choice6">{{quiz.colB[5].option6}}</option>
+                           <option name="choice7">{{quiz.colB[6].option7}}</option>
+                           
+                       </select></p>
+                       
+                       <p id="option5mtf">e. {{quiz.colA[4].option5}}  <img src="" id="img5mtf">&nbsp;&nbsp;<select id='a5'>
+                           <option value="default" disabled selected>Select your option</option> 
+                           <option name="choice1">{{quiz.colB[0].option1}}</option>
+                           <option name="choice2">{{quiz.colB[1].option2}}</option>
+                           <option name="choice3">{{quiz.colB[2].option3}}</option>
+                           <option name="choice4">{{quiz.colB[3].option4}}</option>
+                           <option name="choice5">{{quiz.colB[4].option5}}</option>
+                           <option name="choice6">{{quiz.colB[5].option6}}</option>
+                           <option name="choice7">{{quiz.colB[6].option7}}</option>
+                           
+                       </select></p>
+                       
+                       <p id="option6mtf">f. {{quiz.colA[5].option6}}  <img src="" id="img6mtf">&nbsp;&nbsp;<select id='a6'>
+                           <option value="default" disabled selected>Select your option</option> 
+                           <option name="choice1">{{quiz.colB[0].option1}}</option>
+                           <option name="choice2">{{quiz.colB[1].option2}}</option>
+                           <option name="choice3">{{quiz.colB[2].option3}}</option>
+                           <option name="choice4">{{quiz.colB[3].option4}}</option>
+                           <option name="choice5">{{quiz.colB[4].option5}}</option>
+                           <option name="choice6">{{quiz.colB[5].option6}}</option>
+                           <option name="choice7">{{quiz.colB[6].option7}}</option>
+                           
+                       </select></p>
+                       <p id="option7mtf">g. {{quiz.colA[6].option7}}  <img src="" id="img7mtf">&nbsp;&nbsp;<select id='a7'>
+                           <option value="default" disabled selected>Select your option</option> 
+                           <option name="choice1">{{quiz.colB[0].option1}}</option>
+                           <option name="choice2">{{quiz.colB[1].option2}}</option>
+                           <option name="choice3">{{quiz.colB[2].option3}}</option>
+                           <option name="choice4">{{quiz.colB[3].option4}}</option>
+                           <option name="choice5">{{quiz.colB[4].option5}}</option>
+                           <option name="choice6">{{quiz.colB[5].option6}}</option>
+                           <option name="choice7">{{quiz.colB[6].option7}}</option>
+                           
+                       </select></p>
+                       <p id="option8mtf">h. {{quiz.colA[7].option8}}  <img src="" id="img8mtf">&nbsp;&nbsp;<select id='a8'>
+                           <option value="default" disabled selected>Select your option</option> 
+                           <option name="choice1">{{quiz.colB[0].option1}}</option>
+                           <option name="choice2">{{quiz.colB[1].option2}}</option>
+                           <option name="choice3">{{quiz.colB[2].option3}}</option>
+                           <option name="choice4">{{quiz.colB[3].option4}}</option>
+                           <option name="choice5">{{quiz.colB[4].option5}}</option>
+                           <option name="choice6">{{quiz.colB[5].option6}}</option>
+                           <option name="choice7">{{quiz.colB[6].option7}}</option>
+                           
+                       </select></p>
+                       <p id="option9mtf">i. {{quiz.colA[8].option9}}  <img src="" id="img9mtf">&nbsp;&nbsp;<select id='a9'>
+                           <option value="default" disabled selected>Select your option</option> 
+                           <option name="choice1">{{quiz.colB[0].option1}}</option>
+                           <option name="choice2">{{quiz.colB[1].option2}}</option>
+                           <option name="choice3">{{quiz.colB[2].option3}}</option>
+                           <option name="choice4">{{quiz.colB[3].option4}}</option>
+                           <option name="choice5">{{quiz.colB[4].option5}}</option>
+                           <option name="choice6">{{quiz.colB[5].option6}}</option>
+                           <option name="choice7">{{quiz.colB[6].option7}}</option>
+                           
+                       </select></p>
+                    
+                    <div id="q1mtf" style="line-height: 30px;margin-top:10px;text-align: justify"><p class="text-success" ></p></div>
+                    <button id="bttbmtf" class="btn btn-inverse" style="margin-top:20px" ng-click="checkmatch(quiz)">Submit</button>
+                    </div>
+                    
+            </div>
+                
+                <div class="row" id="qt3">
+                    <!-- This div contains the second column -->
+                    <div class="col-md-12" id="quiz">
+                       <p id="questionfib" style="line-height: 40px;white-space:pre-wrap;"></p>
+                       <p id="imgfib" style=""><img class="img-left"  src="{{quiz.imgURL}}" /></p>
+      
+                       <p id="queryfib" style="line-height: 40px;white-space: pre-wrap"></p>
+                       <br>
+                       <p id="blank1">A. <span id="text1"></span><input type="text" id="t1" name="t1"></p>
+                       <p id="blank2">B. <span id="text2"></span><input type="text" id="t2" name="t1"></p>
+                       <p id="blank3">C. <span id="text3"></span><input type="text" id="t3" name="t1"></p>
+                       <p id="blank4">D. <span id="text4"></span><input type="text" id="t4" name="t1"></p>
+                       <p id="blank5">E. <span id="text5"></span><input type="text" id="t5" name="t1"></p>
+                       <p id="blank6">F. <span id="text6"></span><input type="text" id="t6" name="t1"></p>
+                       <p id="blank7">G. <span id="text7"></span><input type="text" id="t7" name="t1"></p>
+<!--                       D. <input type="text" id="t2" name="t1"><br>
+                       E. <input type="text" id="t2" name="t1"><br>
+                       F. <input type="text" id="t2" name="t1"><br>
+                       G. <input type="text" id="t2" name="t1"><br>-->
+                       
+                       
+                    <button id="bttbfib" class="btn btn-inverse" ng-click="checkfillup(quiz)">Submit</button>
+                    </div>
+                    
+            </div>
+                
+            </div>
+        </div>
+        <div id="menu-top">
+            <div id="home-menu">
+                <ul class="ddmenu">
+                    <li>
+                        <a href="#" class="home-menu-icon" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Menu','','../images/menu-hl.png',1)"><img id="Menu" src="../images/menu.png" alt=""></a>
+                        <div class="submenu" id="home-submenu">
+                            <ul>
+                                <li><a href="dbtoc.html">Programming Fundamentals</a></li>
+                                <li><a href="../index1.html">Home</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="pageheainding">
+
+                <h1 id="title-quiz">Test Yourself</h1>
+            </div>           
+        </div>
+        <div id="footer">
+            <div id="footer-tell">
+                <div id="prev"><a ng-click="getPrev()" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('nav-prev','','../images/arrow-l-hl.png',1)"><img id="nav-prev" src="../images/arrow-l.png" alt=""></a></div>
+                <div id="tell"><p id="telltext" style='text-align:center;font:12pt Verdana solid'>{{quizpageNumber}}</p></div>
+                <div id="next"><a ng-click="getNext()" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('nav-next','','../images/arrow-r-hl.png',1)"><img id="nav-next" src="../images/arrow-r.png" alt=""></a></div>
+            </div>
+            <div id="footer-copyright" style="font-family: Helvetica Neue , Helvetica, Arial, sans-serif;">&copy; 2017 Infosys Limited. All rights reserved.</div>
+            <div id="page-progress">
+                <progress id="prog-bar" value="{{quizpageNumber}}" max="362" style="position:fixed;bottom:24px;height:10px;width:1200px"></progress>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<style>
+   
+    .table-def strong{
+        color : #006dcc;
+    }
+</style>
+</head>
+
+<body style="margin: 0;">
+    
+    <div id="manual" style="overflow: hidden; position: relative; width: 1200px; height: 750px;">
+        <div id="container" class="container-fluid">
+                <!-- This div contains the main content. It divides the page into three columns in 1:10:1 ratio -->
+                <div class="row" style="margin-bottom: 5px">
+                    <div class="col-md-9"></div>
+                    <div class="col-md-3  btn-duration">
+                        <div class="durationtext" style="font:18px Verdana">Duration: 30 min</div>
+                    </div>
+                </div>
+                <div class="row" style="position:relative;margin-left:60px;">
+                    <div class="col-md-11 table-def">
+                        <ul style="list-style-type:none;">
+                            <li><strong>Dept </strong>(DeptNo, DName, Loc)</li>
+                            <li><strong>Emp </strong>(EmpNo, EName, Job, Mgr, HireDate, Sal, Comm, DeptNo)</li>
+                            <li><strong>Vehicle </strong>(VehicleId, VehicleName)</li>
+                            <li><strong>EmpVehicle </strong>(EmpNo, VehicleId)</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+              
+                <div class="row" style="position:relative;margin-left:60px;">
+                    
+                    <div class="col-md-11">
+                        <ul style="list-style-type:gregorian;">
+                            <li>Display the <strong>ename</strong> and <strong>job</strong> of the employees who own vehicle.</li>
+                            <li>Display the name of the employee who is drawing maximum salary.</li>
+                            <li>Identify the vehicle which is purchased by the maximum number of employees. Display <strong>empno</strong> and <strong>ename</strong> of the employees who have purchased the identified vehicles.</li>
+                            <li>Identify the department of Smith. Display the <strong>empno</strong>, <strong>ename</strong> and <strong>deptno</strong> for those employees who work in a department where Smith works. Do not display the record of Smith in resultant set.</li>
+                            <li>Display the <strong>empno</strong> and <strong>ename</strong> of all those employees whose salary is greater than the average salary of all employees working in their departments.</li>
+                            <li>Remove vehicle allocation from employees who have highest salary in their departments.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+        </div>
+    </div>
+ 
+</body>
+</html>

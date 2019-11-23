@@ -1,0 +1,266 @@
+[
+{
+"id":"1",
+"question": "Which of the following are DDL statements in SQL?  Select one or more as applicable.",
+"imgURL":"",
+"options":[
+           {"option1":"ALTER"},
+           {"option2":"DELETE"}, 
+           {"option3":"DROP"},
+           {"option4":"TRUNCATE"},
+           {"option5":"COMMIT"}
+          ],
+"correct":"ACD", 
+"description":{"A":"Yes, ALTER is a DDL statement",
+"B":"Re-think!  DELETE is not a DDL statement",
+"C":"Yes, DROP is a DDL statement",
+"D":"Yes, TRUNCATE is  a DDL statement",
+"E":"Rethink! COMMIT is not a DDL statement"},
+ "fileURL":""
+},
+{
+"id":"2",
+"question": "Which of the following are DML statements in SQL? Select one or more as applicable.",
+"imgURL":"",
+"options":[
+           {"option1":"DELETE"},
+           {"option2":"COMMIT"}, 
+           {"option3":"INSERT"},
+           {"option4":"SELECT"},
+           {"option5":"CREATE"}
+          ],
+"correct":"ACD",
+"description":{"A":"Yes, DELETE is a DML statement",
+"B":"Rethink! COMMIT is not a DML statement",
+"C":"Yes, INSERT is a DML statement",
+"D":"Yes, SELECT is a DML statement",
+"E":"Rethink! CREATE is not a DML statement"},
+ "fileURL":""
+},
+
+{
+"id":"3",
+"question": "Which of the following data type specifications would be suitable for a column to store the numeric data 221.78 as is (without rounding off)?  Select one or more as applicable.",
+"imgURL":"",
+"options":[
+           {"option1":"NUMBER(3)"},
+           {"option2":"NUMBER"}, 
+           {"option3":"NUMBER(3,2)"},
+           {"option4":"NUMBER(5,2)"},
+           {"option5":"NUMBER(6,1)"}
+          ],
+"correct":"BD",
+"description":{"A":"How about the digits after the decimal place?  Re-think!",
+"B":"Yes, NUMBER can store any numeric data within the data type limits",
+"C":"The value 221.78 is larger than the precision specified in NUMBER(3,2).  Hence it can’t be stored",
+"D":"Yes, NUMBER(5,2) can store 3 digits before the decimal and 2 digits after decimal",
+"E":"NUMBER(6,1) can store 5 digits before the decimal and only one digit after decimal. Hence it can’t be stored"}	,
+ "fileURL":""
+},
+
+{
+"id":"4",
+"question": "Which of the following operations in SQL will result in irrecoverable loss of data? Select one or more as applicable.",
+"imgURL":"",
+"options":[
+           {"option1":"DELETE"},
+           {"option2":"DELETE followed by COMMIT"}, 
+           {"option3":"TRUNCATE"},
+           {"option4":"DROP"},
+           {"option5":"Revoke"}
+          ],
+"correct":"BCD",
+"description":{"A":"DELETE is a DML statement which does not have an implicit commit.  Hence the data can be recovered.",
+"B":"Yes. DELETE followed by COMMIT will delete the data forever.",
+"C":"Yes, TRUNCATE is a DDL statement with an implicit COMMIT",
+"D":"Yes, DROP is a DDL statement with an implicit COMMIT",
+"E":"REVOKE is used in a totally different scenario - for revoking the user privileges.  Re-think!"},
+ "fileURL":""
+},
+{
+"id":"5",
+"question": " Which of the following statements is / are TRUE?  Select one or more as applicable.",
+"imgURL":"",
+"options":[
+           {"option1":"A CHAR (10) field will store ‘John’ in 4 bytes saving the remaining 6 bytes"},
+           {"option2":"A CHAR(10) field will store ‘John’ as 10 bytes appending 6 trailing spaces"}, 
+           {"option3":"A VARCHAR2(10) field will store ‘John’ as 10 bytes appending 6 trailing spaces"},
+           {"option4":"A VARCHAR2(10) field will store ‘John’ as 6 bytes (assuming 2 bytes to store length) saving the rest"}
+          ],
+"correct":"BD",
+"description":{"A":"CHAR datatype is fixed size and it will not save remaining bytes",
+"B":"Yes. CHAR datatype is fixed size and unutilized bytes will be filled with spaces",
+"C":"VARCHAR datatype is variable size and it will save remaining bytes by eliminating trailing spaces",
+"D":"Yes,VARCHAR datatype is variable size and it will save remaining bytes"}	,
+ "fileURL":""
+},
+{
+"id":"6",
+"question": "Which of the following statements are true in SQL?  Select one or more as applicable.",
+"imgURL":"",
+"options":[
+           {"option1":"Primary Key constraint cannot be defined at column level"},
+           {"option2":"NOT NULL constraint can be defined only at column level"}, 
+           {"option3":"DEFAULT clause can be given only for fields with NOT NULL constraint"},
+           {"option4":"UNIQUE constraint allows multiple records to have NULL entry"}
+          ],
+"correct":"BD",
+"description":{"A":"Primary Key constraint can be defined at column level.  Re-think!",
+"B":"Yes, NOT NULL cannot be defined at table level",
+"C":"Not really!  Default clause can be given otherwise as well",
+"D":"Yes, UNIQUE will permit multiple NULL entries.  Ultimately NULL is not a data value; it simply shows absence of data!"},
+ "fileURL":""
+},
+{
+"id":"7",
+"question": "Which of the following requirements can be implemented with a CHECK constraint?  Select one or more as applicable.",
+"imgURL":"",
+"options":[
+           {"option1":"Every Student must have a name"},
+           {"option2":"Age of Students must be greater than 18"}, 
+           {"option3":"Two Students cannot have the same roll number"},
+           {"option4":"Students must be from Karnataka  State"},
+           {"option5":"Every Student must be assigned to any of the available disciplines"}
+          ],
+"correct":"BD",
+"description":{"A":"Here NOT NULL constraint would be the best fit",
+"B":"Yes, CHECK can be used here as we are applying a constraint on the range of values that can be assigned to a field",
+"C":"UNIQUE constraint suits this requirement",
+"D":"Yes, CHECK can be used here as we are applying a constraint on the range of values that can be assigned to a field",
+"E":"Here the requirement states that discipline field cannot be NULL.  Re-think!"}	,
+ "fileURL":""
+},
+{
+"id":"8",
+"question": "Which of the following statements is / are true about Foreign Keys in RDBMS?  Select one or more.",
+"imgURL":"",
+"options":[
+           {"option1":"A foreign key field in a relation can refer to a primary key field in the same or a different relation"},
+           {"option2":"A foreign key field in a relation  can refer to any field with UNIQUE constraint in the same or different relation"}, 
+           {"option3":"A foreign key field in a relation must always refer to a primary key field in the same or a different relation"},
+           {"option4":"A foreign key field in a relation  can refer to any field with NOT NULL constraint in the same or different relation"},
+           {"option5":"A foreign key field in a relation  cannot refer to another field in the same relation"}
+          ],
+"correct":"AB",
+"description":{"A":"Yes, foreign keys can refer to a primary key field in the same or a different relation",
+"B":"Yes, foreign keys can refer to any  field with UNIQUE in the same or a different relation",
+"C":"Not necessarily, it can also refer to field with UNIQUE constraint as well",
+"D":"Not really.  Re-think!",
+"E":"It can refer to another field in the same table which is the case for self referential tables.  Re-think!"},
+ "fileURL":""
+},
+
+{
+"id":"9",
+"question": "Predict the output of the following SQL Statement.  Assume that Student table is not pre-existing.",
+"imgURL":"images/quiz6.1.PNG",
+"options":[
+          {"option1":"Throws an error"},
+          {"option2":"Composite Primary Key will be created with Name as first attribute"}, 
+          {"option3":"Composite Primary Key will be created with DoB as first attribute"},
+          {"option4":"Two separate primary keys will be created"}
+          ],
+"correct":"A",
+"description":{"A":"Yes, it throws an error as we cannot specify Primary Key constraint for multiple columns in a table",
+"B":"Composite Primary key constraint has to be specified at table level.  Re-think!",
+"C":"Composite Primary key constraint has to be specified at table level.  Re-think!",
+"D":"Not really, a table can have only one primary key!"},
+ "fileURL":""
+},
+{
+"id":"10",
+"question": "Consider the following table: Student(RollNo, Name, EmailAddress, Age) where a combination of two columns (RollNo, EmailAddress) together should be unique.  Which of the following is correct in this context?",
+"imgURL":"",
+"options":[
+           {"option1":"Apply UNIQUE constraint separately for both columns"},
+           {"option2":"Put Primary Key constraint on both columns separately"}, 
+           {"option3":"Apply a table level UNIQUE constraint involving both the columns"},
+           {"option4":"It is impossible to give such a constraint"}
+          ],
+"correct":"C",
+"description":{"A":"In this case,  A and B individually cannot have duplicate values.  Re-think!",
+"B":"A table can have only one primary key.  Re-think!",
+"C":"Yes, a table level UNIQUE constraint involving columns A and B will ensure that the combination of A and B is unique",
+"D":"Not really, it is very much possible!"},
+ "fileURL":""
+},
+{
+"id":"11",
+"question": "Consider a Product table has been created already as given below.  Assume that there are no records in the table. There is a new requirement that category column must have some value.  Which of the following statements can be used for implementing this?",
+"imgURL":"images/quiz6.2.PNG",
+"options":[
+           {"option1":"ALTER TABLE Product ADD CONSTRAINT prod_cat_nn NOT NULL (category);"},
+           {"option2":"ALTER TABLE Product MODIFY category CONSTRAINT prod_cat_nn NOT NULL;"}, 
+           {"option3":"ALTER TABLE Product MODIFY CONSTRAINT prod_cat_nn NOT NULL (category);"},
+           {"option4":"ALTER TABLE Product  ADD CONSTRAINT prod_cat_nn NOT NULL (category);"}
+          ],
+"correct":"B",
+"description":{"A":"Can we use ADD to add a new constraint to a column in an existing table?  Re-think!",
+"B":"Yes, MODIFY has to be used in this case",
+"C":"The query syntax is not right.  Re-think!",
+"D":"Can we use ADD to add a new constraint to a column in an existing table?  Re-think!"},
+ "fileURL":""
+},
+{
+"id":"12",
+"question": "Consider the current and expected structures of Student table and identify the statements that will make it happen.",
+"imgURL":"images/quiz6.6.png",
+"options":[
+           {"option1":"i,ii,v"},
+           {"option2":"iv,v,vi"}, 
+           {"option3":"ii,iv,v"},
+           {"option4":"ii,iii,iv"}
+          ],
+"correct":"C",
+"description":{"A":"Query i is not in proper syntax",
+"B":"Can we use MODIFY to rename a column? Re-think!",
+"C":"Correct usage of RENAME, MODIFY clauses in query ii and v and proper syntax dropping a column in query ii.  Hence correct",
+"D":"Should we add a Email column again to change its size? Re-think!"},
+ "fileURL":""
+},
+{
+"id":"13",
+"question": "Consider the following Student table which is already created. Which of the following INSERT statements will execute successfully?",
+"imgURL":"images/quiz6.5.PNG",
+"options":[
+           {"option1":"INSERT INTO Student VALUES(100, 'Annie', 'Female', '12-FEB-16');"},
+           {"option2":"INSERT INTO Student VALUES(100, 'Annie', 'F', SYSDATE);"}, 
+           {"option3":"INSERT INTO Student VALUES(100, 'Annie', 'F', '2016-FEB-16');"},
+           {"option4":"INSERT INTO Student VALUES(100, 'Annie', 'F', NULL)"}
+          ],
+"correct":"D",
+"description":{"A":"Can we store ‘Female’ in CHAR(1) field?  Re-think!",
+"B":"Can we use double quotes for VARCHAR2 field while inserting? Re-think!",
+"C":"Is the date value properly mentioned here?  Re-think!",
+"D":"It is a proper INSERT statement."},
+ "fileURL":""
+},
+{
+"id":"14",
+"question": "Consider the following Student table which is already created. Which of the following INSERT statements will execute successfully?",
+"imgURL":"images/quiz6.5.PNG",
+"options":[
+           {"option1":"INSERT INTO Student(RollNo, DateofBirth) VALUES( 1, NULL);"},
+           {"option2":"INSERT INTO Student(RollNo, Name, Gender, DateofBirth) VALUES(1000, 'Annie', 'F', NULL);"}, 
+           {"option3":"INSERT INTO Student(RollNo, Name, Gender, DateofBirth) VALUES (1000,NULL, 'F', '12-FEB-16');"},
+           {"option4":"INSERT INTO Student(RollNo, Name) VALUES(1000, 'Annie');"}
+          ],
+"correct":"D",
+"description":{"A":"Can we insert NULL to Name field? Re-think!",
+"B":"Proper INSERT statement.  NULL can be inserted for columns with DEFAULT as well",
+"C":"Can we insert NULL to Name field and is the date value proper? Re-think!",
+"D":"Proper INSERT statement."},
+ "fileURL":""
+}
+]
+
+
+
+
+
+
+
+
+
+
+

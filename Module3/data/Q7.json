@@ -1,0 +1,40 @@
+[
+{
+"id":"1",
+"question": "Consider the Vehicle table again and predict the output of the given Python code:",
+"imgURL":"images/quiz7.1.PNG",
+"imgURL2":"images/quiz7.C.1.PNG",
+"query":"",
+"options":[
+           {"option":"a: 0"},
+           {"option":"b: 1"}, 
+           {"option":"c: No Output"},
+           {"option":"d: Error"}
+          ],
+"correct":"B",
+"description":{"A" : "Don't you think there is a vehicle with the name \"Toyota\" in the given table? ", 
+               "B" : "We are using a string concatenation operator to append the query with the value of Python variable 'name', which is a valid syntax. Hence one record is deleted.", 
+               "C" : "Don't you think there is a vehicle with the name \"Toyota\" in the given table? ", 
+               "D" : "Try to execute the code and observe if there is any error."
+                }
+},
+{
+"id":"2",
+"question": "Consider the Customer table again.",
+"imgURL":"images/quiz3.1.PNG",
+"imgURL2":"images/quiz7.C.2.PNG",
+"query":"Predict the output of the below Python code:",
+"type":"Verify",
+"line":"images/Line.png",
+"imgAnsText":"Output:",
+"imgAnsURL":"images/q7.A.2.PNG",
+
+"options":[
+           
+          ],
+"correct":"CA",
+"description":{
+                },
+                "fileURL":"Scripts/file5.txt"
+}
+]

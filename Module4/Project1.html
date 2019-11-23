@@ -1,0 +1,102 @@
+
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Project 1</title>
+</head>
+<body style="margin: 0;">
+<div id="jpedal" style="overflow: hidden; position: relative; width: 1100px; height: 1500px;">
+
+<!-- Begin shared CSS values -->
+
+<!-- End shared CSS values -->
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+
+.s3_5{
+	FONT-SIZE: 16.3px;
+	FONT-FAMILY: DejaVuSans_485;
+	color: rgb(0,0,0);
+}
+.s2_5{
+	FONT-SIZE: 20.3px;
+	FONT-FAMILY: DejaVuSans_485;
+	color: rgb(0,0,0);}
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style id="fonts5" type="text/css" >
+
+@font-face {
+	font-family: LiberationSans_4n5;
+	src: url("fonts/LiberationSans_4n.woff") format("woff");
+}
+
+@font-face {
+	font-family: DejaVuSans_485;
+	src: url("fonts/DejaVuSans_48.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<h2>Word Scrambling</h2>
+<ul><li class="s2_5"><b>Prerequisite</b>
+<ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">This project is supposed to be done the end of Module 1 </li>
+<li style="left:38px;top:42px;letter-spacing:-0.2px;word-spacing:0.6px" class="s3_5">Prerequisite is Knowledge of Python Programming Fundamentals</li>
+<li style="left:38px;top:77px;letter-spacing:0.1px" class="s3_5">Students can use any IDE for project development</li>
+<li style="left:38px;top:112px;letter-spacing:0.1px;" class="s3_5">Suggested duration: 4 person-hours</li>
+<li style="left:38px;top:147px;letter-spacing:0.2px;" class="s3_5">Suggested team size: 1</li>
+</ul>
+</li>
+<li class="s2_5"><b>Example</b><ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">&quotSrbmnacilg wrods is vrey itrensientg.Bscauee even if tehy are srelabcmd, it dosn'et ipcmat our raidneg.Bacusee we dn'ot raed lteetr by letetr, we raed the wrod as a wolhe.&quot</li>
+</ul>
+</li>
+<li class="s2_5"><b>Specifications</b><ul style="list-style-type:disc">
+<li  class="s3_5">The project is to write a Python program that reads a text file, scrambles the words in the file on following rules and writes the output to a new text file:<ul style="list-style-type:disc">
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Words less than or equal to 3 characters need not be scrambled</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Don&#39t scramble first and last char, so Scrambling can become Srbmnacilg or Srbmnailcg or Snmbracilg , i.e. letters except first and last can be scrambled in any order</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Punctuation at the end of the word to be maintained as is i.e. &quotSurprising,&quot  could become &quotSpsirnirug,&quot but not &quotSpsirn,irug&quot</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Following punctuation marks are to be supported &#45 Comma Question mark, Full stop, Semicolon, Exclamation</li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Do this for a file and maintain sequences of lines </li>
+<li  style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Hint: use random module of Python for scrambling</li></ul></li>
+</li>
+</ul>
+<li class="s2_5"><b>Expected Output</b><ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">On executing the program, it should prompt the user to enter input file name and output file name</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">For a given input file with text like this:<ul style="list-style-type:none">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Scrambling words is very interesting. Because even if they are scrambled, it doesn&#39t impact our reading. If you don't believe it, scramble this file and read again. Sounds surprising, isn't it! Because we don&#39t read letter by letter, we read the word as a whole.</li></ul></li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">It should produce a file with text like this:<ul style="list-style-type:none">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Srbmnacilg wrods is vrey itrensientg. Bscauee even if tehy are srelabcmd, it dosn'et ipcmat our raidneg. If you dno&#39t bleieve it, slbmcrae tihs flie and raed agian. Suodns spsirnirug, is&#39nt it&#33 Bacusee we dn&#39ot raed lteetr by letetr, we raed the wrod as a wolhe.</li></ul></li>
+</ul>
+</li>
+<li class="s2_5"><b>Coverage</b><ul style="list-style-type:disc">
+<li>The project provides a practice on following concepts to students:<ul style="list-style-type:disc">
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">For loops</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">If-else statements</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">String</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Lists</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Functions</li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">File operations </li>
+<li style="left:38px;top:7px;word-spacing:0.1px;" class="s3_5">Random module</li>
+</ul></li>
+</ul>
+</li>
+</ul>
+
+<!-- End text definitions -->
+<!-- Begin page background -->
+<!--<div id="pg5Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>-->
+<!--<div id="pg5"><object width="1100" height="825" data="5/5.svg" type="image/svg+xml" id="pdf5" style="width:1100px; height:825px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>-->
+<!-- End page background -->
+
+
+</div>
+</body>
+</html>

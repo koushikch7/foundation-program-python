@@ -1,0 +1,61 @@
+[
+{
+"id":"1",
+"type":"Matchquiz",
+"imgLink":"",
+"question": "Match the pair from the image given below",
+"imgURL":"images/quiz26.PNG",
+"colA":[
+           {"option1":"is-a     "},
+           {"option2":"uses-a     "},
+           {"option3":"Aggregation    "},
+           {"option4":"Composition    "}
+          ],
+"colB":[
+		   {"option1":"Diagram A"},
+		   {"option2":"Diagram B"},
+           {"option3":"Diagram C"},
+           {"option4":"Diagram D"},
+           {"option5":"Diagram E"}
+		],
+"Correct":	[
+		{"option":"Diagram D"},
+		{"option":"Diagram C"}, 
+		{"option":"Diagram A"},
+		{"option":"Diagram E"}
+		],
+"description":
+         [
+		{"option":"is-a : Parent child relationship"},
+		{"option":"uses-a: A uses-a is a relationship in which one element (client) requires another element (or set of elements) (supplier) for its full implementation or operation. "}, 
+		{"option":"Aggregation: Part and whole relationship"},
+		{"option":"Composition: Part is limited to the life time of whole"}
+		]
+          
+
+},
+{
+"id":"2",
+"question": "The Following diagram indicates:",
+"imgURL":"images/quiz22.PNG",
+"imgLink":"",
+"options":
+		[
+		{"option":"a: A student can take zero or upto 4 courses(excluding 5)"},
+		{"option":"b: A student can take exactly 5 courses"}, 
+		{"option":"c: A student can take zero or upto 5 courses (including 5)"},
+		{"option":"d: A course can be taken by zero or upto 5 students"},
+		{"option":"e: A course can be taken by 0 or more students"}
+		],
+"correct":"C",
+"description":
+		{"A":"this would require 0..4 near Course instead of 0..5",
+		"B":"this would require 5 near Course instead of 0..5.",
+		"C":"as per Association - Multiplicity convention this is correct",
+		"D":"this would require 2,4 near Course instead of 0..5",
+		"E":"this would require 0..* near Course instead of 0..5"
+		},
+             "fileURL":""
+}
+
+]

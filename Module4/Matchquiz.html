@@ -1,0 +1,139 @@
+﻿<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="" ng-app="fpApp">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <script src="js/angular.js"></script>
+         <script src="js/jquery.js"></script>
+<script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
+<!--<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="js/libs/twitter-bootstrap/css/bootstrap.css">
+  <style type="text/css">
+      .visi{
+          visibility: visible;
+      }
+      .hid{
+          visibility: hidden;
+          
+      }
+  </style>
+   
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/quiz1.js"></script>
+    <title>Advanced Database Quiz</title>
+  
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/Quiz.js"></script>
+      <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/db.css">   
+    <style>
+        progress {
+   -webkit-appearance: none;
+   appearance: none;
+
+}
+    progress::-moz-progress-bar { background: #4cae4c; }
+    progress::-webkit-progress-bar { background: #9eacba; }
+    progress::-webkit-progress-value { background: #4cae4c; }
+</style>
+</head>
+<body class="qc" onload="MM_preloadImages('../images/arrow-l.png', '../images/arrow-r.png', '../images/arrow-l-hl.png', '../images/arrow-r-hl.png')">
+    <div class="gridContainer clearfix" ng-controller="quizMatch" ng-controller="paging">
+        <div id="home-content">
+            <div id="container" class="container-fluid">
+                <!-- This div contains the main content. It divides the page into three columns in 1:10:1 ratio -->
+                <div class="row">
+                    <div class="col-md-10"></div>
+                    <div class="col-md-2  btn-duration">
+                        <div class="centered">Duration: 5 mins</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- This div contains the second column -->
+                    <div class="col-md-12" id="quiz">
+                       Quiz: {{quiz.question}}
+                       <br>
+                    1.    {{quiz.colA[0].option1}}   &nbsp;&nbsp; <select id='a1'>
+                           <option>{{quiz.colB[0].option1}}</option>
+                           <option>{{quiz.colB[1].option2}}</option>
+                           <option>{{quiz.colB[2].option3}}</option>
+                           <option>{{quiz.colB[3].option4}}</option>
+                           
+                       </select>
+                    <br>
+                    2. {{quiz.colA[1].option2}}   &nbsp;&nbsp; <select id='a2'>
+                           <option>{{quiz.colB[0].option1}}</option>
+                           <option>{{quiz.colB[1].option2}}</option>
+                           <option>{{quiz.colB[2].option3}}</option>
+                           <option>{{quiz.colB[3].option4}}</option>
+                           
+                       </select>
+                    <br>
+                    3. {{quiz.colA[2].option3}}   &nbsp;&nbsp; <select id='a3'>
+                           <option>{{quiz.colB[0].option1}}</option>
+                           <option>{{quiz.colB[1].option2}}</option>
+                           <option>{{quiz.colB[2].option3}}</option>
+                           <option>{{quiz.colB[3].option4}}</option>
+                           
+                       </select>
+                    <br>
+                    4. {{quiz.colA[3].option4}}   &nbsp;&nbsp; <select id='a4'>
+                           <option>{{quiz.colB[0].option1}}</option>
+                           <option>{{quiz.colB[1].option2}}</option>
+                           <option>{{quiz.colB[2].option3}}</option>
+                           <option>{{quiz.colB[3].option4}}</option>
+                           
+                       </select>
+                    <br>
+                    
+                    <button id="bttb" ng-click="checkmatch(quiz)">Submit</button>
+                    </div>
+                    
+            </div>
+                </div>
+            </div>
+        </div>
+    <a href="Matchquiz.html"></a>
+     
+        <div id="menu-top">
+            <div id="home-menu">
+                <ul class="ddmenu">
+                    <li>
+                        <a href="#" class="home-menu-icon" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Menu','','../images/menu-hl.png',1)"><img id="Menu" src="../images/menu.png" alt=""></a>
+                        <div class="submenu" id="home-submenu">
+                            <ul>
+                                <li><a href="dbtoc.html">Database</a></li>
+                                <li><a href="../index1.html">Home</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="pageheainding">
+
+                <h1 id="title-quiz">Test Yourself</h1>
+            </div>           
+        </div>
+        <div id="footer">
+            <div id="footer-tell">
+                <div id="prev"><a ng-click="getPrev()" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('nav-prev','','../images/arrow-l-hl.png',1)"><img id="nav-prev" src="../images/arrow-l.png" alt=""></a></div>
+                <div id="tell"><p id="telltext" style='text-align:center'></p></div>
+                <div id="next"><a ng-click="getNext()" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('nav-next','','../images/arrow-r-hl.png',1)"><img id="nav-next" src="../images/arrow-r.png" alt=""></a></div>
+            </div>
+            <div id="footer-copyright">&copy; 2016 Infosys Limited. All rights reserved.</div>
+<!--            <div id="page-progress">
+                <progress id="prog-bar" value="{{quizindex+1}}" max="{{quizLength}}" style="position:fixed;bottom:24px;height:10px;width:1200px"></progress>
+            </div>-->
+        </div>
+
+    
+</body>
+</html>

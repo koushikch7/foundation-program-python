@@ -1,0 +1,88 @@
+[
+{
+"id":"1",
+"question": "Consider the 'item' table again:",
+"imgURL":"images/quiz8.1.PNG",
+"query":"Choose the correct error message which will be displayed. Assume that the database credentials are correct<br> ",
+"imgURL2":"images/quiz8.C.1.PNG",
+"options":[
+           {"option":"a: ORA-00904: \"ITEM_CODES\": invalid identifier"},
+           {"option":"b: ORA-00942: table or view does not exist"}, 
+           {"option":"c: ORA-00900: invalid SQL statement"},
+           {"option":"d: No error"}
+          ],
+"correct":"A",
+"description":{"A" : "The column name ‘item_code’ is wrongly mentioned as ‘item_codes’. Hence the error.", 
+               "B" : "Observe the table name again. Is it wrongly mentioned?", 
+               "C" : "'ORA-00900: invalid SQL statement' is raised if there is any syntax error in the query. Is there any syntax error here? Observe the code again and answer again.", 
+               "D" : "Try to execute the code and see if there is any error."
+                },
+"qtype":"multichoice"
+},
+{
+"id":"2",
+"question": "Consider the 'item' table again:",
+"imgURL":"images/quiz8.1.PNG",
+"query":"Choose the correct error message that will be generated for the respective database queries if placed in the given code snippet. ",
+"imgURL2":"images/quiz8.C.2.PNG",
+"colA":
+		[
+		{"option1":"INSERT INTO item VALUES(8)"},
+		{"option2":"SELECT item_code, itemname FROM item"}, 
+		{"option3":"DELETE FRM item WHERE itemcode = 7"},
+		{"option4":"INSERT INTO item VALUES(6,'Jam')"},
+		{"option5":"UPDATE item SET category_code = 50 WHERE item_name = 'Plum'"}
+		],
+"colB":
+		[
+		{"option":"unique constraint violated"},
+		{"option":"invalid SQL statement"}, 
+		{"option":"not enough values"},
+		{"option":"\"ITEMNAME\": invalid identifier"},
+		{"option":"quoted string not properly terminated"}
+		],
+"Correct":
+		[
+		{"option":"not enough values"},
+		{"option":"\"ITEMNAME\": invalid identifier"}, 
+		{"option":"invalid SQL statement"},
+		{"option":"unique constraint violated"},
+		{"option":"quoted string not properly terminated"}
+		],
+"descriptions":[{"option" : "We are not passing enough values for all columns, hence the error"}, 
+               {"option" : "Observe the column name 'item_codes' is should be 'item_code'"}, 
+               {"option" : "Observe the 'FRM' keyword, it should be 'FROM'"}, 
+               {"option" : "We are trying to insert the value for item_code = 6 again, there already is a record with item_code = 6 in the given table, hence unique constraint is violated here."},
+               {"option" : "Observe the closing quote for 'Plum' is missing, hence the error."}
+                ],
+		"qtype":"matchquiz"
+    },
+    {
+"id":"3",
+"question": "Choose the correct error message for following scenarios:",
+
+"colA":
+		[
+		{"option1":"If the username or password  in the correction string is incorrect."},
+		{"option2":"If there is an error in service name in connection string."}, 
+		{"option3":"If there is an error in IP address in connection string or a network issue."}
+		],
+"colB":
+		[
+		{"option":"TNS:Connect Timeout occurred"},
+		{"option":"TNS:listener does not currently know of service requested in connect descriptor"}, 
+		{"option":"invalid username/password; logon denied"}
+		],
+"Correct":
+		[
+		{"option":"invalid username/password; logon denied"},
+		{"option":"TNS:listener does not currently know of service requested in connect descriptor"}, 
+		{"option":"TNS:Connect Timeout occurred"}
+		],
+		"descriptions":[{"option" : "Oracle credentials are case sensitive"}, 
+               {"option" : "Service name is  a unique name that identifies a database. It is recorded in tnsnames.ora file."}, 
+               {"option" : "We can connect to Oracle database remotely using it’s IP address."}
+                ],
+		"qtype":"matchquiz"
+    }
+]

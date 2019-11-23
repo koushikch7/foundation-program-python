@@ -1,0 +1,10 @@
+DROP TABLE item;
+CREATE TABLE item (item_code NUMBER, item_name VARCHAR2(15), category_code NUMBER);
+INSERT INTO item VALUES(1, 'Plum', 30);
+INSERT INTO item VALUES(2, 'Banana', 30);
+INSERT INTO item VALUES(3, 'Orange', 30);
+INSERT INTO item VALUES(4, 'Apple', 30);
+INSERT INTO item VALUES(5, 'Bread', 65);
+INSERT INTO item VALUES(6, 'Sausage', 20);
+INSERT INTO item VALUES(7, 'Sandisk', NULL);
+COMMIT;

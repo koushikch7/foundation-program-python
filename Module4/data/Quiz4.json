@@ -1,0 +1,102 @@
+[
+{
+"id":"1",
+"question": "Fill in the following blanks. Choose your answers from the options given:<br/> In Python, <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          A          </span> is the base class of all exceptions.<br>Hint: find out from Python doc : ",
+"imgURL":"",
+"imgLink":"https://docs.python.org/3/library/exceptions.html#exception-hierarchy",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"  A  ->"}
+		           
+		],
+"colB":
+		[
+		{"option1":"BaseException"},
+		{"option2":"Exception"} ,
+		{"option3":"RuntimeException"}
+		],
+"Correct":
+		[
+		{"option":"BaseException"}
+		],                
+ "description":
+         [
+		{"option":"BaseException is the base class for all built-in exceptions."}
+		]
+
+},
+{
+"id":"2",
+"question": "Fill in the following blanks. Choose your answers from the options given: <br>As per Python doc, user defined Exception should inherit from  <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          A          </span> class.<br>Hint: find out from Python doc : </br>",
+"imgURL":"",
+"imgLink":"https://docs.python.org/3/tutorial/errors.html#tut-userexceptions",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"  A  ->"}
+		           
+		],
+"colB":
+		[
+		{"option1":"BaseException"},
+		{"option2":"Exception"} ,
+		{"option3":"RuntimeException"}
+		],
+"Correct":
+		[
+		{"option":"Exception"}
+		],                
+ "description":
+         [
+		{"option":"All built-in, non-system-exiting exceptions are derived from Exception class.<br/> All user-defined exceptions should also be derived from this class."}
+		]
+
+},
+{
+"id":"3",
+"question": "Consider the following code snippet and Predict the output, select all correct options",
+"imgURL":"images/quiz23.PNG",
+"imgLink":"",
+"options":
+		[
+		{"option":"a: If input is “a” then #Statement2 will execute"},
+		{"option":"b: If input is “5” then output will show Container capacity=0"}, 
+		{"option":"c: If input is “0” then first #Statement1 and then  #Statement2 is executed"},
+		{"option":"d: If input is “-1” then #Statement2 will execute"}
+		],
+"correct":"ABD",
+"description":
+		{"A":"option A is correct. Execute the code to see other correct answers.",
+		"B":" option B is correct. Execute the code to see other correct answers.",
+		"C":"option C is incorrect. only one exception block is executed",
+		"D":"input 'a' will result in an exception since it is not a valid int, breadth 5 will make it too big to fit in container cube so Capacity will be zero. A negative breadth (-1) will result in raising an exception."
+		},
+             "fileURL":""
+             
+             
+},
+{
+"id":"4",
+"question": "Consider the following code snippet and predict the output.",
+"imgURL":"images/quiz24.PNG",
+"imgLink":"",
+"options":
+		[
+		{"option":"a: First -1- and then -2- will be printed"},
+		{"option":"b: Only -1- will be printed"},
+		{"option":"c: First -2- and then -1- will be printed"},
+		{"option":"d: Compilation error"}
+		], 
+"correct":"A",
+"description":
+		{"A":"finally block will always be executed after except if present hence just before return statement it will print -2- and then return. Try to see the flow using eclipse debugger.",
+		"B":"Try to see the flow using eclipse debugger",
+		"C":"Try to see the flow using eclipse debugger.",
+		"D":"Not an Error. Try to see the flow using eclipse debugger."
+		},
+             "fileURL":""
+             
+}
+
+]

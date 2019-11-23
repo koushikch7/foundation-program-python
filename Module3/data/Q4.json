@@ -1,0 +1,58 @@
+[
+{
+"id":"1",
+"question": "Consider the 'customer' table again:",
+"imgURL":"images/quiz3.1.PNG",
+"query":"Try to execute following code in IDE and suggest the output:<br>",
+"imgURL2":"images/quiz4.C.1.PNG",
+"type":"Verify",
+"line":"images/Line.png",
+"imgAnsURL":"images/q4.A.1.PNG",
+"imgAnsText":"Output:<br>",
+"options":[
+           
+          ],
+"correct":"AS",
+"description":{
+                }
+},
+{
+"id":"2",
+"question": "Consider the 'customer' table again:",
+"imgURL":"images/quiz3.1.PNG",
+"query":"Joe is writing a Python program to fetch the details of all the customers residing in RacineCity, Wisconsin but he is not getting the desired output. Assuming connection details to be correct, help Joe to predict the line of code which creates the problem:<br>",
+"imgURL2":"images/quiz4.C.2.PNG",
+"options":[
+           {"option":"a: Line 4 and 5"},
+           {"option":"b: Line 6 because the parameters param1 and param2 are not named correctly"}, 
+           {"option":"c: Line 6 because the order in which parameters is passed is not correct"},
+           {"option":"d: Both b and c"}
+          ],
+"correct":"C",
+"description":{"A" : "Line 4 and 5 specify two string variables in Python for 'city' and 'state' which is valid.", 
+               "B" : "The bind variables of the query are represented by colon ( : ) followed by parameter name. 'param1' and 'param2' can be used as the names for the bind variables. Observe again to see if there is any other problem in this line.", 
+               "C" : "In case of positional parameters, the order in which parameters are passed, matters. In this case, in line number 6, Python variable 'state' is passed to param1 and 'city' to param2 which is incorrect and hence will not return the desired result.<br><br>Line 6 should be changed to: <br>cur.execute(\"Select * from customer where city = :param1 and state = :param2\" , (city, state))<br>Observe the changed order of passing the parameters.", 
+               "D" : "The bind variables can be named arbitrarily; however the order in which they are passed matters in case of positional parameters. Think again."
+                }
+},
+{
+"id":"3",
+"question": "Consider a table 'product':",
+"imgURL":"images/quiz4.3.PNG",
+"query":"The following Python code is intended to display the details of all the products having price more that 500 and quantity more than 20. Which of the following options would complete the code at line# 6, so that the program gives the desired output: (Select all applicable)<br>",
+"imgURL2":"images/quiz4.C.3.PNG",
+"options":[
+           {"option":"a: \"SELECT * FROM product WHERE price > :param1 AND quantity > :param2\" ,{'param1': min_price, 'param2': min_qty}"},
+           {"option":"b: \"SELECT * FROM product WHERE price > :param1 AND quantity > :param2\" , (min_price, min_qty)"}, 
+           {"option":"c: \"SELECT * FROM product WHERE price > :param1 AND quantity > :param2\" , (min_price, min_qty)"},
+           {"option":"d: \"SELECT * FROM product WHERE price > :param1 AND quantity > :param2\" ,{'param2': min_qty, 'param1': min_price}"}
+          ],
+"correct":"ABD",
+"description":{"A" : "The query is written using named bind variables. Gives the relevant output.", 
+               "B" : "The query is written using positional bind variables and order of passing parameters matters.  Hence min_price is passed to param1 and min_qty to param2. The output is correct.", 
+               "C" : "The query is written using positional bind variables and order of passing parameters matters.  Here as per the position, min_qty is passed to param1 and min_price to param2, hence the output will not be correct.", 
+               "D" : "The query is written using named bind variables.  Here the order of parameters and values does not matter. The values are assigned as per the parameter names. Hence the output will be correct."
+                },
+                "fileURL":"Scripts/file3.txt"
+}
+]

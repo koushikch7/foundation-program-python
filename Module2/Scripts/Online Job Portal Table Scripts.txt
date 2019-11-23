@@ -1,0 +1,160 @@
+DROP TABLE Users CASCADE CONSTRAINTS; 
+DROP TABLE Employer CASCADE CONSTRAINTS;
+DROP TABLE Jobs_Posted CASCADE CONSTRAINTS;
+DROP TABLE Jobseeker_Personal CASCADE CONSTRAINTS;
+DROP TABLE Jobseeker_Resume CASCADE CONSTRAINTS;
+DROP TABLE Jobs_Applied CASCADE CONSTRAINTS;
+
+--Users
+CREATE TABLE Users(
+EmailID Varchar2(30) PRIMARY KEY,
+Password Varchar2(30) NOT NULL,
+Usertype Varchar2(30) CHECK(Usertype IN ('Employer','Jobseeker'))
+);
+
+insert into Users values ('jobs@infosys.com','Infy1234','Employer');
+insert into Users values ('careers@accenture.com','Acc1','Employer');
+insert into Users values ('openings@hp.com','hp123','Employer');
+insert into Users values ('prakash1289@gmail.com','p193','Jobseeker');
+insert into Users values ('nithin@gmail.com','home87','Jobseeker');
+insert into Users values('rahulitsme@gmaill.com','rahul124','Jobseeker');
+insert into Users values('shyam9843@gmaill.com','shyamjam','Jobseeker');
+insert into Users values('rohitK@gmaill.com','rohit345','Jobseeker');
+insert into Users values('anillina@gmaill.com','leenaanil','Jobseeker');
+insert into Users values('MohitS@gmaill.com','moohit8786','Jobseeker');
+
+
+
+
+--Employer
+Create table Employer(
+CompanyID varchar2(5) PRIMARY KEY,
+CompanyName Varchar2(50) NOT NULL,
+EmailID Varchar2(30) REFERENCES Users(EmailID),
+Mobile Number(10) CHECK (length(Mobile)=10) UNIQUE,
+City Varchar2(15),
+IndustryType Varchar2(20) CHECK (IndustryType IN ('IT','Manufacturing','Engineering','Banking and Finance','Diversified')),
+FunctionalArea Varchar2(20) CHECK (FunctionalArea IN ('Accounting','Marketing','Engineering','Manufacturing','Software Developer')),
+MembershipPlan Varchar2(20) CHECK (MembershipPlan IN('Trial','Monthly','Yearly')),
+CurrentDt Date Default sysdate,
+DateofSignup Date,
+DateofRenewal Date,
+RenewalStatus varchar2(10) CHECK (RenewalStatus IN ('Active','Expired'))
+);
+
+ALTER TABLE Employer ADD CONSTRAINT EMP_DT_CHECK CHECK(DateofSignup>=CurrentDt) ENABLE;
+
+insert into Employer (CompanyID,CompanyName,EmailID,Mobile,City,IndustryType,FunctionalArea,MembershipPlan,DateofSignup,DateofRenewal,RenewalStatus) values ('C1000','Infosys Limited','jobs@infosys.com',7896579875,'Chennai','IT', 'Accounting','Yearly','11/01/2016','06/30/2017','Active');
+insert into Employer (CompanyID,CompanyName,EmailID,Mobile,City,IndustryType,FunctionalArea,MembershipPlan,DateofSignup,DateofRenewal,RenewalStatus) values ('C1001','Accenture','careers@accenture.com',7989899875,'Bangalore','IT', 'Marketing','Monthly','11/02/2016','07/01/2017','Active');
+insert into Employer (CompanyID,CompanyName,EmailID,Mobile,City,IndustryType,FunctionalArea,MembershipPlan,DateofSignup,DateofRenewal,RenewalStatus) values ('C1002','HP','openings@hp.com',7965798765,'Chennai','Engineering', 'Accounting','Trial', '11/30/2016','11/30/2017','Expired'); 
+
+--Jobs_Posted
+Create table Jobs_Posted(
+JobPost_ID varchar2(6) PRIMARY KEY,
+CompanyID varchar2(5) REFERENCES Employer(CompanyID),
+CurrentDt Date Default sysdate, 
+JobPost_Date Date,
+ValidityDate Date,
+Location varchar2(30),
+Req_Skill_sets Varchar2(30),
+Yrs_of_Experience Number(4),
+QualifyingTestScore Number(5,2) CHECK (length(QualifyingTestScore)<=10),
+JobPostedStatus varchar2(30) CHECK (JobPostedStatus IN ('Open','Closed'))
+);
+
+
+ALTER TABLE Jobs_Posted ADD CONSTRAINT JP_DT1_CHECK CHECK(JobPost_Date>=CurrentDt) ENABLE;
+
+ALTER TABLE Jobs_Posted ADD CONSTRAINT JP_DT2_CHECK CHECK(ValidityDate>JobPost_Date) ENABLE;
+
+
+
+insert into Jobs_Posted (JobPost_ID,CompanyID,JobPost_Date,ValidityDate ,Location,Req_Skill_sets,Yrs_of_Experience,QualifyingTestScore,JobPostedStatus) values ('JP1000','C1000','01/01/2017','04/15/2017','Chennai','J2EE',8,6.5,'Open');
+insert into Jobs_Posted (JobPost_ID,CompanyID,JobPost_Date,ValidityDate ,Location,Req_Skill_sets,Yrs_of_Experience,QualifyingTestScore,JobPostedStatus) values ('JP1001','C1001','02/02/2017','03/16/2017','Bangalore','.NET',5,6.0, 'Open');
+insert into Jobs_Posted (JobPost_ID,CompanyID,JobPost_Date,ValidityDate ,Location,Req_Skill_sets,Yrs_of_Experience,QualifyingTestScore,JobPostedStatus) values ('JP1002','C1002','01/01/2017','02/15/2017','Hyderabad','Android',3,7.5,'Closed');
+insert into Jobs_Posted  (JobPost_ID,CompanyID,JobPost_Date,ValidityDate ,Location,Req_Skill_sets,Yrs_of_Experience,QualifyingTestScore,JobPostedStatus) values ('JP1003','C1000','02/01/2017','03/15/2017','Chennai','J2EE',12,7.0,'Closed');
+
+
+--Jobseeker_Personal
+
+Create table Jobseeker_Personal(
+Firstname varchar2(30),
+Lastname varchar2(30),
+CurrentDt Date Default sysdate, 
+DOB Date,
+EmailID varchar2(30) REFERENCES Users(EmailID),
+Mobile Number(10) CHECK (length(Mobile)=10) UNIQUE,
+City varchar2(30),
+State varchar2(30),
+Country varchar2(30),
+PassportNo varchar2(30) CHECK (length(PassportNo)=10) UNIQUE
+);
+
+ALTER TABLE Jobseeker_Personal ADD CONSTRAINT JSP_DT1_CHECK CHECK(DOB <=CurrentDt) ENABLE; 
+
+insert into Jobseeker_Personal (Firstname,Lastname,DOB,EmailID,Mobile,City,State,Country,PassportNo) values ('Rahul','Kumar', '06/23/1990','rahulitsme@gmaill.com',8929839829,'Bangalore', 'Karnataka', 'India', 'J4928989GH');
+insert into Jobseeker_Personal (Firstname,Lastname,DOB,EmailID,Mobile,City,State,Country,PassportNo)values ('Shyam','Kapoor', '06/13/1988','shyam9843@gmaill.com',8324839829,'Mysore', 'Karnataka', 'India', 'J4928989WD');
+insert into Jobseeker_Personal (Firstname,Lastname,DOB,EmailID,Mobile,City,State,Country,PassportNo) values ('Rohit','Kumar', '02/03/1992','rohitK@gmaill.com',8929346329,'Bangalore', 'Karnataka', 'India', 'J4928989ER');
+insert into Jobseeker_Personal (Firstname,Lastname,DOB,EmailID,Mobile,City,State,Country,PassportNo) values ('Anil','Tiwari', '10/18/1990','anillina@gmaill.com',8922359829,'Hyderabad', 'AP', 'India', 'J4928989KH');
+insert into Jobseeker_Personal (Firstname,Lastname,DOB,EmailID,Mobile,City,State,Country,PassportNo)values ('Mohit','Sharma', '09/04/1987','MohitS@gmaill.com',8929835654,'Chennai', 'TamilNadu', 'India', 'J4928989UI');
+
+
+--Jobseeker_Resume
+
+Create table Jobseeker_Resume(
+JobseekerID varchar2(6) PRIMARY KEY,
+EmailID varchar2(30) REFERENCES Users(EmailID),
+ug_Qualification varchar2(30) CHECK(ug_Qualification IN ('BE','BTech','BCA','BA','BSc')),
+pg_Qualification varchar2(30) CHECK(pg_Qualification IN ('ME','MTech','MCA','MBA','MSc','NA')) ,
+key_Skills1 varchar2(20),
+key_Skills2 varchar2(20),
+Additional_Skills varchar2(50),
+YrsofExperience Number(4) check (YrsofExperience>0),
+Curr_Employer varchar2(30),
+Designation varchar2(30),
+curr_CTC Number(10,2),
+Exp_CTC Number(10,2)
+);
+
+
+
+insert into Jobseeker_Resume values ('JS1000','MohitS@gmaill.com','BE','ME','J2EE','Android','Python',6, 'Maphils Technologies','Technial Analyst',7.3, 10);
+insert into Jobseeker_Resume values ('JS1001','MohitS@gmaill.com','BE','ME','Android','J2EE','Python',6, 'Maphils Technologies','Technial Analyst',7.3, 10);
+insert into Jobseeker_Resume values ('JS1002','anillina@gmaill.com','BTech','MTech','.NET','Android','Python',3, 'Tech Mahindra','System Programmer',5.4, 7.6);
+insert into Jobseeker_Resume values ('JS1003','rohitK@gmaill.com','BSc','MSc','Python','Android','J2EE',9, 'VBJSoft Solutions','Programmer',9, 13);
+insert into Jobseeker_Resume values ('JS1004','shyam9843@gmaill.com','BSc','MSc','J2EE','Android','Python',6, 'Syntel Inc','Technial Trainer',5.9, 9);
+
+--Jobs_Applied
+
+create table Jobs_Applied(
+ApplicationID varchar2(6) PRIMARY KEY,
+JobseekerID varchar2(6) REFERENCES Jobseeker_Resume(JobseekerID),
+JobPost_ID varchar2(6) REFERENCES Jobs_Posted(JobPost_ID),
+CurrentDt Date Default sysdate, 
+ApplicationDate Date,
+JobTestValidityDate Date,
+Attempt varchar2(5) CHECK(Attempt IN ('Yes','No')),
+JobTestStatus varchar2(30) CHECK(JobTestStatus IN ('Open and No Attempt','Open and Attempted','Closed')),
+JobTestScore Number(5,2) CHECK(JobTestScore>=0),
+JobTestResult varchar2(20) CHECK(JobTestResult IN ('Selected','Rejected'))
+)
+	
+ALTER TABLE Jobs_Applied ADD CONSTRAINT JA_DT2_CHECK CHECK(ApplicationDate>=CurrentDt) ENABLE;
+ALTER TABLE Jobs_Applied ADD CONSTRAINT JA_DT3_CHECK CHECK(JobTestValidityDate>ApplicationDate) ENABLE;
+
+
+insert into Jobs_Applied (ApplicationID,JobseekerID,JobPost_ID,ApplicationDate,JobTestValidityDate,Attempt,JobTestStatus,JobTestScore,JobTestResult) values ('JA1000','JS1001','JP1001','11/07/2016', '01/20/2017','Yes','Open and Attempted',6.3,'Selected');
+
+insert into Jobs_Applied  (ApplicationID,JobseekerID,JobPost_ID,ApplicationDate,JobTestValidityDate,Attempt,JobTestStatus,JobTestScore,JobTestResult)values ('JA1001','JS1003','JP1000','11/12/2016', '01/10/2017','No','Open and No Attempt',0,'Rejected');
+
+insert into Jobs_Applied (ApplicationID,JobseekerID,JobPost_ID,ApplicationDate,JobTestValidityDate,Attempt,JobTestStatus,JobTestScore,JobTestResult)values ('JA1002','JS1003','JP1000','12/06/2016', '01/30/2017','Yes','Open and Attempted',7.8,'Selected');
+
+insert into Jobs_Applied (ApplicationID,JobseekerID,JobPost_ID,ApplicationDate,JobTestValidityDate,Attempt,JobTestStatus,JobTestScore,JobTestResult)values ('JA1003','JS1004','JP1001','11/13/2016', '02/16/2017','Yes','Open and Attempted',8.4,'Selected');
+
+insert into Jobs_Applied (ApplicationID,JobseekerID,JobPost_ID,ApplicationDate,JobTestValidityDate,Attempt,JobTestStatus,JobTestScore,JobTestResult)values ('JA1004','JS1001','JP1002','12/25/2016', '01/14/2017','No','Open and No Attempt',0,'Rejected');
+
+insert into Jobs_Applied (ApplicationID,JobseekerID,JobPost_ID,ApplicationDate,JobTestValidityDate,Attempt,JobTestStatus,JobTestScore,JobTestResult)values ('JA1005','JS1004','JP1001','12/06/2016', '02/11/2017','Yes','Open and Attempted',7.6,'Selected');
+
+insert into Jobs_Applied 
+(ApplicationID,JobseekerID,JobPost_ID,ApplicationDate,JobTestValidityDate,Attempt,JobTestStatus,JobTestScore,JobTestResult)values ('JA1006','JS1002','JP1001','12/26/2016', '02/11/2017','Yes','Open and Attempted',7.6,'Selected');
+

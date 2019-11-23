@@ -1,0 +1,125 @@
+/*CHARSET "ISO-8859-1";*/
+
+/*!
+ * Styles for elements in bordered divs used for assignment and exercise pages
+ */
+
+.caret {
+    margin-top: 9px;
+}
+
+table {
+    table-layout: auto;
+}
+
+thead {
+    background-color: #D6D6D6;
+}
+
+#table-fch tbody th, #table-fch-tdc tbody th {
+    background-color: #D6D6D6;
+}
+
+#table-fch-tdc td, #table-fch-tdc th {
+    text-align: center;
+}
+
+#container table:not(.matchTable) tr td, #container table:not(.matchTable) tr {
+    height: auto;
+    width: auto;
+}
+
+.row-fluid td, .row-fluid tr {
+    height: auto;
+    width: auto;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
+.col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+div.col-md-1 table td object {
+    height: 15px;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.row-fluid table {
+    margin-left: 0px;
+}
+
+#telltext {
+    margin: 0;
+    line-height: 1em;
+    vertical-align: middle;
+}
+
+div#result table thead {
+    color: #1e6942;
+    background-color: #c7ffb3;
+}
+
+div[id^='result'] table thead {
+    color: #1e6942;
+    background-color: #c7ffb3;
+}
+
+.head-label {
+    margin-right: 10px;
+    text-align: right;
+    font-weight: bold;
+}
+
+#conceptQuery textarea {
+    max-width: 95%;
+    width: 95%;
+    max-height: 90px;
+}
+
+p.question::before {
+    counter-increment: qc;
+    content: 'Quiz ';
+}
+
+.qc {
+    counter-reset: qc;
+}
+
+div#quiz p {
+    margin-bottom: 5px;
+}
+
+div#quiz input[type=checkbox], div#quiz input[type=radio] {
+    margin-right: 10px;
+}
+
+.diffcolor {
+    background-color: #FFCC66;
+}
+
+.editableTable {
+    margin-bottom: 16px;
+}
+
+    .editableTable > thead > th {
+        text-align: center;
+    }
+
+    .editableTable > tbody td input {
+        border-color: transparent;
+        background-color: inherit;
+        text-align: center;
+        display: block;
+    }
+
+.wrongAnswer {
+    background-color: #ffdddd !important;
+}
+
+h1#title {
+    cursor: pointer;
+}
+
+

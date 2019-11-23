@@ -1,0 +1,487 @@
+[
+{
+"id":"1",
+"duration":5,
+"question":"Which of the following statements is used to list all the built in functions in Python?",
+"imgURL":"",
+"options":[
+           {"option":"a: dir(built_ins)"},
+           {"option":"b: dir(__builtins__)"},
+           {"option":"c: list(built_ins)"},
+           {"option":"d: list(_builtins_)"}
+          ],         
+"correct":"B",
+"description":{
+  "A" : "Name Error. No such function exists.",  
+  "B" : "'dir(__builtins__)' prints all the built in functions available in Python. Try to execute it and observe the output.",
+  "C" : "Name Error. No such function exists.",
+  "D" : "Name Error. No such function exists."
+}
+},
+{
+"id":"2",
+"duration":5,
+"question":"Fill in the blanks(as per the video):<br><ul style=\"list-style-type:decimal;position:relative;margin-left:60px;\"><li>' <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          A          </span>(max) ' command in Python IDLE will provide the details of built in function 'max'.</li><li><span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          B          </span> (4,3,6,7) == 3 [ Select a function which results as TRUE ]</li><li>abs(int(\"- 45\")) = <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          C          </span> [Select one: 45/error]</li><li>len(str(45.5)) == <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          D          </span> </li><li>round(34.547343434, 2) = <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          E          </span></li><li>abs(-45.65) == 45.65 = <span style=\"width:50px;border:2px solid black;background-color:lightyellow;\">          F          </span></li><br>",
+"imgURL":"",
+"Correct":["help","min","45","4","34.55","True"],
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"  A  ->"},
+		{"option2":"  B  ->"}, 
+		{"option3":"  C  ->"},
+		{"option4":"  D  ->"},
+                {"option5":"  E  ->"},
+                {"option6":"   F  ->"}
+		],
+"colB":
+		[
+		{"option1":"45"},
+		{"option2":"True"}, 
+		{"option3":"34.55"},
+		{"option4":"min"},
+                {"option5":"help"},
+                {"option6":"4"},
+                {"option7":"error"}
+		],
+"Correct":
+		[
+		{"option":"help"},
+		{"option":"min"}, 
+		{"option":"45"},
+                {"option":"4"}, 
+		{"option":"34.55"},
+		{"option":"True"}
+		],
+ "description":
+         [
+		{"option":"help() function accepts the name of the function/class/method/module and prints the details of the same on the console. If no argument is given, an interactive help system starts on the console."},
+		{"option":"min() function returns the smallest item in an iterable."}, 
+		{"option":"int() function types casts string -45 to number. abs() function prints the absolute value."},
+                {"option":"str() function converts float 45.5 into string , len() function returns the length (4,5,.,5) i.e. 4."}, 
+		{"option":"round(a, b) function rounds the value a to b digits and returns a floating value."},
+		{"option":"abs() function prints the absolute value of -45.65 i.e. 45.65. Hence 45.65 == 45.65 returns True."}
+		]
+ },
+{
+"id":"3",
+"duration":5,
+"question":"Which of the following is/are TRUE about functions:",
+"imgURL":"",
+"options":[
+           {"option":"a: Functions are reusable components of a program."},
+           {"option":"b: Functions make a program modular."},
+           {"option":"c: The keyword to create a function in Python is \"func\"."},
+           {"option":"d: We cannot define a function with zero(no) arguments in python."}
+          ],         
+"correct":"AB",
+"description":{
+  "A" : "Functions avoid repetition and makes the code more reusable. Once we have defined a function, we can call it from another function or program.",  
+  "B" : "Functions help to break our program into smaller and modular pieces. As our program grows bigger, functions make it more organized and manageable.",
+  "C" : "\"def\" is the keyword in Python to create a function.",
+  "D" : "A function can take 0, 1 or any number of arguments in Python."
+}
+},
+{
+"id":"4",
+"duration":5,
+"question":"Consider the given python code and choose the correct option representing the following:",
+"imgURL":"images/Quiz108.png",
+"query":"<br>",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"Function call                     "},
+		{"option2":"Function body                  "}, 
+		{"option3":"Function definition            "},
+		{"option4":"Function return statement"},
+                {"option5":"Formal argument             "},
+                {"option6":"Actual argument               "}
+		],
+"colB":
+		[
+		{"option1":"def cube(x):"},
+		{"option2":"result = x * x * x; return result"}, 
+		{"option3":"return result"},
+		{"option4":"value = cube(3)"},
+                {"option5":"3"},
+                {"option6":"x"}
+		],
+"Correct":
+		[
+		{"option":"value = cube(3)"},
+		{"option":"result = x * x * x; return result"}, 
+		{"option":"def cube(x):"},
+		{"option":"return result"},
+                {"option":"x"},
+                {"option":"3"}
+		],
+ "description":
+         [
+		{"option":"When a function is called, the statements inside the function body are executed. Here the function cube() is called with argument 3."},
+		{"option":"Function is defined using 'def' keyword, followed by function name, arguments and a colon. The intended statements after definition forms the body of the function. The body of a function is executed when a function is called."}, 
+		{"option":"Function is defined using 'def' keyword, followed by function name, arguments and a colon."},
+		{"option":"Is is the value returned from a function. A function may or may not have a return statement. If a function do not explicitly return a value, it returns None."},
+                {"option":"The parameter defined as a part of function definition. x is a formal argument."},
+                {"option":"The actual parameter sent to the function during function call. 3 is actual argument."}
+		]
+ },
+{
+"id":"5",
+"duration":5,
+"question":"Which of the following is/are correct syntax w.r.t. return statements?",
+"imgURL":"images/Quiz32.png",
+"options":[
+           {"option":"a: 1, 2"},
+           {"option":"b: 1, 3, 4"},
+           {"option":"c: 2, 4, 5"},
+           {"option":"d: 1, 2, 3, 4, 5"}
+          ],         
+"correct":"D",
+"description":{
+  "A" : "<br>Code 1: A function can return only one value<br>Code 2: Function can have a return statement even if it is not returning anything.",  
+  "B" : "<br>Code 1: A function can return only one value<br>Code 3: If a function is not returning anything, 'return' statement can be skipped. This is allowed in Python.<br>Code 4: If the value of 'cust_id' matches 100, function can return at line no. 3",
+  "C" : "<br>Code 2: Function can have a return statement even if it is not returning anything.<br>Code 4: If the value of 'cust_id' matches 100, function can return at line no. 3<br>Code 5: The statement print(\"here\") will never be reached as the function is returned at line no. 3, but this syntax is valid in Python.",
+  "D" : "<br>Code 1: A function can return only one value<br>Code 2: Function can have a return statement even if it is not returning anything.<br>Code 3: If a function is not returning anything, 'return' statement can be skipped. This is allowed in Python.<br>Code 4: If the value of 'cust_id' matches 100, function can return at line no. 3<br>Code 5: The statement print(\"here\") will never be reached as the function is returned at line no. 3, but this syntax is valid in Python."
+}
+},
+{
+"id":"6",
+"duration":5,
+"question":"The following Python program returns the greatest of the three numbers. Observe the code.",
+"imgURL":"images/Quiz33.png",
+"query":"       Find out the line number/numbers from the given options which should be corrected so that the function gives the output as 15.",
+"options":[
+           {"option":"a: 5"},
+           {"option":"b: 5 and 8"},
+           {"option":"c: 2"},
+           {"option":"d: 8"}
+          ],         
+"correct":"D",
+"description":{
+  "A" : "This code is fine. Observe the code again and find the error.",  
+  "B" : "Try to execute the code and observe the output. Are you getting the correct output?",
+  "C" : "This code is fine. Observe the code again and find the error.",
+  "D" : "The line number 8 should be changed to 'if(num3>num1):' so as to correct the logic of the program. Try to execute this program by providing different values at line no. 11"
+}
+},
+{
+"id":"7",
+"duration":5,
+"question":"Observe the following Python Code:",
+"query":"          Complete the output statements:",
+"imgURL":"images/Quiz109.png",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"Customer Id before function invocation:"},
+		{"option2":"Customer Id in function definition:        "}, 
+		{"option3":"Customer Id after function invocation:   "}
+		],
+"colB": 
+		[
+		{"option1":"100"},
+                {"option2":"0"}, 
+		{"option3":"101"},
+                {"option4":"1"}
+		
+		],
+"Correct":
+		[
+                {"option":"100"},
+		{"option":"101"}, 
+		{"option":"100"}
+		
+		],
+ "description":
+         [
+		{"option":"Prints the value of cust_id i.e. 100."},
+		{"option":"The function 'change' is called with actual argument 100. Inside the function value of cust_id is incremented by 1, hence inside the function the value is 101."}, 
+		{"option":"Here cust_id is an integer. While passing immutable datatypes (like Number, Strings and Tuples) as arguments to functions, a copy of the variable is passed and the passing argument is not changed. Hence the customer id remains unchanged even after function invocation."}
+		]
+},
+{
+"id":"8",
+"duration":5,
+"question":"Observe the following Python Code:",
+"query":"          Complete the output statements:",
+"imgURL":"images/Quiz110.png",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"List of Customer Ids before function invocation:"},
+		{"option2":"List of Customer Ids in function definition:        "}, 
+		{"option3":"List of Customer Ids after function invocation:   "}
+		],
+"colB":
+		[
+		{"option1":"[100, 101, 102, [10, 20, 30]]"},
+                {"option2":"[100, 101, 102]"},
+                {"option3":"[10, 20, 30]"},
+                {"option4":"[100, 101, 102 , 10, 20, 30]"}
+		],
+"Correct":
+		[
+		{"option":"[100, 101, 102]"},
+		{"option":"[100, 101, 102, [10, 20, 30]]"}, 
+		{"option":"[100, 101, 102, [10, 20, 30]]"}
+		],
+ "description":
+         [
+		{"option":"Prints the value of list_cust_id."},
+		{"option":"The function 'change' is called with actual argument [100, 101, 102]. Inside the function value of cust_id is appended with [10, 20, 30], hence the value printed inside the function is [100, 101, 102, [10, 20, 30]]."}, 
+		{"option":"While Passing mutable Data Types like Lists as arguments to functions, The function invocation changes the passing arguments directly. Hence the original list_cust_id is modified after function invocation. Hence the value of list outside the function after function call prints [100, 101, 102, [10, 20, 30]]."}
+		]
+},
+{
+"id":"9",
+"duration":5,
+"question":"Observe the following Python code and state if the output is True or False?",
+"imgURL":"images/Quiz34.png",
+"options":[
+           {"option":"a: True"},
+           {"option":"b: False"}
+          ],         
+"correct":"B",
+"description":{
+  "A" : "Is dictionary mutable or immutable? Think again and answer.",  
+  "B" : "Dictionary is mutable, hence when it is passed to the function as an argument, it is modified during the function execution. The value of student_details[101] outside the function also becomes 'Natara'"
+}
+},
+{
+"id":"10",
+"duration":5,
+"question":"Consider the distance between two locations(in kilometers):<br>             1) distance between Bangalore and Chandigarh, bgl_chd.<br>             2) distance between Bangalore and Jaipur, bgl_jpr.<br>             We want to compare the distances and check which city (out of Chandigarh and Jaipur) is farther from Bangalore.<br>             Provided below are two code snippets written to solve the above problem, select the code snippet which will give the correct<br>             output.",
+"imgURL":"images/Quiz48.png",
+"options":[
+           {"option":"a: A"},
+           {"option":"b: B"},
+           {"option":"c: Both A and B"},
+           {"option":"d: None of the above"}
+          ],         
+"correct":"C",
+"description":{
+  "A" : "Your answer is partially correct, but try to execute Option B also.",  
+  "B" : "Your answer is partially correct, but try to execute Option A also.",
+  "C" : "<br>Code A: When function compare() is invoked, 2366 and 1566 are the actual arguments which are passed and assigned to the formal arguments, 'bgl_chd' and 'bgl_jpr' respectively. It is mandatory to pass both the arguments.<br><br>Code B: Here parameters are passed using keyword arguments. Hence we need not follow positional order. Python interpreter is able to match the keywords provided with function parameters. More about Types of Function arguments: <a href=\"http://www.tutorialspoint.com/python/python_functions.htm\" target=\"_blank\" style=\"color: #0000EE;\">Click Here</a> ",
+  "D" : "Try to execute the code and observe the output."
+}
+},
+{
+"id":"11",
+"duration":5,
+"question":"Consider the following Python code:",
+"imgURL":"images/Quiz49.png",
+"query":"            Identify if there is any syntax error in the code snippet? If yes, identify the line number with a syntax error.",
+"options":[
+           {"option":"a: Line 1"},
+           {"option":"b: Line 6"},
+           {"option":"c: Line 7"},
+           {"option":"d: No syntax error"}
+          ],         
+"correct":"D",
+"description":{
+  "A" : "Try to execute the code and observe if there is any syntax error.",  
+  "B" : "Try to execute the code and observe if there is any syntax error.",
+  "C" : "Try to execute the code and observe if there is any syntax error.",
+  "D" : "The code is correct and is an example of default arguments. The default argument 'cust_age' assumes the value 30 in case it is not provided during the function call. If a value is provided during function call ,it overwrites the default value."
+}
+},
+{
+"id":"12",
+"duration":5,
+"question":"The following python code is written to print the student name and the subjects he/she has opted for. Predict the output.",
+"imgURL":"images/Quiz111.png",
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Quiz111_1.png",
+"imgAnsText":"<br><strong>Output:</strong>",         
+"correct":"AB",
+"options":[],  
+"description":{}
+},
+{
+"id":"13",
+"duration":5,
+"question":"Observe the following Python code and match it with the output.",
+"imgURL":"images/Quiz112.png",
+"query":"<br>",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"Value of total inside the function:   "},
+		{"option2":"Value of total outside the function: "}
+		],
+"colB":
+		[
+		{"option1":"0"},
+		{"option2":"37"},
+                {"option3":"25"},
+                {"option4":"12"}
+		],
+"Correct":
+		[
+		{"option":"37"},
+		{"option":"0"}
+		],
+ "description":
+         [
+		{"option":"The variable 'total' inside function definition at line# 4 is a local variable. Line# 8 calls the function 'add()' with parameters 25,12. Function calculates 'total' and prints the value of the local variable 'total' i.e. 37. "},
+                {"option":"Line# 9 prints the value of variable 'total' outside the function, which is not affected with the function execution , hence returns 0."}
+		]
+},
+{
+"id":"14",
+"duration":5,
+"question":"Observe the following Python code and match it with the output.",
+"imgURL":"images/Quiz113.png",
+"query":"<br>",
+"type":"Matchquiz",
+"colA":
+		[
+		{"option1":"Value of total inside the function:    "},
+		{"option2":"Value of total outside the function: "}
+		],
+"colB":
+		[
+		{"option1":"0"},
+		{"option2":"37"},
+                {"option3":"25"},
+                {"option4":"12"}
+		],
+"Correct":
+		[
+		{"option":"37"},
+		{"option":"37"}
+		],
+ "description":
+         [
+		{"option":"We have used global keyword in the function definition. Hence variable 'total' (line# 4) inside the function definition is pointing to the same variable 'total' declared outside the loop(line# 1) During the function call, value of variable 'total' changes to 37 same is printed. "},
+		{"option":"As 'total' is declared as a global variable inside the function, hence it points to the same variable 'total' declared outside the loop(line# 1) . During the function call, value of global variable 'total' changes to 37, hence the same is printed at line# 10."}
+		]
+},
+{
+"id":"15",
+"duration":5,
+"question":"Observe the following Python code:",
+"imgURL":"images/Quiz52.png",
+"query":"            Which of the following options shows the correct output of the above program:",
+"options":[
+           {"option":"a: The value of a is: 10"},
+           {"option":"b: The value of a is: 5"},
+           {"option":"c: Invalid syntax"}
+          ],         
+"correct":"B",
+"description":{
+  "A" : "Have we declared the variable \"a\" as global? Think again and answer.",  
+  "B" : "Variable \"a\" at line # 1 has a global scope, whereas the variable \"a\" declared inside the function at line# 3 is a local variable. While calling the function at line 4 , the local variable \"a\" is assigned a value 10 inside the function. However while printing the value of \"a\" at line# 5, the global variable \"a\" is printed which is not affected by the function call, hence the output is 5.",
+  "C" : "Try to execute the program and observe the output."
+}
+},
+{
+"id":"16",
+"duration":5,
+"question":"Which of the following code snippets gives the output as:<br>                <em><strong>2</strong></em><br>                <em><strong>3</strong></em>",
+"imgURL":"images/Quiz53.png",
+"options":[
+           {"option":"a: I"},
+           {"option":"b: III"},
+           {"option":"c: II, IV"},
+           {"option":"d: IV"}
+          ],         
+"correct":"D",
+"description":{
+  "A" : "Code I : 'x = 2' and 'x =3' are local variables to 'func1()' and 'func2()' respectively. 'print()' function will print the value of global variable 'x'. Hence the output will be 1 1.",
+  "B" : "Code III : Valid usage of global keyword in 'func1()', hence 'x = 2' changes the value of global variable to 2 . But variable 'x' inside 'func2()' is a local variable, hence does not affect the global variable. The output is 2 2.",
+  "C" : "<br>Code II : Invalid syntax for global keyword usage. The variable should be declared global first and then value should be assigned in the next step.<br>Code IV : Valid usage of global keyword in both the functions ,hence the output will be 2 3",
+  "D" : "Code IV : Valid usage of global keyword in both the functions ,hence the output will be 2 3"
+}
+},
+{
+"id":"17",
+"duration":5,
+"question":"Consider the following Python code:",
+"imgURL":"images/Quiz54.png",
+"query":"            Rearrange the following statements in the correct order in which they appear in the output:<br>            Appearing for learning stage<br>            Completed learning stage<br>            Appearing for final stage<br>            Completed final stage<br>            Applying for license<br>            License Issued<br>            Final score is: 200",
+"options":[
+           {"option":"a: 5, 1, 2, 3, 4, 6, 7"},
+           {"option":"b: 1, 2, 3, 4, 5, 6, 7"},
+           {"option":"c: 5, 3, 1, 2, 4, 6, 7"},
+           {"option":"d: 5, 6, 7, 1, 2, 3, 4"}
+          ],         
+"correct":"C",
+"description":{
+  "A" : "Try to execute the code and observe the output.",  
+  "B" : "Try to execute the code and observe the output.",
+  "C" : "We can call a function from other function. The program execution starts with the call to the function get_licence(20). Hence the first output statement is #5. Then the function get_permanent_licence() and the control goes to the function which displays line #3 and further get_learner_licence() is called. Hence #1 and #2 are displayed and score = 100 is returned to the calling function, get_permanent_licence(). There the value of score is incremented by 100 and #4 is displayed. Control finally returns to get_licence() function with score = 200. Hence the 'if' block is executed here and #6 is displayed. Finally #7 is displayed.",
+  "D" : "Try to execute the code and observe the output."
+}
+},
+{
+"id":"18",
+"duration":5,
+"question":"Consider the following python code and answer the following questions.",
+"imgURL":"images/Quiz54.png",
+"query":"<ul style=\"list-style-type:decimal;position:relative;margin-left:60px;\"><li>Variable 'score' is hard coded in this code. Should we do that in real time scenario?</li><li>Identify the statements in this code which are never executed.</li></ul>",
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Quiz54_1.png",
+"imgAnsText":"<br><strong>Answers:</strong>",
+"options":[],         
+"correct":"ABCD",
+"description":{}
+},
+{
+"id":"19",
+"duration":5,
+"question":"<p style=\"position:relative;margin-top:-40px;margin-left:80px;line-height:40px\">Tanmay movie hall has 30 seats. First 20 seats are reserved for economy tickets and last 10 for gold tickets. Gold ticket holders are served with executive food menu, others are served with regular menu. The following Python code is written to implement this scenario. Complete the code.</p>",
+"imgURL":"images/Quiz114.png",
+"type":"Verify",
+"imgURLFlag":"Stay",
+"imgAnsURLLeft":"images/Quiz114_1.png",
+"imgAnsText":"<br><strong>Completed Code:</strong>",
+
+"options":[],         
+"correct":"ABCD",
+"description":{}
+},
+{
+"id":"20",
+"duration":5,
+"question":"Which of the following is/are TRUE regarding recursion? (Multiple options can be correct)",
+"imgURL":"",
+"options":[
+           {"option":"a: Recursion is a function calling itself."},
+           {"option":"b: Recursion uses less memory."},
+           {"option":"c: Every recursive function must have a base condition."},
+           {"option":"d: Recursion can be a substitute for iterations where the iteration solution is complex."}
+          ],         
+"correct":"ACD",
+"description":{
+  "A" : "Recursion is a function calling itself.",  
+  "B" : "Recursion may not use less memory always. In some cases, it may lead to more memory usage.",
+  "C" : "A recursive function terminates, if with every recursive call the solution of the problem downsizes and moves towards a base case. Base/termination case is a condition, where the problem can be solved without further recursion.  Recursion can lead to an infinite loop, if the base case is not met. ",
+  "D" : "Recursion can substitute iterations if iteration solution is complex."
+}
+},
+{
+"id":"21",
+"duration":5,
+"question":"Observe the following Python code:",
+"imgURL":"images/Quiz55.png",
+"query":"            Choose the correct output:",
+"options":[
+           {"option":"a: 17 10"},
+           {"option":"b: Infinite Loop"},
+           {"option":"c: 2 4"},
+           {"option":"d: 20 24"}
+          ],         
+"correct":"A",
+"description":{
+  "A" : "Consider the first function call, 'a = fun1(5,2)' . Here the condition for 'if' statement is not correct as 'x !=0', hence control goes into the else block and calls the function recursively fun1(4,7) -> fun1(3,11) -> fun1(2,14) -> fun1(1,16) -> fun1(0,17) -> for 'x=0', 'if' block is executed and output is 17<br>Similarly b = fun1(3,4) -> fun1(2,7) -> fun1(1,9) -> fun1(0,10) -> 10",  
+  "B" : "Observe the code again and find the correct answer.",
+  "C" : "Observe the code again and find the correct answer.",
+  "D" : "Observe the code again and find the correct answer."
+}
+}
+]

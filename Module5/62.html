@@ -1,0 +1,89 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<style>
+   
+    table{
+        width : 76%;
+        margin : auto;
+        vertical-align: middle;
+    }
+    th{
+        background-color: #6b99c7;
+        color: white;
+        text-align: center
+    }
+    td, th {
+    border: 1px solid white;
+    text-align: left;
+    padding: 8px
+}
+
+
+tr:nth-child(even)
+{
+    background-color: #cbd9e6
+}
+tr:nth-child(odd) 
+{
+    background-color: #e9f0fb
+}
+tr td:nth-child(1){
+    width : 250px;
+}
+tr td{
+    height:50px;
+    
+}
+tr td:first-child{
+    text-align: center;
+
+}
+</style>
+</head>
+
+<body style="margin: 0;">
+
+    <div id="manual" style="overflow: hidden; position: relative; width: 1200px; height: 680px;">
+        <div class="container">
+            <div class="row" style="position:relative;margin-left:60px">
+                <div class="col-md-11">
+                    <ul>
+                        <li>Using SQL cursor attributes, the outcome of SQL statements in PL/SQL can be tested.</li>
+                    </ul>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <br>
+            <table class="table table-responsive" style="width:75%">
+        <thead>
+  <tr>
+    <th style="text-align: center;vertical-align: middle;">Implicit Cursor Attribute</th>
+    <th style="text-align: center;vertical-align: middle;">Meaning</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td style="vertical-align: middle;">SQL%ROWCOUNT</td>
+    <td style="vertical-align: middle;">Number of records affected by the most recent SQL statement.</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;">SQL%FOUND</td>
+    <td style="vertical-align: middle;">Evaluates to TRUE if the most recent SQL statement affects one or more rows.</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;">SQL%NOTFOUND</td>
+    <td style="vertical-align: middle;">Evaluates to TRUE if the most recent SQL statement does not affect any rows.</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;">SQL%ISOPEN</td>
+    <td style="vertical-align: middle;">Always evaluates to FALSE because PL/SQL closes implicit cursors immediately after they are executed.</td>
+  </tr>
+ </tbody>
+</table>
+        </div>
+     </div>
+</body>
+</html>

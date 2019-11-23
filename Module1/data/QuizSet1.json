@@ -1,0 +1,48 @@
+[
+{
+"id":"1",
+"type":"Matchquiz",
+"question": "Some of the problems faced by SAD are mentioned in the table below. Try to match the problems with their correct types.",
+"imgURL":"",
+"colA":
+		[
+		{"option1":"How many teachers are free in lecture 4?                  "},
+		{"option2":"Should class III be given a break in lecture 5?            "}, 
+		{"option3":"Among multiple teachers who can be mapped for lecture 7 of class VI, the teacher who has the minimum load should be mapped. How to do this?                                                            "},
+		{"option4":"Which class is not mapped to any teacher in lecture 2?"}
+		],
+"colB":
+		[
+		{"option1":"Decision"},
+		{"option2":"Sorting"}, 
+		{"option3":"Counting"},
+		{"option4":"Searching"}
+		],
+"Correct":
+		[
+		{"option":"Counting"},
+		{"option":"Decision"}, 
+		{"option":"Sorting"},
+		{"option":"Searching"}
+		],
+ "description":
+         [
+		{"option":"Counting Problem – The problem which requires us to count a particular item based on some input."},
+		{"option":"Decision Problem – The problem which requires us to decide whether to do an action or not. A decision problem is a question with a yes-or-no answer, depending on some input."}, 
+		{"option":"Sorting Problem – The problem which requires us to rearrange the values in some order (an increasing or decreasing order)"},
+		{"option":"Searching Problem – The problem which requires us to find a particular item from a group of options."}
+		]
+ },
+{
+"id":"2",
+"type":"Verify",
+"duration":5,
+"question": "Consider the problem faced by SAD to compute total numbers of teachers available to take the 4th lecture of class III. Guess <br>            the input, process and output for above problem.",
+"imgQuestionURL":"images/Quiz5.png",
+"imgAnsURL":"images/Quiz5_1.png",
+"imgAnsText":"<strong>Your answer could be on similar lines:</strong>",
+"options":[],
+"correct":"AB",
+"description":{}
+}
+]

@@ -1,0 +1,37 @@
+[
+{
+"id":"1",
+"question": "Which of the following are the key disadvantages of storing data in flat files?",
+"imgURL":"",
+"options":[
+           {"option1":"A.Data Redundancy"},
+           {"option2":"B.Tight dependency between application programs and data"}, 
+		   {"option3":"C.Difficult to grant access privileges to users for different portions of the same file"},
+           {"option4":"D.Very high cost"}
+          ],
+"correct":"ABC", 
+"description":{"A":"Yes,the same data would need to be duplicated at different locations",
+               "B":" Yes,Changing the structure of file would require a corresponding update in the application program accessing the file",
+               "C":" Yes,it is difficult.Once you get a file handle, any location within the file can be accessed",
+               "D":" Not really.File based approach is not a costly one"
+              },
+               "fileURL":""
+},
+{
+"id":"2",
+"question": "Identify the data model which can be used for the following scenario:",
+"imgURL":"images/QImg1.png",
+"options":[
+           {"option1":"Hierarchical Model"},
+           {"option2":"Network Model"}, 
+           {"option3":"Both"},
+           {"option4":"None of the Above"}
+           ],
+"correct":"B",
+"description":{"A":"In hierarchical model,a node cannot have multiple parent nodes.Hence not possible in this case",
+               "B":"Yes,Network Model supports multiple links between records.",
+               "C":"In hierarchical model,a node cannot have multiple parent nodes."	
+              },
+               "fileURL":""
+}
+]

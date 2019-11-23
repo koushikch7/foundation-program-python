@@ -1,0 +1,133 @@
+[
+{
+"id":"1",
+"question": "Consider the following item table.  Which of the following queries would retrieve the number of distinct category codes in Item table?",
+"imgURL":"images/quiz8.11.JPG",
+"options":
+		[
+		{"option1":"SELECT COUNT(DISTINCT category_code) AS total FROM item;"},
+		{"option2":"SELECT DISTINCT COUNT(category_code) AS total FROM item;"}, 
+		{"option3":"SELECT DISTINCT COUNT (*) AS total FROM ITEM;"},
+		{"option4":"SELECT COUNT(category_code) AS total FROM item; "}
+		],
+"correct":"A",
+"description":{
+"A":"Correct use of COUNT function and DISTINCT operator",
+"B":"Improper use of DISTINCT",
+"C":"Wrong usage of DISTINCT operator and COUNT function",
+"D":"This will not fetch the distinct category codes. Re-think!"
+},
+             "fileURL":"Scripts/file2.txt"
+},
+{
+"id":"2",
+"question": "Consider the following item table.Which of the following queries is better in terms of performance?",
+"imgURL":"images/quiz8.11.JPG",
+"options":
+		[
+		{"option1":"SELECT COUNT(*) AS total FROM item WHERE category_code=30;"},
+		{"option2":"SELECT COUNT(1) AS total FROM item WHERE category_code=30;"}
+		], 
+"correct":"B",
+"description":
+		{
+                    "A":"Count(*) will fetch all fields from item table",
+            "B":"Here Count(1) will not fetch all fields from item table.  Hence better."
+		},
+             "fileURL":"Scripts/file3.txt"
+},
+{
+"id":"3",
+"question": "Consider the following Student table.  Which of the following queries will return each branch along with the maximum marks in that branch",
+"imgURL":"images/quiz8.1.PNG",
+"options":
+		[
+		{"option1":"SELECT Branch, MAX(Marks) AS 'Highest Mark' FROM Student GROUP BY Branch, MAX(Marks);"},
+		{"option2":"SELECT Branch, MAX(Marks) AS 'Highest Mark' FROM Student GROUP BY Marks, Branch;"}, 
+		{"option3":"SELECT Branch, MAX(Marks) AS 'Highest Mark' FROM Student GROUP BY Branch;"},
+		{"option4":"SELECT Branch, MAX(Marks) AS 'Highest Mark' FROM Student GROUP BY Marks;"}
+		],
+"correct":"C",
+"description":
+		{"A":"Wrong usage of Group By clause",
+            "B":"This query would not give the required result.  It just lists department name and marks for all students",
+            "C":"Proper use of Group By and this would give the required result",
+            "D":"Wrong usage of Group By clause"},
+         "fileURL":"Scripts/file4.txt"
+},
+{
+"id":"4",
+"question": "In which of the following scenarios, a GROUP BY clause becomes mandatory?",
+"imgURL":"",
+"options":
+		[
+		{"option1":"SELECT query with only one aggregate function"},
+		{"option2":"SELECT query with minimum one aggregate function along with other columns"}, 
+		{"option3":"SELECT query with two aggregate functions"},
+		{"option4":"SELECT query with only two columns"}
+		],
+"correct":"B",
+"description":{"A":"Not really.  GROUP BY is not mandatory for a SELECT query using one aggregate function only without any other columns",
+            "B":"When the SELECT list contains atleast one aggregate function along with other column(s), a GROUP BY clause based on those column(s) that appear in SELECT list becomes mandatory",
+            "C":"GROUP BY is not mandatory for a SELECT query using two aggregate function only without any other columns",
+            "D":"GROUP BY is not mandatory for a SELECT query without an aggregate function "},
+ "fileURL":""
+},
+{
+"id":"5",
+"question": "In a query it is mandatory that the condition in HAVING clause must be based on ____________",
+"imgURL":"",
+"options":
+		[
+		{"option1":"any column of the table referred in the query"},
+		{"option2":"the aggregate function used in the GROUP BY clause"}, 
+		{"option3":"the primary key of the table referred in the query"},
+		{"option4":"the columns that appear in the GROUP BY clause"}
+		],
+"correct":"D",
+"description":
+		{"A":"It is not legal to write HAVING clause based on any column of the table",
+            "B":"Is it correct to use a GROUP BY in an aggregate function?  Re-think!",
+            "C":"It is not mandated that HAVING has to be based on primary key of the table",
+            "D":"HAVING clause is used to apply a filter after Group By and hence it should be based on a column that appear in Group By clause"},
+         "fileURL":""
+},
+{
+"id":"6",
+"question": "Consider a table -  Student(Name, Marks).  Which of the following queries can give the desired table state?",
+"imgURL":"images/quiz8.2.PNG",
+"options":
+		[
+		{"option1":"SELECT NVL(Name, ‘NIL') 'Name', NVL(Marks, 'NA') 'Marks' FROM Student;"},
+		{"option2":"SELECT NVL(TO_NUMBER(Name),‘NIL’) 'Name', NVL(Marks,'NA') 'Marks' FROM Student;"}, 
+		{"option3":"SELECT NVL(Name,‘NIL') 'Name', NVL(TO_CHAR(Marks),'NA') 'Marks' FROM Student;"},
+		{"option4":"SELECT NVL(TO_NUMBER(Name),‘NIL') 'Name', NVL(TO_NUMBER(Marks),'NA') 'Marks' FROM Student;"}
+		],
+"correct":"C",
+"description":
+{"A":"Marks is a numeric field.  Re-think!",
+            "B":"Why should we convert Name to NUMBER?  Re-think!",
+            "C":"Marks is a numeric field and has to be converted to Character data before applying NVL function",
+            "D":"Why should we convert Name to NUMBER?  Also, Marks is already a numeric field.  Re-think!"},
+ "fileURL":"Scripts/file5.txt"
+},
+{
+"id":"7",
+"question": "Consider a table Employee(empno, name, designation, salary, deptno).  We need to retrieve the department number along with the minimum and maximum salary given in that department only if the minimum salary is less than 1000 and maximum salary is greater than 2000.  Which of the following query can help with this requirement?",
+"imgURL":"",
+"options":
+		[
+		{"option1":"SELECT deptno, MIN (salary), MAX (salary) FROM employee GROUP BY deptno HAVING MIN(salary) < 1000 AND MAX (salary) >2000;"},
+		{"option2":"SELECT deptno, MIN (salary), MAX (salary) FROM employee WHERE MIN(salary) < 1000 AND MAX (salary) >2000 GROUP BY DEPTNO;"}, 
+		{"option3":"SELECT deptno, MIN (salary), MAX (salary) FROM employee GROUP BY deptno WHERE MIN(salary) < 1000 AND MAX (salary) >2000;"},
+		{"option4":"SELECT deptno, MIN (salary), MAX (salary) FROM employee HAVING MIN(salary) < 1000 AND MAX (salary) >2000;"}
+		],
+"correct":"A",
+"description":
+	{"A":"This query gives the required result by first grouping the results based on deptno and then applying HAVING condition.",
+            "B":"Incorrect usage of GROUP BY and WHERE clause",
+            "C":"Can we use WHERE clause after GROUP BY? Re-think!",
+            "D":"Can we use HAVING without GROUP BY? Re-think!"},
+ "fileURL":""
+}
+]

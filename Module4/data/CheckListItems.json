@@ -1,0 +1,77 @@
+[{
+
+	"text": "Learning Plan",
+	"done": true,
+	"slideindex": "0.1",
+	"quizindex": "0",
+	"hrefUrl": "QuizType1.html"
+},
+{
+
+	"text": "Table of content",
+	"done": true,
+	"slideindex": "0.2",
+	"quizindex": "0",
+	"hrefUrl": "QuizType1.html"
+},
+{
+
+	"text": "Recap of Module 1",
+	"done": true,
+	"slideindex": "0.3",
+	"quizindex": "0",
+	"hrefUrl": "QuizType1.html"
+},
+{
+
+	"text": "Module Flow",
+	"done": true,
+	"slideindex": "1.1",
+	"quizindex": "0",
+	"hrefUrl": "QuizType1.html"
+},
+{
+	"text": "Learning Objectives",
+	"done": true,
+	"slideindex": "0",
+	"quizindex": "0",
+	"hrefUrl": "QuizType1.html"
+},
+    {
+	"text": "Introduction to Object Oriented Paradigm",
+	"done": true,
+	"slideindex": "1",
+	"quizindex": "0",
+	"hrefUrl": "QuizType1.html"
+}, {
+	"text": "Inheritance & Polymorphism",
+	"done": false,
+	"slideindex": "53",
+	"quizindex": "3",
+	"hrefUrl": "QuizType2.html"
+}, {
+	"text": "Relationships",
+	"done": true,
+	"slideindex": "89",
+	"quizindex": "8",
+	"hrefUrl": "QuizType2.html"
+}, {
+	"text": "Raising Exceptions",
+	"done": false,
+	"slideindex": "114",
+	"quizindex": "12",
+	"hrefUrl": "QuizType1.html"
+}, {
+	"text": "Unit Testing",
+	"done": true,
+	"slideindex": "124",
+	"quizindex": "16",
+	"hrefUrl": "QuizType2.html"
+},
+{
+	"text": "Project",
+	"done": true,
+	"slideindex": "140",
+	"quizindex": "0",
+	"hrefUrl": "QuizType1.html"
+}]

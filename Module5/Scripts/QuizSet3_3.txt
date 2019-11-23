@@ -1,0 +1,8 @@
+DROP TABLE customers;
+CREATE TABLE customers (customerid VARCHAR2(10), name VARCHAR2(20), location VARCHAR2(20));
+CREATE UNIQUE INDEX cust_idx ON customers(customerid);
+INSERT INTO customers VALUES('C1', 'Alice', 'New York');
+INSERT INTO customers VALUES('C2', 'Ben', 'New Jersey');
+INSERT INTO customers VALUES('C3', 'Smith', 'Chicago');
+INSERT INTO customers VALUES('C4', 'Mike', 'New York');
+COMMIT;

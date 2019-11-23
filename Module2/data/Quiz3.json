@@ -1,0 +1,42 @@
+[
+{
+"id":"1",
+"question": "Consider an engineering college where a student can enroll for multiple courses. A course can be taken-up by many students.  Exams are conducted for courses and marks are given to students.A student can enroll for a course only if he/she has undertaken the prerequisite course.What is the cardinality of “Enrolls” relationship between Student and Course entities?",
+"imgURL":"",
+"options":
+		[
+		{"option1":"One to Many"},
+		{"option2":"One to One"}, 
+		{"option3":"Many to One"},
+		{"option4":"Many to Many"}
+		],
+"correct":"D",
+"description":
+		{"A":"The same course can be taken up by many students",	
+		"B":"A student can enroll for multiple courses and the same course can be taken up by many students! Re-think",
+		"C":"A student can enroll for multiple courses",
+		"D":"A student can enroll for multiple courses and the same course can be taken up by many students"
+		},
+                 "fileURL":""
+},
+{
+"id":"2",
+"question": "In an organization with 10000+ employees, they have an option of availing quick salary loans.  Here the employees can get one month salary as a loan which can be repaid in 12 EMIs without interest.  For processing this salary loan, the beneficiary employee need to get a guarantee from another employee.  At a time, an employee can have utmost one active salary loan.  Also, an employee can be the guarantor for any number of beneficiaries.Which of the following statements are true for this context?",
+"imgURL":"",
+"options":
+		[
+		{"option1":"Employee entity participates in a Unary One to Many relationship with itself"},
+		{"option2":"Employee entity participates in a Unary Many to Many relationship with itself"}, 
+		{"option3":"Employee entity participates in a Binary One to Many relationship with itself"},
+		{"option4":"Employee entity participates in a Binary Many to Many relationship with itself"}
+		],
+"correct":"A",
+"description":
+		{"A":"Yes, Unary one to many as an employee can be the guarantor for any number of beneficiary employees",
+		"B":"An employee can have utmost one active salary loan",
+		"C":"There is only one entity here  - Employee! Re-think",
+		"D":"There is only one entity here  - Employee! Re-think"
+		},
+                 "fileURL":""
+}
+]
